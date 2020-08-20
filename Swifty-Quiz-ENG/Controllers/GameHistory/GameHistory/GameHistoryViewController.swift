@@ -56,7 +56,7 @@ extension GameHistoryViewController: UITableViewDelegate, UITableViewDataSource 
         if history[indexPath.row].correctAnswer == history[indexPath.row].userAnswer {
             cell.colorBack.backgroundColor = #colorLiteral(red: 0.1451225281, green: 0.7943774462, blue: 0.4165494442, alpha: 1)
             cell.questionNumber.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        } else if history[indexPath.row].userAnswer != "Подсказка" {
+        } else if history[indexPath.row].userAnswer != "Hint" {
             cell.colorBack.backgroundColor = #colorLiteral(red: 0.9865071177, green: 0.3565812409, blue: 0.2555966675, alpha: 1)
             cell.userAnswer.text = "Ваш ответ: \(history[indexPath.row].userAnswer)"
             cell.questionNumber.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

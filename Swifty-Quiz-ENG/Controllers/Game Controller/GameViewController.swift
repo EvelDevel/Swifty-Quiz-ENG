@@ -232,7 +232,7 @@ extension GameViewController {
         switch path {
         case 1: /// Доиграли до конца
             callDelegateAndSaveRecord(continueStatus: false, autoHelp: weDidGetAutoHelp)
-            showAlert(title: "Ваш счет", message: "\(gameHelper.updatedAlertMessage(score: updatePercentage()))")
+            showAlert(title: "Your score", message: "\(gameHelper.updatedAlertMessage(score: updatePercentage()))")
         case 2: /// Преждевременно закончили игру
             callDelegateAndSaveRecord(continueStatus: true, autoHelp: weDidGetAutoHelp)
         default: print("gameEnding error")
@@ -295,8 +295,8 @@ extension GameViewController {
     
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: "\(title): \(score)", message: "\(message)", preferredStyle: .alert)
-        let restartAction = UIAlertAction(title: "Перезапустить", style: .default, handler: { action in self.restartGame() })
-        let quitAction = UIAlertAction(title: "Выйти", style: .default, handler: { action in self.quitGame() })
+        let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { action in self.restartGame() })
+        let quitAction = UIAlertAction(title: "Quit", style: .default, handler: { action in self.quitGame() })
         alert.addAction(restartAction)
         alert.addAction(quitAction)
         present(alert, animated: true, completion: nil)
@@ -341,7 +341,7 @@ extension GameViewController {
                 /// Так же как и подсказку - записываем всего один раз
                 gameHistory.append(GameHistory(question: localQuestionSet[currentQuestionIndex].question[0],
                                                correctAnswer: localQuestionSet[currentQuestionIndex].optionA,
-                                               userAnswer: "Подсказка",
+                                               userAnswer: "Hint",
                                                questionId: localQuestionSet[currentQuestionIndex].questionId,
                                                image: localQuestionSet[currentQuestionIndex].image))
             }

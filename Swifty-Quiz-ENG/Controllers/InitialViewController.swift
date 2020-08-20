@@ -58,8 +58,8 @@ extension InitialViewController {
         if SelectedTopic.shared.topic.questionSet.isEmpty
             || Game.shared.settings.appLastVersion != currentAppVersion {
             let newSet = TopicOperator.getQuestionsTheBasics()
-            SelectedTopic.shared.saveQuestionSet(newSet, topic: "Основы", tag: 10)
-            selectedTopic.text = "Основы"
+            SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
+            selectedTopic.text = "The Basics"
             Game.shared.changeContinueStatus()
         } else {
             selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)"
@@ -76,16 +76,16 @@ extension InitialViewController {
             let help = records.first?.helpCounter ?? 0
             let correct = records.first?.score ?? 0
             let roundedPercents = String(format: "%.1f", records.first?.percentOfCorrectAnswer ?? 0)
-            lastTopic.text = "Категория: \(category)"
-            totalQuestions.text = "Вопросы: \(played) из \(total) (подсказок: \(help))"
-            lastScore.text = "Правильных ответов: \(correct) (\(roundedPercents)%)"
+            lastTopic.text = "Category: \(category)"
+            totalQuestions.text = "Questions: \(played) out of \(total) (hints: \(help))"
+            lastScore.text = "Correct answers: \(correct) (\(roundedPercents)%)"
         }
     }
     
     /// Показываем общее количество вопросов в игре
     func showTotalQuestions() {
         _ = RandomSuperSets.getQuestions(limit: 0)
-        totalQuestionsLabel.text = "Вопросов в игре: \(RandomSuperSets.showTotalquestionsNumber())"
+        totalQuestionsLabel.text = "Questions in game: \(RandomSuperSets.showTotalquestionsNumber())"
     }
 }
 
@@ -191,9 +191,9 @@ SettingsViewControllerDelegate{
     
     func didEndGame(result: Int, totalQuestion: Int, percentOfCorrect: Double,
                     topic: String, helpCounter: Int, playedNum: Int) {
-        lastTopic.text = "Категория: \(topic)"
-        totalQuestions.text = "Вопросы: \(playedNum) из \(totalQuestion) (подсказок: \(helpCounter))"
-        lastScore.text = "Правильных ответов: \(result) (\(percentOfCorrect)%)"
+        lastTopic.text = "Category: \(topic)"
+        totalQuestions.text = "Questions: \(playedNum) out of \(totalQuestion) (hints: \(helpCounter))"
+        lastScore.text = "Correct answers: \(result) (\(percentOfCorrect)%)"
     }
     func updateInitialView() { updateContinueButton() }
     func selectedCategory() { selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)" }
