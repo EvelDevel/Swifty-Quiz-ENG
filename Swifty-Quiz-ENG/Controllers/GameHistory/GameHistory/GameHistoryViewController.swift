@@ -49,7 +49,7 @@ extension GameHistoryViewController: UITableViewDelegate, UITableViewDataSource 
         
         cell.questionNumber.text = "\(indexPath.row + 1)"
         cell.questionText.text = history[indexPath.row].question
-        cell.correctAnswer.text = "Ответ: \(history[indexPath.row].correctAnswer)"
+        cell.correctAnswer.text = "Answer: \(history[indexPath.row].correctAnswer)"
         cell.userAnswer.text = ""
         
         /// Цвет: Правильный или неправильный ответ
@@ -58,12 +58,12 @@ extension GameHistoryViewController: UITableViewDelegate, UITableViewDataSource 
             cell.questionNumber.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         } else if history[indexPath.row].userAnswer != "Hint" {
             cell.colorBack.backgroundColor = #colorLiteral(red: 0.9865071177, green: 0.3565812409, blue: 0.2555966675, alpha: 1)
-            cell.userAnswer.text = "Ваш ответ: \(history[indexPath.row].userAnswer)"
+            cell.userAnswer.text = "Your answer: \(history[indexPath.row].userAnswer)"
             cell.questionNumber.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         } else {
             cell.colorBack.backgroundColor = #colorLiteral(red: 0.8938786387, green: 0.8978905678, blue: 0.9102204442, alpha: 1)
             cell.questionNumber.textColor = #colorLiteral(red: 0.2377000451, green: 0.2814793885, blue: 0.335570693, alpha: 1)
-            cell.userAnswer.text = "Ваш ответ: Взяли подсказку"
+            cell.userAnswer.text = "Your answer: Took a hint"
         }
         
         return cell

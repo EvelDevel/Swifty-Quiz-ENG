@@ -41,9 +41,9 @@ extension RecordsViewController {
     /// Вызов алерта
     func showAlert() {
         if Game.shared.records.count != 0 {
-            let alert = UIAlertController(title: "Вы уверены?", message: "Рекорды нельзя будет восстановить", preferredStyle: .alert)
-            let deleteAction = UIAlertAction(title: "Удалить", style: .default, handler: { action in self.deleteRecords() })
-            let cancelAction = UIAlertAction(title: "Отмена", style: .default, handler: { action in })
+            let alert = UIAlertController(title: "Are you sure?", message: "Records cannot be restored", preferredStyle: .alert)
+            let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { action in self.deleteRecords() })
+            let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { action in })
             alert.addAction(deleteAction)
             alert.addAction(cancelAction)
             present(alert, animated: true, completion: nil)
@@ -105,11 +105,11 @@ extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
             cell.percentOfCorrect.text = "100%"
         }
         
-        cell.helpCounterLabel.text = "Подсказки: \(record.helpCounter ?? 0)"
+        cell.helpCounterLabel.text = "Hints: \(record.helpCounter ?? 0)"
         cell.topicLabel.text = "\(record.topic ?? "")"
-        cell.dateLabel.text = "Дата: \(dateFormatter.string(from: record.date ?? Date()))"
-        cell.totalQuestionLabel.text = "Вопросы: \(record.playedNum ?? 0) / \(record.totalQuestion ?? 0)"
-        cell.scoreLabel.text = "Очки: \(record.score ?? 0)"
+        cell.dateLabel.text = "Date: \(dateFormatter.string(from: record.date ?? Date()))"
+        cell.totalQuestionLabel.text = "Questions: \(record.playedNum ?? 0) / \(record.totalQuestion ?? 0)"
+        cell.scoreLabel.text = "Score: \(record.score ?? 0)"
         
         return cell
     }

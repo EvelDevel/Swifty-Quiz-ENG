@@ -175,17 +175,17 @@ extension SettingCell {
         
         switch sender.tag {
         case 1:
-            title = "Последовательность вопросов"
-            message = "В случае прямой последовательности вопросы каждую игру будут идти в одном порядке. Если вы выберете случайную последовательность, порядок вопросов никогда не повторится дважды."
+            title = "Questions order"
+            message = "In the case of direct order, the questions will go in the same order for each game. If you choose a random order, the order of the questions will never be repeated twice."
         case 2:
-            title = "Формулировка текста вопроса"
-            message = "У каждого вопроса в игре есть несколько формулировок вопроса - от одной до трех. Если вы хотите сделать игру сложнее, включите изменение формулировок, тогда глазу будет труднее вспомнить вопрос."
+            title = "Wording of question"
+            message = "Each question in the game has several question wordings - from one to three. If you want to make the game harder, include a change in wording, then it will be more difficult for the eye to remember the question."
         case 3:
-            title = "При неправильном ответе"
-            message = "После неправильного ответа вы можете просто идти дальше или получать теоретическую подсказку, которая поможет понимать сразу, какой ответ был правильным. Это замедляет ход игры, но делает ее более информативной."
+            title = "In case of a wrong answer"
+            message = "After a wrong answer, you can simply move on or receive a theoretical hint that will help you understand immediately which answer was correct. This slows down the game, but makes it more informative."
         case 4:
-            title = "Переход после подсказки"
-            message = "После каждой подсказки вы можете автоматически переходить к следующему вопросу, а можете оставаться, чтобы еще раз внимательно прочитать вопрос и выбрать правильный ответ. После использования подсказки вам не будут засчитаны очки."
+            title = "If the hint is shown"
+            message = "After each hint, you can automatically move on to the next question, or you can stay to read the question carefully again and choose the correct answer. After using the hint you will not score the points."
         default:
             print("Error with information about setting")
         }

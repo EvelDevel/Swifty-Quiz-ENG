@@ -47,7 +47,7 @@ class TopicViewController: UIViewController {
         /// Проверяем, что у нас есть незавершенная игра, проверяем, что алерт еще не был показан
         if Game.shared.records.count != 0 && Game.shared.records[0].continueGameStatus == true {
             if Game.shared.showTopicAlertStatus() != true {
-                let alert = UIAlertController(title: "You have an unfinished game", message: "If you choose a different topic, answer at least one question of the new game, or change the settings, you will lose the opportunity to finish the unfinished game", preferredStyle: .alert)
+                let alert = UIAlertController(title: "You have an unfinished game", message: "If you choose a different category, answer at least one question of the new game, or change the settings, you will lose the opportunity to finish the unfinished game", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Continue", style: .default, handler: { action in })
                 alert.addAction(okAction)
                 present(alert, animated: true, completion: nil)

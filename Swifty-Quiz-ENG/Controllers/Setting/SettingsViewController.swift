@@ -27,8 +27,8 @@ class SettingsViewController: UIViewController {
         /// Проверяем, что у нас есть незавершенная игра, проверяем, что алерт еще не был показан
         if Game.shared.records.count != 0 && Game.shared.records[0].continueGameStatus == true {
             if Game.shared.showSettingsAlertStatus() != true {
-                let alert = UIAlertController(title: "Есть незавершенная игра", message: "Если вы измените настройки, выберете другую тему, или ответите хотя бы на один вопрос новой игры, вы потеряете возможность закончить незавершенную игру", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "Продолжить", style: .default, handler: { action in })
+                let alert = UIAlertController(title: "You have an unfinished game", message: "If you change the settings, choose a different category, or answer at least one question in the new game, you will lose the opportunity to complete the unfinished game.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Continue", style: .default, handler: { action in })
                 alert.addAction(okAction)
                 present(alert, animated: true, completion: nil)
             }
@@ -62,7 +62,7 @@ extension SettingsViewController: SettingCellDelegate {
     
     func showInformationAlert(_ title: String, _ message: String) {
         let alert = UIAlertController(title: "\(title)", message: "\(message)", preferredStyle: .alert)
-        let quitAction = UIAlertAction(title: "Вернуться", style: .default, handler: { action in })
+        let quitAction = UIAlertAction(title: "Back to settengs", style: .default, handler: { action in })
         alert.addAction(quitAction)
         present(alert, animated: true, completion: nil)
     }

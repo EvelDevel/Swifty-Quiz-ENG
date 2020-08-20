@@ -14,15 +14,15 @@ class GameHelper {
         /// При любых других раскладах текущий сет случайных вопросов будет повторяться (перезапуск, не доиграли)
         
         if tag == 0 {
-            SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 20), topic: "20 случайных вопросов", tag: 0)
+            SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 20), topic: "20 random questions", tag: 0)
         } else if tag == 1 {
-            SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 50), topic: "50 случайных вопросов", tag: 1)
+            SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 50), topic: "50 random questions", tag: 1)
         } else if tag == 2 {
-            SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 100), topic: "100 случайных вопросов", tag: 2)
+            SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 100), topic: "100 random questions", tag: 2)
         } else if tag == 3 {
-            SelectedTopic.shared.saveQuestionSet(GuideRandomSet.getQuestions(limit: 20), topic: "20 вопросов по Руководству", tag: 3)
+            SelectedTopic.shared.saveQuestionSet(GuideRandomSet.getQuestions(limit: 20), topic: "20 random - Language Guide", tag: 3)
         } else if tag == 4 {
-            SelectedTopic.shared.saveQuestionSet(PatternsRandomSet.getQuestions(limit: 20), topic: "20 вопросов по Паттернам", tag: 4)
+            SelectedTopic.shared.saveQuestionSet(PatternsRandomSet.getQuestions(limit: 20), topic: "20 random - Patterns", tag: 4)
         }
     }
     
@@ -32,13 +32,13 @@ class GameHelper {
         
         var message = ""
         if score < 35 {
-            message = "Не сдавайтесь, пока результат слабый, но у вас все получится!"
+            message = "Don't give up, you will succeed!"
         } else if score < 55 {
-            message = "Достойный результат, но нужно продолжать работать!"
+            message = "A decent result, but you need to keep working!"
         } else if score < 85 {
-            message = "Уже хорошо! Но вы можете постараться сделать еще лучше!"
+            message = "Good! But you can try to do even better!"
         } else {
-            message = "Превосходно! Продолжайте в том же духе и по остальным темам!"
+            message = "Excellent! Keep up the good work on the rest of the categories!"
         }
         return message
     }
@@ -53,8 +53,8 @@ class GameHelper {
             && Game.shared.showNewGameAlertStatus() != true {
             
             DispatchQueue.main.async {
-                let alert = UIAlertController(title: "Есть незавершенная игра", message: "Если вы ответите хотя бы на один вопрос, измените настройки или выберете другую тему, вы потеряете возможность закончить незавершенную игру", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "Продолжить", style: .default, handler: { action in })
+                let alert = UIAlertController(title: "You have an unfinished game", message: "If you answer at least one question, change your settings, or choose a different category, you will lose the opportunity to complete the unfinished game.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Continue", style: .default, handler: { action in })
                 alert.addAction(okAction)
                 view.present(alert, animated: true, completion: nil)
             }
