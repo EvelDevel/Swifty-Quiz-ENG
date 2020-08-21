@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 701 по 800
+// MARK: 08 - Вопросы (id) с 701 по 800
 
 class EnumerationsSet {
     static func getQuestions() -> [Question] {

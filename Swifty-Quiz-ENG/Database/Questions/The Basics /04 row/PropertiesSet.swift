@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 901 по 1000
+// MARK: 10 - Вопросы (id) с 901 по 1000
 
 class PropertiesSet {
     static func getQuestions() -> [Question] {

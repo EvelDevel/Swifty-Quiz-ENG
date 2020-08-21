@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 2201 по 2300
+// MARK: 23 - Вопросы (id) с 2201 по 2300
 
 class ProtocolsSet {
     static func getQuestions() -> [Question] {

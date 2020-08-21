@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 1701 по 1800
+// MARK: 18 - Вопросы (id) с 1701 по 1800
 
 class ARCSet {
     static func getQuestions() -> [Question] {

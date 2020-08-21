@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 1101 по 1200
+// MARK: 12 - Вопросы (id) с 1101 по 1200
 
 class SubscriptsSet {
     static func getQuestions() -> [Question] {

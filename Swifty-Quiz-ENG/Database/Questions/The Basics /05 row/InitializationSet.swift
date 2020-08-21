@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 1301 по 1400
+// MARK: 14 - Вопросы (id) с 1301 по 1400
 
 class InitializationSet {
     static func getQuestions() -> [Question] {

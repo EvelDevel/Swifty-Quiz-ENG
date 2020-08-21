@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 501 по 600
+// MARK: 06 - Вопросы (id) с 501 по 600
 
 class FunctionsSet {
     static func getQuestions() -> [Question] {

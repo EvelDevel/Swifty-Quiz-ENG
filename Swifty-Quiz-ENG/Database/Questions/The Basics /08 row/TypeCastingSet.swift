@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 1801 по 1900
+// MARK: 19 - Вопросы (id) с 1801 по 1900
 
 class TypeCastingSet {
     static func getQuestions() -> [Question] {

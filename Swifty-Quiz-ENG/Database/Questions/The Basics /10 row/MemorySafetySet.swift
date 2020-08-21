@@ -4,7 +4,7 @@
 
 import Foundation
 
-// MARK:  Вопросы (id) с 2401 по 2450
+// MARK: 25 - Вопросы (id) с 2401 по 2450
 
 class MemorySafetySet {
     static func getQuestions() -> [Question] {
