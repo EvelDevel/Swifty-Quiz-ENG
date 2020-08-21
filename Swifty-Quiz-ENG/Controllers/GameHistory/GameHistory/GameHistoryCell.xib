@@ -9,11 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameHistoryCell" rowHeight="315" id="KGk-i7-Jjw" customClass="GameHistoryCell" customModule="Свифти_Квиз" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameHistoryCell" rowHeight="351" id="KGk-i7-Jjw" customClass="GameHistoryCell" customModule="Swifty_Quiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-nz-QSa" userLabel="Color identificator">
@@ -40,14 +40,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-B8-Oan" userLabel="GraySeparator">
-                        <rect key="frame" x="90" y="314" width="214" height="1"/>
+                        <rect key="frame" x="90" y="350" width="214" height="1"/>
                         <color key="backgroundColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.29548373290000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="PBO-LD-YzF"/>
                         </constraints>
                     </view>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Jk-ps-7p4">
-                        <rect key="frame" x="90" y="19" width="210" height="275.66666666666669"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8Jk-ps-7p4">
+                        <rect key="frame" x="90" y="19" width="210" height="307"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbf-DP-hla" userLabel="QuestionView">
                                 <rect key="frame" x="0.0" y="0.0" width="210" height="200"/>
@@ -76,24 +76,29 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="751" text="Текст вопроса " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-FD-6vG">
-                                <rect key="frame" x="0.0" y="208" width="210" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="212" width="210" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" text="Правильный ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-JJ-S7x">
-                                <rect key="frame" x="0.0" y="236.33333333333334" width="210" height="15.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Ваш ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-GA-g4v">
-                                <rect key="frame" x="0.0" y="260" width="210" height="15.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DHw-Gt-iwd">
+                                <rect key="frame" x="0.0" y="268" width="210" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" text="Правильный ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-JJ-S7x">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Ваш ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-GA-g4v">
+                                        <rect key="frame" x="0.0" y="21" width="210" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giP-7L-BKc">
@@ -114,7 +119,7 @@
                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="8Jk-ps-7p4" secondAttribute="trailing" constant="20" id="1tg-ZE-5CR"/>
-                    <constraint firstAttribute="bottom" secondItem="8Jk-ps-7p4" secondAttribute="bottom" constant="20.5" id="3jo-yM-3qA"/>
+                    <constraint firstAttribute="bottom" secondItem="8Jk-ps-7p4" secondAttribute="bottom" constant="25" id="3jo-yM-3qA"/>
                     <constraint firstAttribute="bottom" secondItem="5iS-B8-Oan" secondAttribute="bottom" id="926-xY-qJL"/>
                     <constraint firstItem="8Jk-ps-7p4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="QvP-eV-e8E"/>
                     <constraint firstItem="giP-7L-BKc" firstAttribute="centerX" secondItem="OBZ-nz-QSa" secondAttribute="centerX" id="SrG-Hw-F8Z"/>
@@ -142,10 +147,10 @@
                 <outlet property="stackTopMargin" destination="QvP-eV-e8E" id="ZHi-bt-W3n"/>
                 <outlet property="userAnswer" destination="xEp-GA-g4v" id="fF2-gG-qya"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="213.28125"/>
+            <point key="canvasLocation" x="140.57971014492756" y="243.41517857142856"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="exclamationmark.octagon" catalog="system" width="128" height="112"/>
+        <image name="exclamationmark.octagon" catalog="system" width="32" height="32"/>
     </resources>
 </document>

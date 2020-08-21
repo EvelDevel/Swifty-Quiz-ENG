@@ -38,7 +38,7 @@ extension GameHistoryViewController: UITableViewDelegate, UITableViewDataSource 
         /// Настройка изображений
         if history[indexPath.row].image == "" {
             cell.imageHeight.constant = 0
-            cell.stackTopMargin.constant = 10
+            cell.stackTopMargin.constant = 7
         } else {
             if let image = UIImage(named: "\(history[indexPath.row].image)") {
                 cell.questionImage.image = UIImage(named: "\(history[indexPath.row].image)")
