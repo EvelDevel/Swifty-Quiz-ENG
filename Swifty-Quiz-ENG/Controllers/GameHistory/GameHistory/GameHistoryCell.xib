@@ -77,7 +77,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="751" text="Текст вопроса " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-FD-6vG">
                                 <rect key="frame" x="0.0" y="212" width="210" height="44"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -101,20 +101,6 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giP-7L-BKc">
-                        <rect key="frame" x="35.333333333333336" y="90" width="23.666666666666664" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="nD2-Vr-wEB"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" image="exclamationmark.octagon" catalog="system">
-                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19"/>
-                        </state>
-                        <connections>
-                            <action selector="reportButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j0q-Sa-MxQ"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
@@ -122,9 +108,7 @@
                     <constraint firstAttribute="bottom" secondItem="8Jk-ps-7p4" secondAttribute="bottom" constant="25" id="3jo-yM-3qA"/>
                     <constraint firstAttribute="bottom" secondItem="5iS-B8-Oan" secondAttribute="bottom" id="926-xY-qJL"/>
                     <constraint firstItem="8Jk-ps-7p4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="QvP-eV-e8E"/>
-                    <constraint firstItem="giP-7L-BKc" firstAttribute="centerX" secondItem="OBZ-nz-QSa" secondAttribute="centerX" id="SrG-Hw-F8Z"/>
                     <constraint firstAttribute="trailing" secondItem="5iS-B8-Oan" secondAttribute="trailing" constant="16" id="T0A-2y-nrt"/>
-                    <constraint firstItem="giP-7L-BKc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="YC0-l5-dbW"/>
                     <constraint firstItem="8Jk-ps-7p4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="bA0-nT-JDw"/>
                     <constraint firstItem="ird-p1-UMY" firstAttribute="centerX" secondItem="OBZ-nz-QSa" secondAttribute="centerX" id="fTz-Tz-big"/>
                     <constraint firstItem="5iS-B8-Oan" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="mUR-mb-tfY"/>
@@ -150,7 +134,4 @@
             <point key="canvasLocation" x="140.57971014492756" y="243.41517857142856"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="exclamationmark.octagon" catalog="system" width="32" height="32"/>
-    </resources>
 </document>
