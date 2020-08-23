@@ -47,7 +47,8 @@ class CategoriesCell: UITableViewCell {
             addQuestionsToArray(sender: sender)
             delegate?.updateNumberOfQuestions()
             Game.shared.changeContinueStatus()
-            sender.backgroundColor = #colorLiteral(red: 1, green: 0.8529722691, blue: 0.1131319478, alpha: 1)
+            sender.backgroundColor = #colorLiteral(red: 0.3792441487, green: 0.7556995749, blue: 0.873203218, alpha: 1)
+            sender.setTitleColor(#colorLiteral(red: 0.9566296935, green: 0.9607134461, blue: 0.9688788056, alpha: 1), for: .normal)
             SoundPlayer.shared.playSound(sound: .topicAndSettingsButton)
             lastPosition = sender.tag - 1
         }
@@ -260,14 +261,18 @@ extension CategoriesCell {
             /// Последнюю выбранную категорию делаем "активной"
             switch position {
             case 0...9:
-                superSets[position].backgroundColor = #colorLiteral(red: 1, green: 0.8529722691, blue: 0.1131319478, alpha: 1)
+                superSets[position].backgroundColor = #colorLiteral(red: 0.3792441487, green: 0.7556995749, blue: 0.873203218, alpha: 1)
+                superSets[position].setTitleColor(#colorLiteral(red: 0.9566296935, green: 0.9607134461, blue: 0.9688788056, alpha: 1), for: .normal)
             case 10...35:
-                guideQuestions[position-10].backgroundColor = #colorLiteral(red: 1, green: 0.8529722691, blue: 0.1131319478, alpha: 1)
+                guideQuestions[position-10].backgroundColor = #colorLiteral(red: 0.3792441487, green: 0.7556995749, blue: 0.873203218, alpha: 1)
+                guideQuestions[position-10].setTitleColor(#colorLiteral(red: 0.9566296935, green: 0.9607134461, blue: 0.9688788056, alpha: 1), for: .normal)
             case 36...40:
-                patternsQuestions[position-36].backgroundColor = #colorLiteral(red: 1, green: 0.8529722691, blue: 0.1131319478, alpha: 1)
+                patternsQuestions[position-36].backgroundColor = #colorLiteral(red: 0.3792441487, green: 0.7556995749, blue: 0.873203218, alpha: 1)
+                patternsQuestions[position-36].setTitleColor(#colorLiteral(red: 0.9566296935, green: 0.9607134461, blue: 0.9688788056, alpha: 1), for: .normal)
             default:
                 print("default case in addQuestionsToArray() in CategoriesCell")
             }
+            
         }
     }
 }

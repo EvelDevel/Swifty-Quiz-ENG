@@ -102,7 +102,7 @@ class GameHelper {
             if view.frame.size.width <= 320 {
                 button.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
             } else if view.frame.size.width <= 410 {
-                button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0)
+                button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0)
             } else {
                 button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
             }

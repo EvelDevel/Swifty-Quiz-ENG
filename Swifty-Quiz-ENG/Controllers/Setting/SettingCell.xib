@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="466" id="KGk-i7-Jjw" customClass="SettingCell" customModule="Swifty_Quiz_ENG" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="466" id="KGk-i7-Jjw" customClass="SettingCell" customModule="Swifty_Quiz" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -38,7 +38,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="i1T-ve-GQ7">
-                        <rect key="frame" x="20" y="45" width="280" height="36"/>
+                        <rect key="frame" x="20" y="43" width="280" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="CNU-mA-RBL"/>
@@ -47,13 +47,13 @@
                             <segment title="Direct"/>
                             <segment title="Random"/>
                         </segments>
-                        <color key="selectedSegmentTintColor" red="1" green="0.85297226910000001" blue="0.11313194779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="BVQ-iX-eGv"/>
                         </connections>
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-np-sbC">
-                        <rect key="frame" x="283" y="104.5" width="15" height="14"/>
+                        <rect key="frame" x="283" y="102.5" width="15" height="14"/>
                         <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863441780822" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="McI-0r-QDK"/>
@@ -61,7 +61,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-wf-yoT" userLabel="questionText">
-                        <rect key="frame" x="20" y="100" width="280" height="20"/>
+                        <rect key="frame" x="20" y="98" width="280" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="3Os-Be-ijl"/>
                         </constraints>
@@ -74,7 +74,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kDo-Pf-RA7">
-                        <rect key="frame" x="20" y="130" width="280" height="36"/>
+                        <rect key="frame" x="20" y="126" width="280" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="1LL-b5-GCa"/>
@@ -83,13 +83,13 @@
                             <segment title="Change"/>
                             <segment title="Don't change"/>
                         </segments>
-                        <color key="selectedSegmentTintColor" red="1" green="0.85297226910000001" blue="0.11313194779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="CAd-Bk-hp2"/>
                         </connections>
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QuD-fe-LIa">
-                        <rect key="frame" x="283" y="189.5" width="15" height="14"/>
+                        <rect key="frame" x="283" y="185.5" width="15" height="14"/>
                         <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863441780822" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="eQx-FD-6PI"/>
@@ -97,7 +97,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veB-j8-GhW" userLabel="questionText">
-                        <rect key="frame" x="20" y="185" width="280" height="20"/>
+                        <rect key="frame" x="20" y="181" width="280" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="eJC-p9-pDW"/>
                         </constraints>
@@ -110,7 +110,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-f5-f8C">
-                        <rect key="frame" x="20" y="215" width="280" height="36"/>
+                        <rect key="frame" x="20" y="209" width="280" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="Jco-0I-9EH"/>
@@ -119,13 +119,13 @@
                             <segment title="Continue"/>
                             <segment title="Show the hint"/>
                         </segments>
-                        <color key="selectedSegmentTintColor" red="1" green="0.85297226910000001" blue="0.11313194779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="ahO-XP-Stz"/>
                         </connections>
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tCG-VD-v47">
-                        <rect key="frame" x="283" y="274.5" width="15" height="14"/>
+                        <rect key="frame" x="283" y="268.5" width="15" height="14"/>
                         <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863441780822" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="0eo-sA-DmW"/>
@@ -133,7 +133,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oll-D6-fdB" userLabel="questionText">
-                        <rect key="frame" x="20" y="270" width="280" height="20"/>
+                        <rect key="frame" x="20" y="264" width="280" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="YBo-XS-VMy"/>
                         </constraints>
@@ -146,7 +146,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JRi-HG-15f">
-                        <rect key="frame" x="20" y="300" width="280" height="36"/>
+                        <rect key="frame" x="20" y="292" width="280" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="sUU-vw-YoR"/>
@@ -155,13 +155,13 @@
                             <segment title="Move on"/>
                             <segment title="Stay"/>
                         </segments>
-                        <color key="selectedSegmentTintColor" red="1" green="0.85297226910000001" blue="0.11313194779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="V5c-NS-bcm"/>
                         </connections>
                     </segmentedControl>
                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U53-eV-aMa" userLabel="questionText">
-                        <rect key="frame" x="20" y="355" width="280" height="20"/>
+                        <rect key="frame" x="20" y="347" width="280" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="sHa-pq-GVO"/>
                         </constraints>
@@ -171,7 +171,7 @@
                         </state>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Odq-rL-3kX">
-                        <rect key="frame" x="20" y="385" width="280" height="36"/>
+                        <rect key="frame" x="20" y="375" width="280" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="SfH-cK-HdZ"/>
@@ -180,7 +180,7 @@
                             <segment title="On"/>
                             <segment title="Off"/>
                         </segments>
-                        <color key="selectedSegmentTintColor" red="1" green="0.85297226910000001" blue="0.11313194779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Fc3-YR-kyn"/>
                         </connections>
@@ -194,9 +194,9 @@
                     <constraint firstItem="veB-j8-GhW" firstAttribute="top" secondItem="kDo-Pf-RA7" secondAttribute="bottom" constant="20" id="4hT-an-d0o"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Odq-rL-3kX" secondAttribute="bottom" constant="5" id="5pj-tC-6OW"/>
                     <constraint firstItem="D0I-Pl-Rlx" firstAttribute="firstBaseline" secondItem="l73-AV-Lm5" secondAttribute="firstBaseline" id="6X8-f8-P4g"/>
-                    <constraint firstItem="JRi-HG-15f" firstAttribute="top" secondItem="oll-D6-fdB" secondAttribute="bottom" constant="10" id="CDf-qh-oR3"/>
-                    <constraint firstItem="Odq-rL-3kX" firstAttribute="top" secondItem="U53-eV-aMa" secondAttribute="bottom" constant="10" id="Ctt-Xy-GuP"/>
-                    <constraint firstItem="iWV-f5-f8C" firstAttribute="top" secondItem="veB-j8-GhW" secondAttribute="bottom" constant="10" id="F0O-KG-8m5"/>
+                    <constraint firstItem="JRi-HG-15f" firstAttribute="top" secondItem="oll-D6-fdB" secondAttribute="bottom" constant="8" id="CDf-qh-oR3"/>
+                    <constraint firstItem="Odq-rL-3kX" firstAttribute="top" secondItem="U53-eV-aMa" secondAttribute="bottom" constant="8" id="Ctt-Xy-GuP"/>
+                    <constraint firstItem="iWV-f5-f8C" firstAttribute="top" secondItem="veB-j8-GhW" secondAttribute="bottom" constant="8" id="F0O-KG-8m5"/>
                     <constraint firstItem="JRi-HG-15f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FFn-2Z-Bqn"/>
                     <constraint firstItem="QuD-fe-LIa" firstAttribute="firstBaseline" secondItem="veB-j8-GhW" secondAttribute="firstBaseline" id="HNv-eC-FhK"/>
                     <constraint firstItem="U53-eV-aMa" firstAttribute="top" secondItem="JRi-HG-15f" secondAttribute="bottom" constant="20" id="HpY-c3-TIz"/>
@@ -210,11 +210,11 @@
                     <constraint firstItem="l73-AV-Lm5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Tsn-WY-bQi"/>
                     <constraint firstItem="oll-D6-fdB" firstAttribute="top" secondItem="iWV-f5-f8C" secondAttribute="bottom" constant="20" id="VvE-mh-4p6"/>
                     <constraint firstAttribute="trailing" secondItem="D0I-Pl-Rlx" secondAttribute="trailing" constant="22" id="WwO-DG-kRE"/>
-                    <constraint firstItem="kDo-Pf-RA7" firstAttribute="top" secondItem="Bdm-wf-yoT" secondAttribute="bottom" constant="10" id="WxX-D1-w3P"/>
+                    <constraint firstItem="kDo-Pf-RA7" firstAttribute="top" secondItem="Bdm-wf-yoT" secondAttribute="bottom" constant="8" id="WxX-D1-w3P"/>
                     <constraint firstItem="oll-D6-fdB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Xy3-lO-BpL"/>
                     <constraint firstItem="tCG-VD-v47" firstAttribute="firstBaseline" secondItem="oll-D6-fdB" secondAttribute="firstBaseline" id="bMt-ge-S1X"/>
                     <constraint firstItem="3kg-np-sbC" firstAttribute="firstBaseline" secondItem="Bdm-wf-yoT" secondAttribute="firstBaseline" id="cPp-Qc-cap"/>
-                    <constraint firstItem="i1T-ve-GQ7" firstAttribute="top" secondItem="l73-AV-Lm5" secondAttribute="bottom" constant="10" id="eLj-BS-k3l"/>
+                    <constraint firstItem="i1T-ve-GQ7" firstAttribute="top" secondItem="l73-AV-Lm5" secondAttribute="bottom" constant="8" id="eLj-BS-k3l"/>
                     <constraint firstAttribute="trailing" secondItem="JRi-HG-15f" secondAttribute="trailing" constant="20" id="ePB-im-GRd"/>
                     <constraint firstAttribute="trailing" secondItem="3kg-np-sbC" secondAttribute="trailing" constant="22" id="ehL-xq-xhX"/>
                     <constraint firstAttribute="trailing" secondItem="veB-j8-GhW" secondAttribute="trailing" constant="20" id="gHc-rB-RDD"/>

@@ -46,7 +46,7 @@ extension SettingCell {
     
     func setControlsTintColors() {
         let inactive: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.5)
-        let active: UIColor = #colorLiteral(red: 0.2377000451, green: 0.2814793885, blue: 0.335570693, alpha: 1)
+        let active: UIColor = #colorLiteral(red: 0.9566296935, green: 0.9607134461, blue: 0.9688788056, alpha: 1)
         let normalColor = [NSAttributedString.Key.foregroundColor: inactive]
         let selectedColor = [NSAttributedString.Key.foregroundColor: active]
         

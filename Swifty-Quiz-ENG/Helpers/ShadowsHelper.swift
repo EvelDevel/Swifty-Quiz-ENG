@@ -44,7 +44,7 @@ class ShadowsHelper {
     
     /// Кнопки ответов - красная тень
     func addRedShadow(button: UIButton) {
-        button.layer.shadowColor = UIColor(red: 0.996, green: 0.353, blue: 0.224, alpha: 0.5).cgColor
+        button.layer.shadowColor = UIColor(red: 0.996, green: 0.353, blue: 0.224, alpha: 0.2).cgColor
         button.layer.shadowOpacity = 1
         button.layer.shadowRadius = 4
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
@@ -53,7 +53,7 @@ class ShadowsHelper {
     
     /// Кнопки ответов - зеленая тень
     func addGreenShadow(button: UIButton) {
-        button.layer.shadowColor = UIColor(red: 0.055, green: 0.8, blue: 0.404, alpha: 0.5).cgColor
+        button.layer.shadowColor = UIColor(red: 0.055, green: 0.8, blue: 0.404, alpha: 0.2).cgColor
         button.layer.shadowOpacity = 1
         button.layer.shadowRadius = 4
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
