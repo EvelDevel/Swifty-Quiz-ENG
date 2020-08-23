@@ -152,8 +152,8 @@
                             <constraint firstAttribute="height" constant="35" id="sUU-vw-YoR"/>
                         </constraints>
                         <segments>
-                            <segment title="Move on"/>
                             <segment title="Stay"/>
+                            <segment title="Move on"/>
                         </segments>
                         <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
