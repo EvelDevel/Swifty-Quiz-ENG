@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="782"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random sets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUx-lF-pbh" userLabel="Title : All together">
-                        <rect key="frame" x="16" y="15" width="99" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUx-lF-pbh" userLabel="Title : All together">
+                        <rect key="frame" x="16" y="15" width="141" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Mye-XD-PCD"/>
                         </constraints>
@@ -32,10 +32,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efU-AZ-oTf" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="20 random">
+                                        <state key="normal" title="20 questions">
                                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -48,10 +48,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjn-CH-lMo" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="90.5" y="0.0" width="82.5" height="30"/>
+                                        <rect key="frame" x="92" y="0.0" width="84" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="50 random">
+                                        <state key="normal" title="50 questions">
                                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -64,10 +64,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyP-mf-tY5" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="181" y="0.0" width="99" height="30"/>
+                                        <rect key="frame" x="184" y="0.0" width="96" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="100 random">
+                                        <state key="normal" title="100 questions">
                                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -88,10 +88,10 @@
                                 <rect key="frame" x="0.0" y="38" width="280" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t42-Ee-vW4" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="20 random - Guide">
+                                        <state key="normal" title="20 questions on Guide">
                                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -104,10 +104,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZA-oy-Het" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="134.5" y="0.0" width="145.5" height="30"/>
+                                        <rect key="frame" x="136" y="0.0" width="144" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="20 random - Patterns">
+                                        <state key="normal" title="20 questions on Patterns">
                                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
