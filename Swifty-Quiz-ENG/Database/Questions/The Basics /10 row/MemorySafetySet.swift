@@ -28,7 +28,7 @@ class MemorySafetySet {
                      optionC: "",
                      optionD: "",
                      questionId: 2402,
-                     helpText: "Swift makes sure that multiple accesses to the same area of memory don’t conflict, by requiring code that modifies a location in memory to have exclusive access to that memory. Because Swift manages memory automatically, most of the time you don’t have to think about accessing memory at all."),
+                     helpText: "Swift makes sure that multiple accesses to the same area of memory don’t conflict, by requiring code that modifies a location in memory to have exclusive access to that memory. Because Swift manages memory automatically, most of the time, you don’t have to think about accessing memory at all."),
             
             Question(question: ["If you have conflicting access to memory from within a single thread, does Swift guarantee that you’ll get an error at compile time?",
                                 "If you have conflicting access to memory from within a single thread, Swift guarantees that you’ll get an error at runtime?"],
@@ -72,7 +72,7 @@ class MemorySafetySet {
                      helpText: "The duration of a memory access is either instantaneous or long-term. An access is instantaneous if it’s not possible for other code to run after that access starts but before it ends. By their nature, two instantaneous accesses can’t happen at the same time. Most memory access is instantaneous. However, there are several ways to access memory, called long-term accesses, that span the execution of other code. The difference between instantaneous access and long-term access is that it’s possible for other code to run after a long-term access starts but before it ends, which is called overlap. A long-term access can overlap with other long-term accesses and instantaneous accesses."),
             
             Question(question: ["Can two instantaneous accesses happen at the same time?",
-                                "Two instantaneous accesses can’t happen at the same time. Is that true?"],
+                                "Two instantaneous accesses can happen at the same time. Is that true?"],
                      image: "",
                      optionA: "No",
                      optionB: "Yes",
@@ -111,7 +111,7 @@ class MemorySafetySet {
                      questionId: 2410,
                      helpText: "You can’t access the original variable that was passed as in-out, even if scoping rules and access control would otherwise permit it—any access to the original creates a conflict. In our code, stepSize is a global variable, and it is normally accessible from within increment(_:). However, the read access to stepSize overlaps with the write access to number. Both number and stepSize refer to the same location in memory. The read and write accesses refer to the same memory and they overlap, producing a conflict. One way to solve this conflict is to make an explicit copy of stepSize."),
             
-            Question(question: ["How you can solve access conflict with in-out parameters of a function?"],
+            Question(question: ["How can you solve access conflict with in-out parameters of a function?"],
                      image: "",
                      optionA: "Make an explicit copy",
                      optionB: "Pass variable without &",
@@ -120,14 +120,14 @@ class MemorySafetySet {
                      questionId: 2411,
                      helpText: "One way to solve the access conflict with in-out parameters is to make an explicit copy of your variable, and then passing this copy when you call the function."),
             
-            Question(question: ["What will happen after running following code?"],
+            Question(question: ["What will happen after running the following code?"],
                      image: "MemorySafety12",
                      optionA: "Successful execution",
                      optionB: "Accesses conflict",
                      optionC: "Compilation error",
                      optionD: "Nothing",
                      questionId: 2412,
-                     helpText: "The balance(_:_:) function modifies its two parameters to divide the total value evenly between them. Calling it with playerOneScore and playerTwoScore as arguments doesn’t produce a conflict — there are two write accesses that overlap in time, but they access different locations in memory."),
+                     helpText: "The balance(_:_:) function modifies its two parameters to divide the total value evenly between them. Calling it with playerOneScore and playerTwoScore as arguments doesn’t produce a conflict — there are two write accesses that overlap in time, but they access different locations in memory.")
         ]
     }
 }

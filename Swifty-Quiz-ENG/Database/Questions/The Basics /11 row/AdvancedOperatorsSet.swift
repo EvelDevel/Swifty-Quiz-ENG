@@ -10,7 +10,7 @@ class AdvancedOperatorsSet {
     static func getQuestions() -> [Question] {
         return [
             Question(question: ["How is arithmetic operator overflow reported in Swift?",
-                                "How the overflow behavior of arithmetic operator is trapped and reported in Swift?"],
+                                "How the overflow behavior of arithmetic operators is trapped and reported in Swift?"],
                      image: "",
                      optionA: "As an error",
                      optionB: "It is not reported",
@@ -19,7 +19,7 @@ class AdvancedOperatorsSet {
                      questionId: 2451,
                      helpText: "Unlike arithmetic operators in C, arithmetic operators in Swift do not overflow by default. Overflow behavior is trapped and reported as an error."),
             
-            Question(question: ["Which sign should the overflow operators start with in Swift?",
+            Question(question: ["Which sign should the overflow operator start with in Swift?",
                                 "Overflow operators in Swift begins with that sign"],
                      image: "",
                      optionA: "&",
@@ -51,8 +51,8 @@ class AdvancedOperatorsSet {
                      helpText: "You’re not limited to the predefined operators. Swift gives you the freedom to define your own custom infix, prefix, postfix, and assignment operators, with custom precedence and associativity values. These operators can be used and adopted in your code like any of the predefined operators, and you can even extend existing types to support the custom operators you define."),
             
             Question(question: ["Which operators enable you to manipulate the individual raw data bits within a data structure?",
-                                "Which operators often used in low - level programming, such as graphics programming?",
-                                "Which operators often used in low - level programming, such as device driver creation?"],
+                                "Which operators are often used in low - level programming, such as graphics programming?",
+                                "Which operators are often used in low - level programming, such as device driver creation?"],
                      image: "",
                      optionA: "Bitwise operators",
                      optionB: "Overflow operators",
@@ -68,7 +68,7 @@ class AdvancedOperatorsSet {
                      optionC: "OR (|)",
                      optionD: "XOR (^)",
                      questionId: 2456,
-                     helpText: "This is the bitwise NOT operator (~) inverts all bits in a number."),
+                     helpText: "This is the bitwise NOT operator (~). It inverts all bits in a number."),
             
             Question(question: ["The bitwise NOT operator is a ___ operator"],
                      image: "",
@@ -86,7 +86,7 @@ class AdvancedOperatorsSet {
                      optionC: "OR (|)",
                      optionD: "XOR (^)",
                      questionId: 2458,
-                     helpText: "The bitwise AND operator (&) combines the bits of two numbers. It returns a new number whose bits are set to 1 only if the bits were equal to 1 in both input numbers. In our example, the first values and second value both have four middle bits equal to 1. The bitwise AND operator combines them to make the number 00111100, which is equal to an unsigned decimal value of 60."),
+                     helpText: "The bitwise AND operator (&) combines the bits of two numbers. It returns a new number whose bits are set to 1 only if the bits were equal to 1 in both input numbers. In our example, the first value and the second value both have four middle bits equal to 1. The bitwise AND operator combines them to make the number 00111100, which is equal to an unsigned decimal value of 60."),
             
             Question(question: ["Which bitwise operator is this?"],
                      image: "AdvancedOperators9",
@@ -104,7 +104,7 @@ class AdvancedOperatorsSet {
                      optionC: "AND (&)",
                      optionD: "OR (|)",
                      questionId: 2460,
-                     helpText: "The bitwise XOR operator, or “exclusive OR operator” (^), compares the bits of two numbers. The operator returns a new number whose bits are set to 1 where the input bits are different and are set to 0 where the input bits are the same. In our example, the first values and second value each have a bit set to 1 in a location that the other does not. The bitwise XOR operator sets both of these bits to 1 in its output value. All of the other bits in firstBits and otherBits match and are set to 0 in the output value."),
+                     helpText: "The bitwise XOR operator, or “exclusive OR operator” (^), compares the bits of two numbers. The operator returns a new number whose bits are set to 1 where the input bits are different and are set to 0 where the input bits are the same. In our example, the first value and the second value each have a bit set to 1 in a location that the other does not. The bitwise XOR operator sets both of these bits to 1 in its output value. All of the other bits in firstBits and otherBits match and are set to 0 in the output value."),
             
             Question(question: ["The bitwise left shift operator (<<) and bitwise right shift operator (>>) move all bits in a number to the left or the right by a certain number of places. Is that true?",
                                 "Bitwise left and right shifts have the effect of multiplying or dividing an integer by a factor of two. Is that true?",
@@ -117,7 +117,7 @@ class AdvancedOperatorsSet {
                      questionId: 2461,
                      helpText: "The bitwise left shift operator (<<) and bitwise right shift operator (>>) move all bits in a number to the left or the right by a certain number of places, according to the rules defined below. Bitwise left and right shifts have the effect of multiplying or dividing an integer by a factor of two. Shifting an integer’s bits to the left by one position doubles its value, whereas shifting it to the right by one position halves its value."),
             
-            Question(question: ["How many rules for bit-shifting behavior are there?"],
+            Question(question: ["How many rules for bit-shifting behavior exist?"],
                      image: "",
                      optionA: "Three",
                      optionB: "Two",
@@ -154,7 +154,7 @@ class AdvancedOperatorsSet {
                      questionId: 2465,
                      helpText: "The bit-shifting behavior for unsigned integers is as follows: 1. Existing bits are moved to the left or right by the requested number of places. 2. Any bits that are moved beyond the bounds of the integer’s storage are discarded. 3. Zeros are inserted in the spaces left behind after the original bits are moved to the left or right. This approach is known as a logical shift."),
             
-            Question(question: ["If you try to insert a number into an integer constant or variable that cannot hold that value, by default Swift will do that",
+            Question(question: ["If you try to insert a number into an integer constant or variable that cannot hold that value, by default Swift will do that...",
                                 "What will Swift do if you try to insert a number into an integer constant or variable that cannot hold that value?"],
                      image: "",
                      optionA: "Reports an error",
@@ -164,7 +164,7 @@ class AdvancedOperatorsSet {
                      questionId: 2466,
                      helpText: "If you try to insert a number into an integer constant or variable that cannot hold that value, by default Swift reports an error rather than allowing an invalid value to be created. This behavior gives extra safety when you work with numbers that are too large or too small."),
             
-            Question(question: ["How many arithmetic overflow operators in Swift?"],
+            Question(question: ["How many arithmetic overflow operators are available in Swift?"],
                      image: "",
                      optionA: "Three",
                      optionB: "Four",
@@ -201,7 +201,7 @@ class AdvancedOperatorsSet {
                      questionId: 2470,
                      helpText: "For both signed and unsigned integers, overflow in the positive direction wraps around from the maximum valid integer value back to the minimum, and overflow in the negative direction wraps around from the minimum value to the maximum."),
             
-            Question(question: ["Как называется действие переопределения оператора внутри пользовательского класса?"],
+            Question(question: ["The process that allows you to change the way existing operators work with your custom structures or classes"],
                      image: "",
                      optionA: "Overloading",
                      optionB: "Overflowing",
@@ -210,14 +210,14 @@ class AdvancedOperatorsSet {
                      questionId: 2471,
                      helpText: "Classes and structures can provide their own implementations of existing operators. This is known as overloading the existing operators."),
             
-            Question(question: ["When we are overloading prefix operator, which modifier we must implement?"],
+            Question(question: ["When we are overloading a prefix operator, which modifier must we implement?"],
                      image: "",
                      optionA: "prefix",
                      optionB: "postfix",
                      optionC: "pref",
                      optionD: "post",
                      questionId: 2472,
-                     helpText: "Classes and structures can also provide implementations of the standard unary operators. Unary operators operate on a single target. They are prefix if they precede their target (such as -a) and postfix operators if they follow their target (such as b!). You implement a prefix or postfix unary operator by writing the prefix or postfix modifier before the func keyword when declaring the operator method."),
+                     helpText: "Classes and structures can also provide implementations of the standard unary operators. Unary operators operate on a single target. They are prefix if they precede their target (such as -a) and postfix operators if they follow their target (such as b!). You implement a prefix or postfix unary operator by writing the prefix or postfix modifier before the func keyword when declaring the operator method.")
         ]
     }
 }
