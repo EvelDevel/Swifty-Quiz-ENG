@@ -59,7 +59,7 @@ class GenericsSet {
 					 optionC: "(T)",
 					 optionD: "",
 					 questionId: 2106,
-					 helpText: "The generic version of the function uses a placeholder type name (<T>) instead of an actual type name (such as Int, String, or Double). The placeholder type name doesn’t say anything about what T must be, but it does say that all function’s parameters must be of the same type T. The current type that T represents is determined each time the function is called. When there is no meaningful relationship between a type parameter and a function, then by tradition, individual letters such as T, U, V become names."),
+					 helpText: "The generic version of the function uses a placeholder type name (<T>) instead of an actual type name (such as Int, String, or Double). The placeholder type name doesn’t say anything about what T must be, but it does say that all function’s parameters must be of the same type T. The current type that T represents is determined each time the function is called. If a parameter's type is not related to the function directly, the convention is to name such types using capital letters, like T, U, V."),
 
 			Question(question: ["At what point the type to use for T is inferred from the types of values passed to the function?"],
 					 image: "",
@@ -177,7 +177,7 @@ class GenericsSet {
 					 optionD: "append",
 					 questionId: 2118,
 					 helpText: "When defining a protocol, it’s sometimes useful to declare one or more associated types as part of the protocol’s definition. An associated type gives a placeholder name to a type that is used as part of the protocol. The actual type to use for that associated type isn’t specified until the protocol is adopted. Associated types are specified with the associatedtype keyword.")
-			
+
 		]
 	}
 }
