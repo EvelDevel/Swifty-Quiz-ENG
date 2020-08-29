@@ -11,7 +11,6 @@ protocol TopicViewControllerDelegate: class {
 
 class TopicViewController: UIViewController {
 
-	@IBOutlet weak var unlockAllQuestionsButton: UIButton!
 	@IBOutlet weak var numberOfQuestions: UILabel!
     @IBOutlet weak var tableView: UITableView!
     weak var delegate: TopicViewControllerDelegate?
