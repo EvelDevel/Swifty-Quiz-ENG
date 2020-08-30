@@ -58,21 +58,21 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your support in advance!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W1-pN-P4v">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                        <color key="textColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN2-r8-tYI">
                                         <rect key="frame" x="0.0" y="32" width="343" height="84"/>
                                         <string key="text">You can unlock over 900 questions which I create and translate (with professional help) for more than half a year. This is one-time purchase and you won't have to pay any more money. If you will reinstall the application, your access will be restored.</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                        <color key="textColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good luck and have fun learning Swift!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3W-6l-saT">
                                         <rect key="frame" x="0.0" y="131" width="343" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -208,10 +208,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="y2t-Xx-bkV"/>
                     <connections>
+                        <outlet property="buyButton" destination="uJw-h0-9uh" id="MWR-yg-Sh3"/>
                         <outlet property="categoriesTitle" destination="Vlx-yb-y6F" id="3DP-8v-jgo"/>
                         <outlet property="numberOfQuestions" destination="Zct-nv-o2o" id="hjH-Ru-tju"/>
                         <outlet property="tableView" destination="dI7-ZL-40D" id="cem-Ei-0UX"/>
-                        <outlet property="unlockButton" destination="uJw-h0-9uh" id="MWR-yg-Sh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoj-en-6PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

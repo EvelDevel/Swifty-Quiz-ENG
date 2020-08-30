@@ -13,7 +13,7 @@ class TopicViewController: UIViewController {
 
 	@IBOutlet weak var numberOfQuestions: UILabel!
 	@IBOutlet weak var tableView: UITableView!
-	@IBOutlet weak var unlockButton: UIButton!
+	@IBOutlet weak var buyButton: UIButton!
 	@IBOutlet weak var categoriesTitle: UILabel!
 	weak var delegate: TopicViewControllerDelegate?
 
@@ -44,10 +44,10 @@ class TopicViewController: UIViewController {
 		if !purchased {
 			_ = RandomSuperSets.getQuestions(limit: 0)
 			let total = RandomSuperSets.showTotalquestionsNumber()
-			unlockButton.setTitle("Unlock \(total) questions", for: .normal)
+			buyButton.setTitle("Unlock \(total) questions", for: .normal)
 		} else {
 			categoriesTitle.text = "Available categories"
-			unlockButton.isHidden = true
+			buyButton.isHidden = true
 		}
 
 	}
@@ -124,5 +124,18 @@ extension TopicViewController: CategoriesCellDelegate, DemoCategoriesCellDelegat
 
 	func showAlert() {
 		self.showAlertIfNeeded()
+	}
+
+	/// Когда нажимаем на неативную категорию - срабатывает анимация кнопки "купить"
+	func popTheBuyButton() {
+		buyButton.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+		UIView.animate(withDuration: 1,
+					   delay: 0,
+					   usingSpringWithDamping: CGFloat(1),
+					   initialSpringVelocity: CGFloat(4.0),
+					   options: UIView.AnimationOptions.allowUserInteraction,
+					   animations: {
+						self.buyButton.transform = CGAffineTransform.identity }, completion: { Void in()  }
+		)
 	}
 }

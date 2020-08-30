@@ -104,7 +104,7 @@ extension InitialViewController {
 		updateContinueButton()
 		addShadows()
 		imageTuning(button: topicPicker, position: .center)
-		imageTuning(button: logoButton, position: .top)
+		imageTuning(button: logoButton, position: .center)
 		setUpCorrectLogoPosition()
 	}
 

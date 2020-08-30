@@ -7,6 +7,7 @@ import UIKit
 protocol DemoCategoriesCellDelegate: class {
 	func updateNumberOfQuestions()
 	func showAlert()
+	func popTheBuyButton()
 }
 
 class DemoCategoriesCell: UITableViewCell {
@@ -41,6 +42,10 @@ class DemoCategoriesCell: UITableViewCell {
 			SoundPlayer.shared.playSound(sound: .topicAndSettingsButton)
 			lastPosition = sender.tag - 1
 		}
+	}
+
+	@IBAction func inactiveButtonPressed(_ sender: Any) {
+		delegate?.popTheBuyButton()
 	}
 }
 
