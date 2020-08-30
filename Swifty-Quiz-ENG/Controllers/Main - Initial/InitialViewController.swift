@@ -60,10 +60,19 @@ extension InitialViewController {
 	func setUpStartQuestionSet() {
 		if SelectedTopic.shared.topic.questionSet.isEmpty
 			|| Game.shared.settings.appLastVersion != currentAppVersion {
-			let newSet = TopicOperator.getQuestionsTheBasics()
+
+			var newSet: [Question] = []
+
+			if purchased {
+				newSet = TopicOperator.getQuestionsTheBasics()
+			} else {
+				newSet = TopicOperator.getQuestionsDemoTheBasics()
+			}
+
 			SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
 			selectedTopic.text = "The Basics"
 			Game.shared.changeContinueStatus()
+
 		} else {
 			selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)"
 		}

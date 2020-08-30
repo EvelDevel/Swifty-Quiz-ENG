@@ -338,6 +338,7 @@
 				FB8606B32444771300A692AD /* Helpers */,
 				FB8606B0244458E300A692AD /* Database */,
 				FBDECD7C24839924004695FB /* Assets */,
+				FBC91D1F24FBF06900811A8B /* Storyboards */,
 				FB2EACA1243EEE130098FAC3 /* Info.plist */,
 			);
 			path = "Swifty-Quiz-ENG";
@@ -352,7 +353,6 @@
 				FB37AA3B246D2CCD001E08CE /* CategoriesCell.xib */,
 				FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */,
 				FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */,
-				FBC91D1524FBAC0000811A8B /* Categories.storyboard */,
 			);
 			path = "Topic Picker";
 			sourceTree = "<group>";
@@ -370,7 +370,6 @@
 		FB66C05624559197009FADDE /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				FBC91D1924FBAC2600811A8B /* Settings.storyboard */,
 				FB1D0B9C244C45AD00E9C56D /* SettingsViewController.swift */,
 				FB66C057245591AC009FADDE /* SettingEnums.swift */,
 				FBA97902247CF43200228FB5 /* SettingCell.swift */,
@@ -505,7 +504,6 @@
 				FB1D0BB12450133200E9C56D /* HelpViewController.swift */,
 				FB2EAC97243EEE0F0098FAC3 /* GameViewController.swift */,
 				FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */,
-				FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */,
 			);
 			path = "Game Controller";
 			sourceTree = "<group>";
@@ -523,8 +521,6 @@
 			children = (
 				FB7B13E224AB5DE600CB11C6 /* LaunchViewController.swift */,
 				FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */,
-				FB2EAC99243EEE0F0098FAC3 /* Main.storyboard */,
-				FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */,
 			);
 			path = "Main - Initial";
 			sourceTree = "<group>";
@@ -533,9 +529,21 @@
 			isa = PBXGroup;
 			children = (
 				FBB3584424BF229300C33A79 /* AboutProjectController.swift */,
-				FBC91D1B24FBAC3500811A8B /* About.storyboard */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		FBC91D1F24FBF06900811A8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */,
+				FB2EAC99243EEE0F0098FAC3 /* Main.storyboard */,
+				FBC91D1B24FBAC3500811A8B /* About.storyboard */,
+				FBC91D1524FBAC0000811A8B /* Categories.storyboard */,
+				FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */,
+				FBC91D1924FBAC2600811A8B /* Settings.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		FBDECD7C24839924004695FB /* Assets */ = {
