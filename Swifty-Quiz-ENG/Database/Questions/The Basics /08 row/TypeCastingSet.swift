@@ -10,7 +10,7 @@ class TypeCastingSet {
 	static func getQuestions() -> [Question] {
 		return [
 			Question(question: ["Type casting in Swift is implemented with ___ operators",
-								"We are implementing type casting in Swift using ___ operators"],
+								"Pick the operator(s) that we use to implement type casting in Swift"],
 					 image: "",
 					 optionA: "is and as",
 					 optionB: "+ and -",
@@ -19,8 +19,8 @@ class TypeCastingSet {
 					 questionId: 1802,
 					 helpText: "Type casting in Swift is implemented with the is and as operators. These two operators provide a simple and expressive way to check the type of a value or cast a value to a different type."),
 
-			Question(question: ["With which operator we can check whether an instance is of a certain subclass type?",
-								"Check whether an instance is of a certain subclass type is done through this type check operator"],
+			Question(question: ["Which operator checks whether an instance is of a certain subclass type?",
+								"This is the operator you can use to check whether an instance is of a certain subclass type"],
 					 image: "",
 					 optionA: "is",
 					 optionB: "as",
@@ -30,8 +30,8 @@ class TypeCastingSet {
 					 helpText: "Use the type check operator (is) to check whether an instance is of a certain subclass type."),
 
 			Question(question: ["The type check operator returns ___",
-								"The type check operator return this kind of results",
-								"What type of result will be after using type check operator \"is\"?"],
+								"Choose the literal that the type check operator returns",
+								"What type of result will be returned after using the type check operator \"is\"?"],
 					 image: "",
 					 optionA: "Bool (true, false)",
 					 optionB: "0 or 1",
@@ -40,8 +40,8 @@ class TypeCastingSet {
 					 questionId: 1804,
 					 helpText: "The type check operator returns true if the instance is of that subclass type and false if it is not."),
 
-			Question(question: ["Pick the type cast operator",
-								"With which operator you can try to downcast to the subclass type?"],
+			Question(question: ["Pick the pair of valid type cast operators",
+								"Which operator lets you downcast to the subclass type if it is possible?"],
 					 image: "",
 					 optionA: "as? or as!",
 					 optionB: "is! or is?",
@@ -51,7 +51,7 @@ class TypeCastingSet {
 					 helpText: "A constant or variable of a certain class type may actually refer to an instance of a subclass behind the scenes. Where you believe this is the case, you can try to downcast to the subclass type with a type cast operator (as? or as!)."),
 
 			Question(question: ["Which form of the type cast operator as you must use when you are not sure if the downcast will succeed?",
-								"When you are not sure if the downcast will succeed, which form of the type cast operator as you must use?"],
+								"If you are not sure that the downcast will succeed, which form of the type cast operator as you must opt for?"],
 					 image: "",
 					 optionA: "as?",
 					 optionB: "as!",
@@ -70,7 +70,7 @@ class TypeCastingSet {
 					 helpText: "Yes, you to check for a successful downcast."),
 
 			Question(question: ["What is going to happen if you try to downcast to an incorrect class type?",
-								"If we will try to downcast to an incorrect class type, what is going to happen?"],
+								"If we try to downcast to an incorrect class type, what is going to happen?"],
 					 image: "",
 					 optionA: "Runtime error ",
 					 optionB: "Compilation error",
@@ -79,8 +79,8 @@ class TypeCastingSet {
 					 questionId: 1808,
 					 helpText: "Use the forced form of the type cast operator (as!) only when you are sure that the downcast will always succeed. This form of the operator will trigger a runtime error if you try to downcast to an incorrect class type."),
 
-			Question(question: ["Does casting modify the instance or change its value??",
-								"Casting does actually modify the instance or change its values. Is that true?"],
+			Question(question: ["Does casting modify the instance or change its value?",
+								"Casting can actually modifiy the underlying instance or change its values. Is that true?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -89,8 +89,8 @@ class TypeCastingSet {
 					 questionId: 1809,
 					 helpText: "Casting does not actually modify the instance or change its values. The underlying instance remains the same; it is simply treated and accessed as an instance of the type to which it has been cast."),
 
-			Question(question: ["What two special types for working with nonspecific types we have in Swift?",
-								"Swift provides two special types for working with nonspecific types, which one?"],
+			Question(question: ["Which special types for working with nonspecific types we have in Swift?",
+								"Swift provides two special types for working with nonspecific types. Pick them from the options below"],
 					 image: "",
 					 optionA: "Any and AnyObject",
 					 optionB: "Object and AnyObject",
