@@ -50,10 +50,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="92B-HM-6qy">
-                                <rect key="frame" x="16" y="232" width="288" height="40"/>
+                                <rect key="frame" x="16" y="232" width="288" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqC-gd-l2W">
-                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Author">
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqR-yO-hFQ">
-                                        <rect key="frame" x="56.5" y="0.0" width="62" height="40"/>
+                                        <rect key="frame" x="58" y="0.0" width="65" height="30"/>
                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Designer">
@@ -87,9 +87,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqf-nK-7s4">
-                                        <rect key="frame" x="128.5" y="0.0" width="159.5" height="40"/>
+                                        <rect key="frame" x="133" y="0.0" width="155" height="30"/>
                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <state key="normal" title="Editing and translation">
                                             <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -105,7 +105,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ADP-aB-zJx"/>
+                                    <constraint firstAttribute="height" constant="30" id="ADP-aB-zJx"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-sQ-Zj7">
@@ -117,13 +117,13 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ibr-Py-QwI">
-                                <rect key="frame" x="16" y="373" width="288" height="90"/>
+                                <rect key="frame" x="16" y="373" width="288" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rvs-WO-fgw">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggV-sd-EN0">
-                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="30"/>
                                                 <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Refactoring Guru">
@@ -139,7 +139,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-VM-edI">
-                                                <rect key="frame" x="132.5" y="0.0" width="77" height="40"/>
+                                                <rect key="frame" x="132.5" y="0.0" width="77" height="30"/>
                                                 <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Swift Book">
@@ -156,7 +156,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIp-Gn-Yrk">
-                                                <rect key="frame" x="219.5" y="0.0" width="68.5" height="40"/>
+                                                <rect key="frame" x="219.5" y="0.0" width="68.5" height="30"/>
                                                 <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Swift Me">
@@ -175,14 +175,14 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="E82-Df-Ut8"/>
+                                            <constraint firstAttribute="height" constant="30" id="E82-Df-Ut8"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d5K-Mm-JQE">
-                                        <rect key="frame" x="0.0" y="50" width="288" height="40"/>
+                                        <rect key="frame" x="0.0" y="40" width="288" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsk-vk-WCk">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
                                                 <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Telegram &quot;ProgLib&quot;">
@@ -199,13 +199,13 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="f81-Xu-Ygj"/>
+                                            <constraint firstAttribute="height" constant="30" id="f81-Xu-Ygj"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our application quotes public information from several sources, for which many thanks to them!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4P-Kn-E0Y">
-                                <rect key="frame" x="16" y="292" width="288" height="66"/>
+                                <rect key="frame" x="16" y="282" width="288" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="FXq-Kz-m6X"/>
                                 </constraints>
@@ -640,12 +640,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-Y5-9oQ" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                <rect key="frame" x="16" y="463" width="288" height="55"/>
+                                <rect key="frame" x="16" y="428" width="288" height="45"/>
                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="8Uy-I9-roi"/>
+                                    <constraint firstAttribute="height" constant="45" id="8Uy-I9-roi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrA-b8-BR5" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
+                                <rect key="frame" x="16" y="483" width="288" height="45"/>
+                                <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mcz-kh-Rkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -662,7 +678,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Mm-fx-9y0">
-                                <rect key="frame" x="16" y="220" width="288" height="165.5"/>
+                                <rect key="frame" x="16" y="215" width="288" height="165.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your support in advance!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-Bo-83E">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
@@ -690,13 +706,16 @@
                         <constraints>
                             <constraint firstItem="cTV-X8-ZYZ" firstAttribute="leading" secondItem="vtg-ZE-WG4" secondAttribute="leading" constant="16" id="0YD-3h-g7P"/>
                             <constraint firstItem="vtg-ZE-WG4" firstAttribute="trailing" secondItem="cTV-X8-ZYZ" secondAttribute="trailing" constant="16" id="3qD-XJ-Mny"/>
+                            <constraint firstItem="IrA-b8-BR5" firstAttribute="top" secondItem="ghi-Y5-9oQ" secondAttribute="bottom" constant="10" id="4x9-ng-JUi"/>
                             <constraint firstItem="vtg-ZE-WG4" firstAttribute="trailing" secondItem="7Mm-fx-9y0" secondAttribute="trailing" constant="16" id="Co7-eE-Zav"/>
+                            <constraint firstItem="vtg-ZE-WG4" firstAttribute="trailing" secondItem="IrA-b8-BR5" secondAttribute="trailing" constant="16" id="QTN-i6-8It"/>
                             <constraint firstItem="ghi-Y5-9oQ" firstAttribute="leading" secondItem="vtg-ZE-WG4" secondAttribute="leading" constant="16" id="Zlq-eC-fRJ"/>
                             <constraint firstItem="vtg-ZE-WG4" firstAttribute="trailing" secondItem="ghi-Y5-9oQ" secondAttribute="trailing" constant="16" id="adB-NI-pIb"/>
-                            <constraint firstItem="vtg-ZE-WG4" firstAttribute="bottom" secondItem="ghi-Y5-9oQ" secondAttribute="bottom" constant="30" id="dB6-VN-eUY"/>
                             <constraint firstItem="cTV-X8-ZYZ" firstAttribute="top" secondItem="vtg-ZE-WG4" secondAttribute="top" constant="20" id="doI-F5-8iI"/>
+                            <constraint firstItem="IrA-b8-BR5" firstAttribute="leading" secondItem="vtg-ZE-WG4" secondAttribute="leading" constant="16" id="dvW-gR-Voc"/>
+                            <constraint firstItem="vtg-ZE-WG4" firstAttribute="bottom" secondItem="IrA-b8-BR5" secondAttribute="bottom" constant="20" id="hIX-Pg-h0l"/>
                             <constraint firstItem="7Mm-fx-9y0" firstAttribute="leading" secondItem="vtg-ZE-WG4" secondAttribute="leading" constant="16" id="pke-np-Ixp"/>
-                            <constraint firstItem="7Mm-fx-9y0" firstAttribute="top" secondItem="cTV-X8-ZYZ" secondAttribute="bottom" constant="10" id="zpL-mj-ueY"/>
+                            <constraint firstItem="7Mm-fx-9y0" firstAttribute="top" secondItem="cTV-X8-ZYZ" secondAttribute="bottom" constant="5" id="zpL-mj-ueY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vtg-ZE-WG4"/>
                     </view>
@@ -705,10 +724,12 @@
                         <outlet property="IapBuyButton" destination="ghi-Y5-9oQ" id="EJr-OF-XFT"/>
                         <outlet property="IapGoodLuckLabel" destination="dTq-oT-r7Q" id="6aq-xg-vF1"/>
                         <outlet property="IapMainTextLabel" destination="Egi-Xj-amy" id="Ld4-3c-Bt8"/>
+                        <outlet property="IapRestoreButton" destination="IrA-b8-BR5" id="ZpO-f3-dMO"/>
                         <outlet property="IapSupportLabel" destination="sC9-Bo-83E" id="L6S-0U-biW"/>
                         <outlet property="getYourFullAccessHeight" destination="ubW-IW-CJA" id="Gzo-F4-em4"/>
                         <outlet property="labelsLeadingSpace" destination="Co7-eE-Zav" id="eyn-bE-pcP"/>
                         <outlet property="labelsTrailingSpace" destination="pke-np-Ixp" id="JkA-If-yPu"/>
+                        <outlet property="textTopMargin" destination="zpL-mj-ueY" id="SB4-7h-Ahi"/>
                         <outlet property="topMargin" destination="doI-F5-8iI" id="tmf-6I-KHz"/>
                     </connections>
                 </viewController>
@@ -810,11 +831,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2u-Ig-9Os" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="139" y="24.5" width="165" height="25"/>
-                                        <color key="backgroundColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="139" y="22.5" width="165" height="29"/>
+                                        <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="165" id="J6M-VZ-ZGS"/>
-                                            <constraint firstAttribute="height" constant="25" id="bOg-by-B5A"/>
+                                            <constraint firstAttribute="height" constant="29" id="bOg-by-B5A"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                         <color key="tintColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

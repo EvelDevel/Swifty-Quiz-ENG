@@ -26,8 +26,8 @@ class ShadowsHelper {
         for button in buttons {
 			button.layer.shadowColor = UIColor.black.cgColor
 			button.layer.shadowOpacity = 0.1
-            button.layer.shadowRadius = 4
-            button.layer.shadowOffset = CGSize(width: 0, height: 5)
+            button.layer.shadowRadius = 2
+            button.layer.shadowOffset = CGSize(width: 0, height: 2)
             button.layer.position = button.center
             button.layer.shouldRasterize = true
             button.layer.rasterizationScale = UIScreen.main.scale
