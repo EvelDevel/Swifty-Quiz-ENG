@@ -14,7 +14,11 @@ class TopicViewController: UIViewController {
 	@IBOutlet weak var numberOfQuestions: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var unlockButton: UIButton!
+	@IBOutlet weak var categoriesTitle: UILabel!
 	weak var delegate: TopicViewControllerDelegate?
+
+	// MARK: Сюда добавить главную проверку (была ли покупка)
+	let purchased = false
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -35,9 +39,20 @@ class TopicViewController: UIViewController {
 		delegate?.updateInitialView()
 	}
 
+	/// Работа кнопки UNLOCK
 	func setOrHideUnlockButton() {
-		unlockButton.setTitle("Unlock \(RandomSuperSets.showTotalquestionsNumber()) questions", for: .normal)
+		if !purchased {
+			unlockButton.setTitle("Unlock \(RandomSuperSets.showTotalquestionsNumber()) questions", for: .normal)
+		} else {
+			categoriesTitle.text = "Available categories"
+			unlockButton.isHidden = true
+		}
+
 	}
+	@IBAction func unlockAllQuestions(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+	}
+
 
 	func setDefaultNumberOfQuestions() {
 		if SelectedTopic.shared.topic.topicTag < 10 {
@@ -65,15 +80,31 @@ class TopicViewController: UIViewController {
 extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 
 	func cellRegistration() {
-		tableView.register(UINib(nibName: "DemoCategoriesCell", bundle: nil), forCellReuseIdentifier: "DemoCategoriesCell")
+		if purchased {
+			tableView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellReuseIdentifier: "CategoriesCell")
+		} else {
+			tableView.register(UINib(nibName: "DemoCategoriesCell", bundle: nil), forCellReuseIdentifier: "DemoCategoriesCell")
+		}
 	}
+
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 1
 	}
+
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: "DemoCategoriesCell", for: indexPath) as? DemoCategoriesCell else { return UITableViewCell() }
-		cell.delegate = self
-		return cell
+		if purchased {
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell else {
+				return UITableViewCell()
+			}
+			cell.delegate = self
+			return cell
+		} else {
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: "DemoCategoriesCell", for: indexPath) as? DemoCategoriesCell else {
+				return UITableViewCell()
+			}
+			cell.delegate = self
+			return cell
+		}
 	}
 }
 

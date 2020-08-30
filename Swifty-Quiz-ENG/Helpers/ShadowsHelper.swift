@@ -21,6 +21,21 @@ class ShadowsHelper {
             button.layer.cornerCurve = .continuous
         }
     }
+
+	func addBlackButtonShadows(_ buttons: [UIButton]) {
+        for button in buttons {
+			button.layer.shadowColor = UIColor.black.cgColor
+			button.layer.shadowOpacity = 0.1
+            button.layer.shadowRadius = 4
+            button.layer.shadowOffset = CGSize(width: 0, height: 5)
+            button.layer.position = button.center
+            button.layer.shouldRasterize = true
+            button.layer.rasterizationScale = UIScreen.main.scale
+
+            /// Задротское скругление
+            button.layer.cornerCurve = .continuous
+        }
+    }
     
     /// Кнопки выбора тем - черная тень
     /// shadowPath - дополнительная оптимизация для большого количества теней
