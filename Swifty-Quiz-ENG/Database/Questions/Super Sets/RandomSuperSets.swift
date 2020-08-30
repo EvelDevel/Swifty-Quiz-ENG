@@ -69,6 +69,27 @@ class RandomSuperSets {
         
         return arrayToReturn
     }
+
+	
+	static func getDemoQuestions(limit: Int) -> [Question] {
+
+        allQuestions = []
+        arrayToReturn = []
+
+        allQuestions.append(contentsOf: TheBasicsSet.getDemoQuestions())
+        allQuestions.append(contentsOf: BasicOperatorsSet.getDemoQuestions())
+        allQuestions.append(contentsOf: StringAndCharactersSet.getDemoQuestions())
+        allQuestions.append(contentsOf: CollectionTypesSet.getDemoQuestions())
+        allQuestions.append(contentsOf: ControlFlowSet.getDemoQuestions())
+
+        /// Набираем нужное кол-во вопросов по выбранной категории
+        allQuestionsShuffled = allQuestions.shuffled()
+        for index in 0..<limit {
+            arrayToReturn.append(allQuestionsShuffled[index])
+        }
+        return arrayToReturn
+    }
+
     
     /// Получить общее количество вопросов
     static func showTotalquestionsNumber() -> Int {

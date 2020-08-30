@@ -39,6 +39,10 @@ class CategoriesCell: UITableViewCell {
 		addShadows()
 	}
 
+	override func layoutSubviews() {
+		delegate?.showAlert()
+	}
+
 	@IBAction func topicButtonPressed(_ sender: UIButton) {
 		/// Срабатывание только в случае,
 		/// Когда нажимаем на новую кнопку а не активную
@@ -53,14 +57,10 @@ class CategoriesCell: UITableViewCell {
 			lastPosition = sender.tag - 1
 		}
 	}
-
-	override func layoutSubviews() {
-		delegate?.showAlert()
-	}
 }
 
 
-// MARK: Работа с UI наших аутлетов
+// MARK: Работа с UI
 extension CategoriesCell {
 
 	/// Объединяем аутлеты в пачку

@@ -18,6 +18,9 @@ class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var labelsLeadingSpace: NSLayoutConstraint!
 	@IBOutlet weak var textTopMargin: NSLayoutConstraint!
 
+	/// Главный параметр "Была ли покупка?"
+	static var purchased = false 
+
 	let shadow = ShadowsHelper()
 
 	override func viewDidLoad() {

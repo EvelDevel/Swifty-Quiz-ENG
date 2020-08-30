@@ -116,8 +116,8 @@ extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
     
     /// Отработка нажатий
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let gameHistory = mainStoryboard.instantiateViewController(withIdentifier: "GameHistoryViewController") as! GameHistoryViewController
+        let gamesHistoryStoryboard: UIStoryboard = UIStoryboard(name: "GamesHistory", bundle: nil)
+        let gameHistory = gamesHistoryStoryboard.instantiateViewController(withIdentifier: "GameHistoryViewController") as! GameHistoryViewController
         gameHistory.history = Game.shared.records[indexPath.row].gameHistory ?? []
         self.present(gameHistory, animated: true, completion: nil)
         SoundPlayer.shared.playSound(sound: .menuMainButton)

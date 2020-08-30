@@ -15,7 +15,7 @@ class AboutProjectController: UIViewController {
         UIApplication.shared.open(urlComponents.url!)
     }
     @IBAction func corrector(_ sender: Any) {
-        let urlComponents = URLComponents(string: "https://vk.com/id2312583")!
+        let urlComponents = URLComponents(string: "https://vk.com/id237197643")!
         UIApplication.shared.open(urlComponents.url!)
     }
     @IBAction func refactorGuru(_ sender: Any) {

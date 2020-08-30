@@ -36,6 +36,9 @@ class InitialViewController: UIViewController {
 	private let shadows = ShadowsHelper()
 	private let recordCaretaker = RecordsCaretaker()
 
+	/// Проверка покупки
+	let purchased = InAppPurchaseViewController.purchased
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setUpInitialInformation()
@@ -84,7 +87,11 @@ extension InitialViewController {
 
 	/// Показываем общее количество вопросов в игре
 	func showTotalQuestions() {
-		_ = RandomSuperSets.getQuestions(limit: 0)
+		if purchased {
+			_ = RandomSuperSets.getQuestions(limit: 0)
+		} else {
+			_ = RandomSuperSets.getDemoQuestions(limit: 0)
+		}
 		totalQuestionsLabel.text = "Questions in game: \(RandomSuperSets.showTotalquestionsNumber())"
 	}
 }
@@ -184,10 +191,10 @@ extension InitialViewController {
 
 
 // MARK: Выполнение функций делегата
-extension InitialViewController:    GameViewControllerDelegate,
-	TopicViewControllerDelegate,
-	RecordsViewControllerDelegate,
-SettingsViewControllerDelegate{
+extension InitialViewController: 	GameViewControllerDelegate,
+									TopicViewControllerDelegate,
+									RecordsViewControllerDelegate,
+									SettingsViewControllerDelegate {
 
 	func didEndGame(result: Int, totalQuestion: Int, percentOfCorrect: Double,
 					topic: String, helpCounter: Int, playedNum: Int) {
@@ -195,6 +202,8 @@ SettingsViewControllerDelegate{
 		totalQuestions.text = "Questions: \(playedNum) out of \(totalQuestion) (hints: \(helpCounter))"
 		lastScore.text = "Correct answers: \(result) (\(percentOfCorrect)%)"
 	}
+
 	func updateInitialView() { updateContinueButton() }
+
 	func selectedCategory() { selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)" }
 }

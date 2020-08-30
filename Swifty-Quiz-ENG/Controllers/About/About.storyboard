@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YuG-To-Exf">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Project Controller-->
+        <scene sceneID="rU0-Ey-aUY">
+            <objects>
+                <exit id="41b-oF-sX1" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ze2-nl-IMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="YuG-To-Exf" customClass="AboutProjectController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lwT-9J-X6S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-bq-kkY">
+                                <rect key="frame" x="16" y="25" width="254" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jlb-tv-5iC">
+                                <rect key="frame" x="16" y="301.5" width="288" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gio-b5-NVf">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="40"/>
+                                        <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Author">
+                                            <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="author:" destination="YuG-To-Exf" eventType="touchUpInside" id="1H6-VZ-Hzt"/>
+                                            <action selector="author:" destination="41b-oF-sX1" eventType="touchUpInside" id="IT9-hm-nkI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-Hu-hpw">
+                                        <rect key="frame" x="73.5" y="0.0" width="85.5" height="40"/>
+                                        <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Designer">
+                                            <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="design:" destination="YuG-To-Exf" eventType="touchUpInside" id="D31-ro-MYJ"/>
+                                            <action selector="design:" destination="41b-oF-sX1" eventType="touchUpInside" id="hov-D4-c7e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSU-Lc-9o4">
+                                        <rect key="frame" x="169" y="0.0" width="119" height="40"/>
+                                        <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Translation">
+                                            <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="corrector:" destination="41b-oF-sX1" eventType="touchUpInside" id="8fd-Kq-pft"/>
+                                            <action selector="corrector:" destination="YuG-To-Exf" eventType="touchUpInside" id="jdQ-Xd-g8x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YA5-b1-d7W"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-ws-uFX">
+                                <rect key="frame" x="16" y="64" width="288" height="217.5"/>
+                                <mutableString key="text">Hello, my name is Evgeniy, I am an independent junior iOS-developer from Siberia, and it's my first app. You can test it out with 100 free questions, and then you can unlock (if you will) over 900 questions which I create and translate (with professionals) for more than half a year.   I have received some big help from great people along the way, you can see them below. 
+Your support will mean a lot for me, thanks!</mutableString>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sources:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYA-bj-tmt">
+                                <rect key="frame" x="16" y="371.5" width="288" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-wY-WEY">
+                                <rect key="frame" x="16" y="401" width="288" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="loP-3d-aDN">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP7-IE-71B">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="40"/>
+                                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Refactoring Guru">
+                                                    <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="refactorGuru:" destination="YuG-To-Exf" eventType="touchUpInside" id="cx1-vq-ndx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBv-gJ-cCZ">
+                                                <rect key="frame" x="132.5" y="0.0" width="77" height="40"/>
+                                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Swift Book">
+                                                    <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="swiftbookRu:" destination="YuG-To-Exf" eventType="touchUpInside" id="ktJ-Hp-4GH"/>
+                                                    <action selector="swiftbookRu:" destination="41b-oF-sX1" eventType="touchUpInside" id="nxN-7M-J9t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeK-5g-E8e">
+                                                <rect key="frame" x="219.5" y="0.0" width="68.5" height="40"/>
+                                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Swift Me">
+                                                    <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="swiftMe:" destination="YuG-To-Exf" eventType="touchUpInside" id="eac-ef-z0Z"/>
+                                                    <action selector="swiftbookRu:" destination="YuG-To-Exf" eventType="touchUpInside" id="X3E-iY-TKX"/>
+                                                    <action selector="swiftbookRu:" destination="41b-oF-sX1" eventType="touchUpInside" id="cVQ-V0-JdR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="umJ-XB-SfK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6mH-Jf-uw3">
+                                        <rect key="frame" x="0.0" y="50" width="288" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UD-TA-MvD">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Telegram &quot;ProgLib&quot;">
+                                                    <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="telegramLibrary:" destination="YuG-To-Exf" eventType="touchUpInside" id="B0V-p2-66i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mVC-r5-dta"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="Uuy-ws-uFX" secondAttribute="trailing" constant="16" id="CfW-nm-5hA"/>
+                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="eYA-bj-tmt" secondAttribute="trailing" constant="16" id="Hnd-Oe-qy1"/>
+                            <constraint firstItem="Hb5-bq-kkY" firstAttribute="top" secondItem="VlK-nO-hNM" secondAttribute="top" constant="25" id="Kuv-9j-dnM"/>
+                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="1PH-wY-WEY" secondAttribute="trailing" constant="16" id="NdT-kz-cB9"/>
+                            <constraint firstItem="1PH-wY-WEY" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="16" id="SBF-Ux-mEY"/>
+                            <constraint firstItem="jlb-tv-5iC" firstAttribute="top" secondItem="Uuy-ws-uFX" secondAttribute="bottom" constant="20" id="SVc-nG-TrL"/>
+                            <constraint firstItem="Uuy-ws-uFX" firstAttribute="top" secondItem="Hb5-bq-kkY" secondAttribute="bottom" constant="15" id="V1Y-vj-ZRv"/>
+                            <constraint firstItem="1PH-wY-WEY" firstAttribute="top" secondItem="eYA-bj-tmt" secondAttribute="bottom" constant="10" id="Vjw-ir-gGc"/>
+                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="Hb5-bq-kkY" secondAttribute="trailing" constant="50" id="YXC-lu-oeA"/>
+                            <constraint firstItem="eYA-bj-tmt" firstAttribute="top" secondItem="jlb-tv-5iC" secondAttribute="bottom" constant="30" id="cdv-mp-Iej"/>
+                            <constraint firstItem="eYA-bj-tmt" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="16" id="dTb-Eb-0Ye"/>
+                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="jlb-tv-5iC" secondAttribute="trailing" constant="16" id="gJ0-4L-CDY"/>
+                            <constraint firstItem="Uuy-ws-uFX" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="16" id="gKS-7f-Cik"/>
+                            <constraint firstItem="jlb-tv-5iC" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="16" id="qU2-NP-Q3t"/>
+                            <constraint firstItem="Hb5-bq-kkY" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="16" id="yW0-C9-JYh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VlK-nO-hNM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AN6-jL-PSl"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1222.5" y="-638.02816901408448"/>
+        </scene>
+    </scenes>
+</document>

@@ -88,6 +88,10 @@
 		FBC91D0D24FAA17900811A8B /* DemoCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */; };
 		FBC91D0E24FAA17900811A8B /* DemoCategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */; };
 		FBC91D1124FB67D400811A8B /* InAppPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC91D1024FB67D400811A8B /* InAppPurchaseViewController.swift */; };
+		FBC91D1624FBAC0000811A8B /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1524FBAC0000811A8B /* Categories.storyboard */; };
+		FBC91D1824FBAC1700811A8B /* GamesHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */; };
+		FBC91D1A24FBAC2600811A8B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1924FBAC2600811A8B /* Settings.storyboard */; };
+		FBC91D1C24FBAC3500811A8B /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1B24FBAC3500811A8B /* About.storyboard */; };
 		FBDECD842484D073004695FB /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDECD832484D073004695FB /* RoundCornerButton.swift */; };
 		FBE1437C24F26072004D8E85 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */; };
 		FBECDC5E243F310800BD5583 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBECDC5D243F310800BD5583 /* Question.swift */; };
@@ -177,6 +181,10 @@
 		FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCategoriesCell.swift; sourceTree = "<group>"; };
 		FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCategoriesCell.xib; sourceTree = "<group>"; };
 		FBC91D1024FB67D400811A8B /* InAppPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseViewController.swift; sourceTree = "<group>"; };
+		FBC91D1524FBAC0000811A8B /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
+		FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesHistory.storyboard; sourceTree = "<group>"; };
+		FBC91D1924FBAC2600811A8B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FBC91D1B24FBAC3500811A8B /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		FBDECD832484D073004695FB /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
 		FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -330,8 +338,6 @@
 				FB8606B32444771300A692AD /* Helpers */,
 				FB8606B0244458E300A692AD /* Database */,
 				FBDECD7C24839924004695FB /* Assets */,
-				FB2EAC99243EEE0F0098FAC3 /* Main.storyboard */,
-				FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */,
 				FB2EACA1243EEE130098FAC3 /* Info.plist */,
 			);
 			path = "Swifty-Quiz-ENG";
@@ -346,6 +352,7 @@
 				FB37AA3B246D2CCD001E08CE /* CategoriesCell.xib */,
 				FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */,
 				FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */,
+				FBC91D1524FBAC0000811A8B /* Categories.storyboard */,
 			);
 			path = "Topic Picker";
 			sourceTree = "<group>";
@@ -363,6 +370,7 @@
 		FB66C05624559197009FADDE /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				FBC91D1924FBAC2600811A8B /* Settings.storyboard */,
 				FB1D0B9C244C45AD00E9C56D /* SettingsViewController.swift */,
 				FB66C057245591AC009FADDE /* SettingEnums.swift */,
 				FBA97902247CF43200228FB5 /* SettingCell.swift */,
@@ -494,8 +502,10 @@
 		FBC1D4822474EDCD0055FF62 /* Game Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FB1D0BB12450133200E9C56D /* HelpViewController.swift */,
 				FB2EAC97243EEE0F0098FAC3 /* GameViewController.swift */,
 				FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */,
+				FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */,
 			);
 			path = "Game Controller";
 			sourceTree = "<group>";
@@ -506,6 +516,26 @@
 				FBC91D1024FB67D400811A8B /* InAppPurchaseViewController.swift */,
 			);
 			path = "IAP Controller";
+			sourceTree = "<group>";
+		};
+		FBC91D1D24FBB56900811A8B /* Main - Initial */ = {
+			isa = PBXGroup;
+			children = (
+				FB7B13E224AB5DE600CB11C6 /* LaunchViewController.swift */,
+				FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */,
+				FB2EAC99243EEE0F0098FAC3 /* Main.storyboard */,
+				FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */,
+			);
+			path = "Main - Initial";
+			sourceTree = "<group>";
+		};
+		FBC91D1E24FBB58000811A8B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				FBB3584424BF229300C33A79 /* AboutProjectController.swift */,
+				FBC91D1B24FBAC3500811A8B /* About.storyboard */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		FBDECD7C24839924004695FB /* Assets */ = {
@@ -520,10 +550,8 @@
 		FBECDC58243F241B00BD5583 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB7B13E224AB5DE600CB11C6 /* LaunchViewController.swift */,
-				FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */,
-				FBB3584424BF229300C33A79 /* AboutProjectController.swift */,
-				FB1D0BB12450133200E9C56D /* HelpViewController.swift */,
+				FBC91D1D24FBB56900811A8B /* Main - Initial */,
+				FBC91D1E24FBB58000811A8B /* About */,
 				FBC1D4822474EDCD0055FF62 /* Game Controller */,
 				FB37AA39246D2CAA001E08CE /* Topic Picker */,
 				FB0E0290246CF334005CA792 /* GameHistory */,
@@ -603,14 +631,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA764FB246331E400D567D0 /* button3.mp3 in Resources */,
+				FBC91D1A24FBAC2600811A8B /* Settings.storyboard in Resources */,
 				FB7BCD5024BDCDA700B8F6BA /* hideContinue.mp3 in Resources */,
 				FBC91D0E24FAA17900811A8B /* DemoCategoriesCell.xib in Resources */,
 				FB87420D24605BF500247923 /* trash.mp3 in Resources */,
 				FBE1437C24F26072004D8E85 /* Launch Screen.storyboard in Resources */,
+				FBC91D1C24FBAC3500811A8B /* About.storyboard in Resources */,
 				FBA8A37D24F25CEC006CCE3F /* Assets.xcassets in Resources */,
 				FB6624EA24E0202C008C9CE5 /* GameHistoryCell.xib in Resources */,
+				FBC91D1824FBAC1700811A8B /* GamesHistory.storyboard in Resources */,
 				FB6624EB24E02552008C9CE5 /* Main.storyboard in Resources */,
 				FB1D0BB0244D918900E9C56D /* RecordCell.xib in Resources */,
+				FBC91D1624FBAC0000811A8B /* Categories.storyboard in Resources */,
 				FB99F8C2247BA4690053166C /* CategoriesCell.xib in Resources */,
 				FBA764FC246331E400D567D0 /* button4.mp3 in Resources */,
 				FB69CBED24ACFD64007506F6 /* swipe.mp3 in Resources */,

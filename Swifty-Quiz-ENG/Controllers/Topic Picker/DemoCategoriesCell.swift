@@ -26,13 +26,11 @@ class DemoCategoriesCell: UITableViewCell {
 		addShadows()
 	}
 
-	override func setSelected(_ selected: Bool, animated: Bool) {
-		super.setSelected(selected, animated: animated)
+	override func layoutSubviews() {
+		delegate?.showAlert()
 	}
 
 	@IBAction func topicButtonPressed(_ sender: UIButton) {
-		/// Срабатывание только в случае,
-		/// Когда нажимаем на новую кнопку а не активную
 		if sender.tag - 1 != self.lastPosition {
 			updateTopicButtons()
 			addDemoQuestionsToArray(sender: sender)
@@ -44,10 +42,11 @@ class DemoCategoriesCell: UITableViewCell {
 			lastPosition = sender.tag - 1
 		}
 	}
+}
 
-	override func layoutSubviews() {
-		delegate?.showAlert()
-	}
+
+// MARK: Работа с UI
+extension DemoCategoriesCell {
 
 	func setFontSize() {
 		allButtons.forEach() { button in
@@ -71,6 +70,7 @@ class DemoCategoriesCell: UITableViewCell {
 }
 
 
+
 // MARK: Выбор категории
 extension DemoCategoriesCell {
 
@@ -79,35 +79,38 @@ extension DemoCategoriesCell {
 		var newQuestionSet: [Question] = SelectedTopic.shared.topic.questionSet
 		let position = SelectedTopic.shared.topic.topicTag
 
+		// MARK: FREE 100 QUESTIONS
+
 		switch sender.tag {
 
+			///
+
 		case 1:
-			newQuestionSet = TopicOperator.getRandom20()
+			newQuestionSet = TopicOperator.getDemoRandom20()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "20 random questions", tag: 0)
 		case 2:
-			newQuestionSet = TopicOperator.getRandom50()
+			newQuestionSet = TopicOperator.getDemoRandom50()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "50 random questions", tag: 1)
 
-			// MARK: THE BASICS
+			///
 
-		// MARK: 01 row
 		case 11:
-			newQuestionSet = TopicOperator.getQuestionsTheBasics()
+			newQuestionSet = TopicOperator.getQuestionsDemoTheBasics()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "The Basics", tag: 10)
 		case 12:
-			newQuestionSet = TopicOperator.getQuestionsBasicOperators()
+			newQuestionSet = TopicOperator.getQuestionsDemoBasicOperators()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "Basic Operators", tag: 11)
 		case 13:
-			newQuestionSet = TopicOperator.getQuestionsStringAndCharacters()
+			newQuestionSet = TopicOperator.getQuestionsDemoStringAndCharacters()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "Strings and Characters", tag: 12)
 
-		// MARK: 02 row
 		case 14:
-			newQuestionSet = TopicOperator.getQuestionsCollectionTypes()
+			newQuestionSet = TopicOperator.getQuestionsDemoCollectionTypes()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "Collection Types", tag: 13)
 		case 15:
-			newQuestionSet = TopicOperator.getQuestionsControlFlow()
+			newQuestionSet = TopicOperator.getQuestionsDemoControlFlow()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "Control Flow", tag: 14)
+
 
 		default:
 			switch position {

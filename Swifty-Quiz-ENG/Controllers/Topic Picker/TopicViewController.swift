@@ -17,8 +17,8 @@ class TopicViewController: UIViewController {
 	@IBOutlet weak var categoriesTitle: UILabel!
 	weak var delegate: TopicViewControllerDelegate?
 
-	// MARK: Сюда добавить главную проверку (была ли покупка)
-	let purchased = false
+	/// Проверка покупки
+	let purchased = InAppPurchaseViewController.purchased
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -42,7 +42,9 @@ class TopicViewController: UIViewController {
 	/// Работа кнопки UNLOCK
 	func setOrHideUnlockButton() {
 		if !purchased {
-			unlockButton.setTitle("Unlock \(RandomSuperSets.showTotalquestionsNumber()) questions", for: .normal)
+			_ = RandomSuperSets.getQuestions(limit: 0)
+			let total = RandomSuperSets.showTotalquestionsNumber()
+			unlockButton.setTitle("Unlock \(total) questions", for: .normal)
 		} else {
 			categoriesTitle.text = "Available categories"
 			unlockButton.isHidden = true
