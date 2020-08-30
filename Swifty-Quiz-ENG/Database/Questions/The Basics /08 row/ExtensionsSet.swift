@@ -10,7 +10,7 @@ class ExtensionsSet {
 	static func getQuestions() -> [Question] {
 		return [
 			Question(question: ["Can we add new functionality to an existing class for which you don't have access to the source code?",
-								"If we don't have access to the source code of the class, can we add new functionality to it with extension?",
+								"If we don't have access to the source code of a class, can we add new functionality to it with an extension?",
 								"You can add new functionality to an existing class even if you do not have access to the original source code. Is that true?"],
 					 image: "",
 					 optionA: "Yes",
@@ -20,14 +20,14 @@ class ExtensionsSet {
 					 questionId: 2002,
 					 helpText: "Extensions add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code (known as retroactive modeling). Extensions are similar to categories in Objective-C. (Unlike Objective-C categories, Swift extensions do not have names.)"),
 
-			Question(question: ["What is the name of the process of extending classes whose original source code is not available?"],
+			Question(question: ["The process of extending classes whose original source code is not available is called..."],
 					 image: "",
 					 optionA: "Retroactive modeling",
 					 optionB: "Active modeling",
 					 optionC: "Reactive modeling",
 					 optionD: "",
 					 questionId: 2003,
-					 helpText: "The ability to extend types for which you do not have access to the original source code (known as retroactive modeling)."),
+					 helpText: "The ability to extend types for which you do not have access to the original source code is known as retroactive modeling."),
 
 			Question(question: ["Can extensions add computed instance properties and computed type properties?",
 								"Can extensions define instance methods and type methods?",
@@ -61,9 +61,9 @@ class ExtensionsSet {
 					 questionId: 2006,
 					 helpText: "In Swift, you can even extend a protocol to provide implementations of its requirements or add additional functionality that conforming types can take advantage of."),
 
-			Question(question: ["In extensions you can override existing functionality. Is that true?",
-								"Can you override existing functionality in extensoins?",
-								"Extensions cannot add new functionality to a type, but they can override existing functionality. Is that true?"],
+			Question(question: ["You can override existing functionality through extensions. Is that true?",
+								"Can you override existing functionality in extensions?",
+								"Extensions can add new functionality to a type as well as override its existing functionality. Is that correct?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -72,9 +72,9 @@ class ExtensionsSet {
 					 questionId: 2007,
 					 helpText: "Extensions can add new functionality to a type, but they cannot override existing functionality."),
 
-			Question(question: ["Which keyword declare the extension?",
-								"With this keyword you can declare an extension",
-								"What is the keyword for declaring an extension in Swift?"],
+			Question(question: ["Which keyword is used to declare extensions?",
+								"Use this keyword to declare an extension",
+								"The keyword responsible for declaring extensions in Swift?"],
 					 image: "",
 					 optionA: "extension",
 					 optionB: "class",
@@ -83,8 +83,8 @@ class ExtensionsSet {
 					 questionId: 2008,
 					 helpText: "You can declare extensions with the extension keyword."),
 
-			Question(question: ["If you define an extension, will the new functionality be available on all existing instances of that type?",
-								"Will the new functionality from extension be available on all existing instances of that type?"],
+			Question(question: ["If you define an extension for a type, will the new functionality be available on all existing instances of that type?",
+								"Will the new functionality from a type’s extension be available on all existing instances of that type?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -93,9 +93,9 @@ class ExtensionsSet {
 					 questionId: 2009,
 					 helpText: "If you define an extension to add new functionality to an existing type, the new functionality will be available on all existing instances of that type, even if they were created before the extension was defined."),
 
-			Question(question: ["Can an extensions add computed instance properties and computed type properties to existing types?",
-								"Can an extensions add computed instance properties to existing types?",
-								"Can an extensions add computed type properties to existing types?"],
+			Question(question: ["Can extensions add computed instance properties and computed type properties to existing types?",
+								"Can extensions add computed instance properties to existing types?",
+								"Can extensions add computed type properties to existing types?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -104,7 +104,7 @@ class ExtensionsSet {
 					 questionId: 2010,
 					 helpText: "Yes. Extensions can add computed instance properties and computed type properties to existing types."),
 
-			Question(question: ["What we'll get in the console?",
+			Question(question: ["Choose the output that we will get in the console",
 								"What value will we get in console?"],
 					 image: "Extensions11",
 					 optionA: "0.25",
@@ -116,7 +116,7 @@ class ExtensionsSet {
 
 			Question(question: ["Can extensions add new computed properties?",
 								"Extensions cannot add new computed properties. Is that true?",
-								"Extensions cannot add stored properties. Is that true?"],
+								"It is impossible to add stored properties through extensions. Is that true?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -136,8 +136,8 @@ class ExtensionsSet {
 					 helpText: "Extensions can add new initializers to existing types. This enables you to extend other types to accept your own custom types as initializer parameters, or to provide additional initialization options that were not included as part of the type’s original implementation."),
 
 			Question(question: ["Can extensions add new convenience initializers to a class?",
-								"Extensions cannot add new designated initializers or deinitializers to a class. Is that true?",
-								"Do designated initializers and deinitializers must always be provided by the original class implementation?"],
+								"Extensions cannot add new designated initializers or deinitializers to a class. Is that correct?",
+								"Must designated initializers and deinitializers always be provided by the original class implementation?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -146,7 +146,7 @@ class ExtensionsSet {
 					 questionId: 2014,
 					 helpText: "Extensions can add new convenience initializers to a class, but they cannot add new designated initializers or deinitializers to a class. Designated initializers and deinitializers must always be provided by the original class implementation."),
 
-			Question(question: ["If you add an initializer to a structure that was declared in another module, can the new initializer access self until it calls an initializer from the defining module?"],
+			Question(question: ["If you add an initializer to a structure that was declared in another module, is there any requirements you must meet before the new initializer can access self?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -155,7 +155,7 @@ class ExtensionsSet {
 					 questionId: 2015,
 					 helpText: "If you use an extension to add an initializer to a structure that was declared in another module, the new initializer can’t access self until it calls an initializer from the defining module."),
 
-			Question(question: ["What will we get in the console?"],
+			Question(question: ["What will we get in the console’s output?"],
 					 image: "Extensions16",
 					 optionA: "Hello! and Hello!",
 					 optionB: "Hello!",
@@ -164,8 +164,8 @@ class ExtensionsSet {
 					 questionId: 2016,
 					 helpText: "Correct answer: Hello! and Hello!. Extensions can add new instance methods and type methods to existing types. The following example adds a new instance method called repetitions to the Int type. The repetitions(task:) method takes a single argument of type () -> Void, which indicates a function that has no parameters and does not return a value. After defining this extension, you can call the repetitions(task:) method on any integer to perform a task that many number of times."),
 
-			Question(question: ["Can the instance methods added with an extension also modify (or mutate) the instance itself?",
-								"Instance methods added with an extension can also modify (or mutate) the instance itself. Is that true?"],
+			Question(question: ["Can instance methods added with an extension modify (or mutate) the instance itself?",
+								"Instance methods added with an extension can also modify (or mutate) the instance itself. Is that correct?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -175,7 +175,7 @@ class ExtensionsSet {
 					 helpText: "Yes. Instance methods added with an extension can also modify (or mutate) the instance itself."),
 
 			Question(question: ["Structure and enumeration methods that modify self or its properties must mark the instance method as ___",
-								"Enumeration methods that modify its properties must mark the instance method with ___ keyword"],
+								"Enumeration methods that modify its properties must mark the instance method with the  ___ keyword"],
 					 image: "",
 					 optionA: "mutating",
 					 optionB: "private",
@@ -184,8 +184,8 @@ class ExtensionsSet {
 					 questionId: 2018,
 					 helpText: "Structure and enumeration methods that modify self or its properties must mark the instance method as mutating, just like mutating methods from an original implementation."),
 
-			Question(question: ["What value will we get in the console??",
-								"What will be someInt value after executing this code?"],
+			Question(question: ["What value will we get in the console?",
+								"What value will be assigned to someInt after the following code is executed?"],
 					 image: "Extensions19",
 					 optionA: "9",
 					 optionB: "3",
