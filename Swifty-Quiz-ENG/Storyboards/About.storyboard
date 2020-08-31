@@ -10,8 +10,6 @@
         <!--About Project Controller-->
         <scene sceneID="rU0-Ey-aUY">
             <objects>
-                <exit id="41b-oF-sX1" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ze2-nl-IMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="YuG-To-Exf" customClass="AboutProjectController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lwT-9J-X6S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -84,8 +82,8 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-ws-uFX">
                                 <rect key="frame" x="16" y="64" width="288" height="217.5"/>
-                                <mutableString key="text">Hello, my name is Evgeniy, I am an independent junior iOS-developer from Siberia, and it's my first app. You can test it out with 100 free questions, and then you can unlock (if you will) over 900 questions which I create and translate (with professionals) for more than half a year.   I have received some big help from great people along the way, you can see them below. 
-Your support will mean a lot for me, thanks!</mutableString>
+                                <string key="text">Hello, my name is Evgeniy, I am an independent junior iOS-developer from Siberia, and it's my first app. You can test it out with 100 free questions, and then you can unlock (if you will) over 900 questions which I create and translate (with professionals) for more than half a year.   I have received some big help from great people along the way, you can see them below. 
+Your support will mean a lot for me, thanks!</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -98,16 +96,16 @@ Your support will mean a lot for me, thanks!</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-wY-WEY">
-                                <rect key="frame" x="16" y="401" width="288" height="90"/>
+                                <rect key="frame" x="16" y="401" width="288" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="loP-3d-aDN">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP7-IE-71B">
-                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Refactoring Guru">
+                                                <state key="normal" title="Refactoring.guru">
                                                     <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -120,10 +118,10 @@ Your support will mean a lot for me, thanks!</mutableString>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBv-gJ-cCZ">
-                                                <rect key="frame" x="176.5" y="0.0" width="111.5" height="40"/>
+                                                <rect key="frame" x="185.5" y="0.0" width="102.5" height="40"/>
                                                 <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Swift Book">
+                                                <state key="normal" title="Swift.org">
                                                     <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -132,37 +130,13 @@ Your support will mean a lot for me, thanks!</mutableString>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="swiftbookRu:" destination="YuG-To-Exf" eventType="touchUpInside" id="ktJ-Hp-4GH"/>
+                                                    <action selector="swiftOrg:" destination="YuG-To-Exf" eventType="touchUpInside" id="ktJ-Hp-4GH"/>
                                                     <action selector="swiftbookRu:" destination="41b-oF-sX1" eventType="touchUpInside" id="nxN-7M-J9t"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="umJ-XB-SfK"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6mH-Jf-uw3">
-                                        <rect key="frame" x="0.0" y="50" width="288" height="40"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UD-TA-MvD">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
-                                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Telegram &quot;ProgLib&quot;">
-                                                    <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="telegramLibrary:" destination="YuG-To-Exf" eventType="touchUpInside" id="B0V-p2-66i"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="mVC-r5-dta"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -190,6 +164,8 @@ Your support will mean a lot for me, thanks!</mutableString>
                     </view>
                     <navigationItem key="navigationItem" id="AN6-jL-PSl"/>
                 </viewController>
+                <exit id="41b-oF-sX1" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ze2-nl-IMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1222.5" y="-638.02816901408448"/>
         </scene>

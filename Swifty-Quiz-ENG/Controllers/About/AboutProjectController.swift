@@ -9,26 +9,27 @@ class AboutProjectController: UIViewController {
     @IBAction func author(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://vk.com/ev.nikitin")!
         UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
     @IBAction func design(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://vk.com/shlehanov")!
         UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
     @IBAction func corrector(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://vk.com/id237197643")!
         UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
     @IBAction func refactorGuru(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://refactoring.guru/ru")!
         UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
-    @IBAction func swiftbookRu(_ sender: Any) {
-        let urlComponents = URLComponents(string: "https://swiftbook.ru/content/languageguide/")!
+    @IBAction func swiftOrg(_ sender: Any) {
+        let urlComponents = URLComponents(string: "https://swift.org/")!
         UIApplication.shared.open(urlComponents.url!)
-    }
-    @IBAction func telegramLibrary(_ sender: Any) {
-        let urlComponents = URLComponents(string: "https://t.me/mobileproglib")!
-        UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
     
     override func viewDidLoad() {
