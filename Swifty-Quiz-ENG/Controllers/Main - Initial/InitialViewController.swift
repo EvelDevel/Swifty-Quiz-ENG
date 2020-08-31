@@ -148,25 +148,36 @@ extension InitialViewController {
 	/// В зависимости от размера экрана
 	func setUpCorrectLogoPosition() {
 		if view.frame.size.width <= 320 {
+			/// SE-1
 			logoVerticalPosition.constant = 40
-			logoWidth.constant = 150
-			logoHeight.constant = 40
-			aboutButtonHeight.constant = 75
-			aboutButtonWidth.constant = 170
-			aboutButtonVerticalPosition.constant = 25
-		} else if view.frame.size.width <= 410 {
-			logoVerticalPosition.constant = 60
 			logoWidth.constant = 180
-			logoHeight.constant = 60
+			logoHeight.constant = 55
 			aboutButtonHeight.constant = 95
-			aboutButtonWidth.constant = 220
-			aboutButtonVerticalPosition.constant = 45
-		} else {
-			logoVerticalPosition.constant = 100
+			aboutButtonWidth.constant = 210
+			aboutButtonVerticalPosition.constant = 20
+		} else if view.frame.size.width <= 410 {
+			/// 8, SE-2
+			logoVerticalPosition.constant = 70
 			logoWidth.constant = 200
 			logoHeight.constant = 80
-			aboutButtonHeight.constant = 100
+			aboutButtonHeight.constant = 105
 			aboutButtonWidth.constant = 240
+			aboutButtonVerticalPosition.constant = 55
+		} else if view.frame.size.width > 410 && view.frame.size.width < 500 {
+			/// 8+, 11, 7+, 11 Pro Max
+			logoVerticalPosition.constant = 90
+			logoWidth.constant = 220
+			logoHeight.constant = 100
+			aboutButtonHeight.constant = 120
+			aboutButtonWidth.constant = 260
+			aboutButtonVerticalPosition.constant = 75
+		} else {
+			/// ipads
+			logoVerticalPosition.constant = 100
+			logoWidth.constant = 400
+			logoHeight.constant = 180
+			aboutButtonHeight.constant = 200
+			aboutButtonWidth.constant = 440
 			aboutButtonVerticalPosition.constant = 85
 		}
 	}

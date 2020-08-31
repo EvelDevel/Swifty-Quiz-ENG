@@ -222,7 +222,7 @@ class TheBasicsSet {
 
 			Question(question: ["Which of the following types has a higher precision?",
 								"Which type that stores numbers with a decimal point has a higher precision?",
-								"This the type stores the largest number of decimal digits"],
+								"Pick the type that stores the largest number of decimal digits"],
 					 image: "",
 					 optionA: "Double",
 					 optionB: "Float",
