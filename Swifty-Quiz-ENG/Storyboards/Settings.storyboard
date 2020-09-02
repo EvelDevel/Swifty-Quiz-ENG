@@ -10,7 +10,6 @@
         <!--Settings View Controller-->
         <scene sceneID="k9N-27-PGK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Bz-vR-mNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="CqF-Y8-4ug" customClass="SettingsViewController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tEx-f6-Ogo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -29,8 +28,8 @@
                                 <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbJ-mm-KUl">
-                                <rect key="frame" x="0.0" y="60" width="375" height="641"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbJ-mm-KUl">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsCell" id="dqm-fS-8vg" customClass="SettingsCell" customModule="Swifty_Quiz" customModuleProvider="target">
@@ -57,7 +56,7 @@
                             <constraint firstItem="bfL-Hh-Epo" firstAttribute="leading" secondItem="Foa-v3-0sl" secondAttribute="leading" constant="16" id="WSM-de-z6K"/>
                             <constraint firstItem="Foa-v3-0sl" firstAttribute="trailing" secondItem="2OC-ag-W0J" secondAttribute="trailing" id="YLb-0K-SQQ"/>
                             <constraint firstItem="Foa-v3-0sl" firstAttribute="trailing" secondItem="zbJ-mm-KUl" secondAttribute="trailing" id="ii7-TB-Q3j"/>
-                            <constraint firstItem="Foa-v3-0sl" firstAttribute="bottom" secondItem="zbJ-mm-KUl" secondAttribute="bottom" constant="-34" id="twH-xI-UfY"/>
+                            <constraint firstItem="Foa-v3-0sl" firstAttribute="bottom" secondItem="zbJ-mm-KUl" secondAttribute="bottom" id="twH-xI-UfY"/>
                             <constraint firstItem="2OC-ag-W0J" firstAttribute="top" secondItem="Foa-v3-0sl" secondAttribute="top" id="w9l-JK-xbt"/>
                             <constraint firstItem="Foa-v3-0sl" firstAttribute="trailing" secondItem="bfL-Hh-Epo" secondAttribute="trailing" constant="50" id="yeJ-GK-RkR"/>
                         </constraints>
@@ -68,6 +67,7 @@
                         <outlet property="tableView" destination="zbJ-mm-KUl" id="0GX-VC-N32"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Bz-vR-mNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1086" y="1010"/>
         </scene>
