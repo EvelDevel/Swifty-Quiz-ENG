@@ -46,6 +46,7 @@ class DemoCategoriesCell: UITableViewCell {
 
 	@IBAction func inactiveButtonPressed(_ sender: Any) {
 		delegate?.popTheBuyButton()
+		SoundPlayer.shared.playSound(sound: .error)
 	}
 }
 

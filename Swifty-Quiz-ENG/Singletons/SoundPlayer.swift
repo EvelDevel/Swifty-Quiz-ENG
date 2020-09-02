@@ -15,6 +15,7 @@ enum Sounds {
     case theAppIsLoading
     case showContinueButton
     case hideContinueButton
+	case error
 }
 
 class SoundPlayer {
@@ -55,8 +56,11 @@ class SoundPlayer {
                 name = "showContinue"
                 soundExtension = "mp3"
             case .hideContinueButton:
-                name = "hideContinue"
-                soundExtension = "mp3"
+				name = "hideContinue"
+				soundExtension = "mp3"
+			case .error:
+				name = "error"
+				soundExtension = "mp3"
             }
             
             guard let url = Bundle.main.url(forResource: name, withExtension: soundExtension) else {
