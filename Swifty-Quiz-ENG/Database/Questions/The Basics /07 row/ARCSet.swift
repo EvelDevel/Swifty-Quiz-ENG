@@ -18,7 +18,7 @@ class ARCSet {
 					 optionD: "It is just a counter",
 					 questionId: 1701,
 					 helpText: "Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you do not need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed."),
-
+			
 			Question(question: ["What instances does ARC apply to?",
 								"Reference counting applies only to instances of specific objects. Which ones?"],
 					 image: "",
@@ -28,7 +28,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1702,
 					 helpText: "Reference counting applies only to instances of classes. Structures and enumerations are value types, not reference types, and are not stored and passed by reference."),
-
+			
 			Question(question: ["ARC will deallocate an instance only when ..."],
 					 image: "",
 					 optionA: "it has no active references",
@@ -37,7 +37,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1703,
 					 helpText: "if ARC were to deallocate an instance that was still in use, it would no longer be possible to access that instance’s properties, or call that instance’s methods. Indeed, if you tried to access the instance, your app would most likely crash. To make sure that instances don’t disappear while they are still needed, ARC tracks how many properties, constants, and variables are currently referring to each class instance. ARC will not deallocate an instance as long as at least one active reference to that instance still exists."),
-
+			
 			Question(question: ["Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes ___",
 								"The reference type that keeps a firm hold on the instance",
 								"The reference type that doesn’t allow instances to be deallocated for as long as it remains"],
@@ -48,7 +48,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1704,
 					 helpText: "Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes a strong reference to the instance. The reference is called a “strong” reference because it keeps a firm hold on that instance, and does not allow it to be deallocated for as long as that strong reference remains."),
-
+			
 			Question(question: ["The situation when two class instances hold a strong reference to each other, and each instance keeps the other alive",
 								"What do we call a situation when a class never gets to a point where it has zero strong references?"],
 					 image: "",
@@ -58,7 +58,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1705,
 					 helpText: "It is possible to write code in which an instance of a class never gets to a point where it has zero strong references. This can happen if two class instances hold a strong reference to each other, such that each instance keeps the other alive. This is known as a strong reference cycle."),
-
+			
 			Question(question: ["The keyword that sets a weak reference",
 								"Pick the correct keyword used for introducing a weak reference",
 								"The keyword used for weak references"],
@@ -69,7 +69,7 @@ class ARCSet {
 					 optionD: "soft",
 					 questionId: 1706,
 					 helpText: "Correct answer: weak. Weak and unowned references enable one instance in a reference cycle to refer to the other instance without keeping a strong hold on it. The instances can then refer to each other without creating a strong reference cycle."),
-
+			
 			Question(question: ["What problem a strong reference cycle can cause?",
 								"Which of these can be caused by a strong reference cycle?"],
 					 image: "",
@@ -79,7 +79,7 @@ class ARCSet {
 					 optionD: "Instance deallocation",
 					 questionId: 1707,
 					 helpText: "Strong reference cycles prevent instances from ever being deallocated, causing a memory leak in your app."),
-
+			
 			Question(question: ["Which pair of reference types enables one instance in a reference cycle to refer to the other instance without keeping a strong hold on it?"],
 					 image: "",
 					 optionA: "Weak and Unowned",
@@ -88,7 +88,7 @@ class ARCSet {
 					 optionD: "Unowned and Strong",
 					 questionId: 1708,
 					 helpText: "Weak and unowned references enable one instance in a reference cycle to refer to the other instance without keeping a strong hold on it. The instances can then refer to each other without creating a strong reference cycle."),
-
+			
 			Question(question: ["Pick the reference that you should use when you have two instances, and one of them has a shorter lifetime than another"],
 					 image: "",
 					 optionA: "Weak",
@@ -97,7 +97,7 @@ class ARCSet {
 					 optionD: "Strongest",
 					 questionId: 1709,
 					 helpText: "Use a weak reference when among two existing instances, one has a shorter lifetime than another — that is, when the other instance can be deallocated first. Weak references are an appropriate way to break the reference cycle in this case."),
-
+			
 			Question(question: ["Which of the following references should we use when the other instance has the same lifetime or a longer lifetime?"],
 					 image: "",
 					 optionA: "Unowed reference",
@@ -106,7 +106,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1710,
 					 helpText: "Use an unowned reference when the other instance has the same lifetime or a longer lifetime."),
-
+			
 			Question(question: ["How do weak references avoid becoming part of a strong reference cycle?",
 								"How exactly weak references help avoid strong reference cycles?"],
 					 image: "",
@@ -116,7 +116,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1711,
 					 helpText: "A weak reference is a reference that does not keep a strong hold on the instance it refers to, and so does not stop ARC from disposing of the referenced instance. This behavior prevents the reference from becoming part of a strong reference cycle. You indicate a weak reference by placing the weak keyword before a property or variable declaration."),
-
+			
 			Question(question: ["Should we declare weak references as variables or constants?",
 								"Do we declare weak references in our code as constants or variables?"],
 					 image: "",
@@ -126,7 +126,7 @@ class ARCSet {
 					 optionD: "As optional constants",
 					 questionId: 1712,
 					 helpText: "Because a weak reference does not keep a strong hold on the instance it refers to, it’s possible for that instance to be deallocated while the weak reference is still referring to it. Therefore, ARC automatically sets a weak reference to nil when the instance that it refers to is deallocated. And, because weak references need to allow their value to be changed to nil at runtime, they are always declared as variables, rather than constants, of an optional type."),
-
+			
 			Question(question: ["Can you check for the existence of a value in the weak reference?",
 								"Is the following statement correct? - You can check for the existence of a value in the weak reference.",
 								"You can check for the existence of a value in the weak reference, just like any other optional value. Is that true?"],
@@ -137,7 +137,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1713,
 					 helpText: "You can check for the existence of a value in the weak reference, just like any other optional value, and you will never end up with a reference to an invalid instance that no longer exists."),
-
+			
 			Question(question: ["Are property observers called when ARC sets a weak reference to nil?",
 								"Property observers are still called even when ARC sets a weak reference to nil. Is that true?"],
 					 image: "",
@@ -147,7 +147,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1714,
 					 helpText: "Property observers aren’t called when ARC sets a weak reference to nil."),
-
+			
 			Question(question: ["Unlike a weak reference, an unowned reference is ..."],
 					 image: "",
 					 optionA: "Expected to always have a value",
@@ -156,7 +156,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1715,
 					 helpText: "Like a weak reference, an unowned reference does not keep a strong hold on the instance it refers to. Unlike a weak reference, an unowned reference is expected to always have a value. As a result, marking a value as unowned doesn’t make it optional, and ARC never sets an unowned reference’s value to nil."),
-
+			
 			Question(question: ["You indicate an unowned reference by the ___ keyword",
 								"With which keyword can you indicate the unowned reference?",
 								"Which of these is the correct keyword for indicating an unowned reference?"],
@@ -167,7 +167,7 @@ class ARCSet {
 					 optionD: "static",
 					 questionId: 1716,
 					 helpText: "You indicate an unowned reference by placing the unowned keyword before a property or variable declaration."),
-
+			
 			Question(question: ["Does marking a value as unowned make it optional?",
 								"Do you need to unwrap an unowned reference when you want to use it?"],
 					 image: "",
@@ -177,7 +177,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1717,
 					 helpText: "Since unowned references are not optional, you don't need to unwrap them every time you want to use them. You can refer to an unowned reference directly."),
-
+			
 			Question(question: ["Can ARC set an unowned reference to nil?",
 								"ARC can set an unowned reference to nil. Is that true?"],
 					 image: "",
@@ -187,7 +187,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1718,
 					 helpText: "ARC cannot set an unowned reference to nil when the instance it refers to is deallocated, since non-optional variables cannot be nil."),
-
+			
 			Question(question: ["What will happen if you try to access the value of an unowned reference after its instance has been deallocated?",
 								"What is going to happen, if you try to access the value of an unowned reference after that instance has been deallocated?"],
 					 image: "",
@@ -197,7 +197,7 @@ class ARCSet {
 					 optionD: "We will get nil",
 					 questionId: 1719,
 					 helpText: "Use an unowned reference only when you are sure that the reference always refers to an instance that has not been deallocated. If you try to access the value of an unowned reference after that instance has been deallocated, you’ll get a runtime error."),
-
+			
 			Question(question: ["Can a reference cycle occur if you assign a closure to a property of a class instance?",
 								"Is it true that a strong reference cycle can occur if you assign a closure to a property of a class instance, and the body of that closure captures the instance?"],
 					 image: "",
@@ -207,7 +207,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1720,
 					 helpText: "A strong reference cycle can also occur if you assign a closure to a property of a class instance, and the body of that closure captures the instance. This capture might occur because the closure’s body accesses a property of the instance, such as self.someProperty, or because the closure calls a method on the instance, such as self.someMethod(). In either case, these accesses cause the closure to “capture” self, creating a strong reference cycle. This strong reference cycle occurs because closures, like classes, are reference types, so when you assign a closure to a property, you are assigning a reference to that closure."),
-
+			
 			Question(question: ["You can resolve a strong reference cycle between a closure and a class instance by ...",
 								"Continue the following phrase. You can prevent a strong reference cycle between a closure and a class instance from happening by ..."],
 					 image: "",
@@ -217,7 +217,7 @@ class ARCSet {
 					 optionD: "Using weak references",
 					 questionId: 1721,
 					 helpText: "You resolve a strong reference cycle between a closure and a class instance by defining a capture list as part of the closure’s definition. A capture list defines the rules to use when capturing one or more reference types within the closure’s body."),
-
+			
 			Question(question: ["Which of the following surround a capture list?",
 								"Which of the following is the correct way of introducing a capture list?"],
 					 image: "",
@@ -227,7 +227,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1722,
 					 helpText: "Each item in a capture list is a pairing of the weak or unowned keyword with a reference to a class instance (such as self) or a variable initialized with some value (such as delegate = self.delegate). These pairings are written within a pair of square brackets, separated by commas."),
-
+			
 			Question(question: ["If a closure does not specify a parameter list or return type because they can be inferred from context, where do we need to place the capture list?",
 								"Where do we need to place the capture list, if a closure does not specify a parameter list or return type?"],
 					 image: "",
@@ -237,7 +237,7 @@ class ARCSet {
 					 optionD: "",
 					 questionId: 1723,
 					 helpText: "If a closure does not specify a parameter list or return type because they can be inferred from context, place the capture list at the very start of the closure, followed by the in keyword, followed by the closure’s body."),
-
+			
 			Question(question: ["If the captured reference will never become nil, should we treat it as an unowned or a weak reference?",
 								"Will we opt for an unowned or a weak reference if the captured reference never becomes nil?"],
 					 image: "",
