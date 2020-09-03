@@ -85,7 +85,7 @@ extension DemoCategoriesCell {
 		var newQuestionSet: [Question] = SelectedTopic.shared.topic.questionSet
 		let position = SelectedTopic.shared.topic.topicTag
 
-		// MARK: FREE 100 QUESTIONS
+		// MARK: FREE 200 QUESTIONS
 
 		switch sender.tag {
 

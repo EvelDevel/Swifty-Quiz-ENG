@@ -6,6 +6,17 @@ import UIKit
 
 class AboutProjectController: UIViewController {
 
+	@IBOutlet var allButtons: [UIButton]!
+	private var shadows = ShadowsHelper()
+	private var adaptiveInterface = AdaptiveInterface()
+
+	@IBOutlet weak var mainTextLabel: UILabel!
+	@IBOutlet weak var textAfterLogoHeight: NSLayoutConstraint!
+	@IBOutlet weak var stackAfterTextHeight: NSLayoutConstraint!
+	@IBOutlet weak var firstRowButtonsHeight: NSLayoutConstraint!
+	@IBOutlet weak var secondRowButtonsHeight: NSLayoutConstraint!
+	@IBOutlet weak var logoHeight: NSLayoutConstraint!
+
     @IBAction func author(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://vk.com/ev.nikitin")!
         UIApplication.shared.open(urlComponents.url!)
@@ -34,5 +45,13 @@ class AboutProjectController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		adaptiveInterface.setAboutAppPage(view: view,
+										  mainTextLabel: mainTextLabel,
+										  textAfterLogoHeight: textAfterLogoHeight,
+										  stackAfterTextMargin: stackAfterTextHeight,
+										  firstRowButtonsHeight: firstRowButtonsHeight,
+										  secondRowButtonsHeight: secondRowButtonsHeight,
+										  logoHeight: logoHeight)
+		shadows.addBlackButtonShadows(allButtons)
     }
 }

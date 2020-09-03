@@ -10,7 +10,6 @@
         <!--Records View Controller-->
         <scene sceneID="m11-JC-6un">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dgJ-Qh-SeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RecordsViewController" id="p0w-mL-ldH" customClass="RecordsViewController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T66-eR-0CF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -89,13 +88,13 @@
                         <outlet property="tableView" destination="6FI-RI-CWT" id="6av-Wz-hLV"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgJ-Qh-SeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117" y="1068"/>
         </scene>
         <!--Game History View Controller-->
         <scene sceneID="LgS-3d-EOz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NYu-X2-cRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GameHistoryViewController" id="H9O-67-0Qs" customClass="GameHistoryViewController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fny-vQ-iKA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -159,6 +158,7 @@
                         <outlet property="tableView" destination="oxH-Ou-ZgZ" id="bPX-AD-L3I"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYu-X2-cRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="926" y="1067"/>
         </scene>

@@ -35,6 +35,7 @@
 		FB2EAC98243EEE0F0098FAC3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2EAC97243EEE0F0098FAC3 /* GameViewController.swift */; };
 		FB37AA3C246D2CCD001E08CE /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37AA3A246D2CCD001E08CE /* CategoriesCell.swift */; };
 		FB37AA3F246D2D7C001E08CE /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37AA3E246D2D7C001E08CE /* TopicViewController.swift */; };
+		FB395E262500E19700C6000C /* AdaptiveInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB395E252500E19700C6000C /* AdaptiveInterface.swift */; };
 		FB39FCBB24FFA7FC00B0685D /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB39FCBA24FFA7FB00B0685D /* error.mp3 */; };
 		FB6624E324DFF4B7008C9CE5 /* GameHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6624E224DFF4B7008C9CE5 /* GameHistory.swift */; };
 		FB6624E524E014FA008C9CE5 /* GameHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6624E424E014FA008C9CE5 /* GameHistoryViewController.swift */; };
@@ -133,6 +134,7 @@
 		FB37AA3A246D2CCD001E08CE /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		FB37AA3B246D2CCD001E08CE /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
 		FB37AA3E246D2D7C001E08CE /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		FB395E252500E19700C6000C /* AdaptiveInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveInterface.swift; sourceTree = "<group>"; };
 		FB39FCBA24FFA7FB00B0685D /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
 		FB6624E224DFF4B7008C9CE5 /* GameHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistory.swift; sourceTree = "<group>"; };
 		FB6624E424E014FA008C9CE5 /* GameHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryViewController.swift; sourceTree = "<group>"; };
@@ -337,7 +339,6 @@
 				FBECDC5C243F30D700BD5583 /* Model */,
 				FB1D0B9A2448235F00E9C56D /* Singletons */,
 				FBECDC58243F241B00BD5583 /* Controllers */,
-				FBC91D0F24FB67A300811A8B /* IAP - In App Purchase */,
 				FB8606B32444771300A692AD /* Helpers */,
 				FB8606B0244458E300A692AD /* Database */,
 				FBDECD7C24839924004695FB /* Assets */,
@@ -395,10 +396,12 @@
 		FB8606B32444771300A692AD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FBC91D0F24FB67A300811A8B /* IAP */,
 				FB7B13E024AA020400CB11C6 /* GameHelper.swift */,
 				FBC1D489247574730055FF62 /* ShadowsHelper.swift */,
 				FBDECD832484D073004695FB /* RoundCornerButton.swift */,
 				FBA8A37B24F24EBE006CCE3F /* Colors.swift */,
+				FB395E252500E19700C6000C /* AdaptiveInterface.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -511,21 +514,12 @@
 			path = "Game Controller";
 			sourceTree = "<group>";
 		};
-		FBC91D0F24FB67A300811A8B /* IAP - In App Purchase */ = {
+		FBC91D0F24FB67A300811A8B /* IAP */ = {
 			isa = PBXGroup;
 			children = (
 				FBC91D1024FB67D400811A8B /* InAppPurchaseViewController.swift */,
 			);
-			path = "IAP - In App Purchase";
-			sourceTree = "<group>";
-		};
-		FBC91D1D24FBB56900811A8B /* Main - Initial */ = {
-			isa = PBXGroup;
-			children = (
-				FB7B13E224AB5DE600CB11C6 /* LaunchViewController.swift */,
-				FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */,
-			);
-			path = "Main - Initial";
+			path = IAP;
 			sourceTree = "<group>";
 		};
 		FBC91D1E24FBB58000811A8B /* About */ = {
@@ -561,7 +555,8 @@
 		FBECDC58243F241B00BD5583 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBC91D1D24FBB56900811A8B /* Main - Initial */,
+				FB7B13E224AB5DE600CB11C6 /* LaunchViewController.swift */,
+				FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */,
 				FBC91D1E24FBB58000811A8B /* About */,
 				FBC1D4822474EDCD0055FF62 /* Game Controller */,
 				FB37AA39246D2CAA001E08CE /* Topic Picker */,
@@ -703,6 +698,7 @@
 				FB966289246E6D8C000B82B9 /* AccessControlSet.swift in Sources */,
 				FB86ACA62469A410002BA8B3 /* ClosuresSet.swift in Sources */,
 				FB119C34246A5B23005F5289 /* NestedTypesSet.swift in Sources */,
+				FB395E262500E19700C6000C /* AdaptiveInterface.swift in Sources */,
 				FB8606AD24431A9300A692AD /* RecordsViewController.swift in Sources */,
 				FB119C23246A5AB3005F5289 /* SubscriptsSet.swift in Sources */,
 				FBC1D48A247574730055FF62 /* ShadowsHelper.swift in Sources */,

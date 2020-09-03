@@ -20,9 +20,9 @@ class GameHelper {
         } else if tag == 2 {
             SelectedTopic.shared.saveQuestionSet(RandomSuperSets.getQuestions(limit: 100), topic: "100 random questions", tag: 2)
         } else if tag == 3 {
-            SelectedTopic.shared.saveQuestionSet(GuideRandomSet.getQuestions(limit: 20), topic: "20 random - Language Guide", tag: 3)
+            SelectedTopic.shared.saveQuestionSet(GuideRandomSet.getQuestions(limit: 20), topic: "20 questions on Language Guide", tag: 3)
         } else if tag == 4 {
-            SelectedTopic.shared.saveQuestionSet(PatternsRandomSet.getQuestions(limit: 20), topic: "20 random - Patterns", tag: 4)
+            SelectedTopic.shared.saveQuestionSet(PatternsRandomSet.getQuestions(limit: 20), topic: "20 questions on Patterns", tag: 4)
         }
     }
     

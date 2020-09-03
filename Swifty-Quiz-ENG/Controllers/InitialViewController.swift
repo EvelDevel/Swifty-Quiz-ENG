@@ -34,6 +34,7 @@ class InitialViewController: UIViewController {
 	private let currentAppVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
 	private let shadows = ShadowsHelper()
 	private let recordCaretaker = RecordsCaretaker()
+	private let adaptiveInterface = AdaptiveInterface()
 
 	/// Проверка покупки
 	let purchased = InAppPurchaseViewController.purchased
@@ -143,42 +144,15 @@ extension InitialViewController {
 		button.contentHorizontalAlignment = .right
 	}
 
-	/// Настройка адекватного расположения логотипа
-	/// В зависимости от размера экрана
+	/// Адаптивность логотипа
 	func setUpCorrectLogoPosition() {
-		if view.frame.size.width <= 320 {
-			/// SE-1
-			logoVerticalPosition.constant = 40
-			logoWidth.constant = 180
-			logoHeight.constant = 55
-			aboutButtonHeight.constant = 95
-			aboutButtonWidth.constant = 210
-			aboutButtonVerticalPosition.constant = 20
-		} else if view.frame.size.width <= 410 {
-			/// 8, SE-2
-			logoVerticalPosition.constant = 55
-			logoWidth.constant = 200
-			logoHeight.constant = 80
-			aboutButtonHeight.constant = 105
-			aboutButtonWidth.constant = 240
-			aboutButtonVerticalPosition.constant = 55
-		} else if view.frame.size.width > 410 && view.frame.size.width < 500 {
-			/// 8+, 11, 7+, 11 Pro Max
-			logoVerticalPosition.constant = 90
-			logoWidth.constant = 220
-			logoHeight.constant = 100
-			aboutButtonHeight.constant = 120
-			aboutButtonWidth.constant = 260
-			aboutButtonVerticalPosition.constant = 75
-		} else {
-			/// ipads
-			logoVerticalPosition.constant = 100
-			logoWidth.constant = 400
-			logoHeight.constant = 180
-			aboutButtonHeight.constant = 200
-			aboutButtonWidth.constant = 440
-			aboutButtonVerticalPosition.constant = 85
-		}
+		adaptiveInterface.setLogoFromInitialView(view: view,
+												 logoVerticalPosition: logoVerticalPosition,
+												 logoWidth: logoWidth,
+												 logoHeight: logoHeight,
+												 aboutButtonHeight: aboutButtonHeight,
+												 aboutButtonWidth: aboutButtonWidth,
+												 aboutButtonVerticalPosition: aboutButtonVerticalPosition)
 	}
 }
 
