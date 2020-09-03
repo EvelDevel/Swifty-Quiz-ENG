@@ -30,8 +30,9 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+		fetchProduct()
 		setTheInterfaceRight()
-		setTheBuyButton()
+		shadow.addBlackButtonShadows([IapBuyButton, IapRestoreButton])
     }
 
 	override func viewDidDisappear(_ animated: Bool) {
@@ -51,20 +52,20 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 	@IBAction func didTapBuy(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 
-		/// Это строчку убрать и оставить полноценную реализацию
-		Game.shared.changeThePurchaseStatus(status: true)
+		/// Это строчку можно раскоменнтировать, чтобы отработать сценарий на симуляторе
+		/// Game.shared.changeThePurchaseStatus(status: true)
 
-//		/// Проверяем наличие и доступ нашей встроенной покупки
-//		guard let myProduct = myProduct else {
-//			return
-//		}
-//
-//		/// Проверяем, может ли устройство совершать покупки
-//		if SKPaymentQueue.canMakePayments() {
-//			let payment = SKPayment(product: myProduct)
-//			SKPaymentQueue.default().add(self)
-//			SKPaymentQueue.default().add(payment)
-//		}
+		/// Проверяем наличие и доступ нашей встроенной покупки
+		guard let myProduct = myProduct else {
+			return
+		}
+
+		/// Проверяем, может ли устройство совершать покупки
+		if SKPaymentQueue.canMakePayments() {
+			let payment = SKPayment(product: myProduct)
+			SKPaymentQueue.default().add(self)
+			SKPaymentQueue.default().add(payment)
+		}
 	}
 
 	@IBAction func didTapRestore(_ sender: Any) {
@@ -77,11 +78,10 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 		if let product = response.products.first {
 			myProduct = product
 
-			///
-			print(product.productIdentifier)
-			print(product.price)
-			print(product.localizedTitle)
-			print(product.localizedDescription)
+			DispatchQueue.main.async {
+				self.IapBuyButton.setTitle("UNLOCK for \(product.price) \(product.priceLocale.currencySymbol ?? "")", for: .normal)
+				self.IapRestoreButton.setTitle("Restore access", for: .normal)
+			}
 		}
 	}
 
@@ -105,16 +105,6 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 				break
 			}
 		}
-	}
-
-	///
-
-	func setTheBuyButton() {
-		shadow.addBlackButtonShadows([IapBuyButton, IapRestoreButton])
-		
-		// MARK: Заменить цену на "цену из аппстора"
-		IapBuyButton.setTitle("UNLOCK for \("13.99")", for: .normal)
-		IapRestoreButton.setTitle("Restore access", for: .normal)
 	}
 
 	func setTheInterfaceRight() {

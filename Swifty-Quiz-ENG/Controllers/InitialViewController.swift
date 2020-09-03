@@ -46,7 +46,9 @@ class InitialViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		Game.shared.deletePurchaseStatus()
+
+		/// Раскомментировать, если нужно обнулять статус покупки для тестов
+		/// Game.shared.deletePurchaseStatus()
 		setUpInitialInformation()
 		setUpUserInterface()
 	}
