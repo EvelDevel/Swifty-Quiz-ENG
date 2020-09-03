@@ -92,8 +92,6 @@ class DeinitializationSet {
 					 optionD: "",
 					 questionId: 1409,
 					 helpText: "Because an instance is not deallocated until after its deinitializer is called, a deinitializer can access all properties of the instance it is called on and can modify its behavior based on those properties (such as looking up the name of a file that needs to be closed).")
-
-
 		]
 	}
 }
