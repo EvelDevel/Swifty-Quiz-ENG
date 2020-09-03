@@ -17,19 +17,19 @@ class ErrorHandlingSet {
 					 optionD: "Predicting error conditions",
 					 questionId: 1502,
 					 helpText: "Error handling is the process of responding to and recovering from error conditions in your program. Swift provides first-class support for throwing, catching, propagating, and manipulating recoverable errors at runtime. Some operations aren’t guaranteed to always complete execution or produce a useful output. Optionals are used to represent the absence of a value, but when an operation fails, it’s often useful to understand what caused the failure, so that your code can respond accordingly."),
-			
-			Question(question: ["In Swift, errors are represented by values of types that conform to ___ protocol",
-								"Errors are represented by values of types that conform to that protocol"],
+
+			Question(question: ["In Swift, errors are represented by values of types that conform to the ___ protocol",
+								"Choose the name of the protocol values of error types conform to"],
 					 image: "",
 					 optionA: "Error",
 					 optionB: "Handling",
-					 optionC: "Mistakes",
-					 optionD: "Ghost Protocol",
+					 optionC: "Mistake",
+					 optionD: "Ghost",
 					 questionId: 1503,
 					 helpText: "In Swift, errors are represented by values of types that conform to the Error protocol. This empty protocol indicates that a type can be used for error handling. Cheers to Mission: Impossible fans!"),
-			
-			Question(question: ["This Swift type is particularly well suited to modeling a group of related error conditions",
-								"To modeling a group of related error conditions with associated values you can use that Swift type"],
+
+			Question(question: ["Which of the following Swift type is particularly well suited to modeling a group of related error conditions?",
+								"Which Swift type can you use to model a group of related error conditions with associated values?"],
 					 image: "",
 					 optionA: "Enumeration",
 					 optionB: "List",
@@ -37,9 +37,9 @@ class ErrorHandlingSet {
 					 optionD: "Set",
 					 questionId: 1504,
 					 helpText: "Swift enumerations are particularly well suited to modeling a group of related error conditions, with associated values allowing for additional information about the nature of an error to be communicated."),
-			
-			Question(question: ["You can use this statement to throw an error",
-								"What statement do you need to use, when you want to throw an error?"],
+
+			Question(question: ["You can use this statement to trigger an error",
+								"What statement do you need to use to force an error to appear?"],
 					 image: "",
 					 optionA: "throw",
 					 optionB: "guard",
@@ -47,9 +47,9 @@ class ErrorHandlingSet {
 					 optionD: "switch",
 					 questionId: 1505,
 					 helpText: "Throwing an error lets you indicate that something unexpected happened and the normal flow of execution can’t continue. You use a throw statement to throw an error."),
-			
+
 			Question(question: ["When an error is thrown, some surrounding piece of code must be responsible for ...",
-								"Surrounding piece of code must be responsible for ___, when an error is thrown"],
+								"Surrounding piece of code must be responsible for ___, when it is thrown"],
 					 image: "",
 					 optionA: "Handling the error",
 					 optionB: "Logging the error",
@@ -57,9 +57,9 @@ class ErrorHandlingSet {
 					 optionD: "",
 					 questionId: 1506,
 					 helpText: "When an error is thrown, some surrounding piece of code must be responsible for handling the error—for example, by correcting the problem, trying an alternative approach, or informing the user of the failure."),
-			
+
 			Question(question: ["How many error handling ways are there in Swift?",
-								"There are so many ways to handle errors in Swift"],
+								"Choose the correct number of ways Swift provides to handle errors"],
 					 image: "",
 					 optionA: "Four",
 					 optionB: "Three",
@@ -67,9 +67,9 @@ class ErrorHandlingSet {
 					 optionD: "Seventeen",
 					 questionId: 1507,
 					 helpText: "There are four ways to handle errors in Swift. You can propagate the error from a function to the code that calls that function, handle the error using a do-catch statement, handle the error as an optional value, or assert that the error will not occur."),
-			
-			Question(question: ["To identify places in your code that can throw errors write this keyword",
-								"Keyword for identifying places in your code that can throw errors"],
+
+			Question(question: ["Use this keyword to identify places in your code that can throw errors",
+								"The keyword used for identifying places in your code that can throw errors"],
 					 image: "",
 					 optionA: "try",
 					 optionB: "error",
@@ -77,9 +77,9 @@ class ErrorHandlingSet {
 					 optionD: "do",
 					 questionId: 1508,
 					 helpText: "When a function throws an error, it changes the flow of your program, so it’s important that you can quickly identify places in your code that can throw errors. To identify these places in your code, write the try keyword—or the try? or try! variation—before a piece of code that calls a function, method, or initializer that can throw an error."),
-			
-			Question(question: ["You need to write the try keyword like that",
-								"When toy are calling a method, function or initializer, the try keyword must be written exactly like this"],
+
+			Question(question: ["Where exactly do you need to put the try keyword in your code?",
+								"This is where the try keyword must be written when you are calling a method, function or initializer that can throw an error"],
 					 image: "",
 					 optionA: "Before the call of a function",
 					 optionB: "After the call of a function",
@@ -87,9 +87,9 @@ class ErrorHandlingSet {
 					 optionD: "",
 					 questionId: 1509,
 					 helpText: "To identify these places in your code, write the try keyword—or the try? or try! variation—before a piece of code that calls a function, method, or initializer that can throw an error."),
-			
-			Question(question: ["A function marked with throws is called a... ",
-								"The function that can throws an error is called like this"],
+
+			Question(question: ["A function marked with the throws keyword is called a... ",
+								"The function that can throw an error"],
 					 image: "",
 					 optionA: "Throwing function",
 					 optionB: "Error throwing function",
@@ -97,10 +97,10 @@ class ErrorHandlingSet {
 					 optionD: "Handling function",
 					 questionId: 1510,
 					 helpText: "To indicate that a function, method, or initializer can throw an error, you write the throws keyword in the function’s declaration after its parameters. A function marked with throws is called a throwing function."),
-			
-			Question(question: ["To create a generating function, we must write the throws keyword at this point",
-								"Where should you write throws keyword?",
-								"Where should we write the throws keyword to turn a function into a throwing function?"],
+
+			Question(question: ["Pick the option that correctly shows where we must put the throws keyword to create a throwing function",
+								"Where do we need you write throws keyword?",
+								"Where do we place the throws keyword to turn a function into a throwing function?"],
 					 image: "",
 					 optionA: "Before the return arrow ->",
 					 optionB: "After the return arrow ->",
@@ -108,11 +108,9 @@ class ErrorHandlingSet {
 					 optionD: "After return type",
 					 questionId: 1511,
 					 helpText: "If the function specifies a return type, you write the throws keyword before the return arrow (->)."),
-			
-			/// Пожалуйста эти формулировки 1512 посмотри под микроскопом, че-то я тут уже поплыл
-			
-			Question(question: ["Where are errors that occur inside the throwing function thrown to?",
-								"If errors occur inside the throwing function, where are they thrown?"],
+
+			Question(question: ["Where the errors that occur inside a throwing function are thrown to?",
+								"If errors occur inside a throwing function, where are they thrown?"],
 					 image: "",
 					 optionA: "To the scope from which it’s called",
 					 optionB: "To the console",
@@ -120,17 +118,17 @@ class ErrorHandlingSet {
 					 optionD: "To the function body",
 					 questionId: 1512,
 					 helpText: "A throwing function propagates errors that are thrown inside of it to the scope from which it’s called."),
-			
+
 			Question(question: ["Any errors thrown inside a nonthrowing function must be handled there",
 								"Errors thrown inside a nonthrowing function must be handled ..."],
 					 image: "",
 					 optionA: "Inside the function",
 					 optionB: "Right after function's body",
-					 optionC: "In the closure",
+					 optionC: "In a closure",
 					 optionD: "",
 					 questionId: 1513,
 					 helpText: "Only throwing functions can propagate errors. Any errors thrown inside a nonthrowing function must be handled inside the function."),
-			
+
 			Question(question: ["Can the throwing initializers propagate errors in the same way as throwing functions do?",
 								"Throwing initializers can propagate errors in the same way as throwing functions. Is that true?"],
 					 image: "",
@@ -140,38 +138,38 @@ class ErrorHandlingSet {
 					 optionD: "",
 					 questionId: 1514,
 					 helpText: "Throwing initializers can propagate errors in the same way as throwing functions."),
-			
+
 			Question(question: ["How many catch keywords can a do-catch statement have?"],
 					 image: "",
-					 optionA: "How much is needed",
+					 optionA: "As many as needed",
 					 optionB: "One",
 					 optionC: "Two",
 					 optionD: "Only five",
 					 questionId: 1515,
-					 helpText: "Correct answer: How much is needed."),
-			
+					 helpText: "Correct answer: As many as needed."),
+
 			Question(question: ["If a catch clause doesn’t have a pattern, what is going to happen?",
-								"If the catch block doesn't have a pattern error handler, what happens?"],
+								"What will happen if a catch block doesn't have a pattern error handler?"],
 					 image: "",
-					 optionA: "It creates local error constant",
+					 optionA: "It creates a local constant named error",
 					 optionB: "We will get compilation error",
 					 optionC: "We will have a warning",
 					 optionD: "The code won't compile",
 					 questionId: 1516,
 					 helpText: "You write a pattern after catch to indicate what errors that clause can handle. If a catch clause doesn’t have a pattern, the clause matches any error and binds the error to a local constant named error."),
-			
-			Question(question: ["If an error is thrown while evaluating the try? expression, the value of the expression is ...",
-								"If we are using try? instead of try expression, the value of the expression after an error is thrown will be ..."],
+
+			Question(question: ["If an error is thrown while evaluating the try? expression, the value of that expression will be set to ...",
+								"If we are using try? instead of try expression, the value of the expression that threw the error will be ..."],
 					 image: "",
 					 optionA: "nil",
-					 optionB: "We can't use a try?",
-					 optionC: "Same as if we used try",
+					 optionB: "There’s no such thing as try?",
+					 optionC: "The same as if we used try",
 					 optionD: "",
 					 questionId: 1517,
-					 helpText: "You use try? to handle an error by converting it to an optional value. If an error is thrown while evaluating the try? expression, the value of the expression is nil. If someThrowingFunction() throws an error, the value of x and y is nil. Otherwise, the value of x and y is the value that the function returned."),
-			
-			Question(question: ["If an error actually is thrown when you are using try!, what you will get?",
-								"What we will get, if we are using try!, and an error is thrown?"],
+					 helpText: "You use try? to handle an error by converting it to an optional value. If an error is thrown while evaluating the try? expression, the value of the expression is nil. Otherwise, the value of the expression equals to the value that the function returned."),
+
+			Question(question: ["If an error is thrown while using try!, what will you get?",
+								"What will occur, if we use try!, and an error is thrown?"],
 					 image: "",
 					 optionA: "Runtime error",
 					 optionB: "Compilation error",
@@ -179,7 +177,7 @@ class ErrorHandlingSet {
 					 optionD: "nil",
 					 questionId: 1518,
 					 helpText: "Sometimes you know a throwing function or method won’t, in fact, throw an error at runtime. On those occasions, you can write try! before the expression to disable error propagation and wrap the call in a runtime assertion that no error will be thrown. If an error actually is thrown, you’ll get a runtime error."),
-			
+
 			Question(question: ["You can use this statement to execute a set of statements just before code execution leaves the current block of code",
 								"The statement that lets you do any necessary cleanup that should be performed regardless of how execution leaves the current block",
 								"You can use this statement to ensure that file descriptors are closed and manually allocated memory is freed"],
@@ -190,7 +188,7 @@ class ErrorHandlingSet {
 					 optionD: "throw",
 					 questionId: 1519,
 					 helpText: "You use a defer statement to execute a set of statements just before code execution leaves the current block of code. This statement lets you do any necessary cleanup that should be performed regardless of how execution leaves the current block of code—whether it leaves because an error was thrown or because of a statement such as return or break. For example, you can use a defer statement to ensure that file descriptors are closed and manually allocated memory is freed."),
-			
+
 			Question(question: ["Deferred actions are executed in this order",
 								"The deferred actions of the defer statement are executed this way"],
 					 image: "",
@@ -200,6 +198,7 @@ class ErrorHandlingSet {
 					 optionD: "It'll execute only last action",
 					 questionId: 1520,
 					 helpText: "A defer statement defers execution until the current scope is exited. This statement consists of the defer keyword and the statements to be executed later. The deferred statements may not contain any code that would transfer control out of the statements, such as a break or a return statement, or by throwing an error. Deferred actions are executed in the reverse of the order that they’re written in your source code. That is, the code in the first defer statement executes last, the code in the second defer statement executes second to last, and so on. The last defer statement in source code order executes first.")
+
 		]
 	}
 }

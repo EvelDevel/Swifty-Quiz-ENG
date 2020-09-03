@@ -18,9 +18,10 @@ class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var labelsLeadingSpace: NSLayoutConstraint!
 	@IBOutlet weak var textTopMargin: NSLayoutConstraint!
 
+	// MARK: Свойство заменить на реальную проверку покупки
 	static var purchased = false
-	private var adaptiveInterface = AdaptiveInterface()
 
+	private var adaptiveInterface = AdaptiveInterface()
 	let shadow = ShadowsHelper()
 
 	override func viewDidLoad() {
@@ -31,6 +32,8 @@ class InAppPurchaseViewController: UIViewController {
 
 	func setTheBuyButton() {
 		shadow.addBlackButtonShadows([IapBuyButton, IapRestoreButton])
+		
+		// MARK: Заменить цену на "цену из аппстора"
 		IapBuyButton.setTitle("UNLOCK for 14.99$", for: .normal)
 		IapRestoreButton.setTitle("Restore access", for: .normal)
 	}
