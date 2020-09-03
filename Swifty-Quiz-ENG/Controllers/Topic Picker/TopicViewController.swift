@@ -8,18 +8,16 @@ import MessageUI
 protocol TopicViewControllerDelegate: class {
 	func selectedCategory()
 	func updateInitialView()
+	func refreshTotalNumberOfQuestion()
 }
 
-class TopicViewController: UIViewController {
+class TopicViewController: UIViewController, InAppPurchaseViewControllerDelegate {
 
-	@IBOutlet weak var numberOfQuestions: UILabel!
+	@IBOutlet weak var nameAndNumberOfQuestions: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var buyButton: UIButton!
 	@IBOutlet weak var categoriesTitle: UILabel!
 	weak var delegate: TopicViewControllerDelegate?
-
-	/// Проверка покупки
-	let purchased = InAppPurchaseViewController.purchased
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -31,6 +29,7 @@ class TopicViewController: UIViewController {
 	/// Обновляем выбранную категорию (моментально)
 	override func viewWillDisappear(_ animated: Bool) {
 		delegate?.selectedCategory()
+		delegate?.refreshTotalNumberOfQuestion()
 		let currentAppVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
 		Game.shared.saveAppVersion(version: currentAppVersion)
 	}
@@ -42,7 +41,7 @@ class TopicViewController: UIViewController {
 
 	/// Работа кнопки UNLOCK
 	func setOrHideUnlockButton() {
-		if !purchased {
+		if !Game.shared.checkForPurchaseStatus() {
 			_ = RandomSuperSets.getQuestions(limit: 0)
 			let total = RandomSuperSets.showTotalquestionsNumber()
 			buyButton.setTitle("Unlock \(total) questions", for: .normal)
@@ -50,18 +49,42 @@ class TopicViewController: UIViewController {
 			categoriesTitle.text = "Available categories"
 			buyButton.isHidden = true
 		}
-
 	}
+
 	@IBAction func unlockAllQuestions(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 	}
 
+	/// Подготовка делегата
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier  == "toInAppPurchaseView" {
+			let inAppView = segue.destination as! InAppPurchaseViewController
+			inAppView.delegate = self
+		}
+	}
+	/// Обновление таблицы
+	func refreshViewAndTableAfterPurchase() {
+		let newSet = TopicOperator.getQuestionsTheBasics()
+		cellRegistration()
+		UIView.transition(with: tableView,
+						  duration: 1,
+						  options: .transitionCrossDissolve,
+						  animations:
+			{ () -> Void in
+				SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
+				self.nameAndNumberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
+				self.setOrHideUnlockButton()
+				self.tableView.setNeedsLayout()
+				self.tableView.reloadData()
+		},
+						  completion: nil)
+	}
 
 	func setDefaultNumberOfQuestions() {
 		if SelectedTopic.shared.topic.topicTag < 10 {
-			numberOfQuestions.text = SelectedTopic.shared.topic.topicName
+			nameAndNumberOfQuestions.text = SelectedTopic.shared.topic.topicName
 		} else {
-			numberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
+			nameAndNumberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
 		}
 	}
 
@@ -83,7 +106,7 @@ class TopicViewController: UIViewController {
 extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 
 	func cellRegistration() {
-		if purchased {
+		if Game.shared.checkForPurchaseStatus() {
 			tableView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellReuseIdentifier: "CategoriesCell")
 		} else {
 			tableView.register(UINib(nibName: "DemoCategoriesCell", bundle: nil), forCellReuseIdentifier: "DemoCategoriesCell")
@@ -95,7 +118,7 @@ extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if purchased {
+		if Game.shared.checkForPurchaseStatus() {
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell else {
 				return UITableViewCell()
 			}
@@ -117,9 +140,9 @@ extension TopicViewController: CategoriesCellDelegate, DemoCategoriesCellDelegat
 
 	func updateNumberOfQuestions() {
 		if SelectedTopic.shared.topic.topicTag < 10 {
-			numberOfQuestions.text = SelectedTopic.shared.topic.topicName
+			nameAndNumberOfQuestions.text = SelectedTopic.shared.topic.topicName
 		} else {
-			numberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
+			nameAndNumberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
 		}
 	}
 

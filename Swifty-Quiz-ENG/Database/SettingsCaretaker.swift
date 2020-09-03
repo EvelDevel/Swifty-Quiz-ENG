@@ -26,7 +26,8 @@ class SettingsCaretaker {
                             sound: 0,
                             changeAfterHelp: 0,
                             helpAfterWrong: 0,
-                            appLastVersion: "")
+							appLastVersion: "",
+							fullAccess: false)
         }
         do {
             return try self.decoder.decode(Settings.self, from: data)
@@ -37,7 +38,8 @@ class SettingsCaretaker {
                             sound: 0,
                             changeAfterHelp: 0,
                             helpAfterWrong: 0,
-                            appLastVersion: "")
+                            appLastVersion: "",
+							fullAccess: false)
         }
     }
 }

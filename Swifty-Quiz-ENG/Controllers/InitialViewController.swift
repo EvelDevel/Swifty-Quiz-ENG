@@ -8,6 +8,9 @@ import UIKit
 /// Сделать кнопки доната (которые будут привязаны к неодноразовым покупкам в эпл)
 /// 5 - 10 - 15 - 50 баксов (примерно). Подумать куда их можно определить 
 
+/// Подумать как можно убрать работу с почтой (отправка репортов и своих вопросов) в один метод удаленно
+/// Навести порядок в контроллерах покупки и выбора тем! 
+
 class InitialViewController: UIViewController {
 
 	@IBOutlet weak var logoHeight: NSLayoutConstraint!
@@ -39,12 +42,13 @@ class InitialViewController: UIViewController {
 	private let adaptiveInterface = AdaptiveInterface()
 
 	/// Проверка покупки
-	let purchased = InAppPurchaseViewController.purchased
+	let purchased = Game.shared.checkForPurchaseStatus()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setUpInitialInformation()
 		setUpUserInterface()
+		Game.shared.deletePurchaseStatus()
 	}
 }
 
@@ -65,7 +69,7 @@ extension InitialViewController {
 
 			var newSet: [Question] = []
 
-			if purchased {
+			if Game.shared.checkForPurchaseStatus() {
 				newSet = TopicOperator.getQuestionsTheBasics()
 			} else {
 				newSet = TopicOperator.getQuestionsDemoTheBasics()
@@ -98,7 +102,7 @@ extension InitialViewController {
 
 	/// Показываем общее количество вопросов в игре
 	func showTotalQuestions() {
-		if purchased {
+		if Game.shared.checkForPurchaseStatus() {
 			_ = RandomSuperSets.getQuestions(limit: 0)
 		} else {
 			_ = RandomSuperSets.getDemoQuestions(limit: 0)
@@ -197,8 +201,13 @@ extension InitialViewController: 	GameViewControllerDelegate,
 		totalQuestions.text = "Questions: \(playedNum) out of \(totalQuestion) (hints: \(helpCounter))"
 		lastScore.text = "Correct answers: \(result) (\(percentOfCorrect)%)"
 	}
-
-	func updateInitialView() { updateContinueButton() }
-
-	func selectedCategory() { selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)" }
+	func updateInitialView() {
+		updateContinueButton()
+	}
+	func selectedCategory() {
+		selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)"
+	}
+	func refreshTotalNumberOfQuestion() {
+		showTotalQuestions()
+	}
 }

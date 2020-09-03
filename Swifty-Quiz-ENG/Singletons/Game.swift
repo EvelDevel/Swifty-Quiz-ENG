@@ -40,7 +40,6 @@ extension Game {
     func showNewGameAlertStatus() -> Bool {
         return self.weShowedAlert
     }
-    
     func setThatWeShowedAlert() {
         self.weShowedAlert = true
     }
@@ -78,6 +77,17 @@ extension Game {
     func saveSettings(_ settings: Settings) {
         self.settings = settings
     }
+
+	/// Работа с покупкой и полным доступом
+	func saveThePurchaseStatus(status: Bool) {
+		self.settings.fullAccess = status
+	}
+	func checkForPurchaseStatus() -> Bool {
+		return self.settings.fullAccess
+	}
+	func deletePurchaseStatus() {
+		self.settings.fullAccess = false
+	}
 }
 
 
