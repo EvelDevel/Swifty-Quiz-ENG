@@ -9,7 +9,7 @@ import UIKit
 /// 5 - 10 - 15 - 50 баксов (примерно). Подумать куда их можно определить 
 
 /// Подумать как можно убрать работу с почтой (отправка репортов и своих вопросов) в один метод удаленно
-/// Навести порядок в контроллерах покупки и выбора тем! 
+/// Навести порядок в контроллерах покупки и выбора тем!
 
 class InitialViewController: UIViewController {
 
@@ -42,13 +42,13 @@ class InitialViewController: UIViewController {
 	private let adaptiveInterface = AdaptiveInterface()
 
 	/// Проверка покупки
-	let purchased = Game.shared.checkForPurchaseStatus()
+	let purchased = Game.shared.wePurchasedFullAccess()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		Game.shared.deletePurchaseStatus()
 		setUpInitialInformation()
 		setUpUserInterface()
-		Game.shared.deletePurchaseStatus()
 	}
 }
 
@@ -69,7 +69,7 @@ extension InitialViewController {
 
 			var newSet: [Question] = []
 
-			if Game.shared.checkForPurchaseStatus() {
+			if Game.shared.wePurchasedFullAccess() {
 				newSet = TopicOperator.getQuestionsTheBasics()
 			} else {
 				newSet = TopicOperator.getQuestionsDemoTheBasics()
@@ -102,7 +102,7 @@ extension InitialViewController {
 
 	/// Показываем общее количество вопросов в игре
 	func showTotalQuestions() {
-		if Game.shared.checkForPurchaseStatus() {
+		if Game.shared.wePurchasedFullAccess() {
 			_ = RandomSuperSets.getQuestions(limit: 0)
 		} else {
 			_ = RandomSuperSets.getDemoQuestions(limit: 0)

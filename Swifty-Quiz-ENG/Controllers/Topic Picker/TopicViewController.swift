@@ -41,7 +41,7 @@ class TopicViewController: UIViewController, InAppPurchaseViewControllerDelegate
 
 	/// Работа кнопки UNLOCK
 	func setOrHideUnlockButton() {
-		if !Game.shared.checkForPurchaseStatus() {
+		if !Game.shared.wePurchasedFullAccess() {
 			_ = RandomSuperSets.getQuestions(limit: 0)
 			let total = RandomSuperSets.showTotalquestionsNumber()
 			buyButton.setTitle("Unlock \(total) questions", for: .normal)
@@ -106,7 +106,7 @@ class TopicViewController: UIViewController, InAppPurchaseViewControllerDelegate
 extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 
 	func cellRegistration() {
-		if Game.shared.checkForPurchaseStatus() {
+		if Game.shared.wePurchasedFullAccess() {
 			tableView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellReuseIdentifier: "CategoriesCell")
 		} else {
 			tableView.register(UINib(nibName: "DemoCategoriesCell", bundle: nil), forCellReuseIdentifier: "DemoCategoriesCell")
@@ -118,7 +118,7 @@ extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if Game.shared.checkForPurchaseStatus() {
+		if Game.shared.wePurchasedFullAccess() {
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell else {
 				return UITableViewCell()
 			}

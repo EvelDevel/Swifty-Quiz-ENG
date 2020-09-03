@@ -79,10 +79,10 @@ extension Game {
     }
 
 	/// Работа с покупкой и полным доступом
-	func saveThePurchaseStatus(status: Bool) {
+	func changeThePurchaseStatus(status: Bool) {
 		self.settings.fullAccess = status
 	}
-	func checkForPurchaseStatus() -> Bool {
+	func wePurchasedFullAccess() -> Bool {
 		return self.settings.fullAccess
 	}
 	func deletePurchaseStatus() {

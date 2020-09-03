@@ -35,7 +35,7 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
     }
 
 	override func viewDidDisappear(_ animated: Bool) {
-		if Game.shared.checkForPurchaseStatus() {
+		if Game.shared.wePurchasedFullAccess() {
 			delegate?.refreshViewAndTableAfterPurchase()
 		}
 	}
@@ -50,7 +50,9 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 
 	@IBAction func didTapBuy(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
-		Game.shared.saveThePurchaseStatus(status: true)
+
+		/// Это строчку убрать и оставить полноценную реализацию
+		Game.shared.changeThePurchaseStatus(status: true)
 
 //		/// Проверяем наличие и доступ нашей встроенной покупки
 //		guard let myProduct = myProduct else {
@@ -89,7 +91,7 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 			case .purchasing:
 				break
 			case .purchased, .restored:
-				Game.shared.saveThePurchaseStatus(status: true)
+				Game.shared.changeThePurchaseStatus(status: true)
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
 				break
@@ -126,6 +128,4 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 												 labelsTrailingSpace: labelsTrailingSpace,
 												 labelsLeadingSpace: labelsLeadingSpace)
 	}
-
-
 }
