@@ -76,7 +76,6 @@ extension DemoCategoriesCell {
 }
 
 
-
 // MARK: Выбор категории
 extension DemoCategoriesCell {
 
@@ -85,11 +84,8 @@ extension DemoCategoriesCell {
 		var newQuestionSet: [Question] = SelectedTopic.shared.topic.questionSet
 		let position = SelectedTopic.shared.topic.topicTag
 
-		// MARK: FREE 200 QUESTIONS
-
+		/// FREE DEMO QUESTIONS
 		switch sender.tag {
-
-			///
 
 		case 1:
 			newQuestionSet = TopicOperator.getDemoRandom20()
@@ -116,7 +112,6 @@ extension DemoCategoriesCell {
 		case 15:
 			newQuestionSet = TopicOperator.getQuestionsDemoControlFlow()
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "Control Flow", tag: 14)
-
 
 		default:
 			switch position {
