@@ -176,7 +176,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-ZL-40D" userLabel="Categories">
-                                <rect key="frame" x="0.0" y="81" width="375" height="620"/>
+                                <rect key="frame" x="0.0" y="81" width="375" height="586"/>
                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicCategory" id="ZRb-Tj-ueZ">
@@ -202,7 +202,7 @@
                             <constraint firstItem="X3C-xA-qcG" firstAttribute="leading" secondItem="EYg-aI-FGR" secondAttribute="leading" id="SaY-Ic-gss"/>
                             <constraint firstItem="dI7-ZL-40D" firstAttribute="top" secondItem="X3C-xA-qcG" secondAttribute="bottom" id="aEp-KW-Oxs"/>
                             <constraint firstItem="EYg-aI-FGR" firstAttribute="trailing" secondItem="dI7-ZL-40D" secondAttribute="trailing" id="hY7-xt-PAE"/>
-                            <constraint firstItem="EYg-aI-FGR" firstAttribute="bottom" secondItem="dI7-ZL-40D" secondAttribute="bottom" constant="-34" id="iMl-z1-GyQ"/>
+                            <constraint firstItem="EYg-aI-FGR" firstAttribute="bottom" secondItem="dI7-ZL-40D" secondAttribute="bottom" id="iMl-z1-GyQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EYg-aI-FGR"/>
                     </view>
