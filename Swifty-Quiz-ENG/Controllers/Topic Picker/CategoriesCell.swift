@@ -10,12 +10,14 @@
 /// 5. Добавить необходимые действия по этим кнопкам в addQuestionsToArray
 /// 6. Внутри addQuestionsToArray, в кейсе default - прописать нужный кейс и диапазон
 ///  - отнимать tag предыдущей, последней кнопки (например, следующим будет [position-39])
+/// Если происходили какие-то изменения кнопок - надо пересоздавать коллекции (чтобы сохранялся исходный порядок)
 
 import UIKit
 
 protocol CategoriesCellDelegate: class {
 	func updateNumberOfQuestions()
 	func showAlert()
+	func suggestQuestion(section: String)
 }
 
 class CategoriesCell: UITableViewCell {
@@ -26,6 +28,8 @@ class CategoriesCell: UITableViewCell {
 	@IBOutlet var superSets: [UIButton]!
 	@IBOutlet var guideQuestions: [UIButton]!
 	@IBOutlet var patternsQuestions: [UIButton]!
+	@IBOutlet weak var suggestQuestionGuide: UIButton!
+	@IBOutlet weak var suggestQuestionPatterns: UIButton!
 
 	weak var delegate: CategoriesCellDelegate?
 	private let shadows = ShadowsHelper()
@@ -37,6 +41,7 @@ class CategoriesCell: UITableViewCell {
 		addQuestionsToArray(sender: UIButton())
 		setFontSize()
 		addShadows()
+		imageTuning()
 	}
 
 	override func layoutSubviews() {
@@ -56,6 +61,21 @@ class CategoriesCell: UITableViewCell {
 			SoundPlayer.shared.playSound(sound: .topicAndSettingsButton)
 			lastPosition = sender.tag - 1
 		}
+	}
+
+	/// "Предложить вопрос"
+	@IBAction func suggestQuestionGuide(_ sender: Any) { delegate?.suggestQuestion(section: "Language Guide") }
+	@IBAction func suggestQuestionPatterns(_ sender: Any) { delegate?.suggestQuestion(section: "Patterns") }
+
+	func imageTuning() {
+		imageTuning(button: suggestQuestionGuide, position: .center)
+		imageTuning(button: suggestQuestionPatterns, position: .center)
+	}
+	/// Корректного отображение плюсиков
+	func imageTuning(button: UIButton, position: UIControl.ContentVerticalAlignment) {
+		button.imageView!.contentMode = .scaleAspectFit
+		button.contentVerticalAlignment = position
+		button.contentHorizontalAlignment = .right
 	}
 }
 
@@ -124,10 +144,10 @@ extension CategoriesCell {
 			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "100 random questions", tag: 2)
 		case 4:
 			newQuestionSet = TopicOperator.getGuide20()
-			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "20 random - Language Guide", tag: 3)
+			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "20 questions on Language Guide", tag: 3)
 		case 5:
 			newQuestionSet = TopicOperator.getPatterns20()
-			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "20 random - Patterns", tag: 4)
+			SelectedTopic.shared.saveQuestionSet(newQuestionSet, topic: "20 questions on Patterns", tag: 4)
 
 
 			// MARK: THE BASICS

@@ -26,7 +26,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-p5-cdl" userLabel="All togheter">
-                        <rect key="frame" x="16" y="55" width="288" height="68"/>
+                        <rect key="frame" x="16" y="50" width="288" height="68"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aff-PP-AXD" userLabel="01 Row">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
@@ -126,17 +126,33 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Guide" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS1-Wq-feW" userLabel="Title : The Basics">
-                        <rect key="frame" x="16" y="158" width="124" height="20.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XC-5y-aGx" userLabel="Title Guide-Suggest">
+                        <rect key="frame" x="16" y="143" width="304" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Guide" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS1-Wq-feW" userLabel="Title : The Basics">
+                                <rect key="frame" x="0.0" y="0.0" width="124" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2O-11-5qj">
+                                <rect key="frame" x="134" y="0.0" width="170" height="30"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" image="plus.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18"/>
+                                </state>
+                                <connections>
+                                    <action selector="suggestQuestionGuide:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vaw-dX-i5l"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20.5" id="PUD-mA-gbc"/>
+                            <constraint firstAttribute="height" constant="30" id="NkU-Ir-LP2"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                        <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-ZD-gEa" userLabel="The Basics">
-                        <rect key="frame" x="16" y="198.5" width="288" height="410"/>
+                        <rect key="frame" x="16" y="183" width="288" height="410"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EP1-RY-saU" userLabel="01 Row">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
@@ -644,17 +660,33 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patterns" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdD-H9-Pu8" userLabel="Title : Patterns">
-                        <rect key="frame" x="16" y="643.5" width="288" height="20.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h2g-w4-ccA" userLabel="Title Patterns-Suggestion">
+                        <rect key="frame" x="16" y="618" width="304" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patterns" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdD-H9-Pu8" userLabel="Title : Patterns">
+                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cP-1I-hQR">
+                                <rect key="frame" x="73.5" y="0.0" width="230.5" height="30"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" image="plus.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18"/>
+                                </state>
+                                <connections>
+                                    <action selector="suggestQuestionPatterns:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nol-uk-JTg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20.5" id="k5c-Qp-N5g"/>
+                            <constraint firstAttribute="height" constant="30" id="P95-7o-R7E"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                        <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pLn-8m-84D" userLabel="Patterns">
-                        <rect key="frame" x="16" y="684" width="288" height="68"/>
+                        <rect key="frame" x="16" y="658" width="288" height="68"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-W0-nCM" userLabel="01 Row">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
@@ -758,26 +790,29 @@
                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="d0p-ZD-gEa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1Nb-Hc-BOM"/>
+                    <constraint firstItem="0XC-5y-aGx" firstAttribute="top" secondItem="ACn-p5-cdl" secondAttribute="bottom" constant="25" id="45e-kQ-Egg"/>
                     <constraint firstItem="ACn-p5-cdl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="46t-jq-ymH"/>
-                    <constraint firstItem="RS1-Wq-feW" firstAttribute="top" secondItem="ACn-p5-cdl" secondAttribute="bottom" constant="35" id="9ZW-Ff-AVr"/>
-                    <constraint firstItem="d0p-ZD-gEa" firstAttribute="top" secondItem="RS1-Wq-feW" secondAttribute="bottom" constant="20" id="EGO-lp-sOc"/>
+                    <constraint firstItem="h2g-w4-ccA" firstAttribute="top" secondItem="d0p-ZD-gEa" secondAttribute="bottom" constant="25" id="Ewe-1H-gRz"/>
+                    <constraint firstItem="d0p-ZD-gEa" firstAttribute="top" secondItem="0XC-5y-aGx" secondAttribute="bottom" constant="10" id="FNn-3Q-9F2"/>
+                    <constraint firstItem="h2g-w4-ccA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="GbZ-Ew-39x"/>
                     <constraint firstItem="tUx-lF-pbh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="R4x-dl-6Oi"/>
-                    <constraint firstItem="UdD-H9-Pu8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Reu-s7-rdt"/>
-                    <constraint firstAttribute="bottom" secondItem="pLn-8m-84D" secondAttribute="bottom" constant="55" id="S5a-3v-9fU"/>
+                    <constraint firstAttribute="trailing" secondItem="h2g-w4-ccA" secondAttribute="trailing" id="RdT-5V-0TH"/>
+                    <constraint firstAttribute="bottom" secondItem="pLn-8m-84D" secondAttribute="bottom" constant="50" id="S5a-3v-9fU"/>
                     <constraint firstItem="pLn-8m-84D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SSf-2a-uT8"/>
+                    <constraint firstItem="pLn-8m-84D" firstAttribute="top" secondItem="h2g-w4-ccA" secondAttribute="bottom" constant="10" id="Sla-Lk-8nZ"/>
                     <constraint firstItem="tUx-lF-pbh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="T2Y-w1-kDk"/>
                     <constraint firstAttribute="trailing" secondItem="ACn-p5-cdl" secondAttribute="trailing" constant="16" id="TdG-eq-yav"/>
-                    <constraint firstItem="RS1-Wq-feW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bna-Kq-cLs"/>
-                    <constraint firstAttribute="trailing" secondItem="UdD-H9-Pu8" secondAttribute="trailing" constant="16" id="dvo-lB-6uh"/>
-                    <constraint firstItem="ACn-p5-cdl" firstAttribute="top" secondItem="tUx-lF-pbh" secondAttribute="bottom" constant="20" id="g5J-4M-K4G"/>
+                    <constraint firstItem="0XC-5y-aGx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="fVw-p6-PyI"/>
+                    <constraint firstItem="ACn-p5-cdl" firstAttribute="top" secondItem="tUx-lF-pbh" secondAttribute="bottom" constant="15" id="g5J-4M-K4G"/>
                     <constraint firstAttribute="trailing" secondItem="d0p-ZD-gEa" secondAttribute="trailing" constant="16" id="jgA-Kn-7V8"/>
                     <constraint firstAttribute="trailing" secondItem="pLn-8m-84D" secondAttribute="trailing" constant="16" id="mP1-Eo-OZB"/>
-                    <constraint firstItem="UdD-H9-Pu8" firstAttribute="top" secondItem="d0p-ZD-gEa" secondAttribute="bottom" constant="35" id="tRH-b3-ILq"/>
-                    <constraint firstItem="pLn-8m-84D" firstAttribute="top" secondItem="UdD-H9-Pu8" secondAttribute="bottom" constant="20" id="xZ7-Zc-9BV"/>
+                    <constraint firstAttribute="trailing" secondItem="0XC-5y-aGx" secondAttribute="trailing" id="rrM-IG-n03"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="suggestQuestionGuide" destination="B2O-11-5qj" id="cVq-WY-THj"/>
+                <outlet property="suggestQuestionPatterns" destination="8cP-1I-hQR" id="3pG-8L-23C"/>
                 <outletCollection property="guideQuestions" destination="wcJ-TJ-Cn5" collectionClass="NSMutableArray" id="S3A-cU-eD2"/>
                 <outletCollection property="guideQuestions" destination="fTQ-Ap-1US" collectionClass="NSMutableArray" id="YJP-Rr-zDd"/>
                 <outletCollection property="guideQuestions" destination="ia1-P9-vXa" collectionClass="NSMutableArray" id="xbK-jT-6Gg"/>
@@ -818,4 +853,7 @@
             <point key="canvasLocation" x="-178.2608695652174" y="186.16071428571428"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

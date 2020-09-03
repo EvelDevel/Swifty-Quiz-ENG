@@ -337,6 +337,7 @@
 				FBECDC5C243F30D700BD5583 /* Model */,
 				FB1D0B9A2448235F00E9C56D /* Singletons */,
 				FBECDC58243F241B00BD5583 /* Controllers */,
+				FBC91D0F24FB67A300811A8B /* IAP - In App Purchase */,
 				FB8606B32444771300A692AD /* Helpers */,
 				FB8606B0244458E300A692AD /* Database */,
 				FBDECD7C24839924004695FB /* Assets */,
@@ -394,7 +395,6 @@
 		FB8606B32444771300A692AD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				FBC91D0F24FB67A300811A8B /* IAP Controller */,
 				FB7B13E024AA020400CB11C6 /* GameHelper.swift */,
 				FBC1D489247574730055FF62 /* ShadowsHelper.swift */,
 				FBDECD832484D073004695FB /* RoundCornerButton.swift */,
@@ -511,12 +511,12 @@
 			path = "Game Controller";
 			sourceTree = "<group>";
 		};
-		FBC91D0F24FB67A300811A8B /* IAP Controller */ = {
+		FBC91D0F24FB67A300811A8B /* IAP - In App Purchase */ = {
 			isa = PBXGroup;
 			children = (
 				FBC91D1024FB67D400811A8B /* InAppPurchaseViewController.swift */,
 			);
-			path = "IAP Controller";
+			path = "IAP - In App Purchase";
 			sourceTree = "<group>";
 		};
 		FBC91D1D24FBB56900811A8B /* Main - Initial */ = {

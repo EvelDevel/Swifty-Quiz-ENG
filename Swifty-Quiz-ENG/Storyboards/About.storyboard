@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-bq-kkY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-bq-kkY">
                                 <rect key="frame" x="16" y="25" width="254" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jlb-tv-5iC">
-                                <rect key="frame" x="16" y="301.5" width="288" height="40"/>
+                                <rect key="frame" x="16" y="351.5" width="288" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gio-b5-NVf">
                                         <rect key="frame" x="0.0" y="0.0" width="63.5" height="40"/>
@@ -81,22 +81,24 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-ws-uFX">
-                                <rect key="frame" x="16" y="64" width="288" height="217.5"/>
-                                <string key="text">Hello, my name is Evgeniy, I am an independent junior iOS-developer from Siberia, and it's my first app. You can test it out with 100 free questions, and then you can unlock (if you will) over 900 questions which I create and translate (with professionals) for more than half a year.   I have received some big help from great people along the way, you can see them below. 
-Your support will mean a lot for me, thanks!</string>
+                                <rect key="frame" x="16" y="64" width="288" height="267.5"/>
+                                <mutableString key="text">So... it's a quiz 🤓
+
+Hello and nice to see you here! My name is Evgeniy, I am an independent iOS-developer (junior) from Siberia, and it's my first app. You can test it out with 150 free questions, and then you can unlock full access with over 920 questions (and this number will grow). That was a hard work, I got to tell you. Please enjoy it and send your feedback (it's important for improvement)
+ I have received some big help from great people along the way, you can see them below. Your support will mean a lot for me, thanks!</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sources:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYA-bj-tmt">
-                                <rect key="frame" x="16" y="371.5" width="288" height="19.5"/>
+                                <rect key="frame" x="16" y="421.5" width="288" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-wY-WEY">
-                                <rect key="frame" x="16" y="401" width="288" height="40"/>
+                                <rect key="frame" x="16" y="451" width="288" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="loP-3d-aDN">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>

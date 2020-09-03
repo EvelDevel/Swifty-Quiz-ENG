@@ -3,6 +3,7 @@
 //  Copyright © 2020 Evel-Devel. All rights reserved.
 
 import UIKit
+import MessageUI
 
 protocol TopicViewControllerDelegate: class {
 	func selectedCategory()
@@ -138,4 +139,82 @@ extension TopicViewController: CategoriesCellDelegate, DemoCategoriesCellDelegat
 						self.buyButton.transform = CGAffineTransform.identity }, completion: { Void in()  }
 		)
 	}
+
+	/// Вызов отправки письма
+	func suggestQuestion(section: String) {
+		userQuestionSuggestion(section: section)
+	}
+}
+
+
+// MARK: Работа c отправкой почты
+extension TopicViewController: MFMailComposeViewControllerDelegate {
+
+    func userQuestionSuggestion(section: String) {
+		showMailComposer(section: section)
+        SoundPlayer.shared.playSound(sound: .menuMainButton)
+    }
+
+    func showMailComposer(section: String) {
+        /// Проверяем, может ли девайс пользователя отправлять мэйлы
+        guard MFMailComposeViewController.canSendMail() else {
+            let alert = UIAlertController(  title: "You want to suggest your question",
+                                            message: "Sorry, your device cannot send mail. Most likely, you don't have any active account in the mail application.",
+                                            preferredStyle: .alert)
+            let ok = UIAlertAction(         title: "Ok",
+                                            style: .default,
+                                            handler: { action in })
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+            return
+        }
+
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients(["hello@swifty-quiz.online"])
+        composer.setSubject(section)
+		composer.setMessageBody("""
+			I want to suggest my question to \(section) section
+			
+			category: 
+			question text:
+			answer A (correct one):
+			answer B:
+			answer C:
+			answer D:
+			hint text:
+			link to the source:
+			""", isHTML: false)
+        present(composer, animated: true)
+    }
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        if let _ = error {
+            let alert = UIAlertController(  title: "There is some problem with sending an e-mail",
+                                            message: "",
+                                            preferredStyle: .alert)
+            let ok = UIAlertAction(         title: "Ok",
+                                            style: .default,
+                                            handler: { action in })
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+            controller.dismiss(animated: true)
+            return
+        }
+
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed to send")
+        case .saved:
+            print("Saved")
+        case .sent:
+            print("E-mail sent")
+        @unknown default:
+            print("We have some poroblems with e-mail sending")
+        }
+
+        controller.dismiss(animated: true)
+    }
 }
