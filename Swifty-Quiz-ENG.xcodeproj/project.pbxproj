@@ -85,6 +85,7 @@
 		FBADAAEF246825560014501E /* CollectionTypesSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBADAAEE246825560014501E /* CollectionTypesSet.swift */; };
 		FBB3584524BF229300C33A79 /* AboutProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3584424BF229300C33A79 /* AboutProjectController.swift */; };
 		FBB4405524991C1E00D88937 /* RandomSuperSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4405424991C1E00D88937 /* RandomSuperSets.swift */; };
+		FBB48FAE2501124900167C24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB48FAD2501124900167C24 /* StoreKit.framework */; };
 		FBC1D4842474EE020055FF62 /* AnswerButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */; };
 		FBC1D48A247574730055FF62 /* ShadowsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D489247574730055FF62 /* ShadowsHelper.swift */; };
 		FBC91D0D24FAA17900811A8B /* DemoCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */; };
@@ -180,6 +181,7 @@
 		FBADAAEE246825560014501E /* CollectionTypesSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesSet.swift; sourceTree = "<group>"; };
 		FBB3584424BF229300C33A79 /* AboutProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectController.swift; sourceTree = "<group>"; };
 		FBB4405424991C1E00D88937 /* RandomSuperSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSuperSets.swift; sourceTree = "<group>"; };
+		FBB48FAD2501124900167C24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButtonsView.swift; sourceTree = "<group>"; };
 		FBC1D489247574730055FF62 /* ShadowsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsHelper.swift; sourceTree = "<group>"; };
 		FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCategoriesCell.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB48FAE2501124900167C24 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +323,7 @@
 			children = (
 				FB2EAC92243EEE0F0098FAC3 /* Swifty-Quiz-ENG */,
 				FB2EAC91243EEE0F0098FAC3 /* Products */,
+				FBB48FAC2501124900167C24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -502,6 +506,14 @@
 				FB0807F024A0948500016E18 /* PatternsRandomSet.swift */,
 			);
 			path = "Super Sets";
+			sourceTree = "<group>";
+		};
+		FBB48FAC2501124900167C24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBB48FAD2501124900167C24 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FBC1D4822474EDCD0055FF62 /* Game Controller */ = {
