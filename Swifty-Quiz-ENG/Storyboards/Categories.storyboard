@@ -10,7 +10,7 @@
         <!--In App Purchase View Controller-->
         <scene sceneID="Poi-9V-BmQ">
             <objects>
-                <viewController id="hDr-wu-Deh" customClass="InAppPurchaseViewController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InAppPurchaseViewController" id="hDr-wu-Deh" customClass="InAppPurchaseViewController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S39-Eu-t3B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
