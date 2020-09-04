@@ -9,13 +9,11 @@ protocol InAppPurchaseViewControllerDelegate: class {
 	func refreshViewAndTableAfterPurchase()
 }
 
-class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, SKPaymentTransactionObserver {
-
+class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
 	@IBOutlet weak var IapGoodLuckLabel: UILabel!
-	@IBOutlet weak var IapBuyButton: UIButton!
-	@IBOutlet weak var IapRestoreButton: RoundCornerButton!
+	@IBOutlet weak var iapBuyButton: UIButton!
 
 	@IBOutlet weak var getYourFullAccessHeight: NSLayoutConstraint!
 	@IBOutlet weak var topMargin: NSLayoutConstraint!
@@ -32,7 +30,7 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
         super.viewDidLoad()
 		fetchProduct()
 		setTheInterfaceRight()
-		shadow.addBlackButtonShadows([IapBuyButton, IapRestoreButton])
+		shadow.addBlackButtonShadows([iapBuyButton])
     }
 
 	override func viewDidDisappear(_ animated: Bool) {
@@ -41,26 +39,35 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 		}
 	}
 	
-	// MARK: Покупка и ее методы
+	func setTheInterfaceRight() {
+		iapBuyButton.setTitle("Unlock for ... or Restore", for: .normal)
+		adaptiveInterface.setUnlockPageInterface(view: view,
+												 IapSupportLabel: IapSupportLabel,
+												 IapMainTextLabel: IapMainTextLabel,
+												 IapGoodLuckLabel: IapGoodLuckLabel,
+												 getYourFullAccessHeight: getYourFullAccessHeight,
+												 topMargin: topMargin,
+												 textTopMargin: textTopMargin,
+												 labelsTrailingSpace: labelsTrailingSpace,
+												 labelsLeadingSpace: labelsLeadingSpace)
+	}
+}
+
+
+// MARK: Покупка и ее методы
+extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTransactionObserver {
+	
 	func fetchProduct() {
-		/// com.EvelDevel.SwiftyQuizENG.unlockfullaccess
-		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlockfullaccess"])
+		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlock01"])
 		request.delegate = self
 		request.start()
 	}
 
 	@IBAction func didTapBuy(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
-
-		/// Это строчку можно раскоменнтировать, чтобы отработать сценарий на симуляторе
-		/// Game.shared.changeThePurchaseStatus(status: true)
-
-		/// Проверяем наличие и доступ нашей встроенной покупки
 		guard let myProduct = myProduct else {
 			return
 		}
-
-		/// Проверяем, может ли устройство совершать покупки
 		if SKPaymentQueue.canMakePayments() {
 			let payment = SKPayment(product: myProduct)
 			SKPaymentQueue.default().add(self)
@@ -68,19 +75,11 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 		}
 	}
 
-	@IBAction func didTapRestore(_ sender: Any) {
-		SoundPlayer.shared.playSound(sound: .menuMainButton)
-	}
-
 	func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-		/// Здесь можно проверять сколько пришло "товаров" из эппстора
-		/// Сколько у нас встроенных покупок
 		if let product = response.products.first {
 			myProduct = product
-
 			DispatchQueue.main.async {
-				self.IapBuyButton.setTitle("UNLOCK for \(product.price) \(product.priceLocale.currencySymbol ?? "")", for: .normal)
-				self.IapRestoreButton.setTitle("Restore access", for: .normal)
+				self.iapBuyButton.setTitle("Unlock for \(product.price)\(product.priceLocale.currencySymbol ?? "") or Restore ", for: .normal)
 			}
 		}
 	}
@@ -106,16 +105,7 @@ class InAppPurchaseViewController: UIViewController, SKProductsRequestDelegate, 
 			}
 		}
 	}
-
-	func setTheInterfaceRight() {
-		adaptiveInterface.setUnlockPageInterface(view: view,
-												 IapSupportLabel: IapSupportLabel,
-												 IapMainTextLabel: IapMainTextLabel,
-												 IapGoodLuckLabel: IapGoodLuckLabel,
-												 getYourFullAccessHeight: getYourFullAccessHeight,
-												 topMargin: topMargin,
-												 textTopMargin: textTopMargin,
-												 labelsTrailingSpace: labelsTrailingSpace,
-												 labelsLeadingSpace: labelsLeadingSpace)
-	}
 }
+	
+	
+
