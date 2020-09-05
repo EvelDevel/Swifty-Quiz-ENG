@@ -28,11 +28,11 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-p5-cdl" userLabel="All togheter">
                         <rect key="frame" x="16" y="50" width="288" height="68"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aff-PP-AXD" userLabel="01 Row">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aff-PP-AXD" userLabel="01 Row">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efU-AZ-oTf" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="20 questions">
@@ -48,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjn-CH-lMo" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="98.5" y="0.0" width="91" height="30"/>
+                                        <rect key="frame" x="94.5" y="0.0" width="86.5" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="50 questions">
@@ -64,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyP-mf-tY5" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="197.5" y="0.0" width="90.5" height="30"/>
+                                        <rect key="frame" x="189" y="0.0" width="99" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="100 questions">
@@ -618,11 +618,11 @@
                                     <constraint firstAttribute="height" constant="30" id="OaI-Ey-dDq"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-Vu-OTR" userLabel="11 Row">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-Vu-OTR" userLabel="11 Row">
                                 <rect key="frame" x="0.0" y="380" width="288" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jet-al-ahe" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="Memory Safety">
@@ -638,7 +638,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuT-3w-aPC" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="148" y="0.0" width="140" height="30"/>
+                                        <rect key="frame" x="125" y="0.0" width="163" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="Advanced Operators">

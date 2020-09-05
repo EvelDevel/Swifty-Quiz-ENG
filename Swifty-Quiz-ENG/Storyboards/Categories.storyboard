@@ -41,7 +41,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="DrA-zp-arr">
-                                <rect key="frame" x="16" y="215" width="288" height="165.5"/>
+                                <rect key="frame" x="16" y="215" width="288" height="182"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your support in advance!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W1-pN-P4v">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
@@ -50,14 +50,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN2-r8-tYI">
-                                        <rect key="frame" x="0.0" y="32" width="288" height="100.5"/>
-                                        <string key="text">You can unlock over 900 questions which I create and translate (with professional help) for more than half a year. This is one-time purchase and you won't have to pay any more money. If you will reinstall the application, your access will be restored.</string>
+                                        <rect key="frame" x="0.0" y="32" width="288" height="117"/>
+                                        <string key="text">You can unlock over 920 questions, which I create and translate (with professional help) for more than half a year. This is one-time purchase and you won't have to pay any more money (it's more like an appriciation from you). If you will reinstall the application, your access will be restored.</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good luck and have fun learning Swift!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3W-6l-saT">
-                                        <rect key="frame" x="0.0" y="147.5" width="288" height="18"/>
+                                        <rect key="frame" x="0.0" y="164" width="288" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>

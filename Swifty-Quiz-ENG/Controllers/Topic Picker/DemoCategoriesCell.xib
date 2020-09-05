@@ -602,11 +602,11 @@
                                     <constraint firstAttribute="height" constant="30" id="qRE-5r-WhU"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYn-PB-DEr" userLabel="11 Row">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYn-PB-DEr" userLabel="11 Row">
                                 <rect key="frame" x="0.0" y="380" width="288" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whd-Lm-0HW" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="Memory Safety">
@@ -622,7 +622,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPF-9T-KLK" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="148" y="0.0" width="140" height="30"/>
+                                        <rect key="frame" x="125" y="0.0" width="163" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="Advanced Operators">
