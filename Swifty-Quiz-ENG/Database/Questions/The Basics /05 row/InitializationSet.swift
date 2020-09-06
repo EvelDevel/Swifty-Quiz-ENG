@@ -247,7 +247,7 @@ class InitializationSet {
 			Question(question: ["What will we get after running this code?"],
 					 image: "Initialization24",
 					 optionA: "New instance of ShoppingListItem",
-					 optionB: "Compilation error",
+					 optionB: "Compile-time error",
 					 optionC: "Initialization error",
 					 optionD: "",
 					 questionId: 1324,

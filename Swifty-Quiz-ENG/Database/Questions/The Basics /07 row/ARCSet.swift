@@ -192,7 +192,7 @@ class ARCSet {
 								"What is going to happen, if you try to access the value of an unowned reference after that instance has been deallocated?"],
 					 image: "",
 					 optionA: "Runtime error",
-					 optionB: "Compilation error",
+					 optionB: "Compile-time error",
 					 optionC: "Nothing",
 					 optionD: "We will get nil",
 					 questionId: 1719,

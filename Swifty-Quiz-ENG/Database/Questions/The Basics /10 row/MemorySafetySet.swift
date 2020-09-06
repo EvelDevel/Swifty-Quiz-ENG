@@ -124,7 +124,7 @@ class MemorySafetySet {
 					 image: "MemorySafety12",
 					 optionA: "Successful execution",
 					 optionB: "Accesses conflict",
-					 optionC: "Compilation error",
+					 optionC: "Compile-time error",
 					 optionD: "Nothing",
 					 questionId: 2412,
 					 helpText: "The balance(_:_:) function modifies its two parameters to divide the total value evenly between them. Calling it with playerOneScore and playerTwoScore as arguments doesn’t produce a conflict — there are two write accesses that overlap in time, but they access different locations in memory.")

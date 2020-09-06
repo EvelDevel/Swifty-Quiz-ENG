@@ -210,7 +210,7 @@ class AccessControlSet {
 			
 			Question(question: ["What will we get after running the following code?"],
 					 image: "AccessControl21",
-					 optionA: "Compilation error",
+					 optionA: "Compile-time error",
 					 optionB: "The code will compile and run",
 					 optionC: "Nothing",
 					 optionD: "",

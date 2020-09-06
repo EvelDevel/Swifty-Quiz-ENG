@@ -73,7 +73,7 @@ class TypeCastingSet {
 								"If we try to downcast to an incorrect class type, what is going to happen?"],
 					 image: "",
 					 optionA: "Runtime error ",
-					 optionB: "Compilation error",
+					 optionB: "Compile-time error",
 					 optionC: "Nothing",
 					 optionD: "nil",
 					 questionId: 1808,
