@@ -66,7 +66,7 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 	@IBAction func didTapBuy(_ sender: Any) {
 		
 		/// Временное действие для разблокировки доступа на симуляторах
-		/// Game.shared.changeThePurchaseStatus(status: true)
+		Game.shared.changeThePurchaseStatus(status: true)
 		
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 		guard let myProduct = myProduct else {

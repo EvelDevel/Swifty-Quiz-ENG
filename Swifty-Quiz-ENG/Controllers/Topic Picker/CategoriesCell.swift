@@ -90,10 +90,6 @@ extension CategoriesCell {
 		allOutlets.append(contentsOf: patternsQuestions)
 	}
 
-	/// Добавляем тени кнопкам
-	/// - На некоторых экранах тень под кнопкой не ресайзится (7, XR, 6s, 8)
-	/// - DispatchQueue является решением данного бага в нашем случае
-	/// - https://stackoverflow.com/questions/49664951/shadow-effect-is-not-displaying-properly-for-uiview
 	func addShadows() {
 		DispatchQueue.main.async {
 			self.shadows.addTopicButtonShadows(self.allOutlets)
@@ -110,8 +106,8 @@ extension CategoriesCell {
 
 	func setFontSize() {
 		allOutlets.forEach() { button in
-			if UIScreen.main.bounds.size.width > 320 { button.titleLabel?.font = .systemFont(ofSize: 12)
-			} else { button.titleLabel?.font = .systemFont(ofSize: 10) }
+			let bounds = UIScreen.main.bounds.size.width
+			button.titleLabel?.font = bounds > 320 ? .systemFont(ofSize: 12) : .systemFont(ofSize: 10)
 		}
 	}
 }
