@@ -83,7 +83,7 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		if let product = response.products.first {
 			myProduct = product
 			DispatchQueue.main.async {
-				self.iapBuyButton.setTitle("Unlock for \(product.price)\(product.priceLocale.currencySymbol ?? "") or Restore ", for: .normal)
+				self.iapBuyButton.setTitle("Unlock for \(product.price) \(product.priceLocale.currencySymbol ?? "") or Restore ", for: .normal)
 			}
 		}
 	}
