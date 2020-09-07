@@ -518,7 +518,6 @@
 		FBC1D4822474EDCD0055FF62 /* Game Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FB1D0BB12450133200E9C56D /* HelpViewController.swift */,
 				FB2EAC97243EEE0F0098FAC3 /* GameViewController.swift */,
 				FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */,
 			);
@@ -531,14 +530,6 @@
 				FBC91D1024FB67D400811A8B /* InAppPurchaseViewController.swift */,
 			);
 			path = IAP;
-			sourceTree = "<group>";
-		};
-		FBC91D1E24FBB58000811A8B /* About */ = {
-			isa = PBXGroup;
-			children = (
-				FBB3584424BF229300C33A79 /* AboutProjectController.swift */,
-			);
-			path = About;
 			sourceTree = "<group>";
 		};
 		FBC91D1F24FBF06900811A8B /* Storyboards */ = {
@@ -568,7 +559,8 @@
 			children = (
 				FB7B13E224AB5DE600CB11C6 /* LaunchViewController.swift */,
 				FBECDC5A243F2D0500BD5583 /* InitialViewController.swift */,
-				FBC91D1E24FBB58000811A8B /* About */,
+				FBB3584424BF229300C33A79 /* AboutProjectController.swift */,
+				FB1D0BB12450133200E9C56D /* HelpViewController.swift */,
 				FBC1D4822474EDCD0055FF62 /* Game Controller */,
 				FB37AA39246D2CAA001E08CE /* Topic Picker */,
 				FB0E0290246CF334005CA792 /* GameHistory */,

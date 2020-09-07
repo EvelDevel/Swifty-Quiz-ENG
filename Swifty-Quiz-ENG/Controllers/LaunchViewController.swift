@@ -13,7 +13,7 @@ class LaunchViewController: UIViewController {
         controlledTransitionFromLaunch()
     }
     
-    /// Меняем аудио-сессию (приложение не останавливает фоновую музыку)
+    /// Так приложение не останавливает фоновую музыку
     func makeRightSettingsForSounds() {
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)

@@ -80,11 +80,8 @@ extension HelpViewController {
         separatorHeight.constant = 1.0 / UIScreen.main.scale
     }
     func setFontSize() {
-        if view.frame.size.width <= 320 {
-            helpTextLabel.font = UIFont.systemFont(ofSize: 12.0, weight: .light)
-        } else {
-            helpTextLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .light)
-        }
+		let width = view.frame.size.width
+		helpTextLabel.font = width <= 320 ? UIFont.systemFont(ofSize: 12.0) : UIFont.systemFont(ofSize: 14.0)
     }
     func addShadows() {
         let shadows = ShadowsHelper()
