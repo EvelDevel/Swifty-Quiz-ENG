@@ -13,8 +13,9 @@ class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
 	@IBOutlet weak var IapGoodLuckLabel: UILabel!
-	@IBOutlet weak var iapBuyButton: UIButton!
-
+	@IBOutlet weak var buyButtonLabel: UIButton!
+	@IBOutlet weak var restoreButtonLabel: RoundCornerButton!
+	
 	@IBOutlet weak var getYourFullAccessHeight: NSLayoutConstraint!
 	@IBOutlet weak var topMargin: NSLayoutConstraint!
 	@IBOutlet weak var labelsTrailingSpace: NSLayoutConstraint!
@@ -30,9 +31,9 @@ class InAppPurchaseViewController: UIViewController {
         super.viewDidLoad()
 		fetchProduct()
 		setTheInterfaceRight()
-		shadow.addBlackButtonShadows([iapBuyButton])
+		shadow.addBlackButtonShadows([buyButtonLabel])
     }
-
+	
 	override func viewDidDisappear(_ animated: Bool) {
 		if Game.shared.wePurchasedFullAccess() {
 			delegate?.refreshViewAndTableAfterPurchase()
@@ -40,7 +41,8 @@ class InAppPurchaseViewController: UIViewController {
 	}
 	
 	func setTheInterfaceRight() {
-		iapBuyButton.setTitle("Unlock for ... or Restore", for: .normal)
+		buyButtonLabel.setTitle("Unlock for ...", for: .normal)
+		restoreButtonLabel.setTitle("Restore your previous purchase", for: .normal)
 		adaptiveInterface.setUnlockPageInterface(view: view,
 												 IapSupportLabel: IapSupportLabel,
 												 IapMainTextLabel: IapMainTextLabel,
@@ -63,11 +65,13 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		request.start()
 	}
 
-	@IBAction func didTapBuy(_ sender: Any) {
-		
-		/// Временное действие для разблокировки доступа на симуляторах
-		/// Game.shared.changeThePurchaseStatus()
-		
+	@IBAction func restoreButtonTapped(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+		SKPaymentQueue.default().add(self)
+		SKPaymentQueue.default().restoreCompletedTransactions()
+	}
+	
+	@IBAction func buyButtonTapped(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 		guard let myProduct = myProduct else {
 			return
@@ -83,7 +87,7 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		if let product = response.products.first {
 			myProduct = product
 			DispatchQueue.main.async {
-				self.iapBuyButton.setTitle("Unlock for \(product.price) \(product.priceLocale.currencySymbol ?? "") or Restore ", for: .normal)
+				self.buyButtonLabel.setTitle("Unlock for \(product.price) \(product.priceLocale.currencySymbol ?? "") or Restore ", for: .normal)
 			}
 		}
 	}
@@ -93,7 +97,12 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 			switch transaction.transactionState {
 			case .purchasing:
 				break
-			case .purchased, .restored:
+			case .purchased:
+				Game.shared.openFullAccess()
+				SKPaymentQueue.default().finishTransaction(transaction)
+				SKPaymentQueue.default().remove(self)
+				break
+			case .restored:
 				Game.shared.openFullAccess()
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)

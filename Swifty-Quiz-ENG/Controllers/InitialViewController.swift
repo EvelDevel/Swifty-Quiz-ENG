@@ -48,7 +48,7 @@ class InitialViewController: UIViewController {
 		super.viewDidLoad()
 
 		/// Раскомментировать, если нужно обнулять статус покупки для тестов
-		/// Game.shared.deletePurchaseStatus()
+		Game.shared.deletePurchaseStatus()
 		setUpInitialInformation()
 		setUpUserInterface()
 	}
