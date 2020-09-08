@@ -15,14 +15,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetYourAccessShadow" translatesAutoresizingMaskIntoConstraints="NO" id="NZX-jg-g5F">
-                                <rect key="frame" x="16" y="20" width="288" height="190"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-dZ-RSH" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
+                                <rect key="frame" x="16" y="419" width="288" height="52"/>
+                                <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="190" id="r7s-CQ-wGi"/>
+                                    <constraint firstAttribute="height" constant="52" id="3Sd-B8-pzO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buyButtonTapped:" destination="hDr-wu-Deh" eventType="touchUpInside" id="D3o-YV-GWq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetYourAccessShadow" translatesAutoresizingMaskIntoConstraints="NO" id="NZX-jg-g5F">
+                                <rect key="frame" x="16" y="20" width="288" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="r7s-CQ-wGi"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="DrA-zp-arr">
-                                <rect key="frame" x="16" y="215" width="288" height="182"/>
+                                <rect key="frame" x="16" y="175" width="288" height="166"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your support in advance!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W1-pN-P4v">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
@@ -31,15 +50,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN2-r8-tYI">
-                                        <rect key="frame" x="0.0" y="32" width="288" height="117"/>
-                                        <string key="text">You can unlock over 920 questions, which I create and translate (with professional help) for more than half a year. This is one-time purchase and you won't have to pay any more money (it's more like an appriciation from you). If you will reinstall the application, your access will be restored.</string>
+                                        <rect key="frame" x="0.0" y="32" width="288" height="134"/>
+                                        <string key="text">You can unlock over 920 questions, which I create and translate (with professional help) for more than half a year. This is one-time purchase and you won't have to pay any more money (it's more like an appriciation from you). If you will reinstall the application, your access will be restored. Good luck and have fun learning Swift!</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good luck and have fun learning Swift!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3W-6l-saT">
-                                        <rect key="frame" x="0.0" y="164" width="288" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -64,25 +77,12 @@
                                     <action selector="restoreButtonTapped:" destination="hDr-wu-Deh" eventType="touchUpInside" id="oqA-aZ-13o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-dZ-RSH" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                <rect key="frame" x="16" y="419" width="288" height="52"/>
-                                <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="3Sd-B8-pzO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buyButtonTapped:" destination="hDr-wu-Deh" eventType="touchUpInside" id="D3o-YV-GWq"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4W-VM-oxL">
+                                <rect key="frame" x="104" y="389.5" width="112.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                <color key="textColor" red="0.25487014650000001" green="0.25492024419999998" blue="0.25486692789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -95,15 +95,16 @@
                             <constraint firstItem="kFL-dZ-RSH" firstAttribute="leading" secondItem="i1W-eV-8zj" secondAttribute="leading" constant="16" id="Sy9-xX-IMp"/>
                             <constraint firstItem="DrA-zp-arr" firstAttribute="leading" secondItem="i1W-eV-8zj" secondAttribute="leading" constant="16" id="VRh-ZO-3bW"/>
                             <constraint firstItem="kgu-gY-gKw" firstAttribute="top" secondItem="kFL-dZ-RSH" secondAttribute="bottom" constant="5" id="awv-at-Z2k"/>
+                            <constraint firstItem="kFL-dZ-RSH" firstAttribute="top" secondItem="p4W-VM-oxL" secondAttribute="bottom" constant="10" id="bxZ-IG-wSK"/>
                             <constraint firstItem="DrA-zp-arr" firstAttribute="top" secondItem="NZX-jg-g5F" secondAttribute="bottom" constant="5" id="emQ-QD-wxQ"/>
                             <constraint firstItem="kgu-gY-gKw" firstAttribute="leading" secondItem="i1W-eV-8zj" secondAttribute="leading" constant="16" id="v5q-YO-dzG"/>
                             <constraint firstItem="NZX-jg-g5F" firstAttribute="top" secondItem="i1W-eV-8zj" secondAttribute="top" constant="20" id="wEg-vV-0Hz"/>
+                            <constraint firstItem="p4W-VM-oxL" firstAttribute="centerX" secondItem="i1W-eV-8zj" secondAttribute="centerX" id="xDS-2O-XOn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i1W-eV-8zj"/>
                     </view>
                     <navigationItem key="navigationItem" id="JqH-ko-6zv"/>
                     <connections>
-                        <outlet property="IapGoodLuckLabel" destination="q3W-6l-saT" id="We5-Jm-hfc"/>
                         <outlet property="IapMainTextLabel" destination="UN2-r8-tYI" id="hN1-hh-hpA"/>
                         <outlet property="IapSupportLabel" destination="7W1-pN-P4v" id="liU-cM-feN"/>
                         <outlet property="buyButtonLabel" destination="kFL-dZ-RSH" id="hqI-Kg-uJX"/>
@@ -111,6 +112,7 @@
                         <outlet property="labelsLeadingSpace" destination="CiN-Pz-izn" id="LfL-DT-ET7"/>
                         <outlet property="labelsTrailingSpace" destination="VRh-ZO-3bW" id="h0c-BJ-WAz"/>
                         <outlet property="restoreButtonLabel" destination="kgu-gY-gKw" id="TET-bJ-8xg"/>
+                        <outlet property="statusLabel" destination="p4W-VM-oxL" id="6rO-8r-PD4"/>
                         <outlet property="textTopMargin" destination="emQ-QD-wxQ" id="iXG-EV-tvP"/>
                         <outlet property="topMargin" destination="wEg-vV-0Hz" id="9wf-am-7Vp"/>
                     </connections>

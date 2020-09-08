@@ -71,7 +71,7 @@ class AdaptiveInterface {
 			mainTextLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .light)
 			firstRowButtonsHeight.constant = 35
 			secondRowButtonsHeight.constant = 35
-			logoHeight.constant = 180
+			logoHeight.constant = 170
 
 		} else if view.frame.size.width > 410 && view.frame.size.width < 500 {
 			/// 8+, 11, 7+, 11 Pro Max
@@ -90,7 +90,6 @@ class AdaptiveInterface {
 	func setUnlockPageInterface(view: UIView,
 							  IapSupportLabel: UILabel,
 							  IapMainTextLabel: UILabel,
-							  IapGoodLuckLabel: UILabel,
 							  getYourFullAccessHeight: NSLayoutConstraint,
 							  topMargin: NSLayoutConstraint,
 							  textTopMargin: NSLayoutConstraint,
@@ -98,10 +97,9 @@ class AdaptiveInterface {
 							  labelsLeadingSpace: NSLayoutConstraint) {
 
 		if view.frame.size.width <= 320 {
-			IapSupportLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
-			IapMainTextLabel.font = UIFont.systemFont(ofSize: 15.0, weight: .thin)
-			IapGoodLuckLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
-			getYourFullAccessHeight.constant = 170
+			IapSupportLabel.font = UIFont.systemFont(ofSize: 13.0, weight: .regular)
+			IapMainTextLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .thin)
+			getYourFullAccessHeight.constant = 150
 			topMargin.constant = 20
 			textTopMargin.constant = 5
 			labelsTrailingSpace.constant = 20
@@ -110,8 +108,7 @@ class AdaptiveInterface {
 		} else if view.frame.size.width <= 410 {
 			IapSupportLabel.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
 			IapMainTextLabel.font = UIFont.systemFont(ofSize: 18.0, weight: .thin)
-			IapGoodLuckLabel.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
-			getYourFullAccessHeight.constant = 240
+			getYourFullAccessHeight.constant = 170
 			topMargin.constant = 20
 			textTopMargin.constant = 5
 			labelsTrailingSpace.constant = 24
@@ -119,9 +116,8 @@ class AdaptiveInterface {
 
 		} else {
 			IapSupportLabel.font = UIFont.systemFont(ofSize: 18.0, weight: .regular)
-			IapMainTextLabel.font = UIFont.systemFont(ofSize: 20, weight: .thin)
-			IapGoodLuckLabel.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-			getYourFullAccessHeight.constant = 250
+			IapMainTextLabel.font = UIFont.systemFont(ofSize: 20, weight: .thin) 
+			getYourFullAccessHeight.constant = 200
 			topMargin.constant = 40
 			textTopMargin.constant = 20
 			labelsTrailingSpace.constant = 30

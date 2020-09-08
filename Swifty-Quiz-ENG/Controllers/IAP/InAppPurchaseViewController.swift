@@ -12,9 +12,9 @@ protocol InAppPurchaseViewControllerDelegate: class {
 class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
-	@IBOutlet weak var IapGoodLuckLabel: UILabel!
 	@IBOutlet weak var buyButtonLabel: UIButton!
 	@IBOutlet weak var restoreButtonLabel: RoundCornerButton!
+	@IBOutlet weak var statusLabel: UILabel!
 	
 	@IBOutlet weak var getYourFullAccessHeight: NSLayoutConstraint!
 	@IBOutlet weak var topMargin: NSLayoutConstraint!
@@ -43,10 +43,11 @@ class InAppPurchaseViewController: UIViewController {
 	func setTheInterfaceRight() {
 		buyButtonLabel.setTitle("Unlock for ...", for: .normal)
 		restoreButtonLabel.setTitle("Restore your previous purchase", for: .normal)
+		statusLabel.text = InAppStatus.didntPurchasedYet.rawValue
+		
 		adaptiveInterface.setUnlockPageInterface(view: view,
 												 IapSupportLabel: IapSupportLabel,
 												 IapMainTextLabel: IapMainTextLabel,
-												 IapGoodLuckLabel: IapGoodLuckLabel,
 												 getYourFullAccessHeight: getYourFullAccessHeight,
 												 topMargin: topMargin,
 												 textTopMargin: textTopMargin,
@@ -80,6 +81,8 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 			let payment = SKPayment(product: myProduct)
 			SKPaymentQueue.default().add(self)
 			SKPaymentQueue.default().add(payment)
+		} else {
+			statusLabel.text = InAppStatus.cantBuy.rawValue
 		}
 	}
 
@@ -92,30 +95,44 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		}
 	}
 
+	// MARK: TODO
+	// 1. Протестировать все сценарии. Предварительно все ок
+	// 2. Поработать над срабатываением статус-лейбла и звуками
+	// 3. Посмотреть информацию на предмет "обязательного завершения статуса при загрузке приложения"
+	// https://developer.apple.com/in-app-purchase/
+	// 4. Создать пару новых тестировщиков и попробовать на некупленных акках восстановку -> покупку
+	
 	func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
 		for transaction in transactions {
 			switch transaction.transactionState {
 			case .purchasing:
+				print("purchasing")
 				break
 			case .purchased:
-				Game.shared.openFullAccess()
-				SoundPlayer.shared.playSound(sound: .fullAccess)
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
+				statusLabel.text = InAppStatus.success.rawValue
+				SoundPlayer.shared.playSound(sound: .fullAccess)
+				Game.shared.openFullAccess()
+				print("purchased")
 				break
 			case .restored:
-				Game.shared.openFullAccess()
-				SoundPlayer.shared.playSound(sound: .fullAccess)
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
+				Game.shared.openFullAccess()
+				SoundPlayer.shared.playSound(sound: .fullAccess)
+				statusLabel.text = InAppStatus.restore.rawValue
+				print("restored")
 				break
 			case .failed, .deferred:
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
+				print("failed or deferr")
 				break
 			default:
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
+				print("default")
 				break
 			}
 		}
