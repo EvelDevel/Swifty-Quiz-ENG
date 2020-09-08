@@ -87,7 +87,7 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		if let product = response.products.first {
 			myProduct = product
 			DispatchQueue.main.async {
-				self.buyButtonLabel.setTitle("Unlock for \(product.price) \(product.priceLocale.currencySymbol ?? "") or Restore ", for: .normal)
+				self.buyButtonLabel.setTitle("Unlock for \(product.priceLocale.currencySymbol ?? "") \(product.price)", for: .normal)
 			}
 		}
 	}
@@ -99,11 +99,13 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 				break
 			case .purchased:
 				Game.shared.openFullAccess()
+				SoundPlayer.shared.playSound(sound: .fullAccess)
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
 				break
 			case .restored:
 				Game.shared.openFullAccess()
+				SoundPlayer.shared.playSound(sound: .fullAccess)
 				SKPaymentQueue.default().finishTransaction(transaction)
 				SKPaymentQueue.default().remove(self)
 				break
