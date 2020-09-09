@@ -105,37 +105,54 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 	func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
 		for transaction in transactions {
 			switch transaction.transactionState {
-			case .purchasing:
-				print("purchasing")
-				break
-			case .purchased:
-				SKPaymentQueue.default().finishTransaction(transaction)
-				SKPaymentQueue.default().remove(self)
-				statusLabel.text = InAppStatus.success.rawValue
-				SoundPlayer.shared.playSound(sound: .fullAccess)
-				Game.shared.openFullAccess()
-				print("purchased")
-				break
-			case .restored:
-				SKPaymentQueue.default().finishTransaction(transaction)
-				SKPaymentQueue.default().remove(self)
-				Game.shared.openFullAccess()
-				SoundPlayer.shared.playSound(sound: .fullAccess)
-				statusLabel.text = InAppStatus.restore.rawValue
-				print("restored")
-				break
-			case .failed, .deferred:
-				SKPaymentQueue.default().finishTransaction(transaction)
-				SKPaymentQueue.default().remove(self)
-				print("failed or deferr")
-				break
-			default:
-				SKPaymentQueue.default().finishTransaction(transaction)
-				SKPaymentQueue.default().remove(self)
-				print("default")
-				break
+			case .purchasing: purchasing(transaction); 	break
+			case .purchased: purchased(transaction); 	break
+			case .restored: restored(transaction); 		break
+			case .failed: failed(transaction); 			break
+			case .deferred: deferred(transaction); 		break
+			default: defaultCase(transaction); 			break
 			}
 		}
+	}
+	
+	func purchasing(_ transaction: SKPaymentTransaction) {
+		print("Purchasing")
+	}
+	
+	func purchased(_ transaction: SKPaymentTransaction) {
+		SKPaymentQueue.default().finishTransaction(transaction)
+		SKPaymentQueue.default().remove(self)
+		statusLabel.text = InAppStatus.success.rawValue
+		SoundPlayer.shared.playSound(sound: .fullAccess)
+		Game.shared.openFullAccess()
+		print("Transaction Purchased")
+	}
+	
+	func restored(_ transaction: SKPaymentTransaction) {
+		SKPaymentQueue.default().finishTransaction(transaction)
+		SKPaymentQueue.default().remove(self)
+		Game.shared.openFullAccess()
+		SoundPlayer.shared.playSound(sound: .fullAccess)
+		statusLabel.text = InAppStatus.restore.rawValue
+		print("Transaction Restored")
+	}
+	
+	func failed(_ transaction: SKPaymentTransaction) {
+		SKPaymentQueue.default().finishTransaction(transaction)
+		SKPaymentQueue.default().remove(self)
+		print("Transaction Failed")
+	}
+	
+	func deferred(_ transaction: SKPaymentTransaction) {
+		SKPaymentQueue.default().finishTransaction(transaction)
+		SKPaymentQueue.default().remove(self)
+		print("Transaction Deferred")
+	}
+	
+	func defaultCase(_ transaction: SKPaymentTransaction) {
+		SKPaymentQueue.default().finishTransaction(transaction)
+		SKPaymentQueue.default().remove(self)
+		print("Default case")
 	}
 }
 	
