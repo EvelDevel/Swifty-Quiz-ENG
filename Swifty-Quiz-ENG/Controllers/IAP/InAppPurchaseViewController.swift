@@ -9,6 +9,10 @@ protocol InAppPurchaseViewControllerDelegate: class {
 	func refreshViewAndTableAfterPurchase()
 }
 
+// MARK: com.EvelDevel.SwiftyQuizENG.unlock05
+// Куплено у следующих тестеров:
+// 1. hello@swifty-quiz.online
+
 class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
@@ -61,7 +65,7 @@ class InAppPurchaseViewController: UIViewController {
 extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTransactionObserver {
 	
 	func fetchProduct() {
-		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlock01"])
+		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlock05"])
 		request.delegate = self
 		request.start()
 	}
@@ -95,22 +99,27 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		}
 	}
 
-	// MARK: TODO
-	// 1. Протестировать все сценарии. Предварительно все ок
-	// 2. Поработать над срабатываением статус-лейбла и звуками
-	// 3. Посмотреть информацию на предмет "обязательного завершения статуса при загрузке приложения"
-	// https://developer.apple.com/in-app-purchase/
-	// 4. Создать пару новых тестировщиков и попробовать на некупленных акках восстановку -> покупку
-	
 	func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
 		for transaction in transactions {
 			switch transaction.transactionState {
-			case .purchasing: purchasing(transaction); 	break
-			case .purchased: purchased(transaction); 	break
-			case .restored: restored(transaction); 		break
-			case .failed: failed(transaction); 			break
-			case .deferred: deferred(transaction); 		break
-			default: defaultCase(transaction); 			break
+			case .purchasing:
+				purchasing(transaction)
+				break
+			case .purchased:
+				purchased(transaction)
+				break
+			case .restored:
+				restored(transaction)
+				break
+			case .failed:
+				failed(transaction)
+				break
+			case .deferred:
+				deferred(transaction)
+				break
+			default:
+				defaultCase(transaction)
+				break
 			}
 		}
 	}
