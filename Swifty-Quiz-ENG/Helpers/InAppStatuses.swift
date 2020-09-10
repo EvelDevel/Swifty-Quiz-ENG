@@ -4,7 +4,8 @@
 
 import Foundation
 
-enum InAppStatus: String {
+enum InAppStatuses: String {
+	
 	case didntPurchasedYet = "You don't have full access yet 🥺"
 	case success = "Thank you! You got the full access 😎"
 	case restore = "Here you go! Glad you're back 🥳"

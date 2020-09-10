@@ -85,9 +85,11 @@ extension Game {
 	func wePurchasedFullAccess() -> Bool {
 		return self.settings.fullAccess
 	}
-	func deletePurchaseStatus() {
-		self.settings.fullAccess = false
-	}
+	
+	/// Этот метод использовался для тестов
+	//	func deletePurchaseStatus() {
+	//		self.settings.fullAccess = false
+	//	}
 }
 
 

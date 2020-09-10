@@ -4,12 +4,9 @@
 
 import UIKit
 
-// MARK: TODO - Баги и доработки с Apple Store отзывов 
-/// Сделать кнопки доната (которые будут привязаны к неодноразовым покупкам в эпл)
-/// 5 - 10 - 15 - 50 баксов (примерно). Подумать куда их можно определить 
-
+// MARK: TODO - Баги и доработки с Apple Store отзывов
+/// Добавить логгер
 /// Подумать как можно убрать работу с почтой (отправка репортов и своих вопросов) в один метод удаленно
-/// Навести порядок в контроллерах покупки и выбора тем!
 
 class InitialViewController: UIViewController {
 
@@ -46,9 +43,6 @@ class InitialViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		/// Раскомментировать, если нужно обнулять статус покупки для тестов
-		/// Game.shared.deletePurchaseStatus()
 		setUpInitialInformation()
 		setUpUserInterface()
 	}

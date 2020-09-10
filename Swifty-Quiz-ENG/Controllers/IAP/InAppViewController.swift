@@ -5,15 +5,11 @@
 import UIKit
 import StoreKit
 
-protocol InAppPurchaseViewControllerDelegate: class {
+protocol InAppViewControllerDelegate: class {
 	func refreshViewAndTableAfterPurchase()
 }
 
-// MARK: com.EvelDevel.SwiftyQuizENG.unlock05
-// Куплено у следующих тестеров:
-// 1. hello@swifty-quiz.online
-
-class InAppPurchaseViewController: UIViewController {
+class InAppViewController: UIViewController {
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
 	@IBOutlet weak var buyButtonLabel: UIButton!
@@ -26,7 +22,7 @@ class InAppPurchaseViewController: UIViewController {
 	@IBOutlet weak var labelsLeadingSpace: NSLayoutConstraint!
 	@IBOutlet weak var textTopMargin: NSLayoutConstraint!
 
-	weak var delegate: InAppPurchaseViewControllerDelegate?
+	weak var delegate: InAppViewControllerDelegate?
 	private var myProduct: SKProduct?
 	private var adaptiveInterface = AdaptiveInterface()
 	let shadow = ShadowsHelper()
@@ -36,6 +32,7 @@ class InAppPurchaseViewController: UIViewController {
 		fetchProduct()
 		setTheInterfaceRight()
 		shadow.addBlackButtonShadows([buyButtonLabel])
+		SKPaymentQueue.default().add(self)
     }
 	
 	override func viewDidDisappear(_ animated: Bool) {
@@ -47,7 +44,7 @@ class InAppPurchaseViewController: UIViewController {
 	func setTheInterfaceRight() {
 		buyButtonLabel.setTitle("Unlock for ...", for: .normal)
 		restoreButtonLabel.setTitle("Restore your previous purchase", for: .normal)
-		statusLabel.text = InAppStatus.didntPurchasedYet.rawValue
+		statusLabel.text = InAppStatuses.didntPurchasedYet.rawValue
 		
 		adaptiveInterface.setUnlockPageInterface(view: view,
 												 IapSupportLabel: IapSupportLabel,
@@ -62,17 +59,16 @@ class InAppPurchaseViewController: UIViewController {
 
 
 // MARK: Покупка и ее методы
-extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTransactionObserver {
+extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionObserver {
 	
 	func fetchProduct() {
-		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlock05"])
+		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlockfullaccess01"])
 		request.delegate = self
 		request.start()
 	}
 
 	@IBAction func restoreButtonTapped(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
-		SKPaymentQueue.default().add(self)
 		SKPaymentQueue.default().restoreCompletedTransactions()
 	}
 	
@@ -83,10 +79,9 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 		}
 		if SKPaymentQueue.canMakePayments() {
 			let payment = SKPayment(product: myProduct)
-			SKPaymentQueue.default().add(self)
 			SKPaymentQueue.default().add(payment)
 		} else {
-			statusLabel.text = InAppStatus.cantBuy.rawValue
+			statusLabel.text = InAppStatuses.cantBuy.rawValue
 		}
 	}
 
@@ -130,38 +125,33 @@ extension InAppPurchaseViewController: SKProductsRequestDelegate, SKPaymentTrans
 	
 	func purchased(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		SKPaymentQueue.default().remove(self)
-		statusLabel.text = InAppStatus.success.rawValue
+		statusLabel.text = InAppStatuses.success.rawValue
 		SoundPlayer.shared.playSound(sound: .fullAccess)
 		Game.shared.openFullAccess()
-		print("Transaction Purchased")
+		print("Purchased")
 	}
 	
 	func restored(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		SKPaymentQueue.default().remove(self)
 		Game.shared.openFullAccess()
 		SoundPlayer.shared.playSound(sound: .fullAccess)
-		statusLabel.text = InAppStatus.restore.rawValue
-		print("Transaction Restored")
+		statusLabel.text = InAppStatuses.restore.rawValue
+		print("Restored")
 	}
 	
 	func failed(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		SKPaymentQueue.default().remove(self)
 		print("Transaction Failed")
 	}
 	
 	func deferred(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		SKPaymentQueue.default().remove(self)
 		print("Transaction Deferred")
 	}
 	
 	func defaultCase(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		SKPaymentQueue.default().remove(self)
-		print("Default case")
+		print("Default Case")
 	}
 }
 	

@@ -11,7 +11,7 @@ protocol TopicViewControllerDelegate: class {
 	func refreshTotalNumberOfQuestion()
 }
 
-class TopicViewController: UIViewController, InAppPurchaseViewControllerDelegate {
+class TopicViewController: UIViewController, InAppViewControllerDelegate {
 
 	@IBOutlet weak var nameAndNumberOfQuestions: UILabel!
 	@IBOutlet weak var tableView: UITableView!
@@ -58,7 +58,7 @@ class TopicViewController: UIViewController, InAppPurchaseViewControllerDelegate
 	/// Подготовка делегата
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier  == "toInAppPurchaseView" {
-			let inAppView = segue.destination as! InAppPurchaseViewController
+			let inAppView = segue.destination as! InAppViewController
 			inAppView.delegate = self
 		}
 	}
