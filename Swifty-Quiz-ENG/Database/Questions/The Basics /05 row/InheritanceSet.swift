@@ -9,7 +9,7 @@ import Foundation
 class InheritanceSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question(question: ["Does structures have inheritance?"],
+			Question(question: ["Do structures support inheritance?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -18,7 +18,7 @@ class InheritanceSet {
 					 questionId: 1202,
 					 helpText: "No. Inheritance is a fundamental behavior that differentiates classes from other types in Swift."),
 			
-			Question(question: ["Does enumerations have inheritance?"],
+			Question(question: ["Do enumerations support inheritance?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -27,10 +27,8 @@ class InheritanceSet {
 					 questionId: 1226,
 					 helpText: "No. Inheritance is a fundamental behavior that differentiates classes from other types in Swift."),
 			
-			/// Если можно попросить - сделай пожалуйста к 1203 и 1204 по второй формулировке для разнообразия
-			/// Всю голову себе сломал, не смог нормально сформулировать
-			
-			Question(question: ["When one class inherits, the inheriting class is known as a ___"],
+			Question(question: ["When one class inherits from another, the inheriting class is known as a ___",
+								"Choose the word we use to refer to a class that inherits all the characteristics from another class?"],
 					 image: "",
 					 optionA: "Subclass",
 					 optionB: "Seperclass",
@@ -39,7 +37,8 @@ class InheritanceSet {
 					 questionId: 1203,
 					 helpText: "A class can inherit methods, properties, and other characteristics from another class. When one class inherits from another, the inheriting class is known as a subclass, and the class it inherits from is known as its superclass."),
 			
-			Question(question: ["When one class inherits from another, the class it inherits from is known as ___"],
+			Question(question: ["When one class inherits from another, the class it inherits from is known as ___",
+								"How do we call a class that provides all of its characteristics, e.g., methods, properties, etc., to another class?"],
 					 image: "",
 					 optionA: "Superclass",
 					 optionB: "Subclass",
@@ -49,12 +48,12 @@ class InheritanceSet {
 					 helpText: "When one class inherits from another, the inheriting class is known as a subclass, and the class it inherits from is known as its superclass."),
 			
 			Question(question: ["Can classes in Swift call and access methods belonging to their superclass?",
-								"Classes in Swift can call and access properties and subscripts belonging to their superclass. Is that true?"],
+								"Classes in Swift can both call and access properties and subscripts belonging to their superclass. Is that true?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
-					 optionC: "Только получать доступ",
-					 optionD: "Только вызывать",
+					 optionC: "Only access",
+					 optionD: "Only call",
 					 questionId: 1205,
 					 helpText: "Classes in Swift can call and access methods, properties, and subscripts belonging to their superclass and can provide their own overriding versions of those methods, properties, and subscripts to refine or modify their behavior."),
 			
@@ -80,8 +79,8 @@ class InheritanceSet {
 					 helpText: "Classes can also add property observers to inherited properties in order to be notified when the value of a property changes. Property observers can be added to any property, regardless of whether it was originally defined as a stored or computed property."),
 			
 			Question(question: ["Any class that does not inherit from another class is known as a ___",
-								"The class, which does not inherit from another class",
-								"This class doesn't inherit from another class"],
+								"A class that doesn’t inherit from another class",
+								"How do we refer to a class that doesn't inherit from another class?"],
 					 image: "",
 					 optionA: "Base class",
 					 optionB: "Empty class",
@@ -101,7 +100,7 @@ class InheritanceSet {
 					 helpText: "Subclassing is the act of basing a new class on an existing class. The subclass inherits characteristics from the existing class, which you can then refine. You can also add new characteristics to the subclass."),
 			
 			Question(question: ["To indicate that a subclass has a superclass, write the subclass name before the superclass name, separated by ___",
-								"When you indicate that a subclass has a superclass, thir names should be separated by this sign"],
+								"When you indicate that a subclass has a superclass, their names should be separated by ___"],
 					 image: "",
 					 optionA: "Colon (:)",
 					 optionB: "Semicolon (;)",
@@ -119,9 +118,9 @@ class InheritanceSet {
 					 questionId: 1211,
 					 helpText: "Subclasses can themselves be subclassed."),
 			
-			Question(question: ["Process when a subclass can provide its own custom implementation of an instance methods that it would otherwise inherit from a superclass",
-								"Process when a subclass can provide its own custom implementation of a type method or instance property that it would otherwise inherit from a superclass",
-								"Process when a subclass can provide its own custom implementation of a type property or subscript that it would otherwise inherit from a superclass"],
+			Question(question: ["The act of providing a custom implementation of instance methods initially defined on a superclass",
+								"Which option refers to the process of providing a custom implementation of a type method or instance property that a class would otherwise inherit from a superclass",
+								"The process of providing a custom implementation of a type property or subscript defined on a superclass"],
 					 image: "",
 					 optionA: "Overriding",
 					 optionB: "Overwriting",
@@ -130,9 +129,9 @@ class InheritanceSet {
 					 questionId: 1212,
 					 helpText: "A subclass can provide its own custom implementation of an instance method, type method, instance property, type property, or subscript that it would otherwise inherit from a superclass. This is known as overriding."),
 			
-			Question(question: ["To override a characteristic that would otherwise be inherited, you prefix your overriding definition with that keyword",
-								"This keyword says, that you are planning to override methods or properties of the superclass",
-								"Keyword for overriding"],
+			Question(question: ["To modify a characteristic that would otherwise be inherited, you prefix your overriding definition with the ___ keyword",
+								"Which of the following is the keyword required when you want to modify methods or properties of a superclass",
+								"The keyword for overriding"],
 					 image: "",
 					 optionA: "override",
 					 optionB: "overwrite",
@@ -142,14 +141,14 @@ class InheritanceSet {
 					 helpText: "To override a characteristic that would otherwise be inherited, you prefix your overriding definition with the override keyword. Doing so clarifies that you intend to provide an override and have not provided a matching definition by mistake. Overriding by accident can cause unexpected behavior, and any overrides without the override keyword are diagnosed as an error when your code is compiled. The override keyword also prompts the Swift compiler to check that your overriding class’s superclass (or one of its parents) has a declaration that matches the one you provided for the override. This check ensures that your overriding definition is correct."),
 			
 			Question(question: ["You access the superclass version of a method, property, or subscript by using that prefix",
-								"When you provide a method override for a subclass, it is useful to use the existing superclass implementation. What keyword must we use?"],
+								"When you provide a method override for a subclass, it is useful to use the existing superclass implementation. What keyword must we use in this case?"],
 					 image: "",
 					 optionA: "super",
 					 optionB: "superior",
 					 optionC: "superclass",
 					 optionD: "sup",
 					 questionId: 1214,
-					 helpText: "When you provide a method, property, or subscript override for a subclass, it is sometimes useful to use the existing superclass implementation as part of your override. For example, you can refine the behavior of that existing implementation, or store a modified value in an existing inherited variable. Where this is appropriate, you access the superclass version of a method, property, or subscript by using the super prefix: An overridden method named someMethod() can call the superclass version of someMethod() by calling super.someMethod() within the overriding method implementation. An overridden property called someProperty can access the superclass version of someProperty as super.someProperty within the overriding getter or setter implementation. An overridden subscript for someIndex can access the superclass version of the same subscript as super[someIndex] from within the overriding subscript implementation."),
+					 helpText: "When you provide a method, property, or subscript override for a subclass, it is sometimes useful to use the existing superclass implementation as part of your override. For example, you can refine the behavior of that existing implementation, or store a modified value in an existing inherited variable. Where this is appropriate, you access the superclass version of a method, property, or subscript by using the super prefix. For instance, an overridden method named someMethod() can call the superclass version of someMethod() by calling super.someMethod() within the overriding method implementation. Another options is to access the superclass version of an overridden property called someProperty as super.someProperty within the overriding getter or setter implementation."),
 			
 			Question(question: ["Can you override an inherited instance or type method",
 								"If you want to provide a tailored or alternative implementation of the method within your subclass, can you override it?"],
@@ -171,8 +170,8 @@ class InheritanceSet {
 					 questionId: 1216,
 					 helpText: "You can override an inherited instance or type property to provide your own custom getter and setter for that property, or to add property observers to enable the overriding property to observe when the underlying property value changes."),
 			
-			Question(question: ["Does it matter of whether it is implemented as a stored or computed property at source, when we provide a custom getter to override any inherited property?",
-								"You can't provide a custom getter or setter to override any inherited property. Is that true?"],
+			Question(question: ["While providing a custom getter to override an inherited property, does it matter whether the property is implemented as a stored or computed property at source?",
+								"You can't provide a custom getter or setter to override an inherited property. Is that correct?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -182,7 +181,7 @@ class InheritanceSet {
 					 helpText: "You can provide a custom getter (and setter, if appropriate) to override any inherited property, regardless of whether the inherited property is implemented as a stored or computed property at source. The stored or computed nature of an inherited property is not known by a subclass — it only knows that the inherited property has a certain name and type."),
 			
 			Question(question: ["Can you present an inherited read-only property as a read-write property?",
-								"You cannot present an inherited read-write property as a read-only property. Is that true?"],
+								"It’s impossible to present an inherited read-write property as a read-only property. Is that so?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -191,7 +190,7 @@ class InheritanceSet {
 					 questionId: 1218,
 					 helpText: "You can present an inherited read-only property as a read-write property by providing both a getter and a setter in your subclass property override. You cannot, however, present an inherited read-write property as a read-only property."),
 			
-			Question(question: ["Do we need always state both the name and the type of the property you are overriding?",
+			Question(question: ["Do we always need to state both the name and the type of the property we are overriding?",
 								"You must always state both the name and the type of the property you are overriding. Is that true?"],
 					 image: "",
 					 optionA: "Yes",
@@ -201,9 +200,8 @@ class InheritanceSet {
 					 questionId: 1219,
 					 helpText: "You must always state both the name and the type of the property you are overriding, to enable the compiler to check that your override matches a superclass property with the same name and type."),
 			
-			/// Если сможешь - пожалуйста придумай вторую формулировку для 1220 :)
-			
-			Question(question: ["If you provide a setter as part of a property override, do you need also provide a getter?"],
+			Question(question: ["If you provide a setter as part of a property override, do you also need to provide a getter?",
+								"Is it true that once a setter is provided as part of a property override, a getter must be provided for that override as well?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -222,9 +220,9 @@ class InheritanceSet {
 					 helpText: "You cannot add property observers to inherited constant stored properties or inherited read-only computed properties. The value of these properties cannot be set, and so it is not appropriate to provide a willSet or didSet implementation as part of an override."),
 			
 			Question(question: ["You can prevent a method, property, or subscript from being overridden by marking it as ___",
-								"You can prevent a method from being overridden by writing this modifier before this method",
-								"You can prevent a property from being overridden by writing this modifier before this property",
-								"You can prevent a subscript from being overridden by writing this modifier before this subscript"],
+								"You can prevent a method from being overridden by writing this modifier before the method",
+								"Which keyword do you need to use to prevent a property from being overridden?",
+								"Which keyword do you need to put before a subscript to prevent it from being overridden?"],
 					 image: "",
 					 optionA: "final",
 					 optionB: "end",
