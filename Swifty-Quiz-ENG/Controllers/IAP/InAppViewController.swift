@@ -154,6 +154,3 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 		print("Default Case")
 	}
 }
-	
-	
-

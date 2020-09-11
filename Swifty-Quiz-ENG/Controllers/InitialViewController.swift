@@ -38,9 +38,6 @@ class InitialViewController: UIViewController {
 	private let recordCaretaker = RecordsCaretaker()
 	private let adaptiveInterface = AdaptiveInterface()
 
-	/// Проверка покупки
-	let purchased = Game.shared.wePurchasedFullAccess()
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setUpInitialInformation()
