@@ -33,12 +33,19 @@ class InAppViewController: UIViewController {
 		setTheInterfaceRight()
 		shadow.addBlackButtonShadows([buyButtonLabel])
 		SKPaymentQueue.default().add(self)
+		print("Создали наблюдателя :: SKPaymentQueue.default().add(self)")
     }
 	
 	override func viewDidDisappear(_ animated: Bool) {
 		if Game.shared.wePurchasedFullAccess() {
+			print("Обновляем таблицу с категориями (после покупки)")
 			delegate?.refreshViewAndTableAfterPurchase()
 		}
+	}
+	
+	deinit {
+		SKPaymentQueue.default().remove(self)
+		print("deinit InAppViewController and remove SKPayment observer")
 	}
 	
 	func setTheInterfaceRight() {
@@ -62,12 +69,14 @@ class InAppViewController: UIViewController {
 extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionObserver {
 	
 	func fetchProduct() {
+		print("fetchProduct :: com.EvelDevel.SwiftyQuizENG.unlockfullaccess01")
 		let request = SKProductsRequest(productIdentifiers: ["com.EvelDevel.SwiftyQuizENG.unlockfullaccess01"])
 		request.delegate = self
 		request.start()
 	}
 
 	@IBAction func restoreButtonTapped(_ sender: Any) {
+		print("Restore button tapped")
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 		SKPaymentQueue.default().restoreCompletedTransactions()
 	}
@@ -78,8 +87,10 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 			return
 		}
 		if SKPaymentQueue.canMakePayments() {
+			print("We can make payments")
 			let payment = SKPayment(product: myProduct)
 			SKPaymentQueue.default().add(payment)
+			print("Add payment :: \(payment)")
 		} else {
 			statusLabel.text = InAppStatuses.cantBuy.rawValue
 		}
@@ -124,33 +135,40 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 	}
 	
 	func purchased(_ transaction: SKPaymentTransaction) {
+		print("Purchased")
 		SKPaymentQueue.default().finishTransaction(transaction)
+		print("Finish transaction")
 		statusLabel.text = InAppStatuses.success.rawValue
 		SoundPlayer.shared.playSound(sound: .fullAccess)
 		Game.shared.openFullAccess()
-		print("Purchased")
+		print("Open full access")
 	}
 	
 	func restored(_ transaction: SKPaymentTransaction) {
+		print("Restored")
 		SKPaymentQueue.default().finishTransaction(transaction)
+		print("Finish transaction")
 		Game.shared.openFullAccess()
+		print("Open full access")
 		SoundPlayer.shared.playSound(sound: .fullAccess)
 		statusLabel.text = InAppStatuses.restore.rawValue
-		print("Restored")
 	}
 	
 	func failed(_ transaction: SKPaymentTransaction) {
-		SKPaymentQueue.default().finishTransaction(transaction)
 		print("Transaction Failed")
+		SKPaymentQueue.default().finishTransaction(transaction)
+		print("Finish transaction")
 	}
 	
 	func deferred(_ transaction: SKPaymentTransaction) {
-		SKPaymentQueue.default().finishTransaction(transaction)
 		print("Transaction Deferred")
+		SKPaymentQueue.default().finishTransaction(transaction)
+		print("Finish transaction")
 	}
 	
 	func defaultCase(_ transaction: SKPaymentTransaction) {
-		SKPaymentQueue.default().finishTransaction(transaction)
 		print("Default Case")
+		SKPaymentQueue.default().finishTransaction(transaction)
+		print("Finish transaction")
 	}
 }
