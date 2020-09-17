@@ -9,28 +9,28 @@ import Foundation
 class StructuresAndClassesSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question(question: ["You introduce structures with ___ keyword and classes with ___ keyword",
-								"With which keywords you introduce structures and classes in your code?"],
+			Question(question: ["You introduce structures with the ___ keyword and classes with the ___ keyword",
+								"With which keywords do you introduce structures and classes in your code?"],
 					 image: "",
 					 optionA: "class / struct",
 					 optionB: "classes / structures",
-					 optionC: "class / structures",
-					 optionD: "classes / struct",
+					 optionC: "class / structure",
+					 optionD: "class / struc",
 					 questionId: 803,
 					 helpText: "Structures and classes have a similar definition syntax. You introduce structures with the struct keyword and classes with the class keyword. Both place their entire definition within a pair of braces."),
 			
 			Question(question: ["You define ___ and ___ to add functionality to your structures and classes",
-								"What can you define, When you want to add functionality to your structures and classes?"],
+								"What can you define to add functionality to your structures and classes?"],
 					 image: "",
 					 optionA: "Properties and Methods",
 					 optionB: "Constants and Variables",
 					 optionC: "Functions and Closures",
-					 optionD: "Comments",
+					 optionD: "Comments and Marks",
 					 questionId: 804,
 					 helpText: "Structures and classes are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your structures and classes using the same syntax you use to define constants, variables, and functions."),
 			
 			Question(question: ["Does Swift require you to create separate interface and implementation files for custom structures and classes?",
-								"Swift require you to create separate interface and implementation files for custom structures and classes. Is that true?"],
+								"Swift always requires you to create separate interface and implementation files for custom structures and classes. Is that true?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -44,11 +44,9 @@ class StructuresAndClassesSet {
 					 optionA: "an object",
 					 optionB: "an instance",
 					 optionC: "a target",
-					 optionD: "a struct",
+					 optionD: "a classic",
 					 questionId: 806,
 					 helpText: "An instance of a class is traditionally known as an object."),
-			
-			/// В 807 подрезал формулировки из доки. Немного перефразировал
 			
 			Question(question: ["Can functionality that applies to instances of a class be applied to instances of a structures?"],
 					 image: "",
@@ -57,11 +55,7 @@ class StructuresAndClassesSet {
 					 optionC: "",
 					 optionD: "",
 					 questionId: 807,
-					 helpText: "An instance of a class is traditionally known as an object. However, Swift structures and classes are much closer in functionality than in other languages. Functionality that applies to instances of a class can be applied to instances of a structures as well. Because of this, the more general term instance is used."),
-			
-			/// 808 - 810 Раздробил на разные вопросы, потому что это довольно интересная тема
-			/// Жалко ее не использовать очевидным образом, а не скрытым (да и добавится количество вопросов).
-			/// Если добавишь где-то свои формулировки, будет только плюсом, но это не обязательно
+					 helpText: "An instance of a class is traditionally known as an object. However, Swift structures and classes are much closer in functionality than in other languages. Functionality that applies to instances of a class can be applied to instances of a structure as well. Because of this, the more general term instance is used."),
 			
 			Question(question: ["Can structures define properties to store values?",
 								"Can classes define properties to store values?",
@@ -86,7 +80,7 @@ class StructuresAndClassesSet {
 					 helpText: "Structures and classes in Swift have many things in common. Both can define subscripts to provide access to their values using subscript syntax."),
 			
 			Question(question: ["Inheritance enables one structure to inherit the characteristics of another. Is that true?",
-								"One class cannot inherit the characteristics of another. Is that true?"],
+								"Do both classes and structures support inheritance?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -96,19 +90,19 @@ class StructuresAndClassesSet {
 					 helpText: "Classes have additional capabilities that structures don’t have: Inheritance enables one class to inherit the characteristics of another."),
 			
 			Question(question: ["Can structures define initializers to set up their initial state?",
-								"Can classes define initializers to set up their initial state?",
-								"Can structures be extended to expand their functionality beyond a default implementation?",
-								"Can classes be extended to expand their functionality beyond a default implementation?"],
+								"Can both classes and structures define initializers to set up their initial state?",
+								"Can classes be extended to expand their functionality beyond a default implementation?",
+								"Can both classes and structures be extended to expand their functionality beyond a default implementation?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 8081,
-					 helpText: "Structures and classes in Swift have many things in common. Both can: Define initializers to set up their initial state. Be extended to expand their functionality beyond a default implementation."),
+					 helpText: "Structures and classes in Swift have many things in common. Both can define initializers to set up their initial state and be extended to expand their functionality beyond a default implementation."),
 			
-			Question(question: ["Can the classes conform to protocols to provide standard functionality of a certain kind?",
-								"Can the structures conform to protocols to provide standard functionality of a certain kind??"],
+			Question(question: ["Can classes conform to protocols to provide standard functionality of a certain kind?",
+								"Can structures conform to protocols to provide standard functionality of a certain kind?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -117,30 +111,27 @@ class StructuresAndClassesSet {
 					 questionId: 809,
 					 helpText: "Structures and classes in Swift have many things in common. Both can conform to protocols to provide standard functionality of a certain kind."),
 			
-			Question(question: ["Type casting enables you to check and interpret the type of a structure instance at runtime. Is that true?",
-								"You can't check and interpret the type of a class instance at runtime. Is that true?"],
+			Question(question: ["Type casting enables you to check and interpret the type of a structure instance at runtime. Is that correct?",
+								"Can you apply type casting to structures?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 8101,
-					 helpText: "Classes have additional capabilities that structures don’t have: Type casting enables you to check and interpret the type of a class instance at runtime."),
+					 helpText: "Unlike structures, classes support type casting that enables you to check and interpret the type of a class instance at runtime."),
 			
 			Question(question: ["Deinitializers enable an instance of a class to free up any resources it has assigned. Is that true?",
-								"Does deinitializers enable an instance of a class to free up any resources it has assigned?"],
+								"Do deinitializers enable an instance of a class to free up any resources it has assigned?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 8100,
-					 helpText: "Classes have additional capabilities that structures don’t have: Deinitializers enable an instance of a class to free up any resources it has assigned."),
+					 helpText: "Another feature structures don’t support is deinitializers. They enable an instance of a class to free up any resources it has assigned."),
 			
-			/// Дальше все идет как было
-			/// С 811 что-то нужно будет придумать наверное, потому что какой-то он несуразный... Что думаешь?
-			
-			Question(question: ["Instances of what type you need to prefer to use in your code?"],
+			Question(question: ["Instances of what type(s) are preferable in Swift as soon as they provide all the necessary features?"],
 					 image: "",
 					 optionA: "Structures and enumerations",
 					 optionB: "Classes",
@@ -167,9 +158,7 @@ class StructuresAndClassesSet {
 					 questionId: 813,
 					 helpText: "Give properties and methods lowerCamelCase names (such as frameRate and incrementCount) to differentiate them from type names."),
 			
-			/// 814 - Здесь редактированный хелптекст и оттуда вытекал вопрос
-			
-			Question(question: ["Does structures and classes themselves describe specifics of any objects?"],
+			Question(question: ["Do structures and classes themselves describe specifics of any objects?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -178,8 +167,8 @@ class StructuresAndClassesSet {
 					 questionId: 814,
 					 helpText: "Structures and classes themselves don’t describe specifics of any objects. To do that, you need to create an instance of the structure or class."),
 			
-			Question(question: ["How can you initialized a class instance with the simplest form of initializer syntax?",
-								"How can you initialized a structures instance with the simplest form of initializer syntax?"],
+			Question(question: ["How can you initialize a class or structure instance with the simplest form of initializer syntax?",
+								"What is the simplest form of initializer syntax you can use to initialize a structure instance?"],
 					 image: "",
 					 optionA: "Name()",
 					 optionB: "Name = ()",
@@ -188,7 +177,7 @@ class StructuresAndClassesSet {
 					 questionId: 815,
 					 helpText: "Structures and classes both use initializer syntax for new instances. The simplest form of initializer syntax uses the type name of the class or structure followed by empty parentheses, such as Resolution() or VideoMode() for example. This creates a new instance of the class or structure, with any properties initialized to their default values."),
 			
-			Question(question: ["You can access the properties of an instance using that syntax",
+			Question(question: ["Which of the following can you use to access the properties of an instance?",
 								"With that syntax we can access the properties of an instance"],
 					 image: "",
 					 optionA: "Dot syntax",
@@ -201,13 +190,13 @@ class StructuresAndClassesSet {
 			Question(question: ["Can we use dot syntax to assign a new value to a property?"],
 					 image: "",
 					 optionA: "Yes, if it's a variable property",
-					 optionB: "We can in any case",
+					 optionB: "We can do it without any restrictions",
 					 optionC: "Yes, if it's a constant property",
 					 optionD: "No",
 					 questionId: 817,
 					 helpText: "You can access the properties of an instance using dot syntax. In dot syntax, you write the property name immediately after the instance name, separated by a period (.), without any spaces, you can drill down into subproperties, and also you can use dot syntax to assign a new value to a variable property."),
 			
-			Question(question: ["Structures and classes have an automatically generated memberwise initializer. Is that true?"],
+			Question(question: ["Both structures and classes have an automatically generated memberwise initializer. Is that true?"],
 					 image: "",
 					 optionA: "Only structures",
 					 optionB: "Only classes",
@@ -235,18 +224,18 @@ class StructuresAndClassesSet {
 					 questionId: 820,
 					 helpText: "All of the basic types in Swift—integers, floating-point numbers, Booleans, strings, arrays and dictionaries—are value types, and are implemented as structures behind the scenes."),
 			
-			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Instead of making a copy immediately the elements are copied ___",
-								"Collections defined by the standard library like dictionaries use an optimization to reduce the performance cost of copying. Instead of making a copy immediately the elements are copied ___",
-								"Collections defined by the standard library like strings use an optimization to reduce the performance cost of copying. Instead of making a copy immediately the elements are copied ___"],
+			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Within this approach, the elements are copied ___",
+								"Swift optimizes the cost of copying of collections defined by the standard library like dictionaries or arrays. How does it copy the elements represented by those types?",
+								"Collections defined by the standard library like strings use an optimization to reduce the performance cost of copying. Basically, Swift ensures that the elements are copied ___"],
 					 image: "",
 					 optionA: "Just before the modification",
 					 optionB: "Async in the main thread",
 					 optionC: "In the global thread",
-					 optionD: "With special algorithm",
+					 optionD: "Immediately",
 					 questionId: 821,
 					 helpText: "Collections defined by the standard library like arrays, dictionaries, and strings use an optimization to reduce the performance cost of copying. Instead of making a copy immediately, these collections share the memory where the elements are stored between the original instance and any copies. If one of the copies of the collection is modified, the elements are copied just before the modification. The behavior you see in your code is always as if a copy took place immediately."),
 			
-			Question(question: ["What values will we get into console?"],
+			Question(question: ["What values will we expect to see in console?"],
 					 image: "StructuresAndClasses22",
 					 optionA: "2048 and 1920",
 					 optionB: "2048 and 2048",
@@ -255,7 +244,7 @@ class StructuresAndClassesSet {
 					 questionId: 822,
 					 helpText: "Correct answer: 2048 и 1920. When we set cinema to the current value of hd, the values that were stored in hd were copied to the new cinema instance. And as a result, we have two completely separate instances that contain the same values. Since they are separate instances, setting the cinema width to 2048 will not affect the hd width in any way."),
 			
-			Question(question: ["What type is referense type?"],
+			Question(question: ["Choose the option that contains only reference type(s)"],
 					 image: "",
 					 optionA: "Classes",
 					 optionB: "Structures and enumerations",
@@ -266,43 +255,41 @@ class StructuresAndClassesSet {
 			
 			Question(question: ["How can we find out whether two constants or variables refer to exactly the same instance of a class or not?"],
 					 image: "",
-					 optionA: "Identical to (===)",
+					 optionA: "Identical to operator (===)",
 					 optionB: "Comparison operator ==",
 					 optionC: "Assignment operator =",
 					 optionD: "",
 					 questionId: 826,
 					 helpText: "Because classes are reference types, it’s possible for multiple constants and variables to refer to the same single instance of a class behind the scenes. (The same isn’t true for structures and enumerations, because they are always copied when they are assigned to a constant or variable, or passed to a function). It can sometimes be useful to find out whether two constants or variables refer to exactly the same instance of a class. To enable this, Swift provides two identity operators: Identical to (===) and Not identical to (!==)"),
 			
-			/// Пожалуйста переведи три следующих вопроса, у меня не хватает навыка
-			
-			Question(question: ["В чем сложность работы со ссылочными типами?",
-								"Почему труднее работать с экземплярами класса со ссылочным типом?"],
+			Question(question: ["Why can reference types be challenging to deal with?",
+								"Considering that class instances are reference types, what the challenges that may arise while working with them?"],
 					 image: "",
-					 optionA: "Трудно отследить изменения",
-					 optionB: "Создается много копий",
-					 optionC: "Проблематичнее поддерживать",
+					 optionA: "Hard to keep track of all changes",
+					 optionB: "Too many copies are created",
+					 optionC: "",
 					 optionD: "",
 					 questionId: 824,
-					 helpText: "Бывает очень сложно следить за ссылочными типами. Если две разные переменные, ссылающиеся на один экземпляр, находились бы в разных уголках вашей программы, то было бы сложно найти все места, где мы их меняем. Где бы вы не использовали одной переменной, вам так же бы приходилось думать и о второй, и наоборот. В отличии от ссылочного типа, с типами значения дела обстоят значительно проще, так как весь код, который взаимодействует с одним и тем же значением, находится рядом, в вашем исходном файле."),
+					 helpText: "It can be problematic to keep track of the reference type instances. If two different variables that refer to the same instance were used in different parts of the program, it might not be easy to find all the places where we changed them. Wherever you used one variable, you would also have to think about the second one and vice versa. Unlike the reference types, this process is more straightforward with value types because all the code that interacts with the same value tend to be located closer to that value in your source file."),
 			
-			Question(question: ["Если данный код скомпилируется, что мы получим в консоль?",
-								"Что выводится в консоль?"],
+			Question(question: ["With the following code, what would you expect to see?",
+								"What will be the console output after executing the following code?"],
 					 image: "StructuresAndClasses25",
 					 optionA: "1080",
-					 optionB: "Ошибка присвоения",
-					 optionC: "Ошибка компиляции",
+					 optionB: "Assignment error",
+					 optionC: "Runtime error",
 					 optionD: "0",
 					 questionId: 825,
-					 helpText: "Обратите внимание, что hd объявлена как константа, а не переменная. Однако вы все равно можете менять hd.width, потому что значения hd сами по себе не меняются, так как константа не «содержит» значение экземпляра Resolution, а напротив, она лишь ссылается на него. Это свойство width лежащее в основе Resolution, которое меняется (поскольку оно var)"),
+					 helpText: "Note that hd is declared as a constant, not a variable. However, you can still change hd.width, because hd values themselves don't change. The constant does not \"contain\" the value of the Resolution instance, it only refers to it. The .width property is the underlying property of Resolution, and it can be changed since it is var."),
 			
-			Question(question: ["Что мы получим в консоль?"],
+			Question(question: ["What result will we get after executing this code?"],
 					 image: "StructuresAndClasses27",
 					 optionA: "B A",
 					 optionB: "A B",
 					 optionC: "B A C",
 					 optionD: "A B C",
 					 questionId: 827,
-					 helpText: "Когда вызывается x.b(), печатается «B». Внутри b() осуществляется доступ к переменной a, который выполняет код при закрытии ленивого хранимого свойства, печатая «A». Поскольку b() возвращает значение, отличное от nil, c никогда не будет вызвана. В результате программа выводит «B» и «A». Ленивые хранимые свойства (определяются с помощью ключевого слова lazy) представляют такие свойства, значение которых устанавливается при первом обращении к ним. Использование подобных свойств позволяет более эффективно использовать память, не загромождая ее ненужными объектами, которые могут не потребоваться.")
+					 helpText: "Once x.b() is called, \"B\" gets printed. After that, b() accesses the variable a, that prints \"A\" as soon as the lazy stored property is triggered. Since b() returns a value other than nil, c will never be called. As a result, the program prints \"B\" and \"A\". Lazy stored properties (defined with the lazy keyword) represent properties whose value is set the first time they are addressed. Such properties allow using memory more efficiently, without overloading it with unnecessary objects that may not be needed.")
 		]
 	}
 }
