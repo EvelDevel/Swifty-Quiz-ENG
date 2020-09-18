@@ -9,9 +9,9 @@ import Foundation
 class PropertiesSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question(question: ["This properties store constant and variable values as part of an instance",
-								"This properties are provided only by classes and structures",
-								"Which properties store constant and variable values as part of an instance and provided only by classes and structures?"],
+			Question(question: ["The kind of properties that stores constant and variable values as part of an instance",
+								"These properties are provided only by classes and structures",
+								"Which properties store constant and variable values as part of an instance and are not provided by enumerations?"],
 					 image: "",
 					 optionA: "Stored properties",
 					 optionB: "Computed properties",
@@ -20,11 +20,11 @@ class PropertiesSet {
 					 questionId: 902,
 					 helpText: "Properties associate values with a particular class, structure, or enumeration. Stored properties store constant and variable values as part of an instance, whereas computed properties calculate (rather than store) a value. Computed properties are provided by classes, structures, and enumerations. Stored properties are provided only by classes and structures."),
 			
-			Question(question: ["Which properties associated with the type itself?",
-								"This properties associated with the type itself"],
+			Question(question: ["Which option is the name of the properties associated with a whole type?",
+								"How do we call properties associated the type itself?"],
 					 image: "",
 					 optionA: "Type properties",
-					 optionB: "Computed properties",
+					 optionB: "Data properties",
 					 optionC: "Stored properties",
 					 optionD: "",
 					 questionId: 903,
@@ -42,7 +42,7 @@ class PropertiesSet {
 					 helpText: "You can define property observers to monitor changes in a property’s value, which you can respond to with custom actions. Property observers can be added to stored properties you define yourself, and also to properties that a subclass inherits from its superclass."),
 			
 			Question(question: ["Constant stored properties introduced by this keyword",
-								"Constant stored properties starts with this keyword"],
+								"Which keyword is used for constant stored properties?"],
 					 image: "",
 					 optionA: "let",
 					 optionB: "var",
@@ -53,8 +53,8 @@ class PropertiesSet {
 			
 			Question(question: ["Can you provide a default value for a stored property as part of its definition?",
 								"Can you set and modify the initial value for a stored property during initialization?",
-								"Can you provide a default value for a stored property as part of its definition even if it's constant stored properties?",
-								"Can you set and modify the initial value for a stored property during initialization even if it's constant stored properties?"],
+								"Can you provide a default value for a stored property as part of its definition if it's a constant stored property?",
+								"Can you set and modify the initial value for a stored property during initialization even if it's a constant stored property?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
@@ -63,8 +63,6 @@ class PropertiesSet {
 					 questionId: 906,
 					 helpText: "You can provide a default value for a stored property as part of its definition. You can also set and modify the initial value for a stored property during initialization. This is true even for constant stored properties."),
 			
-			/// 907 и 909 - самописный хелп (вроде нормально перевел)
-			
 			Question(question: ["What is going to happen after running following code?"],
 					 image: "Properties7",
 					 optionA: "We'll get an error",
@@ -72,9 +70,9 @@ class PropertiesSet {
 					 optionC: "Nothing is going to happen",
 					 optionD: "",
 					 questionId: 907,
-					 helpText: "FixedRange instances have a variable storage property firstValue and a constant storage property length. In the example above, the length property was initialized when we created a new range, which cannot be further modified since this property is constant."),
+					 helpText: "FixedRange instances have a variable stored property firstValue and a constant stored property length. In our example, the length property was initialized when we created a new range, which cannot be further modified since this property is constant."),
 			
-			Question(question: ["What is going to happen after running following code?"],
+			Question(question: ["What is going to happen after executing following code?"],
 					 image: "Properties9",
 					 optionA: "We will change firstValue",
 					 optionB: "We'll get an error",
@@ -83,7 +81,7 @@ class PropertiesSet {
 					 questionId: 909,
 					 helpText: "If you assign an instance of a reference type to a constant (class instance), then it can still change variable properties (var)."),
 			
-			Question(question: ["What is going to happen after running following code?"],
+			Question(question: ["What will happen after following code is executed?"],
 					 image: "Properties8",
 					 optionA: "We'll get an error",
 					 optionB: "We will change firstValue",
@@ -92,8 +90,8 @@ class PropertiesSet {
 					 questionId: 908,
 					 helpText: "If you create an instance of a structure and assign that instance to a constant, you cannot modify the instance’s properties, even if they were declared as variable properties. Because rangeOfFourItems is declared as a constant (with the let keyword), it is not possible to change its firstValue property, even though firstValue is a variable property. This behavior is due to structures being value types. When an instance of a value type is marked as a constant, so are all of its properties."),
 			
-			Question(question: ["This property is a property whose initial value is not calculated until the first time it is used",
-								"Which stored property initial value is not calculated until the first time it is used?"],
+			Question(question: ["The property whose initial value is not calculated until the first time it is used",
+								"If there’s a special stored property type whose initial value is not calculated until the first time it is used, how is it called?"],
 					 image: "",
 					 optionA: "Lazy stored property",
 					 optionB: "Stored property",
@@ -103,17 +101,17 @@ class PropertiesSet {
 					 helpText: "A lazy stored property is a property whose initial value is not calculated until the first time it is used. You indicate a lazy stored property by writing the lazy modifier before its declaration."),
 			
 			Question(question: ["You indicate a lazy stored property by writing this modifier",
-								"What modifier indicates lazy stored properties?"],
+								"What modifier indicates a stored property whose initial value is calculated only when it is used for the first time?"],
 					 image: "",
 					 optionA: "lazy",
-					 optionB: "laziest",
+					 optionB: "delayed",
 					 optionC: "passive",
 					 optionD: "slow",
 					 questionId: 911,
 					 helpText: "You indicate a lazy stored property by writing the lazy modifier before its declaration."),
 			
-			Question(question: ["How we need to declare a lazy property?",
-								"We need to declare s lazy stored property as this"],
+			Question(question: ["How do we need to declare a lazy property?",
+								"We need to declare a lazy stored property ..."],
 					 image: "",
 					 optionA: "As a variable (var)",
 					 optionB: "As a constant (let)",
@@ -122,18 +120,16 @@ class PropertiesSet {
 					 questionId: 912,
 					 helpText: "You must always declare a lazy property as a variable (with the var keyword), because its initial value might not be retrieved until after instance initialization completes. Constant properties must always have a value before initialization completes, and therefore cannot be declared as lazy."),
 			
-			Question(question: ["When the lazy properties are useful?"],
+			Question(question: ["When can lazy properties be useful?"],
 					 image: "",
-					 optionA: "You need avoid unnecessary initialization",
-					 optionB: "You need instant initialization",
-					 optionC: "You need partial initialization",
+					 optionA: "If you need to avoid unnecessary initialization",
+					 optionB: "If you need instant initialization",
+					 optionC: "If you need partial initialization",
 					 optionD: "",
 					 questionId: 913,
 					 helpText: "Lazy properties are useful when the initial value for a property is dependent on outside factors whose values are not known until after an instance’s initialization is complete. Lazy properties are also useful when the initial value for a property requires complex or computationally expensive setup that should not be performed unless or until it is needed."),
 			
-			/// Здесь мутная формулировка в 914, но по другому трудно сделать, там много моментов надо уточнить в вопросе
-			
-			Question(question: ["Is there a guarantee that the property will be initialized only once, if it's marked with the lazy modifier and accessed by multiple threads simultaneously (and the property has not yet been initialized)?"],
+			Question(question: ["Does Swift ensures that a lazy property will be initialized only once, if it's accessed by multiple threads simultaneously (and the property has not yet been initialized)?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -142,17 +138,17 @@ class PropertiesSet {
 					 questionId: 914,
 					 helpText: "If a property marked with the lazy modifier is accessed by multiple threads simultaneously and the property has not yet been initialized, there’s no guarantee that the property will be initialized only once."),
 			
-			Question(question: ["This properties don't actually store a value",
-								"This properties provide a getter and an optional setter to retrieve and set other properties and values indirectly"],
+			Question(question: ["The properties that don't actually store a value",
+								"This kind of properties provides a getter and an optional setter to retrieve and set other properties and values indirectly"],
 					 image: "",
 					 optionA: "Computed properties",
-					 optionB: "Type properties",
+					 optionB: "Calculated properties",
 					 optionC: "Stored properties",
 					 optionD: "",
 					 questionId: 915,
 					 helpText: "In addition to stored properties, classes, structures, and enumerations can define computed properties, which do not actually store a value. Instead, they provide a getter and an optional setter to retrieve and set other properties and values indirectly."),
 			
-			Question(question: ["If a computed property’s setter doesn’t define a name for the new value to be set, this name is used."],
+			Question(question: ["If a computed property’s setter doesn’t define a name for the new value to be set, this is the name it gets by default"],
 					 image: "",
 					 optionA: "newValue",
 					 optionB: "new",
@@ -162,7 +158,7 @@ class PropertiesSet {
 					 helpText: "If a computed property’s setter doesn’t define a name for the new value to be set, a default name of newValue is used."),
 			
 			Question(question: ["How a computed property with a getter but no setter called?",
-								"This property can be accessed through dot syntax, but cannot be set to a different value (property with no setter)?"],
+								"The property that can be accessed through dot syntax, but cannot be set to a different value (a property with no setter)?"],
 					 image: "",
 					 optionA: "A read-only computed property",
 					 optionB: "A write-only computed property",
@@ -171,8 +167,8 @@ class PropertiesSet {
 					 questionId: 917,
 					 helpText: "A computed property with a getter but no setter is known as a read-only computed property. A read-only computed property always returns a value, and can be accessed through dot syntax, but cannot be set to a different value."),
 			
-			Question(question: ["How you need to declare computed properties—including read-only computed properties?",
-								"You must declare computed properties—including read-only computed properties as this"],
+			Question(question: ["How do you declare computed properties—including read-only computed properties?",
+								"You must declare computed properties—including read-only computed properties ..."],
 					 image: "",
 					 optionA: "As variable properties (var)",
 					 optionB: "As constant properties (let)",
@@ -190,7 +186,7 @@ class PropertiesSet {
 					 questionId: 919,
 					 helpText: "You can simplify the declaration of a read-only computed property by removing the get keyword and its braces."),
 			
-			Question(question: ["What will we get to console after running this code?"],
+			Question(question: ["What will we get to the console after running the following code?"],
 					 image: "Properties20",
 					 optionA: "40.0",
 					 optionB: "40",
@@ -198,8 +194,6 @@ class PropertiesSet {
 					 optionD: "",
 					 questionId: 920,
 					 helpText: "Correct answer: 40.0. This example defines a new structure called Cuboid, which represents a 3D rectangular box with width, height, and depth properties. This structure also has a read-only computed property called volume, which calculates and returns the current volume of the cuboid. It doesn’t make sense for volume to be settable, because it would be ambiguous as to which values of width, height, and depth should be used for a particular volume value. Nonetheless, it is useful for a Cuboid to provide a read-only computed property to enable external users to discover its current calculated volume."),
-			
-			/// 921 мог намудрить с вопросом (с will и be)
 			
 			Question(question: ["Will the property observers be called every time a property’s value is set, even if the new value is the same as the property’s current value?"],
 					 image: "",
@@ -210,14 +204,12 @@ class PropertiesSet {
 					 questionId: 921,
 					 helpText: "Property observers are called every time a property’s value is set, even if the new value is the same as the property’s current value."),
 			
-			/// Здесь был вопрос 922, который я не могу найти в документации, причем в русской тоже. Возможно это "пофиксили" (обновили)
-			
-			Question(question: ["Pick the correct property observers"],
+			Question(question: ["Pick the correct pair of property observers"],
 					 image: "",
-					 optionA: "willSet и didSet",
-					 optionB: "set и get",
-					 optionC: "willSet и didGet",
-					 optionD: "willGet и didSet",
+					 optionA: "willSet and didSet",
+					 optionB: "set and get",
+					 optionC: "willSet and didGet",
+					 optionD: "willGet and didSet",
 					 questionId: 923,
 					 helpText: "You have the option to define either or both of these observers on a property: willSet is called just before the value is stored. didSet is called immediately after the new value is stored."),
 			
@@ -239,11 +231,11 @@ class PropertiesSet {
 					 questionId: 925,
 					 helpText: "didSet is called immediately after the new value is stored."),
 			
-			Question(question: ["If you won't specify a name for parameter as part of your willSet implementation, it will be ... by default"],
+			Question(question: ["If you don’t specify a name for a parameter as part of your willSet implementation, it will be ... by default"],
 					 image: "",
 					 optionA: "newValue",
 					 optionB: "new",
-					 optionC: "old",
+					 optionC: "setValue",
 					 optionD: "oldValue",
 					 questionId: 926,
 					 helpText: "If you implement a willSet observer, it’s passed the new property value as a constant parameter. You can specify a name for this parameter as part of your willSet implementation. If you don’t write the parameter name and parentheses within your implementation, the parameter is made available with a default parameter name of newValue."),
@@ -251,7 +243,7 @@ class PropertiesSet {
 			Question(question: ["If you won't specify a name for parameter as part of your didSet implementation, it will be ... by default"],
 					 image: "",
 					 optionA: "oldValue",
-					 optionB: "new",
+					 optionB: "prevValue",
 					 optionC: "old",
 					 optionD: "newValue",
 					 questionId: 927,
@@ -295,21 +287,18 @@ class PropertiesSet {
 					 questionId: 932,
 					 helpText: "You can define properties that belong to the type itself, not to any one instance of that type. There will only ever be one copy of these properties, no matter how many instances of that type you create. These kinds of properties are called type properties. Type properties are useful for defining values that are universal to all instances of a particular type, such as a constant property that all instances can use (like a static constant in C), or a variable property that stores a value that is global to all instances of that type (like a static variable in C)."),
 			
-			/// Ниже добавляю вопросы вместо двух удаленных
-			/// Все айдишники потом буду разом поправлять когда допереведем
-			
 			Question(question: ["Properties that belong to the type itself",
 								"Properties that belong to the type itself, not to any one instance of that type",
-								"There will only ever be one copy of ... properties, no matter how many instances of that type you create"],
+								"There will only ever be one copy of ... properties, no matter how many instances of a type you create"],
 					 image: "",
 					 optionA: "Type properties",
 					 optionB: "Stored properties",
-					 optionC: "Computed properties",
+					 optionC: "Global properties",
 					 optionD: "",
 					 questionId: 931,
 					 helpText: "You can define properties that belong to the type itself, not to any one instance of that type. There will only ever be one copy of these properties, no matter how many instances of that type you create. These kinds of properties are called type properties."),
 			
-			Question(question: ["Type properties are useful for this"],
+			Question(question: ["Type properties are useful for the following"],
 					 image: "",
 					 optionA: "Defining universal values",
 					 optionB: "Defining local values",
@@ -318,8 +307,8 @@ class PropertiesSet {
 					 questionId: 922,
 					 helpText: "Type properties are useful for defining values that are universal to all instances of a particular type, such as a constant property that all instances can use (like a static constant in C), or a variable property that stores a value that is global to all instances of that type (like a static variable in C)."),
 			
-			Question(question: ["Do you need to give stored type properties a default value?",
-								"Unlike stored instance properties, you must always give stored type properties a default value. Is that true?",
+			Question(question: ["Do you always need to give stored type properties a default value?",
+								"Unlike stored instance properties, you must always give stored type properties a default value. Is that correct?",
 								"You must always give stored type properties a default value. Is that true?"],
 					 image: "",
 					 optionA: "Yes",
@@ -338,22 +327,19 @@ class PropertiesSet {
 					 questionId: 934,
 					 helpText: "Stored type properties are lazily initialized on their first access. They are guaranteed to be initialized only once, even when accessed by multiple threads simultaneously, and they do not need to be marked with the lazy modifier."),
 			
-			/// Добавляю еще два вопроса, чтобы были
-			/// Если третий ответ посчитаешь лишним - убери (просто добавил чтобы не было подряд много вопросов с ответами да / нет)
-			
 			Question(question: ["Are stored type properties guaranteed to be initialized only once, even when accessed by multiple threads simultaneously?",
-								"Does Swift guaranteed that stored type properties will be initialized only once?"],
+								"Does Swift ensure that stored type properties are initialized only once?"],
 					 image: "",
 					 optionA: "Yes",
 					 optionB: "No",
-					 optionC: "We need specify that behavior",
+					 optionC: "We must specify that behavior",
 					 optionD: "",
 					 questionId: 9341,
 					 helpText: "Stored type properties are lazily initialized on their first access. They are guaranteed to be initialized only once, even when accessed by multiple threads simultaneously, and they do not need to be marked with the lazy modifier."),
 			
 			Question(question: ["Are stored type properties need to be marked with the lazy modifier?",
-								"Do you need to marked stored type properties with the lazy modifier?",
-								"We must marked stored type properties with lazy modifier. Is that true?"],
+								"Do you need to mark stored type properties with the lazy modifier?",
+								"We must mark stored type properties with the lazy modifier. Is that right?"],
 					 image: "",
 					 optionA: "No",
 					 optionB: "Yes",
@@ -362,10 +348,10 @@ class PropertiesSet {
 					 questionId: 9342,
 					 helpText: "Stored type properties are lazily initialized on their first access. They are guaranteed to be initialized only once, even when accessed by multiple threads simultaneously, and they do not need to be marked with the lazy modifier."),
 			
-			Question(question: ["You define type properties with ... keyword?"],
+			Question(question: ["You define type properties with the ... keyword"],
 					 image: "",
 					 optionA: "static",
-					 optionB: "fileprivate",
+					 optionB: "global",
 					 optionC: "private",
 					 optionD: "public",
 					 questionId: 935,
@@ -374,7 +360,7 @@ class PropertiesSet {
 			Question(question: ["For computed type properties for class types, you can use ... keyword instead the static keyword?"],
 					 image: "",
 					 optionA: "class",
-					 optionB: "struct",
+					 optionB: "type",
 					 optionC: "public",
 					 optionD: "",
 					 questionId: 936,
