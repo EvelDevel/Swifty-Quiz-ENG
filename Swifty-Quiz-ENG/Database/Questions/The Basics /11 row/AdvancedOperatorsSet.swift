@@ -70,7 +70,7 @@ class AdvancedOperatorsSet {
 					 questionId: 2456,
 					 helpText: "This is the bitwise NOT operator (~). It inverts all bits in a number."),
 			
-			Question(question: ["The bitwise NOT operator is a ___ operator"],
+			Question(question: ["The bitwise NOT operator is a ... operator"],
 					 image: "",
 					 optionA: "prefix",
 					 optionB: "postfix",

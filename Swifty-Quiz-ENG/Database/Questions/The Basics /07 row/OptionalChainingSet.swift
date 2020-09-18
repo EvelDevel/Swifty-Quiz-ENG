@@ -50,7 +50,7 @@ class OptionalChainingSet {
 					 helpText: "Forced unwrapping triggers a runtime error when the optional is nil."),
 
 			Question(question: ["What will an Int return when it accessed through optional chaining?",
-								"A property that normally returns an Int will return an ___ when accessed through optional chaining"],
+								"A property that normally returns an Int will return an ... when accessed through optional chaining"],
 					 image: "",
 					 optionA: "Int?",
 					 optionB: "Int",

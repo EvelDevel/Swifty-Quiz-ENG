@@ -27,7 +27,7 @@ class InheritanceSet {
 					 questionId: 1226,
 					 helpText: "No. Inheritance is a fundamental behavior that differentiates classes from other types in Swift."),
 			
-			Question(question: ["When one class inherits from another, the inheriting class is known as a ___",
+			Question(question: ["When one class inherits from another, the inheriting class is known as a ...",
 								"Choose the word we use to refer to a class that inherits all the characteristics from another class?"],
 					 image: "",
 					 optionA: "Subclass",
@@ -37,7 +37,7 @@ class InheritanceSet {
 					 questionId: 1203,
 					 helpText: "A class can inherit methods, properties, and other characteristics from another class. When one class inherits from another, the inheriting class is known as a subclass, and the class it inherits from is known as its superclass."),
 			
-			Question(question: ["When one class inherits from another, the class it inherits from is known as ___",
+			Question(question: ["When one class inherits from another, the class it inherits from is known as ...",
 								"How do we call a class that provides all of its characteristics, e.g., methods, properties, etc., to another class?"],
 					 image: "",
 					 optionA: "Superclass",
@@ -78,7 +78,7 @@ class InheritanceSet {
 					 questionId: 1207,
 					 helpText: "Classes can also add property observers to inherited properties in order to be notified when the value of a property changes. Property observers can be added to any property, regardless of whether it was originally defined as a stored or computed property."),
 			
-			Question(question: ["Any class that does not inherit from another class is known as a ___",
+			Question(question: ["Any class that does not inherit from another class is known as a ...",
 								"A class that doesn’t inherit from another class",
 								"How do we refer to a class that doesn't inherit from another class?"],
 					 image: "",
@@ -99,8 +99,8 @@ class InheritanceSet {
 					 questionId: 1209,
 					 helpText: "Subclassing is the act of basing a new class on an existing class. The subclass inherits characteristics from the existing class, which you can then refine. You can also add new characteristics to the subclass."),
 			
-			Question(question: ["To indicate that a subclass has a superclass, write the subclass name before the superclass name, separated by ___",
-								"When you indicate that a subclass has a superclass, their names should be separated by ___"],
+			Question(question: ["To indicate that a subclass has a superclass, write the subclass name before the superclass name, separated by ...",
+								"When you indicate that a subclass has a superclass, their names should be separated by ..."],
 					 image: "",
 					 optionA: "Colon (:)",
 					 optionB: "Semicolon (;)",
@@ -129,7 +129,7 @@ class InheritanceSet {
 					 questionId: 1212,
 					 helpText: "A subclass can provide its own custom implementation of an instance method, type method, instance property, type property, or subscript that it would otherwise inherit from a superclass. This is known as overriding."),
 			
-			Question(question: ["To modify a characteristic that would otherwise be inherited, you prefix your overriding definition with the ___ keyword",
+			Question(question: ["To modify a characteristic that would otherwise be inherited, you prefix your overriding definition with the ... keyword",
 								"Which of the following is the keyword required when you want to modify methods or properties of a superclass",
 								"The keyword for overriding"],
 					 image: "",
@@ -219,7 +219,7 @@ class InheritanceSet {
 					 questionId: 1221,
 					 helpText: "You cannot add property observers to inherited constant stored properties or inherited read-only computed properties. The value of these properties cannot be set, and so it is not appropriate to provide a willSet or didSet implementation as part of an override."),
 			
-			Question(question: ["You can prevent a method, property, or subscript from being overridden by marking it as ___",
+			Question(question: ["You can prevent a method, property, or subscript from being overridden by marking it as ...",
 								"You can prevent a method from being overridden by writing this modifier before the method",
 								"Which keyword do you need to use to prevent a property from being overridden?",
 								"Which keyword do you need to put before a subscript to prevent it from being overridden?"],
@@ -231,9 +231,9 @@ class InheritanceSet {
 					 questionId: 1222,
 					 helpText: "You can prevent a method, property, or subscript from being overridden by marking it as final. Do this by writing the final modifier before the method, property, or subscript’s introducer keyword (such as final var, final func, final class func, and final subscript)."),
 			
-			Question(question: ["Any attempt to override a final method in a subclass will be reported as a ___",
-								"Any attempt to override a final property in a subclass will be reported as a ___",
-								"Any attempt to override a final subscript in a subclass is reported as a ___"],
+			Question(question: ["Any attempt to override a final method in a subclass will be reported as a ...",
+								"Any attempt to override a final property in a subclass will be reported as a ...",
+								"Any attempt to override a final subscript in a subclass is reported as a ..."],
 					 image: "",
 					 optionA: "Compile-time error",
 					 optionB: "It's not reported",

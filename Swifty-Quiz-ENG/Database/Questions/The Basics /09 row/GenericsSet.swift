@@ -11,7 +11,7 @@ class GenericsSet {
 		return [
 			Question(question: ["What can you create with generics?",
 								"What do generics help you to implement?",
-								"Generics help you create ___"],
+								"Generics help you create ..."],
 					 image: "",
 					 optionA: "Flexible, reusable functions",
 					 optionB: "Collections",
@@ -131,7 +131,7 @@ class GenericsSet {
 					 questionId: 2113,
 					 helpText: "When you extend a generic type, you don’t provide a type parameter list as part of the extension’s definition. Instead, the type parameter list from the original type definition is available within the body of the extension, and the original type parameter names are used to refer to the type parameters from the original definition."),
 			
-			Question(question: ["___ specify that a type parameter must inherit from a specific class, or conform to a particular protocol or protocol composition"],
+			Question(question: ["... specify that a type parameter must inherit from a specific class, or conform to a particular protocol or protocol composition"],
 					 image: "",
 					 optionA: "Type constraints",
 					 optionB: "Generic bounds",

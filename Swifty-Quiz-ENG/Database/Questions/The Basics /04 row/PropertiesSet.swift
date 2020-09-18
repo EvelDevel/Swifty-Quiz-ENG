@@ -221,7 +221,7 @@ class PropertiesSet {
 					 questionId: 923,
 					 helpText: "You have the option to define either or both of these observers on a property: willSet is called just before the value is stored. didSet is called immediately after the new value is stored."),
 			
-			Question(question: ["___ observer is called just before the value is stored"],
+			Question(question: ["... observer is called just before the value is stored"],
 					 image: "",
 					 optionA: "willSet",
 					 optionB: "didSet",
@@ -230,7 +230,7 @@ class PropertiesSet {
 					 questionId: 924,
 					 helpText: "willSet is called just before the value is stored."),
 			
-			Question(question: ["___ observer is called immediately after the new value is stored"],
+			Question(question: ["... observer is called immediately after the new value is stored"],
 					 image: "",
 					 optionA: "didSet",
 					 optionB: "willSet",
@@ -239,7 +239,7 @@ class PropertiesSet {
 					 questionId: 925,
 					 helpText: "didSet is called immediately after the new value is stored."),
 			
-			Question(question: ["If you won't specify a name for parameter as part of your willSet implementation, it will be ___ by default"],
+			Question(question: ["If you won't specify a name for parameter as part of your willSet implementation, it will be ... by default"],
 					 image: "",
 					 optionA: "newValue",
 					 optionB: "new",
@@ -248,7 +248,7 @@ class PropertiesSet {
 					 questionId: 926,
 					 helpText: "If you implement a willSet observer, it’s passed the new property value as a constant parameter. You can specify a name for this parameter as part of your willSet implementation. If you don’t write the parameter name and parentheses within your implementation, the parameter is made available with a default parameter name of newValue."),
 			
-			Question(question: ["If you won't specify a name for parameter as part of your didSet implementation, it will be ___ by default"],
+			Question(question: ["If you won't specify a name for parameter as part of your didSet implementation, it will be ... by default"],
 					 image: "",
 					 optionA: "oldValue",
 					 optionB: "new",
@@ -300,7 +300,7 @@ class PropertiesSet {
 			
 			Question(question: ["Properties that belong to the type itself",
 								"Properties that belong to the type itself, not to any one instance of that type",
-								"There will only ever be one copy of ___ properties, no matter how many instances of that type you create"],
+								"There will only ever be one copy of ... properties, no matter how many instances of that type you create"],
 					 image: "",
 					 optionA: "Type properties",
 					 optionB: "Stored properties",
@@ -362,7 +362,7 @@ class PropertiesSet {
 					 questionId: 9342,
 					 helpText: "Stored type properties are lazily initialized on their first access. They are guaranteed to be initialized only once, even when accessed by multiple threads simultaneously, and they do not need to be marked with the lazy modifier."),
 			
-			Question(question: ["You define type properties with ___ keyword?"],
+			Question(question: ["You define type properties with ... keyword?"],
 					 image: "",
 					 optionA: "static",
 					 optionB: "fileprivate",
@@ -371,7 +371,7 @@ class PropertiesSet {
 					 questionId: 935,
 					 helpText: "You define type properties with the static keyword."),
 			
-			Question(question: ["For computed type properties for class types, you can use ___ keyword instead the static keyword?"],
+			Question(question: ["For computed type properties for class types, you can use ... keyword instead the static keyword?"],
 					 image: "",
 					 optionA: "class",
 					 optionB: "struct",

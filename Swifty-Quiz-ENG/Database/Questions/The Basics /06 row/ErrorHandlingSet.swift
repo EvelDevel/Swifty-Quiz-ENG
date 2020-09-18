@@ -18,7 +18,7 @@ class ErrorHandlingSet {
 					 questionId: 1502,
 					 helpText: "Error handling is the process of responding to and recovering from error conditions in your program. Swift provides first-class support for throwing, catching, propagating, and manipulating recoverable errors at runtime. Some operations aren’t guaranteed to always complete execution or produce a useful output. Optionals are used to represent the absence of a value, but when an operation fails, it’s often useful to understand what caused the failure, so that your code can respond accordingly."),
 
-			Question(question: ["In Swift, errors are represented by values of types that conform to the ___ protocol",
+			Question(question: ["In Swift, errors are represented by values of types that conform to the ... protocol",
 								"Choose the name of the protocol values of error types conform to"],
 					 image: "",
 					 optionA: "Error",
@@ -49,7 +49,7 @@ class ErrorHandlingSet {
 					 helpText: "Throwing an error lets you indicate that something unexpected happened and the normal flow of execution can’t continue. You use a throw statement to throw an error."),
 
 			Question(question: ["When an error is thrown, some surrounding piece of code must be responsible for ...",
-								"Surrounding piece of code must be responsible for ___, when it is thrown"],
+								"Surrounding piece of code must be responsible for ..., when it is thrown"],
 					 image: "",
 					 optionA: "Handling the error",
 					 optionB: "Logging the error",

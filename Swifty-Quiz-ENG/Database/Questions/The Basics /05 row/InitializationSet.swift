@@ -177,7 +177,7 @@ class InitializationSet {
 					 questionId: 1317,
 					 helpText: "It is not possible to call initializers without using argument labels, if they are defined, and omitting them is a compile-time error."),
 			
-			Question(question: ["If you do not want to use an argument label for an initializer parameter, write a(n) ___ instead",
+			Question(question: ["If you do not want to use an argument label for an initializer parameter, write a(n) ... instead",
 								"Which of the following can you use to to skip an argument label for an initializer parameter?"],
 					 image: "",
 					 optionA: "Underscore (_)",
@@ -226,7 +226,7 @@ class InitializationSet {
 					 helpText: "For class instances, a constant property can be modified during initialization only by the class that introduces it. It cannot be modified by a subclass."),
 			
 			Question(question: ["What kind of initializer can we use if a class provides default values for all of its properties without providing at least one initializer itself?",
-								"Swift provides a ___ for any structure or class that provides default values for all of its properties and does not provide at least one initializer itself",
+								"Swift provides a ... for any structure or class that provides default values for all of its properties and does not provide at least one initializer itself",
 								"Which of the following creates a new instance with all class properties set to their default values?"],
 					 image: "",
 					 optionA: "Default initializer",
@@ -286,7 +286,7 @@ class InitializationSet {
 					 questionId: 1328,
 					 helpText: "Note that if you define a custom initializer for a value type, you will no longer have access to the default initializer (or the memberwise initializer, if it is a structure) for that type. This constraint prevents a situation in which additional essential setup provided in a more complex initializer is accidentally circumvented by someone using one of the automatic initializers."),
 			
-			Question(question: ["If you want your custom value type to be initializable with the default initializer, and also with your own custom initializers, consider writing the custom ones ___",
+			Question(question: ["If you want your custom value type to be initializable with the default initializer, and also with your own custom initializers, consider writing the custom ones ...",
 								"How can you implement a custom initializer if you want your custom value type to be initializable both with the memberwise initializer and with your own custom initializer?"],
 					 image: "",
 					 optionA: "In an extension",
@@ -346,7 +346,7 @@ class InitializationSet {
 					 questionId: 1334,
 					 helpText: "Here, the superclass has a single designated initializer and two convenience initializers. One convenience initializer calls another convenience initializer, which in turn calls the single designated initializer. The subclass in this figure has two designated initializers and one convenience initializer. The convenience initializer must call one of the two designated initializers, because it can only call another initializer from the same class."),
 			
-			Question(question: ["Class initialization in Swift is a(n) ___ process"],
+			Question(question: ["Class initialization in Swift is a(n) ... process"],
 					 image: "",
 					 optionA: "Two-phase",
 					 optionB: "Three-phase",
@@ -365,7 +365,7 @@ class InitializationSet {
 					 questionId: 1336,
 					 helpText: "Swift’s compiler performs four helpful safety-checks to make sure that two-phase initialization is completed without error. 1. A designated initializer must ensure that all of the properties introduced by its class are initialized before it delegates up to a superclass initializer; 2. A designated initializer must delegate up to a superclass initializer before assigning a value to an inherited property; 3. A convenience initializer must delegate to another initializer before assigning a value to any property (including properties defined by the same class); 4. An initializer cannot call any instance methods, read the values of any instance properties, or refer to self as a value until after the first phase of initialization is complete."),
 			
-			Question(question: ["According to the first safety check of two-phase initialization in Swift, memory is considered fully initialized for ___"],
+			Question(question: ["According to the first safety check of two-phase initialization in Swift, memory is considered fully initialized for ..."],
 					 image: "",
 					 optionA: "Objects with known stored properties",
 					 optionB: "Any objects",
@@ -441,7 +441,7 @@ class InitializationSet {
 					 helpText: "Unlike subclasses in Objective-C, Swift subclasses do not inherit their superclass initializers by default. Swift’s approach prevents a situation in which a simple initializer from a superclass is inherited by a more specialized subclass and is used to create a new instance of the subclass that is not fully or correctly initialized. Superclass initializers are inherited in certain circumstances, but only when it is safe and appropriate to do so."),
 			
 			Question(question: ["What modifier must you write when the subclass initializer matches a superclass designated initializer?",
-								"You write the ___ modifier before the subclass’s initializer definition, when you write a subclass initializer that matches a superclass designated initializer"],
+								"You write the ... modifier before the subclass’s initializer definition, when you write a subclass initializer that matches a superclass designated initializer"],
 					 image: "",
 					 optionA: "override",
 					 optionB: "static",
@@ -529,7 +529,7 @@ class InitializationSet {
 					 questionId: 1353,
 					 helpText: "You can use a failable initializer to select an appropriate enumeration case based on one or more parameters. The initializer can then fail if the provided parameters do not match an appropriate enumeration case."),
 			
-			Question(question: ["Enumerations with raw values automatically receive a ___ initializer"],
+			Question(question: ["Enumerations with raw values automatically receive a ... initializer"],
 					 image: "",
 					 optionA: "Failable",
 					 optionB: "Designated",

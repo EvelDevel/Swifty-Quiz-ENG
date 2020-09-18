@@ -20,9 +20,9 @@ class SubscriptsSet {
 					 questionId: 1102,
 					 helpText: "Classes, structures, and enumerations can define subscripts, which are shortcuts for accessing the member elements of a collection, list, or sequence. You use subscripts to set and retrieve values by index without needing separate methods for setting and retrieval."),
 			
-			Question(question: ["You can access elements in an Array instance by their ___",
+			Question(question: ["You can access elements in an Array instance by their ...",
 								"Which of these do you need to access an element in an Array instance?",
-								"What do we need to write in square braces to access elements in an Array instance: someArray[___]?"],
+								"What do we need to write in square braces to access elements in an Array instance: someArray[...]?"],
 					 image: "",
 					 optionA: "index",
 					 optionB: "name",
@@ -31,9 +31,9 @@ class SubscriptsSet {
 					 questionId: 1103,
 					 helpText: "You access elements in an Array instance as someArray[index] and elements in a Dictionary instance as someDictionary[key]."),
 			
-			Question(question: ["You can access elements in a Dictionary instance by their ___",
+			Question(question: ["You can access elements in a Dictionary instance by their ...",
 								"Choose from the options below the one that you use to access elements in a Dictionary instance.",
-								"What do we need to write in square braces to access elements in a Dictionary instance: someDictionary[___]"],
+								"What do we need to write in square braces to access elements in a Dictionary instance: someDictionary[...]"],
 					 image: "",
 					 optionA: "key",
 					 optionB: "name",
@@ -104,7 +104,7 @@ class SubscriptsSet {
 					 helpText: "The type of newValue is the same as the return value of the subscript. As with computed properties, you can choose not to specify the setter’s (newValue) parameter."),
 			
 			Question(question: ["It’s not required to manually provide a default parameter for your setter because Swift can do it automatically. How will the default parameter be called in this case?",
-								"A default parameter called ___ is provided to your setter if you do not provide one yourself"],
+								"A default parameter called ... is provided to your setter if you do not provide one yourself"],
 					 image: "",
 					 optionA: "newValue",
 					 optionB: "value",
@@ -201,7 +201,7 @@ class SubscriptsSet {
 					 questionId: 1121,
 					 helpText: "A class or structure can provide as many subscript implementations as it needs, and the appropriate subscript to be used will be inferred based on the types of the value or values that are contained within the subscript brackets at the point that the subscript is used. "),
 			
-			Question(question: ["Definition of multiple subscripts is known as ___"],
+			Question(question: ["Definition of multiple subscripts is known as ..."],
 					 image: "",
 					 optionA: "Subscript overloading",
 					 optionB: "Subscript overdrafting",

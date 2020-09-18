@@ -9,7 +9,7 @@ import Foundation
 class StructuresAndClassesSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question(question: ["You introduce structures with the ___ keyword and classes with the ___ keyword",
+			Question(question: ["You introduce structures with the ... keyword and classes with the ... keyword",
 								"With which keywords do you introduce structures and classes in your code?"],
 					 image: "",
 					 optionA: "class / struct",
@@ -19,7 +19,7 @@ class StructuresAndClassesSet {
 					 questionId: 803,
 					 helpText: "Structures and classes have a similar definition syntax. You introduce structures with the struct keyword and classes with the class keyword. Both place their entire definition within a pair of braces."),
 			
-			Question(question: ["You define ___ and ___ to add functionality to your structures and classes",
+			Question(question: ["You define ... and ... to add functionality to your structures and classes",
 								"What can you define to add functionality to your structures and classes?"],
 					 image: "",
 					 optionA: "Properties and Methods",
@@ -39,7 +39,7 @@ class StructuresAndClassesSet {
 					 questionId: 805,
 					 helpText: "Unlike other programming languages, Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use."),
 			
-			Question(question: ["An instance of a class is traditionally known as ___"],
+			Question(question: ["An instance of a class is traditionally known as ..."],
 					 image: "",
 					 optionA: "an object",
 					 optionB: "an instance",
@@ -215,7 +215,7 @@ class StructuresAndClassesSet {
 					 helpText: "A value type is a type whose value is copied when it’s assigned to a variable or constant, or when it’s passed to a function. All structures and enumerations are value types in Swift. This means that any structure and enumeration instances you create—and any value types they have as properties—are always copied when they are passed around in your code."),
 			
 			Question(question: ["How the basic types are implemented in Swift?",
-								"All basic types in Swift are implemented ___"],
+								"All basic types in Swift are implemented ..."],
 					 image: "",
 					 optionA: "As structures",
 					 optionB: "As classes",
@@ -224,9 +224,9 @@ class StructuresAndClassesSet {
 					 questionId: 820,
 					 helpText: "All of the basic types in Swift—integers, floating-point numbers, Booleans, strings, arrays and dictionaries—are value types, and are implemented as structures behind the scenes."),
 			
-			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Within this approach, the elements are copied ___",
+			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Within this approach, the elements are copied ...",
 								"Swift optimizes the cost of copying of collections defined by the standard library like dictionaries or arrays. How does it copy the elements represented by those types?",
-								"Collections defined by the standard library like strings use an optimization to reduce the performance cost of copying. Basically, Swift ensures that the elements are copied ___"],
+								"Collections defined by the standard library like strings use an optimization to reduce the performance cost of copying. Basically, Swift ensures that the elements are copied ..."],
 					 image: "",
 					 optionA: "Just before the modification",
 					 optionB: "Async in the main thread",

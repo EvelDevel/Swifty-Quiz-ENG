@@ -38,7 +38,7 @@ class ARCSet {
 					 questionId: 1703,
 					 helpText: "if ARC were to deallocate an instance that was still in use, it would no longer be possible to access that instance’s properties, or call that instance’s methods. Indeed, if you tried to access the instance, your app would most likely crash. To make sure that instances don’t disappear while they are still needed, ARC tracks how many properties, constants, and variables are currently referring to each class instance. ARC will not deallocate an instance as long as at least one active reference to that instance still exists."),
 			
-			Question(question: ["Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes ___",
+			Question(question: ["Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes ...",
 								"The reference type that keeps a firm hold on the instance",
 								"The reference type that doesn’t allow instances to be deallocated for as long as it remains"],
 					 image: "",
@@ -157,7 +157,7 @@ class ARCSet {
 					 questionId: 1715,
 					 helpText: "Like a weak reference, an unowned reference does not keep a strong hold on the instance it refers to. Unlike a weak reference, an unowned reference is expected to always have a value. As a result, marking a value as unowned doesn’t make it optional, and ARC never sets an unowned reference’s value to nil."),
 			
-			Question(question: ["You indicate an unowned reference by the ___ keyword",
+			Question(question: ["You indicate an unowned reference by the ... keyword",
 								"With which keyword can you indicate the unowned reference?",
 								"Which of these is the correct keyword for indicating an unowned reference?"],
 					 image: "",

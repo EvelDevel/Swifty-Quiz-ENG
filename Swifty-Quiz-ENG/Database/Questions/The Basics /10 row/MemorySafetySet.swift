@@ -50,7 +50,7 @@ class MemorySafetySet {
 					 helpText: "There are three characteristics of memory access to consider in the context of conflicting access: whether the access is a read or a write, the duration of the access, and the location in memory being accessed. Specifically, a conflict occurs if you have two accesses that meet all of the following conditions: At least one is a write access. They access the same location in memory. Their durations overlap."),
 			
 			Question(question: ["What is the difference between a read and write access?",
-								"Difference between a read and write access is that ___",
+								"Difference between a read and write access is that ...",
 								"What is the difference between write and read access?"],
 					 image: "",
 					 optionA: "Write changes the memory location",

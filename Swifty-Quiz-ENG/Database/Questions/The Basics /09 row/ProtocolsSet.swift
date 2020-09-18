@@ -123,8 +123,8 @@ class ProtocolsSet {
 					 questionId: 2211,
 					 helpText: "Gettable and settable properties are indicated by writing { get set } after their type declaration, and gettable properties are indicated by writing { get }."),
 			
-			Question(question: ["When you define type property requirements in a protocol, always prefix it with the ___ keyword?",
-								"We will need to use the ___ keyword to define type property requirements in a protocol"],
+			Question(question: ["When you define type property requirements in a protocol, always prefix it with the ... keyword?",
+								"We will need to use the ... keyword to define type property requirements in a protocol"],
 					 image: "",
 					 optionA: "static",
 					 optionB: "public",
@@ -143,7 +143,7 @@ class ProtocolsSet {
 					 questionId: 2213,
 					 helpText: "Swift reports an error at compile - time if a protocol requirement is not fulfilled."),
 			
-			Question(question: ["When we define a method inside a protocol, we write it without ___"],
+			Question(question: ["When we define a method inside a protocol, we write it without ..."],
 					 image: "",
 					 optionA: "Curly braces",
 					 optionB: "Parentheses",
@@ -171,7 +171,7 @@ class ProtocolsSet {
 					 questionId: 2216,
 					 helpText: "Default values can’t be specified for method parameters within a protocol’s definition."),
 			
-			Question(question: ["If you define a protocol instance method requirement that is intended to mutate instances of any type that adopts the protocol, mark the method with the ___ keyword as part of the protocol’s definition"],
+			Question(question: ["If you define a protocol instance method requirement that is intended to mutate instances of any type that adopts the protocol, mark the method with the ... keyword as part of the protocol’s definition"],
 					 image: "",
 					 optionA: "mutating",
 					 optionB: "static",

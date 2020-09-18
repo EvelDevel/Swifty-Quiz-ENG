@@ -9,7 +9,7 @@ import Foundation
 class TypeCastingSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question(question: ["Type casting in Swift is implemented with ___ operators",
+			Question(question: ["Type casting in Swift is implemented with ... operators",
 								"Pick the operator(s) that we use to implement type casting in Swift"],
 					 image: "",
 					 optionA: "is and as",
@@ -29,7 +29,7 @@ class TypeCastingSet {
 					 questionId: 1803,
 					 helpText: "Use the type check operator (is) to check whether an instance is of a certain subclass type."),
 			
-			Question(question: ["The type check operator returns ___",
+			Question(question: ["The type check operator returns ...",
 								"Choose the literal that the type check operator returns",
 								"What type of result will be returned after using the type check operator \"is\"?"],
 					 image: "",

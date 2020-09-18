@@ -21,7 +21,7 @@ class TheBasicsSet {
 					 helpText: "The convention is to use Lower Camel Case while naming properties and methods. Their names should start with a lowercase letter. And if a name consists of several words, only the first word should be lowercased. At the same time, type names should start with an uppercase letter (Upper Camel Case)."),
 
 			Question(question: ["What word can be defined as the introduction of a new object that you are going to use?",
-								"The process of creating a new object that you are going to use is called ___"],
+								"The process of creating a new object that you are going to use is called ..."],
 					 image: "",
 					 optionA: "Declaration",
 					 optionB: "Modification",
@@ -30,9 +30,9 @@ class TheBasicsSet {
 					 questionId: 2,
 					 helpText: "A declaration introduces a new object into the program. Initialization assigns a specific value to the declared object."),
 
-			Question(question: ["A variable name must be ___",
-								"All constant and variable names must be ___",
-								"It is required to give each variable and constant a ___ name"],
+			Question(question: ["A variable name must be ...",
+								"All constant and variable names must be ...",
+								"It is required to give each variable and constant a ... name"],
 					 image: "",
 					 optionA: "Unique",
 					 optionB: "Universal",
@@ -798,7 +798,7 @@ class TheBasicsSet {
 					 helpText: "The convention is to use Lower Camel Case while naming properties and methods. Their names should start with a lowercase letter. And if a name consists of several words, only the first word should be lowercased. At the same time, type names should start with an uppercase letter (Upper Camel Case)."),
 
 			Question(question: ["What word can be defined as the introduction of a new object that you are going to use?",
-								"The process of creating a new object that you are going to use is called ___"],
+								"The process of creating a new object that you are going to use is called ..."],
 					 image: "",
 					 optionA: "Declaration",
 					 optionB: "Modification",
@@ -807,9 +807,9 @@ class TheBasicsSet {
 					 questionId: 2,
 					 helpText: "A declaration introduces a new object into the program. Initialization assigns a specific value to the declared object."),
 
-			Question(question: ["A variable name must be ___",
-								"All constant and variable names must be ___",
-								"It is required to give each variable and constant a ___ name"],
+			Question(question: ["A variable name must be ...",
+								"All constant and variable names must be ...",
+								"It is required to give each variable and constant a ... name"],
 					 image: "",
 					 optionA: "Unique",
 					 optionB: "Universal",

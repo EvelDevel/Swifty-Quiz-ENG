@@ -174,8 +174,8 @@ class ExtensionsSet {
 					 questionId: 2017,
 					 helpText: "Yes. Instance methods added with an extension can also modify (or mutate) the instance itself."),
 			
-			Question(question: ["Structure and enumeration methods that modify self or its properties must mark the instance method as ___",
-								"Enumeration methods that modify its properties must mark the instance method with the  ___ keyword"],
+			Question(question: ["Structure and enumeration methods that modify self or its properties must mark the instance method as ...",
+								"Enumeration methods that modify its properties must mark the instance method with the  ... keyword"],
 					 image: "",
 					 optionA: "mutating",
 					 optionB: "private",
