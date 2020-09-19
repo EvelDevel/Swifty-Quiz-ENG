@@ -139,7 +139,7 @@ class SubscriptsSet {
 					 optionB: "Three",
 					 optionC: "Two",
 					 optionD: "We'll get an error",
-					 questionId: 1115,
+					 questionId: 1114,
 					 helpText: "Correct answer: Four. This example defines a variable called numberOfLegs and initializes it with a dictionary literal containing three key-value pairs. The type of the numberOfLegs dictionary is inferred to be [String: Int]. After creating the dictionary, this example uses subscript assignment to add a String key of \"bird\" and an Int value of 2 to the dictionary."),
 			
 			Question(question: ["Does the dictionary type uses an optional subscript type?",
@@ -150,7 +150,7 @@ class SubscriptsSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1116,
+					 questionId: 1115,
 					 helpText: "Swift’s Dictionary type implements its key-value subscripting. The Dictionary type uses an optional subscript type to model the fact that not every key will have a value, and to give a way to delete a value for a key by assigning a nil value for that key."),
 			
 			Question(question: ["What number of input parameters can subscripts take?"],
@@ -159,7 +159,7 @@ class SubscriptsSet {
 					 optionB: "Less than 5",
 					 optionC: "Less than 3",
 					 optionD: "One",
-					 questionId: 1117,
+					 questionId: 1116,
 					 helpText: "Subscripts can take any number of input parameters, and these input parameters can be of any type. Subscripts can also return a value of any type."),
 			
 			Question(question: ["Is that correct that subscripts can take only certain types of input parameters?"],
@@ -168,7 +168,7 @@ class SubscriptsSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1118,
+					 questionId: 1117,
 					 helpText: "Subscripts can take any number of input parameters, and these input parameters can be of any type. Subscripts can also return a value of any type."),
 			
 			Question(question: ["Can subscripts return a value of any type?",
@@ -178,7 +178,7 @@ class SubscriptsSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1119,
+					 questionId: 1118,
 					 helpText: "Subscripts can take any number of input parameters, and these input parameters can be of any type. Subscripts can also return a value of any type."),
 			
 			Question(question: ["Can subscripts use in-out parameters?",
@@ -188,7 +188,7 @@ class SubscriptsSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1120,
+					 questionId: 1119,
 					 helpText: "Like functions, subscripts can take a varying number of parameters and provide default values for their parameters. However, unlike functions, subscripts can’t use in-out parameters."),
 			
 			Question(question: ["How many subscript implementations can a class and a structure provide?",
@@ -198,7 +198,7 @@ class SubscriptsSet {
 					 optionB: "Less than five",
 					 optionC: "Two for classes and five for structures",
 					 optionD: "",
-					 questionId: 1121,
+					 questionId: 1120,
 					 helpText: "A class or structure can provide as many subscript implementations as it needs, and the appropriate subscript to be used will be inferred based on the types of the value or values that are contained within the subscript brackets at the point that the subscript is used. "),
 			
 			Question(question: ["Definition of multiple subscripts is known as ..."],
@@ -207,7 +207,7 @@ class SubscriptsSet {
 					 optionB: "Subscript overdrafting",
 					 optionC: "Mass subscripting",
 					 optionD: "Subscriptitution",
-					 questionId: 1122,
+					 questionId: 1121,
 					 helpText: "Definition of multiple subscripts is known as subscript overloading."),
 			
 			Question(question: ["Subscript can take only one input parameter. Is that true?",
@@ -217,7 +217,7 @@ class SubscriptsSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1123,
+					 questionId: 1122,
 					 helpText: "While it is most common for a subscript to take a single parameter, you can also define a subscript with multiple parameters if it is appropriate for your type.")
 		]
 	}

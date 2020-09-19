@@ -380,7 +380,7 @@ class InitializationSet {
 					 optionB: "Phase 3",
 					 optionC: "Phase 1",
 					 optionD: "",
-					 questionId: 1343,
+					 questionId: 1338,
 					 helpText: "Here’s how phase 2 looks for an initialization call: The superclass’s designated initializer here has an opportunity to customize the instance further after finishing the first phase (although it does not have to). Once the superclass’s designated initializer is finished, the subclass’s designated initializer can perform additional customization (although again, it does not have to). Finally, once the subclass’s designated initializer is finished, the convenience initializer that was originally called can perform additional customization."),
 			
 			Question(question: ["If a designated initializer doesn’t delegate up to a superclass initializer before assigning a value to an inherited property, what is going to happen to this value?"],
@@ -389,7 +389,7 @@ class InitializationSet {
 					 optionB: "Will be cast to nil",
 					 optionC: "Nothing is going to happen",
 					 optionD: "",
-					 questionId: 1338,
+					 questionId: 1339,
 					 helpText: "A designated initializer must delegate up to a superclass initializer before assigning a value to an inherited property. If it doesn’t, the new value the designated initializer assigns will be overwritten by the superclass as part of its own initialization."),
 			
 			Question(question: ["If a convenience initializer doesn't delegate to another initializer before assigning a value to a property, what is going to happen to this value?"],
@@ -398,7 +398,7 @@ class InitializationSet {
 					 optionB: "It'll be overwritten by the superclass",
 					 optionC: "Will be cast to nil",
 					 optionD: "We will get an error",
-					 questionId: 1339,
+					 questionId: 1340,
 					 helpText: "A convenience initializer must delegate to another initializer before assigning a value to any property (including properties defined by the same class). If it doesn’t, the new value the convenience initializer assigns will be overwritten by its own class’s designated initializer."),
 			
 			Question(question: ["Which initialization phase is it: \"A designated or convenience initializer is called on a class, memory for a new instance of that class is allocated, but the memory is not yet initialized\"?"],
@@ -407,7 +407,7 @@ class InitializationSet {
 					 optionB: "Phase two",
 					 optionC: "Phase three",
 					 optionD: "This is not part of any phase",
-					 questionId: 1340,
+					 questionId: 1341,
 					 helpText: "Phase 1: A designated or convenience initializer is called on a class. Memory for a new instance of that class is allocated. The memory is not yet initialized. A designated initializer for that class confirms that all stored properties introduced by that class have a value. The memory for these stored properties is now initialized. The designated initializer hands off to a superclass initializer to perform the same task for its own stored properties. This continues up the class inheritance chain until the top of the chain is reached. Once the top of the chain is reached, and the final class in the chain has ensured that all of its stored properties have a value, the instance’s memory is considered to be fully initialized, and phase 1 is complete."),
 			
 			Question(question: ["Which initialization phase is it: \"Working back down from the top of the chain, each designated initializer in the chain has the option to customize the instance further, initializers are now able to access self and can modify its properties\"?",
@@ -417,7 +417,7 @@ class InitializationSet {
 					 optionB: "Phase one",
 					 optionC: "This is not part of any phase",
 					 optionD: "",
-					 questionId: 1341,
+					 questionId: 1342,
 					 helpText: "Phase 2: Working back down from the top of the chain, each designated initializer in the chain has the option to customize the instance further. Initializers are now able to access self and can modify its properties, call its instance methods, and so on. Any convenience initializers in the chain have the option to customize the instance and to work with self."),
 			
 			Question(question: ["Which initialization phase is shown on the image?"],
@@ -426,7 +426,7 @@ class InitializationSet {
 					 optionB: "Phase 2",
 					 optionC: "Phase 3",
 					 optionD: "",
-					 questionId: 1342,
+					 questionId: 1343,
 					 helpText: "This is what phase-one looks like for a hypothetical subclass and superclass: Initialization begins with a call to a convenience initializer on the subclass. This convenience initializer cannot yet modify any properties. It delegates across to a designated initializer from the same class. The designated initializer makes sure that all of the subclass’s properties have a value, as per the first safety check. It then calls a designated initializer on its superclass to continue the initialization up the chain. The superclass’s designated initializer makes sure that all of the superclass properties have a value. There are no further superclasses to initialize, and so no further delegation is needed. As soon as all properties of the superclass have an initial value, its memory is considered fully initialized, and phase 1 is complete."),
 			
 			Question(question: ["Swift subclasses do not inherit their superclass initializers by default. Is that true?",
@@ -554,7 +554,7 @@ class InitializationSet {
 					 optionB: "convenience",
 					 optionC: "override",
 					 optionD: "",
-					 questionId: 1357,
+					 questionId: 1356,
 					 helpText: "Write the required modifier before the definition of a class initializer to indicate that every subclass of the class must implement that initializer."),
 			
 			Question(question: ["You must write the override modifier when overriding a required designated initializer. Is that true?",
@@ -564,7 +564,7 @@ class InitializationSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1358,
+					 questionId: 1357,
 					 helpText: "The modifier you must write in this case is the required modifier. Use it before every subclass implementation of a required initializer, to indicate that the initializer requirement applies to further subclasses in the chain. You do not write the override modifier when overriding a required designated initializer."),
 			
 			Question(question: ["Do you have to provide an explicit implementation of a required initializer if you can satisfy the requirement with an inherited initializer?",
@@ -574,7 +574,7 @@ class InitializationSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1359,
+					 questionId: 1358,
 					 helpText: "You do not have to provide an explicit implementation of a required initializer if you can satisfy the requirement with an inherited initializer."),
 			
 			Question(question: ["If a stored property’s default value requires some customization or setup, can you use a closure to provide a customized default value for that property?",
@@ -584,7 +584,7 @@ class InitializationSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1360,
+					 questionId: 1359,
 					 helpText: "If a stored property’s default value requires some customization or setup, you can use a closure or global function to provide a customized default value for that property. Whenever a new instance of the type that the property belongs to is initialized, the closure or function is called, and its return value is assigned as the property’s default value. These kinds of closures or functions typically create a temporary value of the same type as the property, tailor that value to represent the desired initial state, and then return that temporary value to be used as the property’s default value."),
 			
 			Question(question: ["Do we need to use a empty pair of parentheses after curly braces?"],
@@ -593,7 +593,7 @@ class InitializationSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1361,
+					 questionId: 1360,
 					 helpText: "Note that the closure’s end curly brace is followed by an empty pair of parentheses. This tells Swift to execute the closure immediately. If you omit these parentheses, you are trying to assign the closure itself to the property, and not the return value of the closure."),
 			
 			Question(question: ["If you use a closure to initialize a property, can you access any other property values from within your closure?",
@@ -603,7 +603,7 @@ class InitializationSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 1362,
+					 questionId: 1361,
 					 helpText: "If you use a closure to initialize a property, remember that the rest of the instance has not yet been initialized at the point that the closure is executed. This means that you cannot access any other property values from within your closure, even if those properties have default values. You also cannot use the implicit self property, or call any of the instance’s methods.")
 		]
 	}

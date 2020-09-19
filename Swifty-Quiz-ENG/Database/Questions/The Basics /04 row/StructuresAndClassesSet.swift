@@ -76,7 +76,7 @@ class StructuresAndClassesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 8080,
+					 questionId: 809,
 					 helpText: "Structures and classes in Swift have many things in common. Both can define subscripts to provide access to their values using subscript syntax."),
 			
 			Question(question: ["Inheritance enables one structure to inherit the characteristics of another. Is that true?",
@@ -98,7 +98,7 @@ class StructuresAndClassesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 8081,
+					 questionId: 811,
 					 helpText: "Structures and classes in Swift have many things in common. Both can define initializers to set up their initial state and be extended to expand their functionality beyond a default implementation."),
 			
 			Question(question: ["Can classes conform to protocols to provide standard functionality of a certain kind?",
@@ -108,7 +108,7 @@ class StructuresAndClassesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 809,
+					 questionId: 812,
 					 helpText: "Structures and classes in Swift have many things in common. Both can conform to protocols to provide standard functionality of a certain kind."),
 			
 			Question(question: ["Type casting enables you to check and interpret the type of a structure instance at runtime. Is that correct?",
@@ -118,7 +118,7 @@ class StructuresAndClassesSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 8101,
+					 questionId: 813,
 					 helpText: "Unlike structures, classes support type casting that enables you to check and interpret the type of a class instance at runtime."),
 			
 			Question(question: ["Deinitializers enable an instance of a class to free up any resources it has assigned. Is that true?",
@@ -128,7 +128,7 @@ class StructuresAndClassesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 8100,
+					 questionId: 814,
 					 helpText: "Another feature structures don’t support is deinitializers. They enable an instance of a class to free up any resources it has assigned."),
 			
 			Question(question: ["Instances of what type(s) are preferable in Swift as soon as they provide all the necessary features?"],
@@ -137,7 +137,7 @@ class StructuresAndClassesSet {
 					 optionB: "Classes",
 					 optionC: "Structures and classes",
 					 optionD: "Classes and enumerations",
-					 questionId: 811,
+					 questionId: 815,
 					 helpText: "The additional capabilities that classes support come at the cost of increased complexity. As a general guideline, prefer structures because they’re easier to reason about, and use classes when they’re appropriate or necessary. In practice, this means most of the custom data types you define will be structures and enumerations."),
 			
 			Question(question: ["Should you give your structures and classes UpperCamelCase or LowerCamelCase names?"],
@@ -146,7 +146,7 @@ class StructuresAndClassesSet {
 					 optionB: "LowerCamelCase",
 					 optionC: "It doesn't matter",
 					 optionD: "",
-					 questionId: 812,
+					 questionId: 816,
 					 helpText: "Whenever you define a new structure or class, you define a new Swift type. Give types UpperCamelCase names (such as SomeStructure and SomeClass here) to match the capitalization of standard Swift types (such as String, Int, and Bool). Give properties and methods lowerCamelCase names (such as frameRate and incrementCount) to differentiate them from type names."),
 			
 			Question(question: ["Should you give your properties and methods UpperCamelCase or LowerCamelCase names?"],
@@ -155,7 +155,7 @@ class StructuresAndClassesSet {
 					 optionB: "UpperCamelCase",
 					 optionC: "It doesn't matter",
 					 optionD: "",
-					 questionId: 813,
+					 questionId: 817,
 					 helpText: "Give properties and methods lowerCamelCase names (such as frameRate and incrementCount) to differentiate them from type names."),
 			
 			Question(question: ["Do structures and classes themselves describe specifics of any objects?"],
@@ -164,7 +164,7 @@ class StructuresAndClassesSet {
 					 optionB: "Yes",
 					 optionC: "Only structures",
 					 optionD: "",
-					 questionId: 814,
+					 questionId: 818,
 					 helpText: "Structures and classes themselves don’t describe specifics of any objects. To do that, you need to create an instance of the structure or class."),
 			
 			Question(question: ["How can you initialize a class or structure instance with the simplest form of initializer syntax?",
@@ -174,7 +174,7 @@ class StructuresAndClassesSet {
 					 optionB: "Name = ()",
 					 optionC: "(Name)()",
 					 optionD: "Name[]",
-					 questionId: 815,
+					 questionId: 819,
 					 helpText: "Structures and classes both use initializer syntax for new instances. The simplest form of initializer syntax uses the type name of the class or structure followed by empty parentheses, such as Resolution() or VideoMode() for example. This creates a new instance of the class or structure, with any properties initialized to their default values."),
 			
 			Question(question: ["Which of the following can you use to access the properties of an instance?",
@@ -184,7 +184,7 @@ class StructuresAndClassesSet {
 					 optionB: "Subscripts syntax",
 					 optionC: "Initializer syntax",
 					 optionD: "",
-					 questionId: 816,
+					 questionId: 820,
 					 helpText: "You can access the properties of an instance using dot syntax. In dot syntax, you write the property name immediately after the instance name, separated by a period (.), without any spaces, you can drill down into subproperties, and also you can use dot syntax to assign a new value to a variable property."),
 			
 			Question(question: ["Can we use dot syntax to assign a new value to a property?"],
@@ -193,7 +193,7 @@ class StructuresAndClassesSet {
 					 optionB: "We can do it without any restrictions",
 					 optionC: "Yes, if it's a constant property",
 					 optionD: "No",
-					 questionId: 817,
+					 questionId: 821,
 					 helpText: "You can access the properties of an instance using dot syntax. In dot syntax, you write the property name immediately after the instance name, separated by a period (.), without any spaces, you can drill down into subproperties, and also you can use dot syntax to assign a new value to a variable property."),
 			
 			Question(question: ["Both structures and classes have an automatically generated memberwise initializer. Is that true?"],
@@ -202,7 +202,7 @@ class StructuresAndClassesSet {
 					 optionB: "Only classes",
 					 optionC: "Yes",
 					 optionD: "No",
-					 questionId: 818,
+					 questionId: 822,
 					 helpText: "All structures have an automatically generated memberwise initializer, which you can use to initialize the member properties of new structure instances. Initial values for the properties of the new instance can be passed to the memberwise initializer by name. Unlike structures, class instances don’t receive a default memberwise initializer."),
 			
 			Question(question: ["What types are value types in Swift?"],
@@ -211,7 +211,7 @@ class StructuresAndClassesSet {
 					 optionB: "Classes and enumerations",
 					 optionC: "Structures and classes",
 					 optionD: "",
-					 questionId: 819,
+					 questionId: 823,
 					 helpText: "A value type is a type whose value is copied when it’s assigned to a variable or constant, or when it’s passed to a function. All structures and enumerations are value types in Swift. This means that any structure and enumeration instances you create—and any value types they have as properties—are always copied when they are passed around in your code."),
 			
 			Question(question: ["How the basic types are implemented in Swift?",
@@ -221,7 +221,7 @@ class StructuresAndClassesSet {
 					 optionB: "As classes",
 					 optionC: "As enumerations",
 					 optionD: "",
-					 questionId: 820,
+					 questionId: 824,
 					 helpText: "All of the basic types in Swift—integers, floating-point numbers, Booleans, strings, arrays and dictionaries—are value types, and are implemented as structures behind the scenes."),
 			
 			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Within this approach, the elements are copied ...",
@@ -232,7 +232,7 @@ class StructuresAndClassesSet {
 					 optionB: "Async in the main thread",
 					 optionC: "In the global thread",
 					 optionD: "Immediately",
-					 questionId: 821,
+					 questionId: 825,
 					 helpText: "Collections defined by the standard library like arrays, dictionaries, and strings use an optimization to reduce the performance cost of copying. Instead of making a copy immediately, these collections share the memory where the elements are stored between the original instance and any copies. If one of the copies of the collection is modified, the elements are copied just before the modification. The behavior you see in your code is always as if a copy took place immediately."),
 			
 			Question(question: ["What values will we expect to see in console?"],
@@ -241,7 +241,7 @@ class StructuresAndClassesSet {
 					 optionB: "2048 and 2048",
 					 optionC: "1920 and 1920",
 					 optionD: "",
-					 questionId: 822,
+					 questionId: 826,
 					 helpText: "Correct answer: 2048 и 1920. When we set cinema to the current value of hd, the values that were stored in hd were copied to the new cinema instance. And as a result, we have two completely separate instances that contain the same values. Since they are separate instances, setting the cinema width to 2048 will not affect the hd width in any way."),
 			
 			Question(question: ["Choose the option that contains only reference type(s)"],
@@ -250,7 +250,7 @@ class StructuresAndClassesSet {
 					 optionB: "Structures and enumerations",
 					 optionC: "Enumerations and classes",
 					 optionD: "Structures",
-					 questionId: 823,
+					 questionId: 827,
 					 helpText: "Classes - reference type. Unlike value types, reference types are not copied when they are assigned to a variable or constant, or when they are passed to a function. Rather than a copy, a reference to the same existing instance is used."),
 			
 			Question(question: ["How can we find out whether two constants or variables refer to exactly the same instance of a class or not?"],
@@ -259,7 +259,7 @@ class StructuresAndClassesSet {
 					 optionB: "Comparison operator ==",
 					 optionC: "Assignment operator =",
 					 optionD: "",
-					 questionId: 826,
+					 questionId: 828,
 					 helpText: "Because classes are reference types, it’s possible for multiple constants and variables to refer to the same single instance of a class behind the scenes. (The same isn’t true for structures and enumerations, because they are always copied when they are assigned to a constant or variable, or passed to a function). It can sometimes be useful to find out whether two constants or variables refer to exactly the same instance of a class. To enable this, Swift provides two identity operators: Identical to (===) and Not identical to (!==)"),
 			
 			Question(question: ["Why can reference types be challenging to deal with?",
@@ -269,7 +269,7 @@ class StructuresAndClassesSet {
 					 optionB: "Too many copies are created",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 824,
+					 questionId: 829,
 					 helpText: "It can be problematic to keep track of the reference type instances. If two different variables that refer to the same instance were used in different parts of the program, it might not be easy to find all the places where we changed them. Wherever you used one variable, you would also have to think about the second one and vice versa. Unlike the reference types, this process is more straightforward with value types because all the code that interacts with the same value tend to be located closer to that value in your source file."),
 			
 			Question(question: ["With the following code, what would you expect to see?",
@@ -279,7 +279,7 @@ class StructuresAndClassesSet {
 					 optionB: "Assignment error",
 					 optionC: "Runtime error",
 					 optionD: "0",
-					 questionId: 825,
+					 questionId: 830,
 					 helpText: "Note that hd is declared as a constant, not a variable. However, you can still change hd.width, because hd values themselves don't change. The constant does not \"contain\" the value of the Resolution instance, it only refers to it. The .width property is the underlying property of Resolution, and it can be changed since it is var."),
 			
 			Question(question: ["What result will we get after executing this code?"],
@@ -288,7 +288,7 @@ class StructuresAndClassesSet {
 					 optionB: "A B",
 					 optionC: "B A C",
 					 optionD: "A B C",
-					 questionId: 827,
+					 questionId: 831,
 					 helpText: "Once x.b() is called, \"B\" gets printed. After that, b() accesses the variable a, that prints \"A\" as soon as the lazy stored property is triggered. Since b() returns a value other than nil, c will never be called. As a result, the program prints \"B\" and \"A\". Lazy stored properties (defined with the lazy keyword) represent properties whose value is set the first time they are addressed. Such properties allow using memory more efficiently, without overloading it with unnecessary objects that may not be needed.")
 		]
 	}

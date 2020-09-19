@@ -78,7 +78,7 @@ class PropertiesSet {
 					 optionB: "We'll get an error",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 909,
+					 questionId: 908,
 					 helpText: "If you assign an instance of a reference type to a constant (class instance), then it can still change variable properties (var)."),
 			
 			Question(question: ["What will happen after following code is executed?"],
@@ -87,7 +87,7 @@ class PropertiesSet {
 					 optionB: "We will change firstValue",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 908,
+					 questionId: 909,
 					 helpText: "If you create an instance of a structure and assign that instance to a constant, you cannot modify the instance’s properties, even if they were declared as variable properties. Because rangeOfFourItems is declared as a constant (with the let keyword), it is not possible to change its firstValue property, even though firstValue is a variable property. This behavior is due to structures being value types. When an instance of a value type is marked as a constant, so are all of its properties."),
 			
 			Question(question: ["The property whose initial value is not calculated until the first time it is used",
@@ -210,7 +210,7 @@ class PropertiesSet {
 					 optionB: "set and get",
 					 optionC: "willSet and didGet",
 					 optionD: "willGet and didSet",
-					 questionId: 923,
+					 questionId: 922,
 					 helpText: "You have the option to define either or both of these observers on a property: willSet is called just before the value is stored. didSet is called immediately after the new value is stored."),
 			
 			Question(question: ["... observer is called just before the value is stored"],
@@ -219,7 +219,7 @@ class PropertiesSet {
 					 optionB: "didSet",
 					 optionC: "get",
 					 optionD: "set",
-					 questionId: 924,
+					 questionId: 923,
 					 helpText: "willSet is called just before the value is stored."),
 			
 			Question(question: ["... observer is called immediately after the new value is stored"],
@@ -228,7 +228,7 @@ class PropertiesSet {
 					 optionB: "willSet",
 					 optionC: "get",
 					 optionD: "set",
-					 questionId: 925,
+					 questionId: 924,
 					 helpText: "didSet is called immediately after the new value is stored."),
 			
 			Question(question: ["If you don’t specify a name for a parameter as part of your willSet implementation, it will be ... by default"],
@@ -237,7 +237,7 @@ class PropertiesSet {
 					 optionB: "new",
 					 optionC: "setValue",
 					 optionD: "oldValue",
-					 questionId: 926,
+					 questionId: 925,
 					 helpText: "If you implement a willSet observer, it’s passed the new property value as a constant parameter. You can specify a name for this parameter as part of your willSet implementation. If you don’t write the parameter name and parentheses within your implementation, the parameter is made available with a default parameter name of newValue."),
 			
 			Question(question: ["If you won't specify a name for parameter as part of your didSet implementation, it will be ... by default"],
@@ -246,7 +246,7 @@ class PropertiesSet {
 					 optionB: "prevValue",
 					 optionC: "old",
 					 optionD: "newValue",
-					 questionId: 927,
+					 questionId: 926,
 					 helpText: "If you implement a didSet observer, it’s passed a constant parameter containing the old property value. You can name the parameter or use the default parameter name of oldValue."),
 			
 			Question(question: ["Variables that are defined outside of any function, method, closure, or type context"],
@@ -255,7 +255,7 @@ class PropertiesSet {
 					 optionB: "Local variables",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 928,
+					 questionId: 927,
 					 helpText: "Global variables are variables that are defined outside of any function, method, closure, or type context. Local variables are variables that are defined within a function, method, or closure context."),
 			
 			Question(question: ["Variables that are defined within a function, method, or closure context"],
@@ -264,7 +264,7 @@ class PropertiesSet {
 					 optionB: "Global variables",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 929,
+					 questionId: 928,
 					 helpText: "Global variables are variables that are defined outside of any function, method, closure, or type context. Local variables are variables that are defined within a function, method, or closure context."),
 			
 			Question(question: ["Are global constants and variables always computed lazily?",
@@ -275,7 +275,7 @@ class PropertiesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 930,
+					 questionId: 929,
 					 helpText: "Global constants and variables are always computed lazily, in a similar manner to Lazy Stored Properties. Unlike lazy stored properties, global constants and variables do not need to be marked with the lazy modifier. Local constants and variables are never computed lazily."),
 			
 			Question(question: ["Can we define properties that belong to the type itself, not to any one instance of that type?"],
@@ -284,7 +284,7 @@ class PropertiesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 932,
+					 questionId: 930,
 					 helpText: "You can define properties that belong to the type itself, not to any one instance of that type. There will only ever be one copy of these properties, no matter how many instances of that type you create. These kinds of properties are called type properties. Type properties are useful for defining values that are universal to all instances of a particular type, such as a constant property that all instances can use (like a static constant in C), or a variable property that stores a value that is global to all instances of that type (like a static variable in C)."),
 			
 			Question(question: ["Properties that belong to the type itself",
@@ -304,7 +304,7 @@ class PropertiesSet {
 					 optionB: "Defining local values",
 					 optionC: "Storing the internal values",
 					 optionD: "",
-					 questionId: 922,
+					 questionId: 932,
 					 helpText: "Type properties are useful for defining values that are universal to all instances of a particular type, such as a constant property that all instances can use (like a static constant in C), or a variable property that stores a value that is global to all instances of that type (like a static variable in C)."),
 			
 			Question(question: ["Do you always need to give stored type properties a default value?",
@@ -334,7 +334,7 @@ class PropertiesSet {
 					 optionB: "No",
 					 optionC: "We must specify that behavior",
 					 optionD: "",
-					 questionId: 9341,
+					 questionId: 935,
 					 helpText: "Stored type properties are lazily initialized on their first access. They are guaranteed to be initialized only once, even when accessed by multiple threads simultaneously, and they do not need to be marked with the lazy modifier."),
 			
 			Question(question: ["Are stored type properties need to be marked with the lazy modifier?",
@@ -345,7 +345,7 @@ class PropertiesSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 9342,
+					 questionId: 936,
 					 helpText: "Stored type properties are lazily initialized on their first access. They are guaranteed to be initialized only once, even when accessed by multiple threads simultaneously, and they do not need to be marked with the lazy modifier."),
 			
 			Question(question: ["You define type properties with the ... keyword"],
@@ -354,7 +354,7 @@ class PropertiesSet {
 					 optionB: "global",
 					 optionC: "private",
 					 optionD: "public",
-					 questionId: 935,
+					 questionId: 937,
 					 helpText: "You define type properties with the static keyword."),
 			
 			Question(question: ["For computed type properties for class types, you can use ... keyword instead the static keyword?"],
@@ -363,7 +363,7 @@ class PropertiesSet {
 					 optionB: "type",
 					 optionC: "public",
 					 optionD: "",
-					 questionId: 936,
+					 questionId: 938,
 					 helpText: "For computed type properties for class types, you can use the class keyword instead the static keyword to allow subclasses to override the superclass’s implementation."),
 			
 			Question(question: ["What value will we get to console?"],
@@ -372,7 +372,7 @@ class PropertiesSet {
 					 optionB: "false",
 					 optionC: "We'll get compile-time error",
 					 optionD: "",
-					 questionId: 937,
+					 questionId: 939,
 					 helpText: "The didSet does not run in the initializer, so the initial value of p.point.x will be 5, which will be true when the program is executed.")
 		]
 	}

@@ -66,7 +66,7 @@ class AccessControlSet {
 					 optionB: "Internal access",
 					 optionC: "File-private access",
 					 optionD: "Open access and public access",
-					 questionId: 2308,
+					 questionId: 2306,
 					 helpText: "Private access restricts the use of an entity to the enclosing declaration, and to extensions of that declaration that are in the same file. Use private access to hide the implementation details of a specific piece of functionality when those details are used only within a single declaration."),
 			
 			Question(question: ["Is Open access the highest (least restrictive) access level?",
@@ -76,7 +76,7 @@ class AccessControlSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 2309,
+					 questionId: 2307,
 					 helpText: "Open access is the highest (least restrictive) access level and private access is the lowest (most restrictive) access level."),
 			
 			Question(question: ["Classes with this access level can be inherited only in the module in which they are defined",
@@ -86,7 +86,7 @@ class AccessControlSet {
 					 optionB: "Open access",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 2310,
+					 questionId: 2308,
 					 helpText: "Open access applies only to classes and class members, and it differs from public access by allowing code outside the module to subclass and override. Marking a class as open explicitly indicates that you’ve considered the impact of code from other modules using that class as a superclass, and that you’ve designed your class’s code accordingly."),
 			
 			Question(question: ["The  access level that allows code outside the module to subclass and override",
@@ -96,7 +96,7 @@ class AccessControlSet {
 					 optionB: "Public",
 					 optionC: "Internal",
 					 optionD: "",
-					 questionId: 2311,
+					 questionId: 2309,
 					 helpText: "Open access applies only to classes and class members, and it differs from public access by allowing code outside the module to subclass and override. Marking a class as open explicitly indicates that you’ve considered the impact of code from other modules using that class as a superclass, and that you’ve designed your class’s code accordingly."),
 			
 			Question(question: ["Can entity be defined in terms of another entity that has a lower (more restrictive) access level?",
@@ -106,7 +106,7 @@ class AccessControlSet {
 					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 2312,
+					 questionId: 2310,
 					 helpText: "Access levels in Swift follow an overall guiding principle: No entity can be defined in terms of another entity that has a lower (more restrictive) access level. For example: A public variable can’t be defined as having an internal, file-private, or private type, because the type might not be available everywhere that the public variable is used."),
 			
 			Question(question: ["A function can’t have a higher access level than its parameter types and return type. Is that true?"],
@@ -115,7 +115,7 @@ class AccessControlSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 2313,
+					 questionId: 2311,
 					 helpText: "A function can’t have a higher access level than its parameter types and return type, because the function could be used in situations where its constituent types are unavailable to the surrounding code."),
 			
 			Question(question: ["The access that enables entities to be used within any source file from their defining module",
@@ -126,7 +126,7 @@ class AccessControlSet {
 					 optionB: "Open access and public access",
 					 optionC: "Private access",
 					 optionD: "",
-					 questionId: 2306,
+					 questionId: 2312,
 					 helpText: "Internal access enables entities to be used within any source file from their defining module, but not in any source file outside of that module. You typically use internal access when defining an app’s or a framework’s internal structure."),
 			
 			Question(question: ["Which access level all entities in your code have by default?",
@@ -136,7 +136,7 @@ class AccessControlSet {
 					 optionB: "Open",
 					 optionC: "Private",
 					 optionD: "File-private",
-					 questionId: 2314,
+					 questionId: 2313,
 					 helpText: "All entities in your code (with a few specific exceptions) have a default access level of internal if you don’t specify an explicit access level yourself. As a result, in many cases you don’t need to specify an explicit access level in your code."),
 			
 			Question(question: ["At what point do you need to explicitly specify the access level for a custom type?",
@@ -146,7 +146,7 @@ class AccessControlSet {
 					 optionB: "When you first using the type",
 					 optionC: "When you creating the instance",
 					 optionD: "",
-					 questionId: 2315,
+					 questionId: 2314,
 					 helpText: "If you want to specify an explicit access level for a custom type, do so at the point that you define the type. The new type can then be used wherever its access level permits."),
 			
 			Question(question: ["Where can you use a class with file-private access level?",
@@ -156,7 +156,7 @@ class AccessControlSet {
 					 optionB: "Anywhere within the module",
 					 optionC: "Wherever you need it",
 					 optionD: "Nowhere",
-					 questionId: 2316,
+					 questionId: 2315,
 					 helpText: "If you define a file-private class, that class can only be used as the type of a property, or as a function parameter or return type, in the source file in which the file-private class is defined."),
 			
 			Question(question: ["This access level restricts the use of an entity to its own defining source file",
@@ -166,7 +166,7 @@ class AccessControlSet {
 					 optionB: "Private access",
 					 optionC: "Internal access",
 					 optionD: "",
-					 questionId: 2307,
+					 questionId: 2316,
 					 helpText: "File-private access restricts the use of an entity to its own defining source file. Use file-private access to hide the implementation details of a specific piece of functionality when those details are used within an entire file."),
 			
 			Question(question: ["If you compose a tuple from two types, one with internal access and one with private access, which access the compound tuple will get?"],
