@@ -392,13 +392,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yfQ-Nq-j32">
-                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
+                                <rect key="frame" x="0.0" y="86" width="375" height="561"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WV1-s6-FrL" userLabel="QuestionArea">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="295.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="280.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHw-dw-Ztz" userLabel="QuestionView">
-                                                <rect key="frame" x="16" y="5" width="343" height="280.5"/>
+                                                <rect key="frame" x="16" y="5" width="343" height="265.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSf-H3-fwS">
                                                         <rect key="frame" x="0.0" y="10" width="343" height="160"/>
@@ -408,7 +408,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-39-Xa9" userLabel="Question">
-                                                        <rect key="frame" x="16" y="170" width="311" height="100.5"/>
+                                                        <rect key="frame" x="16" y="170" width="311" height="85.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yfJ-bW-XQO"/>
                                                         </constraints>
@@ -443,13 +443,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQU-UX-cgG" userLabel="ButtonsView" customClass="AnswerButtonsView" customModule="Swifty_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="295.5" width="375" height="295.5"/>
+                                        <rect key="frame" x="0.0" y="280.5" width="375" height="280.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vjR-Yi-cYW" userLabel="Buttons">
-                                                <rect key="frame" x="16" y="5" width="343" height="265.5"/>
+                                                <rect key="frame" x="16" y="5" width="343" height="250.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lcg-H9-k7K">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
                                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                         <state key="normal" title="option A">
@@ -465,7 +465,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-XU-csX">
-                                                        <rect key="frame" x="0.0" y="69" width="343" height="59"/>
+                                                        <rect key="frame" x="0.0" y="65" width="343" height="55.5"/>
                                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                         <state key="normal" title="option B">
@@ -481,7 +481,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3us-Ch-ovH">
-                                                        <rect key="frame" x="0.0" y="138" width="343" height="58.5"/>
+                                                        <rect key="frame" x="0.0" y="130.5" width="343" height="55"/>
                                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                         <state key="normal" title="option C">
@@ -497,7 +497,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sAj-KE-UJq">
-                                                        <rect key="frame" x="0.0" y="206.5" width="343" height="59"/>
+                                                        <rect key="frame" x="0.0" y="195.5" width="343" height="55"/>
                                                         <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                         <state key="normal" title="option D">
@@ -527,7 +527,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6F-p6-lv0" userLabel="Header Stats View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-kx-2hD" userLabel="Help Button">
                                         <rect key="frame" x="320" y="14" width="50" height="23"/>
@@ -614,24 +614,41 @@
                                     <constraint firstItem="lup-xN-Pbw" firstAttribute="top" secondItem="atk-Fk-RiH" secondAttribute="bottom" constant="12" id="utN-tX-5hz"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im4-xR-q9J">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Q0c-9L-wJK"/>
+                                    <constraint firstAttribute="height" constant="35" id="Qk0-MV-ETj"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="10" minY="14" maxX="40" maxY="2"/>
+                                <state key="normal" image="ChevroneBigBlue"/>
+                                <state key="highlighted" image="ChevroneBigDarkBlue"/>
+                                <connections>
+                                    <action selector="dismissGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8In-L0-ss3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yfQ-Nq-j32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Yt-K0-5hs"/>
-                            <constraint firstItem="B6F-p6-lv0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5pH-aT-cRk"/>
+                            <constraint firstItem="B6F-p6-lv0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="5pH-aT-cRk"/>
                             <constraint firstItem="yfQ-Nq-j32" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RX9-Yg-OAt"/>
                             <constraint firstItem="yfQ-Nq-j32" firstAttribute="width" secondItem="B6F-p6-lv0" secondAttribute="width" id="S1O-Ol-1TQ"/>
+                            <constraint firstItem="im4-xR-q9J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xod-FA-SPs"/>
                             <constraint firstItem="B6F-p6-lv0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YTd-6g-UnD"/>
                             <constraint firstAttribute="trailing" secondItem="yfQ-Nq-j32" secondAttribute="trailing" id="flk-p0-3P3"/>
                             <constraint firstAttribute="bottom" secondItem="yfQ-Nq-j32" secondAttribute="bottom" id="mvm-S9-Uyp"/>
                             <constraint firstItem="B6F-p6-lv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pJn-Vf-kL2"/>
+                            <constraint firstItem="B6F-p6-lv0" firstAttribute="top" secondItem="im4-xR-q9J" secondAttribute="bottom" constant="-5" id="pfw-gf-3K2"/>
                             <constraint firstItem="B6F-p6-lv0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="quV-GA-ZYt"/>
                             <constraint firstItem="yfQ-Nq-j32" firstAttribute="top" secondItem="B6F-p6-lv0" secondAttribute="bottom" id="xXa-Ow-cBX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="COY-Na-zyC"/>
                     <connections>
+                        <outlet property="backButton" destination="im4-xR-q9J" id="A1u-47-9xk"/>
+                        <outlet property="headerTopMargin" destination="5pH-aT-cRk" id="0C7-24-Fuj"/>
                         <outlet property="helpCounterLabel" destination="veA-zL-dzC" id="bRs-Ph-u8L"/>
                         <outlet property="optionA" destination="lcg-H9-k7K" id="Gtw-Eb-Gg0"/>
                         <outlet property="optionB" destination="cGm-XU-csX" id="Suk-B0-udo"/>
@@ -760,6 +777,8 @@
         <segue reference="aL1-7b-at2"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="ChevroneBigBlue" width="50" height="50"/>
+        <image name="ChevroneBigDarkBlue" width="50" height="50"/>
         <image name="InfoFill" width="50" height="50"/>
         <image name="InfoGray" width="50" height="50"/>
         <image name="RightChevrone" width="50" height="50"/>

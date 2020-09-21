@@ -11,7 +11,10 @@ protocol GameViewControllerDelegate: class {
 
 class GameViewController: UIViewController {
     
-    @IBOutlet var answerButtonsCollection: [UIButton]!
+	@IBOutlet weak var backButton: UIButton!
+	@IBOutlet weak var headerTopMargin: NSLayoutConstraint!
+	
+	@IBOutlet var answerButtonsCollection: [UIButton]!
     @IBOutlet weak var optionA: UIButton!
     @IBOutlet weak var optionB: UIButton!
     @IBOutlet weak var optionC: UIButton!
@@ -69,6 +72,19 @@ class GameViewController: UIViewController {
         delegate?.updateInitialView()
     }
     
+	/// > 13.0 iOS Navigation settings
+	override func viewWillAppear(_ animated: Bool) {
+		if #available(iOS 13.0, *) {
+			backButton.isHidden = true
+			headerTopMargin.constant = 0
+		}
+	}
+	/// < 13.0 iOS Navigation
+	@IBAction func dismissGame(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+		dismiss(animated: true, completion: nil)
+	}
+	
     func addShadows() {
         shadows.addStaticShadows(GameComtrollerViews)
         shadows.addButtonShadows(answerButtonsCollection)
