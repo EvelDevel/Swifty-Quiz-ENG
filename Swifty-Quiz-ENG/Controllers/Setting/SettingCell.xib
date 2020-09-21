@@ -48,6 +48,7 @@
                             <segment title="No"/>
                             <segment title="Yes"/>
                         </segments>
+                        <color key="tintColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="BVQ-iX-eGv"/>
@@ -84,6 +85,7 @@
                             <segment title="No"/>
                             <segment title="Yes"/>
                         </segments>
+                        <color key="tintColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="CAd-Bk-hp2"/>
@@ -120,6 +122,7 @@
                             <segment title="No"/>
                             <segment title="Yes"/>
                         </segments>
+                        <color key="tintColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="ahO-XP-Stz"/>
@@ -156,6 +159,7 @@
                             <segment title="No"/>
                             <segment title="Yes"/>
                         </segments>
+                        <color key="tintColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="V5c-NS-bcm"/>
@@ -181,6 +185,7 @@
                             <segment title="On"/>
                             <segment title="Off"/>
                         </segments>
+                        <color key="tintColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedSegmentTintColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <action selector="settingSwitchSound:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Fc3-YR-kyn"/>

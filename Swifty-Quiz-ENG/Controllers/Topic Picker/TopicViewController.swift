@@ -13,6 +13,9 @@ protocol TopicViewControllerDelegate: class {
 
 class TopicViewController: UIViewController, InAppViewControllerDelegate {
 
+	@IBOutlet weak var headerHeight: NSLayoutConstraint!
+	@IBOutlet weak var titleTopMargin: NSLayoutConstraint!
+	@IBOutlet weak var backButton: UIButton!
 	@IBOutlet weak var nameAndNumberOfQuestions: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var buyButton: UIButton!
@@ -37,6 +40,20 @@ class TopicViewController: UIViewController, InAppViewControllerDelegate {
 	/// Обновляем (убираем) кнопку "продолжить" при смене темы (с задержкой)
 	override func viewDidDisappear(_ animated: Bool) {
 		delegate?.updateInitialView()
+	}
+	
+	/// > 13.0 iOS Navigation settings
+	override func viewWillAppear(_ animated: Bool) {
+		if #available(iOS 13.0, *) {
+			backButton.isHidden = true
+			titleTopMargin.constant = 25
+			headerHeight.constant = 80
+		}
+	}
+	/// < 13.0 iOS Navigation
+	@IBAction func dismissTopicView(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+		dismiss(animated: true, completion: nil)
 	}
 
 	/// Работа кнопки UNLOCK

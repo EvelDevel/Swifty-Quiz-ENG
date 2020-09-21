@@ -10,7 +10,10 @@ protocol SettingsViewControllerDelegate: class {
 
 class SettingsViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var backButton: UIButton!
+	@IBOutlet weak var titleHeight: NSLayoutConstraint!
+	@IBOutlet weak var headerHeight: NSLayoutConstraint!
+	@IBOutlet weak var tableView: UITableView!
     weak var delegate: SettingsViewControllerDelegate?
     
     override func viewDidLoad() {
@@ -18,9 +21,24 @@ class SettingsViewController: UIViewController {
         cellRegistration()
     }
     
+	/// Call delegates
     override func viewDidDisappear(_ animated: Bool) {
         delegate?.updateInitialView()
     }
+	
+	/// > 13.0 iOS Navigation settings
+	override func viewWillAppear(_ animated: Bool) {
+		if #available(iOS 13.0, *) {
+			backButton.isHidden = true
+			titleHeight.constant = 25
+			headerHeight.constant = 60
+		}
+	}
+	/// < 13.0 iOS Navigation
+	@IBAction func dismissSettings(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+		dismiss(animated: true, completion: nil)
+	}
     
     func showAlertIfNeeded() {
         /// Показываем алерт о том, что есть незавершенная игра, чтобы пользователь не сбросил ее

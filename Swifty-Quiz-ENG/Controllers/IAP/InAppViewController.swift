@@ -10,6 +10,8 @@ protocol InAppViewControllerDelegate: class {
 }
 
 class InAppViewController: UIViewController {
+	
+	@IBOutlet weak var backButton: UIButton!
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
 	@IBOutlet weak var buyButtonLabel: UIButton!
@@ -42,6 +44,19 @@ class InAppViewController: UIViewController {
 			delegate?.refreshViewAndTableAfterPurchase()
 		}
 	}
+	
+	/// > 13.0 iOS Navigation settings
+	override func viewWillAppear(_ animated: Bool) {
+		if #available(iOS 13.0, *) {
+			backButton.isHidden = true
+		}
+	}
+	/// < 13.0 iOS Navigation
+	@IBAction func dismissTopicView(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+		dismiss(animated: true, completion: nil)
+	}
+
 	
 	deinit {
 		SKPaymentQueue.default().remove(self)

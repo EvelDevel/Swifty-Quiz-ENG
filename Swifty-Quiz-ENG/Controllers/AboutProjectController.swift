@@ -6,7 +6,9 @@ import UIKit
 
 class AboutProjectController: UIViewController {
 
+	@IBOutlet weak var backButton: UIButton!
 	@IBOutlet var allButtons: [UIButton]!
+	
 	private var shadows = ShadowsHelper()
 	private var adaptiveInterface = AdaptiveInterface()
 
@@ -17,6 +19,33 @@ class AboutProjectController: UIViewController {
 	@IBOutlet weak var secondRowButtonsHeight: NSLayoutConstraint!
 	@IBOutlet weak var logoHeight: NSLayoutConstraint!
 
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		adaptiveInterface.setAboutAppPage(view: view,
+										  mainTextLabel: mainTextLabel,
+										  textAfterLogoHeight: textAfterLogoHeight,
+										  stackAfterTextMargin: stackAfterTextHeight,
+										  firstRowButtonsHeight: firstRowButtonsHeight,
+										  secondRowButtonsHeight: secondRowButtonsHeight,
+										  logoHeight: logoHeight)
+		shadows.addBlackButtonShadows(allButtons)
+	}
+	
+	/// > 13.0 iOS Navigation settings
+	override func viewWillAppear(_ animated: Bool) {
+		if #available(iOS 13.0, *) {
+			backButton.isHidden = true
+		}
+	}
+	/// < 13.0 iOS Navigation
+	@IBAction func dismissAbout(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+		dismiss(animated: true, completion: nil)
+	}
+	
+	
+	// MARK: Links
+	
     @IBAction func author(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://vk.com/ev.nikitin")!
         UIApplication.shared.open(urlComponents.url!)
@@ -41,17 +70,5 @@ class AboutProjectController: UIViewController {
         let urlComponents = URLComponents(string: "https://swift.org/")!
         UIApplication.shared.open(urlComponents.url!)
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-		adaptiveInterface.setAboutAppPage(view: view,
-										  mainTextLabel: mainTextLabel,
-										  textAfterLogoHeight: textAfterLogoHeight,
-										  stackAfterTextMargin: stackAfterTextHeight,
-										  firstRowButtonsHeight: firstRowButtonsHeight,
-										  secondRowButtonsHeight: secondRowButtonsHeight,
-										  logoHeight: logoHeight)
-		shadows.addBlackButtonShadows(allButtons)
     }
 }
