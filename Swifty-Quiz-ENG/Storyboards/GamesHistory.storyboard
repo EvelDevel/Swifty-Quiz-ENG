@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p0w-mL-ldH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p0w-mL-ldH">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,36 +42,39 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-rZ-B5z">
-                                <rect key="frame" x="262" y="24.5" width="97" height="26"/>
+                                <rect key="frame" x="334" y="24" width="25" height="26"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="6Oc-cu-McI"/>
                                     <constraint firstAttribute="height" constant="26" id="JOy-ni-OlZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="tintColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
-                                <state key="normal" title="Delete all" image="trash" catalog="system">
+                                <inset key="imageEdgeInsets" minX="3" minY="4" maxX="3" maxY="4"/>
+                                <state key="normal" image="TrashCan">
                                     <color key="titleColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
                                 </state>
+                                <state key="highlighted" image="TrashCanFill"/>
                                 <connections>
                                     <action selector="cleanRecords:" destination="p0w-mL-ldH" eventType="touchUpInside" id="IsH-0B-p2c"/>
                                     <action selector="clearRecordSound:" destination="p0w-mL-ldH" eventType="touchUpInside" id="ogk-kb-8AW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K4-Cm-cjc">
-                                <rect key="frame" x="16" y="25" width="133" height="24"/>
+                                <rect key="frame" x="16" y="25" width="205" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5ie-gk-miH"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0IZ-rZ-B5z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5ie-gk-miH" secondAttribute="leading" symbolic="YES" id="4U2-YU-u93"/>
                             <constraint firstItem="6FI-RI-CWT" firstAttribute="top" secondItem="wP9-D6-Rfe" secondAttribute="bottom" id="ESY-wV-gZe"/>
                             <constraint firstItem="5K4-Cm-cjc" firstAttribute="leading" secondItem="5ie-gk-miH" secondAttribute="leading" constant="16" id="VYY-RR-d9k"/>
-                            <constraint firstItem="0IZ-rZ-B5z" firstAttribute="firstBaseline" secondItem="5K4-Cm-cjc" secondAttribute="firstBaseline" constant="-3" id="c2m-xg-X2U"/>
                             <constraint firstAttribute="bottom" secondItem="6FI-RI-CWT" secondAttribute="bottom" id="gWv-oB-FAm"/>
+                            <constraint firstItem="0IZ-rZ-B5z" firstAttribute="centerY" secondItem="5K4-Cm-cjc" secondAttribute="centerY" id="i5p-9M-NYc"/>
                             <constraint firstItem="6FI-RI-CWT" firstAttribute="leading" secondItem="5ie-gk-miH" secondAttribute="leading" id="nXm-KM-ogE"/>
                             <constraint firstItem="5ie-gk-miH" firstAttribute="trailing" secondItem="6FI-RI-CWT" secondAttribute="trailing" id="uz3-Z4-kUL"/>
                             <constraint firstItem="5ie-gk-miH" firstAttribute="trailing" secondItem="0IZ-rZ-B5z" secondAttribute="trailing" constant="16" id="wR2-6Y-pc8"/>
@@ -80,7 +84,6 @@
                             <constraint firstItem="0IZ-rZ-B5z" firstAttribute="leading" relation="lessThanOrEqual" secondItem="5K4-Cm-cjc" secondAttribute="trailing" constant="113" id="yeT-mD-WPT"/>
                             <constraint firstItem="5K4-Cm-cjc" firstAttribute="top" secondItem="5ie-gk-miH" secondAttribute="top" constant="25" id="zBI-3n-3Kj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5ie-gk-miH"/>
                     </view>
                     <navigationItem key="navigationItem" id="w63-RM-47A"/>
                     <connections>
@@ -142,6 +145,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="BE5-Ft-Z5B"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oxH-Ou-ZgZ" firstAttribute="leading" secondItem="BE5-Ft-Z5B" secondAttribute="leading" id="0cF-ge-U9b"/>
@@ -152,7 +156,6 @@
                             <constraint firstItem="oxH-Ou-ZgZ" firstAttribute="top" secondItem="Fhc-dQ-Hfk" secondAttribute="bottom" id="k3y-rG-wfN"/>
                             <constraint firstItem="BE5-Ft-Z5B" firstAttribute="bottom" secondItem="oxH-Ou-ZgZ" secondAttribute="bottom" id="phP-IF-Cfi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BE5-Ft-Z5B"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="oxH-Ou-ZgZ" id="bPX-AD-L3I"/>
@@ -164,6 +167,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="trash" catalog="system" width="121" height="128"/>
+        <image name="TrashCan" width="50" height="50"/>
+        <image name="TrashCanFill" width="50" height="50"/>
     </resources>
 </document>
