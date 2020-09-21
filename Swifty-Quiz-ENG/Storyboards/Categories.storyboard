@@ -252,6 +252,7 @@
                         <outlet property="backButton" destination="Nib-lG-mVT" id="gkh-9s-2b8"/>
                         <outlet property="buyButton" destination="uJw-h0-9uh" id="MWR-yg-Sh3"/>
                         <outlet property="categoriesTitle" destination="Vlx-yb-y6F" id="3DP-8v-jgo"/>
+                        <outlet property="headerHeight" destination="d1E-qo-Yhh" id="FOq-Ad-VDk"/>
                         <outlet property="nameAndNumberOfQuestions" destination="Zct-nv-o2o" id="hjH-Ru-tju"/>
                         <outlet property="tableView" destination="dI7-ZL-40D" id="cem-Ei-0UX"/>
                         <outlet property="titleTopMargin" destination="mgC-LE-sCd" id="O3q-G6-EGu"/>

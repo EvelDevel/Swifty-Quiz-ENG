@@ -187,6 +187,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="AN6-jL-PSl"/>
                     <connections>
+                        <outlet property="backButton" destination="YIT-iR-Aff" id="SMt-Ak-J0b"/>
                         <outlet property="firstRowButtonsHeight" destination="Wqs-CZ-lbb" id="VDe-hF-QFb"/>
                         <outlet property="logoHeight" destination="mNW-eE-FEw" id="kJe-mS-cJc"/>
                         <outlet property="mainTextLabel" destination="Uuy-ws-uFX" id="At6-CL-oVH"/>
