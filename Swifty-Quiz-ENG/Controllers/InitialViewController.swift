@@ -7,6 +7,7 @@ import UIKit
 // MARK: TODO - Баги и доработки
 /// Добавить логгер на ин-апп
 /// Социальные фичи (поделиться результатом)
+/// Покупка не отрабатывает на 14.0 оси 
 
 class InitialViewController: UIViewController {
 
