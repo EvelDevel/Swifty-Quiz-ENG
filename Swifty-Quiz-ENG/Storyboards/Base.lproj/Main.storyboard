@@ -90,19 +90,13 @@
                                                         <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1V-ld-fKj" userLabel="Picker">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1V-ld-fKj" userLabel="Picker">
                                                         <rect key="frame" x="0.0" y="1" width="288" height="59"/>
-                                                        <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                                         <inset key="imageEdgeInsets" minX="254" minY="20" maxX="10" maxY="20"/>
-                                                        <state key="normal" image="RightChevrone">
-                                                            <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18"/>
-                                                        </state>
-                                                        <state key="highlighted" image="RightChevroneFill">
-                                                            <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18"/>
-                                                        </state>
+                                                        <state key="normal" image="RightChevrone"/>
+                                                        <state key="highlighted" image="RightChevroneFill"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="13"/>
@@ -529,13 +523,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6F-p6-lv0" userLabel="Header Stats View">
                                 <rect key="frame" x="0.0" y="30" width="375" height="56"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-kx-2hD" userLabel="Help Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-kx-2hD" userLabel="Help Button">
                                         <rect key="frame" x="320" y="14" width="50" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Nqs-qb-q99"/>
                                             <constraint firstAttribute="height" constant="23" id="sP7-Wj-Til"/>
                                         </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="18" minY="3" maxX="15" maxY="3"/>
                                         <state key="normal" image="InfoGray"/>
                                         <state key="highlighted" image="InfoFill"/>

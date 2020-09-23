@@ -19,7 +19,7 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="D0I-Pl-Rlx">
                         <rect key="frame" x="290" y="18.5" width="14" height="13"/>
-                        <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863441780822" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="13" id="U9t-do-7Up"/>
                             <constraint firstAttribute="width" constant="14" id="zHd-1q-lfp"/>
@@ -56,7 +56,7 @@
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="79n-yw-SUS">
                         <rect key="frame" x="290" y="101.5" width="14" height="13"/>
-                        <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863442" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="nOU-CL-n2g"/>
                             <constraint firstAttribute="height" constant="13" id="xQ4-ch-mJ4"/>
@@ -93,7 +93,7 @@
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="j3H-6m-y7Y">
                         <rect key="frame" x="290" y="184.5" width="14" height="13"/>
-                        <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863442" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="13" id="GCh-3f-xLp"/>
                             <constraint firstAttribute="width" constant="14" id="Z9z-K0-pOu"/>
@@ -130,7 +130,7 @@
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-Du-767">
                         <rect key="frame" x="290" y="267.5" width="14" height="13"/>
-                        <color key="tintColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.2478863442" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="gxR-HD-P8r"/>
                             <constraint firstAttribute="height" constant="13" id="wM4-ba-FJs"/>

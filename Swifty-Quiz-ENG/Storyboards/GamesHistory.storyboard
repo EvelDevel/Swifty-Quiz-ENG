@@ -54,17 +54,15 @@
                                     <outlet property="delegate" destination="p0w-mL-ldH" id="jMA-ki-qy1"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-rZ-B5z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-rZ-B5z">
                                 <rect key="frame" x="334" y="49" width="25" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="6Oc-cu-McI"/>
                                     <constraint firstAttribute="height" constant="26" id="JOy-ni-OlZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="tintColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="3" minY="4" maxX="3" maxY="4"/>
                                 <state key="normal" image="TrashCan">
-                                    <color key="titleColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
                                 </state>
                                 <state key="highlighted" image="TrashCanFill"/>
