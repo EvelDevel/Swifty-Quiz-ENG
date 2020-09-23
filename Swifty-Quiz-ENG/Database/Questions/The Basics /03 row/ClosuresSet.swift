@@ -144,7 +144,7 @@ class ClosuresSet {
 					 optionC: "",
 					 optionD: "",
 					 questionId: 609,
-					 helpText: "The parameters in closure expression syntax can be in-out parameters, but they can’t have a default value. "),
+					 helpText: "The parameters in closure expression syntax can be in-out parameters, but they can’t have a default value."),
 			
 			Question(question: ["Can we assign default values to parameters of our closure?"],
 					 image: "",
@@ -153,7 +153,7 @@ class ClosuresSet {
 					 optionC: "",
 					 optionD: "",
 					 questionId: 610,
-					 helpText: "The parameters in closure expression syntax can be in-out parameters, but they can’t have a default value. "),
+					 helpText: "The parameters in closure expression syntax can be in-out parameters, but they can’t have a default value."),
 			
 			Question(question: ["Can we use variadic parameters in closure expression suntax?",
 								"Can we use tuples in closure expression suntax as a parameter type?",
