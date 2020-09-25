@@ -334,7 +334,7 @@ class CollectionTypesSet {
 					 helpText: "First numbers.insert (9, at: 3) adds a nine to the third index, that is, between a three and a four, then numbers.remove (at: 0) removes the one at index zero. It turns out [2, 3, 9, 4, 5]."),
 			
 			
-			////
+			///
 			
 
 			Question(question: ["Как мы можем удалить один или несколько последних элементов массива, при этом вернуть оставшийся массив?",
