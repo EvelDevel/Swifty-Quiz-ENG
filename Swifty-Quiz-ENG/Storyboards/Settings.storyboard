@@ -31,7 +31,7 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="10" minY="14" maxX="40" maxY="2"/>
                                 <state key="normal" image="ChevroneBigBlue"/>
-                                <state key="highlighted" image="ChevroneBigDarkYellow"/>
+                                <state key="highlighted" image="ChevroneBigDarkBlue"/>
                                 <connections>
                                     <action selector="dismissSettings:" destination="CqF-Y8-4ug" eventType="touchUpInside" id="uzE-0u-lHg"/>
                                 </connections>
@@ -93,6 +93,6 @@
     </scenes>
     <resources>
         <image name="ChevroneBigBlue" width="50" height="50"/>
-        <image name="ChevroneBigDarkYellow" width="50" height="50"/>
+        <image name="ChevroneBigDarkBlue" width="50" height="50"/>
     </resources>
 </document>
