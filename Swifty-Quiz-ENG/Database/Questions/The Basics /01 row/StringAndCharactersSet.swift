@@ -9,463 +9,497 @@ import Foundation
 class StringAndCharactersSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question(question: ["Строка - это совокупность ... ? ",
-								"Продолжите формулировку, строка - это совокупность ...",
-								"Строка - это совокупность чего?"],
+			Question(question: ["A string is a series of ...",
+								"Continue the wording, a string is a collection ...",
+								"A string is a collection of what?"],
 					 image: "",
-					 optionA: "Unicode-символов",
-					 optionB: "Отдельных букв",
-					 optionC: "Слов",
+					 optionA: "Characters",
+					 optionB: "Words",
+					 optionC: "Letters",
 					 optionD: "",
 					 questionId: 201,
-					 helpText: "Строка представляет собой совокупность символов. Каждая строка состоит из независимых от кодировки символов Unicode и обеспечивает поддержку доступа к этим символам в различных Unicode представлениях."),
-
-			Question(question: ["Каким типом представлены строки в Swift?",
-								"Какой тип у строки в Swift?",
-								"В Swift у строки именно этот тип"],
+					 helpText: "A string is a series of characters, such as \"hello, world\" or \"albatross\". Swift strings are represented by the String type. The contents of a String can be accessed in various ways, including as a collection of Character values."),
+			
+			Question(question: ["What type are strings in Swift?",
+								"In Swift, a string has this type"],
 					 image: "",
 					 optionA: "String",
 					 optionB: "Character",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 202,
-					 helpText: "Строки в Swift представлены типом String."),
-
-			Question(question: ["Фиксированная последовательность символов, окруженная двойными кавычками",
-								"Последовательность произвольных символов внутри двойных кавычек",
-								"Этот литерал состоит из какой-либо последовательности символов"],
+					 helpText: "Swift strings are represented by the String type."),
+			
+			Question(question: ["A sequence of characters surrounded by double quotation marks",
+								"A a sequence of characters surrounded by double quotation marks",
+								"This literal consists of any sequence of characters"],
 					 image: "",
-					 optionA: "Строковый литерал",
-					 optionB: "Числовой литерал",
-					 optionC: "Литерал",
+					 optionA: "String literal",
+					 optionB: "Numerical literal",
+					 optionC: "Literal",
 					 optionD: "",
 					 questionId: 203,
-					 helpText: "Фиксированная последовательность символов, окруженная двойными кавычками, называется строковым литералом. Обычно используется как начальное значение для инициализации константы или переменной, при этом тип можно объявить неявно."),
-
-			Question(question: ["Cколько двойных кавычек нужно ставить при открытии и закрытии многострочного строкового литерала?",
-								"Какое количество двойных кавычек ставится при открытии многострочного строкового литерала?",
-								"При закрытии открытии многострочного строкового литерала ставится именно столько двойных кавычек"],
+					 helpText: "You can include predefined String values within your code as string literals. A string literal is a sequence of characters surrounded by double quotation marks (\"). You can use a string literal as an initial value for a constant or variable."),
+			
+			Question(question: ["How many double quotation marks should we use when we are opening and closing a multiline string literal?",
+								"How many double quotation marks are there when we are opening a multiline string literal?",
+								"Exactly so many double quotation marks are put when we are closing and opening a multi-line string literal"],
 					 image: "",
 					 optionA: "3",
 					 optionB: "2",
 					 optionC: "1",
 					 optionD: "4",
 					 questionId: 204,
-					 helpText: "Если вам нужно создать строку, которая поддерживает многострочный вид, используйте литерал многострочной строки - последовательность символов, обернутых в три двойные кавычки. Многострочный литерал строки включает в себя все строки между тремя открывающими и тремя закрывающими кавычками. Строка начинается на первой строке после открывающих кавычек, а заканчивается на строке предшествующей закрывающим кавычкам."),
-
-			Question(question: ["Каким символом осуществляется перенос строки в многострочном строковом литерале (в коде), позволяющий не отображать символ переноса строки в качестве части значения этой строки?",
-								"Этот символ может перенести строку многострочного литерала только внутри кода (для лучшего чтения), не отображая перенос строки как часть значения этой строки"],
+					 helpText: "If you need a string that spans several lines, use a multiline string literal—a sequence of characters surrounded by three double quotation marks. A multiline string literal includes all of the lines between its opening and closing quotation marks. The string begins on the first line after the opening quotation marks (\"\"\") and ends on the line before the closing quotation marks, which means that neither of the strings below start or end with a line break"),
+			
+			/// 205 - последняя строка самописная.
+			/// Темка сложная, но я объясню дополнительно.
+			/// Когда ты юзаешь многстрочный литерал - неудобно, когда у тебя текст кучей
+			/// Если ты нажмешь на энтер и перенесешь строку - она на выходе перенесется и в интерфейсе, это не всегда нужно
+			/// Чтобы отделить эти процессы - ставишь бэкслеш и у тебя в коде он переносится, а на выходе - одной кучей
+			
+			Question(question: ["What character is a line break in a multiline string literal (in code) that allows you not to display a line break as part of the value of this line?"],
 					 image: "",
-					 optionA: "Обратный слеш",
-					 optionB: "Звездочка",
-					 optionC: "Тире",
+					 optionA: "Backslash",
+					 optionB: "Asterisk",
+					 optionC: "Dash",
 					 optionD: "",
 					 questionId: 205,
-					 helpText: "Если вы хотите использовать символ переноса строки для того, чтобы сделать ваш код более читаемым, но вы не хотите чтобы символ переноса строки отображался в качестве части значения строки, то вам нужно использовать символ обратного слеша в конце этих строк. Проще говоря, если вы хотите перенести строку внутри кода, чтобы сделать его более читаемым, но не хотите, чтобы после компиляции эта строка также перенеслась."),
-
-			Question(question: ["Как мы можем включить в строку специальные символы, не вызывая эффекта этих символов?",
-								"Вы можете включить в строку специальные символы, не вызывая их эффекта, как?",
-								"Как мы можем включить специальные символы в строку, при этом не вызывая их эффекта?"],
+					 helpText: "When your source code includes a line break inside of a multiline string literal, that line break also appears in the string’s value. If you want to use line breaks to make your source code easier to read, but you don’t want the line breaks to be part of the string’s value, write a backslash at the end of those lines. To simplify - If you want to wrap a line inside your code to make it more readable, but don't want that line to wrap as well after compilation."),
+			
+			Question(question: ["How can we place a special characters in a string without invoking their effect?"],
 					 image: "",
-					 optionA: "Кавычки, обернутые знаком #",
-					 optionB: "Кавычки внутри \\",
-					 optionC: "Через экранирование",
+					 optionA: "Quotation marks inside #",
+					 optionB: "Quotation marks inside two backslashes",
+					 optionC: "Through shielding",
 					 optionD: "",
 					 questionId: 206,
-					 helpText: "Вы можете поместить строковый литерал внутрь расширенного разделителя, чтобы включить в строку специальные символы, не вызывая эффекта самих символов. Вы помещаете вашу строку в кавычки и оборачиваете ее знаками #."),
-
-			Question(question: ["Как можно инициализировать пустую строку?",
-								"Как инициализируется пустой тип String?",
-								"Инициализация пустой строки происходит именно таким(ими) способом(ами)"],
+					 helpText: "You can place a string literal within extended delimiters to include special characters in a string without invoking their effect. You place your string within quotation marks (\") and surround that with number signs (#)."),
+			
+			Question(question: ["How can you initialize an empty string with initializer syntax?",
+								"How is an empty String type initialized with initializer syntax?",
+								"An empty string is initialized with initializer syntax exactly like that"],
 					 image: "",
 					 optionA: "= String()",
 					 optionB: "= [String]",
 					 optionC: "= (String)",
 					 optionD: "",
 					 questionId: 207,
-					 helpText: "Чтобы создать пустое String значение в качестве отправной точки для создания более длинных строк, либо присвойте литерал пустой строки к переменной, либо инициализируйте объект String c помощью синтаксиса инициализации: = String()."),
-
-			Question(question: ["Через какой свойство типа String мы можем узнать, является ли строка пустой?",
-								"Как узнать, является ли строка пустой?",
-								"Через это свойство мы можем узнать, является ли String пустым"],
+					 helpText: "To create an empty String value as the starting point for building a longer string, either assign an empty string literal to a variable: var emptyString = \"\", or initialize a new String instance with initializer syntax: var anotherEmptyString = String()"),
+			
+			Question(question: ["How can you initialize an empty string with an empty string literal?",
+								"How is an empty String type initialized with an empty string literal?",
+								"An empty string is initialized with an empty string literal exactly like that"],
+					 image: "",
+					 optionA: "var emptyString = \"\"",
+					 optionB: "var emptyString = String()",
+					 optionC: "var emptyString = String(\"\")",
+					 optionD: "",
+					 questionId: 20700,
+					 helpText: "To create an empty String value as the starting point for building a longer string, either assign an empty string literal to a variable: var emptyString = \"\", or initialize a new String instance with initializer syntax: var anotherEmptyString = String()"),
+			
+			Question(question: ["Through which property of type String can we find out if a string is empty?",
+								"How do you know if a string is empty?",
+								"Through this property, we can find out if String is empty"],
 					 image: "",
 					 optionA: ".isEmpty",
 					 optionB: ".count",
 					 optionC: ".capacity",
 					 optionD: ".removeRange",
 					 questionId: 208,
-					 helpText: "Можно узнать пустое ли String значение, через его Boolean свойство isEmpty."),
-
-			Question(question: ["Какой результат возвращает свойство .isEmpty, примененное к строке?",
-								"Свойство .isEmpty, примененное к строке, возвращает этот результат",
-								"Какой результат вернет .isEmpty, примененное к String значению?"],
+					 helpText: "Find out whether a String value is empty by checking its Boolean isEmpty property."),
+			
+			/// Здесь мог напортачить с вопросами (чуть больше, чем в остальных местах)
+			
+			Question(question: ["What is the result of the .isEmpty property when we applied it to a string?",
+								"The .isEmpty property applied to a string returns this result",
+								"What is the result of .isEmpty when applied to a String value?"],
 					 image: "",
-					 optionA: "true или false",
-					 optionB: "1 или 0",
-					 optionC: "nil или количество символов",
-					 optionD: "Ничего не возвращает",
+					 optionA: "true or false",
+					 optionB: "1 or 0",
+					 optionC: "number of characters",
+					 optionD: "",
 					 questionId: 209,
-					 helpText: "Свойство .isEmpty возвращает true или false"),
-
-			Question(question: ["Чему мы должны присвоить String-значение, чтобы его можно было модифицировать?",
-								"Как присвоить String-значение, чтобы в дальнейшем мы могли его изменять?",
-								"Чтобы мы могли модифицировать String-значение, чему мы должны его присвоить?"],
+					 helpText: "Find out whether a String value is empty by checking its Boolean isEmpty property, it returns true or false."),
+			
+			Question(question: ["What do we need to assign the String value to so that it can be modified?",
+								"How to assign a String value so that we can change it later?",
+								"So that we can modify the String value, what should we assign it to?"],
 					 image: "",
-					 optionA: "Переменной",
-					 optionB: "Константе",
-					 optionC: "NSMutableString",
-					 optionD: "String-значения неизменяемы",
+					 optionA: "To variable",
+					 optionB: "To constant",
+					 optionC: "To NSMutableString",
+					 optionD: "",
 					 questionId: 210,
-					 helpText: "Вы можете указать, может ли конкретный String быть модифицирован, путем присвоения его переменной ( в этом случае он может быть модифицирован) или присвоения его константе ( в этом случае он не может быть модифицирован)."),
-
-			Question(question: ["Что происходит с String значением при передаче в функцию или метод?",
-								"При присваивании существующего String значения другой переменной, что происходит со значением?",
-								"Когда String значение присваивается новой константе, что происходит?"],
+					 helpText: "You indicate whether a particular String can be modified (or mutated) by assigning it to a variable (in which case it can be modified), or to a constant (in which case it can’t be modified)."),
+			
+			/// 211 - Хочется в формулировке не показывать фразу "тип значения". Чтобы проверить, знает ли человек разницу между ссылочным типом и типом значения
+			/// Если что это фундаментальная вещь, запомни что все базовые типы - это структуры, структуры и перечисления это типа значений, они всегда копируются
+			/// Классы же - ссылочные типы, их используют когда при каждом изменении нужно менять именно исходный экземпляр
+			
+			Question(question: ["What happens to the String value when it passed to a function or method?",
+								"When assigning an existing String to another variable, what happens to the value?",
+								"When a String value is assigned to a new constant, what happens?"],
 					 image: "",
-					 optionA: "Создается копия значения",
-					 optionB: "Превращается в ссылку",
-					 optionC: "Ничего не происходит",
-					 optionD: "Присваивается исходное значение",
+					 optionA: "The value is copied",
+					 optionB: "We assign the reference",
+					 optionC: "",
+					 optionD: "",
 					 questionId: 211,
-					 helpText: "Тип String в Swift является типом значения. Когда вы создаете новое String значение, это значение копируется, когда оно передается функции или методу или когда оно присваивается константе или переменной. В каждом случае создается новая копия существующего String значения и передается либо присваивается новая копия, а не исходная версия."),
-
-			Question(question: ["Когда вы передаете функции или методу String значение, какие изменения с ним происходят?",
-								"Какие изменения происходят со String значением при передаче его функции или методу?",
-								"Какие изменения произойдут со String значением, когда вы передаете его функции или методу?"],
+					 helpText: "Swift’s String type is a value type. If you create a new String value, that String value is copied when it’s passed to a function or method, or when it’s assigned to a constant or variable. In each case, a new copy of the existing String value is created, and the new copy is passed or assigned, not the original version."),
+			
+			Question(question: ["Сan you be confident that the string you are passed won’t be modified unless you modify it yourself?"],
 					 image: "",
-					 optionA: "Передается без изменений",
-					 optionB: "Модифицируется",
-					 optionC: "Округляется",
-					 optionD: "Возврат в исходное состояние",
+					 optionA: "Yes",
+					 optionB: "No",
+					 optionC: "",
+					 optionD: "",
 					 questionId: 212,
-					 helpText: "Подход \"копировать по умолчанию\" для String в Swift позволяет быть уверенным в том, что когда вы передаете функции либо методу String значение, то очевидно, что вы имеете точно то же String значение, независимо от того, откуда она пришла. Вы можете быть уверены, что строка, которая вам передана, не будет модифицирована, если вы не модифицируете ее сами."),
-
-			Question(question: ["Когда происходит копирование строк в Swift?",
-								"Копирование строк в Swift происходит в этот момент",
-								"В какой момент происходит копирование строк в Swift?"],
+					 helpText: "Swift’s copy-by-default String behavior ensures that when a function or method passes you a String value, it’s clear that you own that exact String value, regardless of where it came from. You can be confident that the string you are passed won’t be modified unless you modify it yourself."),
+			
+			/// 213 - Здесь не уверен, что вопросы отражают суть
+			
+			Question(question: ["When does Swift copy strings?",
+								"String copying in Swift happens at this moment",
+								"At what point does Swift copy strings values?"],
 					 image: "",
-					 optionA: "Когда оно необходимо",
-					 optionB: "После запуска Xcode",
-					 optionC: "При запуске компилятора",
-					 optionD: "При индексации файлов",
+					 optionA: "When absolutely necessary",
+					 optionB: "After running Xcode",
+					 optionC: "When you run the compiler",
+					 optionD: "",
 					 questionId: 213,
-					 helpText: "Компилятор Swift оптимизирует использование строк, так что фактическое копирование строк происходит только тогда, когда оно действительно необходимо. Это означает, что вы всегда получаете высокую производительность, при работе со строками, как с типами значений."),
-
-			Question(question: ["К чему мы получим доступ, итерируя строку внутри цикла for-in?",
-								"К чему можно получить доступ при итерации String значения внутри цикла for-in?"],
+					 helpText: "Behind the scenes, Swift’s compiler optimizes string usage so that actual copying takes place only when absolutely necessary. This means you always get great performance when working with strings as value types."),
+			
+			Question(question: ["What can we access by iterating through the string inside the for-in loop?",
+								"What can you access when iterating a String value inside a for-in loop?"],
 					 image: "",
-					 optionA: "К каждому Character",
-					 optionB: "К индексам каждой буквы",
-					 optionC: "К количеству символов",
-					 optionD: "Ни к чему",
+					 optionA: "Individual Character values",
+					 optionB: "Individual letter",
+					 optionC: "To the number of characters",
+					 optionD: "",
 					 questionId: 214,
-					 helpText: "Тип String в Swift представляет собой коллекцию значений Character в указанном порядке. Вы можете получить доступ к отдельным значениям Character в строке с помощью итерации по этой строке в for-in цикле."),
-
-			Question(question: ["Какое значение будет у константы string?",
-								"После компиляции данного кода какое значение будет у string?"],
+					 helpText: "You can access the individual Character values for a String by iterating over the string with a for-in loop."),
+			
+			Question(question: ["What value will the \"string\" constant have?",
+								"After compiling this code, what value will \"string\" have?"],
 					 image: "StringAndCharacters15",
 					 optionA: "abc",
 					 optionB: "a, b, c",
 					 optionC: "[abc]",
-					 optionD: "Столкнемся с ошибкой",
+					 optionD: "",
 					 questionId: 215,
-					 helpText: "Значения типа String могут быть созданы путем передачи массива типа [Character] в инициализатор, поэтому значение константы string будет = abc"),
-
-			Question(question: ["С помощью какого математического оператора могут быть добавлены или конкатенированы значения типа String?",
-								"Значения типа String могут быть конкатенированы с помощью этого оператора",
-								"С помощью этого мат.оператора могут быть добавлены новые значения типа String"],
+					 helpText: "String values can be constructed by passing an array of Character values as an argument to its initializer, so the value of the constant \"string\" will be \"abc\""),
+			
+			Question(question: ["What operator can be used to add or concatenate String values?",
+								"String values can be concatenated using this operator"],
 					 image: "",
-					 optionA: "Сложение",
-					 optionB: "Вычитание",
-					 optionC: "Умножение",
+					 optionA: "+",
+					 optionB: "-",
+					 optionC: "*",
 					 optionD: "",
 					 questionId: 216,
-					 helpText: "Значения типа String могут быть добавлены или конкатенированы с помощью оператора сложения (+)"),
-
-			Question(question: ["Возможно ли добавление значения типа String к существующей переменной типа Character?",
-								"Можем ли мы добавить Character к существующей переменной типа Character?"],
+					 helpText: "String values can be added together (or concatenated) with the addition operator (+) to create a new String value."),
+			
+			Question(question: ["Can we append a String value to an existing String variable with the addition assignment operator \"+=\"?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
-					 optionC: "Да, если это переменная",
-					 optionD: "Да, даже если это константа",
-					 questionId: 217,
-					 helpText: "Вы не можете добавить String или Character к уже существующей переменной типа Character, потому что значение типа Character должно состоять только из одиночного символа."),
-
-			Question(question: ["Способ создать новое значение типа String из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал",
-								"Создание нового String-значения из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал",
-								"Включение разных значений в String, используя обратный слеш и круглые скобки, называется?"],
-					 image: "",
-					 optionA: "Интерполяция",
-					 optionB: "Конкатенация",
-					 optionC: "Объединение строк",
+					 optionA: "Yes",
+					 optionB: "No",
+					 optionC: "No, only with +",
 					 optionD: "",
-					 questionId: 218,
-					 helpText: "Интерполяция строк - способ создать новое значение типа String из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал. Каждый элемент, который вы вставляете в строковый литерал, должен быть помещен в скобки и находиться внутри двойных кавычек литерала, а перед открывающей скобкой должен стоять знак обратного слэша."),
-
-			Question(question: ["Каждый экземпляр типа Character в Swift представляет это",
-								"Является последовательностью одного и более скалярных величин Юникода?"],
+					 questionId: 21600,
+					 helpText: "Yes, you can append a String value to an existing String variable with the addition assignment operator (+=)"),
+			
+			Question(question: ["Can we append a Character value to a String variable with the String type’s append() method?"],
 					 image: "",
-					 optionA: "Расширенный набор графем",
-					 optionB: "Набор символов",
+					 optionA: "Yes",
+					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 219,
-					 helpText: "Каждый экземпляр типа Character в Swift представляет один расширенный набор графем. Расширенный набор графем является последовательностью одного и более скалярных величин Юникода, которые (будучи объединенными) производят один читаемый символ."),
-
-			Question(question: ["Могут ли различные символы и различное отображение одного и того же символа потребовать разных объемов памяти для хранения?",
-								"Разные символы и разное отображение одного и того же символа требует разных объемов памяти для хранения, так ли это?",
-								"Может ли разное отображение одного и того же символа потребовать разного размера памяти для хранения?"],
+					 questionId: 21601,
+					 helpText: "You can append a Character value to a String variable with the String type’s append() method."),
+			
+			Question(question: ["Can we append a String or Character to an existing Character variable?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
+					 optionA: "No",
+					 optionB: "Yes",
+					 optionC: "Yes, if it's a variable",
+					 optionD: "",
+					 questionId: 217,
+					 helpText: "You can’t append a String or Character to an existing Character variable, because a Character value must contain a single character only."),
+			
+			Question(question: ["A way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal"],
+					 image: "",
+					 optionA: "String interpolation",
+					 optionB: "String concatenation",
+					 optionC: "Combining strings",
+					 optionD: "",
+					 questionId: 218,
+					 helpText: "String interpolation is a way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal. You can use string interpolation in both single-line and multiline string literals. Each item that you insert into the string literal is wrapped in a pair of parentheses, prefixed by a backslash."),
+			
+			Question(question: ["Every instance of Swift’s Character type represents this ..."],
+					 image: "",
+					 optionA: "Extended grapheme cluster",
+					 optionB: "Cluster of symbols",
+					 optionC: "Collection",
+					 optionD: "",
+					 questionId: 219,
+					 helpText: "Every instance of Swift’s Character type represents a single extended grapheme cluster. An extended grapheme cluster is a sequence of one or more Unicode scalars that (when combined) produce a single human-readable character."),
+			
+			/// 220 - Пожалуйста переведи этот вопрос сам, очень сложная концепция
+			
+			Question(question: ["Могут ли различные символы и различное отображение одного и того же символа потребовать разных объемов памяти для хранения?"],
+					 image: "",
+					 optionA: "Yes",
+					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 220,
-					 helpText: "Расширенный набор графем может состоять из одного или более скалярных величин Юникода. Это означает, что различные символы, и различное отображение одного и того же символа, могут требовать разных объемов памяти для хранения. Из-за этого символы в Swift не занимают одинаковый объем памяти в строке. В результате этого количество символов в строке не может быть подсчитано без итерации в строке для определения границ, расширенного набора графем. "),
-
-			Question(question: ["Используйте это свойство для доступа к позиции первого Character в String",
-								"Какое свойство используется для доступа к позиции первого Character в String?",
-								"Для доступа к позиции первого Character в String используется именно это свойство"],
+					 helpText: "Extended grapheme clusters can be composed of multiple Unicode scalars. This means that different characters—and different representations of the same character—can require different amounts of memory to store. Because of this, characters in Swift don’t each take up the same amount of memory within a string’s representation. As a result, the number of characters in a string can’t be calculated without iterating through the string to determine its extended grapheme cluster boundaries."),
+			
+			Question(question: ["Use this property to access the position of the first Character in a String",
+								"Which property is used to access the position of the first Character in a String?",
+								"This property is used to access the position of the first Character in a String"],
 					 image: "",
 					 optionA: "startIndex",
 					 optionB: "firstIndex",
 					 optionC: "prefix",
 					 optionD: "first",
 					 questionId: 221,
-					 helpText: "Используйте свойство startIndex для доступа позиции первого Character в String."),
-
-			Question(question: ["Используйте это свойство для доступа к позиции после последнего Character в String",
-								"Какое свойство используется для доступа к позиции после последнего Character в String?",
-								"Для доступа к позиции после последнего Character в String используется именно это свойство"],
+					 helpText: "Use the startIndex property to access the position of the first Character of a String. The endIndex property is the position after the last character in a String. As a result, the endIndex property isn’t a valid argument to a string’s subscript. If a String is empty, startIndex and endIndex are equal."),
+			
+			Question(question: ["Use this property to access the position after the last Character in a String",
+								"Which property is used to access the position after the last Character in a String?",
+								"This property is used to access the position after the last Character in the String"],
 					 image: "",
 					 optionA: "endIndex",
 					 optionB: "lastIndex",
 					 optionC: "suffix",
-					 optionD: "last",
+					 optionD: "",
 					 questionId: 222,
-					 helpText: "Свойство endIndex — это позиция после последнего символа в String. В результате endIndex свойство не является допустимым значением для сабскрипта строки."),
-
-			Question(question: ["Если String пустая, то startIndex и endIndex будут ...?"],
+					 helpText: "The endIndex property is the position after the last character in a String. As a result, the endIndex property isn’t a valid argument to a string’s subscript."),
+			
+			Question(question: ["If a String is empty, startIndex and endIndex are ..."],
 					 image: "",
-					 optionA: "Равными",
-					 optionB: "Неравными",
-					 optionC: "Пустыми",
-					 optionD: "= nil",
+					 optionA: "Equal",
+					 optionB: "Unequal",
+					 optionC: "Empty",
+					 optionD: "Equal to nil",
 					 questionId: 223,
-					 helpText: "Если String пустая, то startIndex и endIndex равны."),
-
-			Question(question: ["Какими методами мы можем получить доступ к индексу до и после указанного индекса?",
-								"Мы можем получить доступ к индексу до и после указанного индекса с помощью этих методов",
-								"С помощью каких методов мы можем получить доступ к индексу до и после указанного?"],
+					 helpText: "If a String is empty, startIndex and endIndex are equal."),
+			
+			Question(question: ["What methods can we use to access the index before and after the specified index?",
+								"We can access the index before and after the specified index using these methods",
+								"What methods can we use to access the index before and after the specified one?"],
 					 image: "",
-					 optionA: "index(before:) и index(after:)",
-					 optionB: "indexBefore и indexAfter",
-					 optionC: "before и after",
+					 optionA: "index(before:) and index(after:)",
+					 optionB: "indexBefore and indexAfter",
+					 optionC: "before and after",
 					 optionD: "",
 					 questionId: 224,
-					 helpText: "Вы получаете доступ к индексу до и после указанного индекса при помощи методов index(before:) и index(after:)."),
-
-			Question(question: ["Что мы получим при попытке получить доступ к Character за пределами диапазона строки?",
-								"Если мы попытаемся получить доступ к символу за пределами диапазона строки, что мы получим?"],
+					 helpText: "You access the indices before and after a given index using the index(before:) and index(after:) methods of String. "),
+			
+			Question(question: ["What do we get when we try to access the Character outside the range of the string?",
+								"If we try to access a character outside the range of the string, what do we get?"],
 					 image: "",
-					 optionA: "Сообщение об ошибке",
-					 optionB: "Ноль",
-					 optionC: "nil",
-					 optionD: "Ничего",
+					 optionA: "Runtime error",
+					 optionB: "nil",
+					 optionC: "Compile-time error",
+					 optionD: "Last value",
 					 questionId: 225,
-					 helpText: "Попытка доступа к Character в индексе за пределами диапазона строки выдаст сообщение об ошибке выполнения."),
-
-			Question(question: ["Какой символ будет присвоен переменной character?"],
+					 helpText: "Attempting to access an index outside of a string’s range or a Character at an index outside of a string’s range will trigger a runtime error."),
+			
+			Question(question: ["What character will be assigned to the \"character\" variable?"],
 					 image: "StringAndCharacters26",
 					 optionA: "h",
 					 optionB: "t",
 					 optionC: "e",
-					 optionD: "Пробел",
+					 optionD: "",
 					 questionId: 226,
-					 helpText: "Правильный ответ: h."),
-
-			Question(question: ["Можем ли мы использовать свойства startIndex, endIndex и методы index(before:), index(after:) и index(_:offsetBy:) с любым типом, который соответствует протоколу Collection?",
-								"Можем ли мы использовать свойства startIndex, endIndex с любым типом, который соответствует протоколу Collection?",
-								"Можем ли мы использовать методы index(before:), index(after:) и index(_:offsetBy:) с типами Array, Dictionary и Set?"],
+					 helpText: "Correct answer: h."),
+			
+			Question(question: ["Can we use the startIndex and endIndex properties with any type that conforms to the Collection protocol?",
+								"Can we use startIndex, endIndex properties with any type that conforms to the Collection protocol?",
+								"Can we use the index (before :), index (after :) and index (_: offsetBy :) methods with the Array, Dictionary and Set types?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
+					 optionA: "Yes",
+					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 227,
-					 helpText: "Вы можете использовать свойства startIndex, endIndex и методы index(before:), index(after:) и index(_:offsetBy:) с любым типом, который соответствует протоколу Collection. Это включает в себя String, как и показано тут, различные типы коллекций, например, Array, Dictionary и Set."),
-
-			Question(question: ["Метод, который позволяет вставить символ в строку по указанному индексу?",
-								"Какой метод позволяет вставить символ в строку на указанный индекс?",
-								"С помощью этого метода мы можем вставить символ в строку на указанный индекс"],
+					 helpText: "You can use the startIndex and endIndex properties and the index(before:), index(after:), and index(_:offsetBy:) methods on any type that conforms to the Collection protocol. This includes String, as shown here, as well as collection types such as Array, Dictionary, and Set."),
+			
+			Question(question: ["A method that allows you to insert a character into a string at the specified index?",
+								"Which method allows you to insert a character into a string at the specified index?",
+								"With this method we can insert a character into the string at the specified index"],
 					 image: "",
 					 optionA: "insert(_:at:)",
 					 optionB: "insert(contentsOf:at:)",
 					 optionC: "remove(at:)",
 					 optionD: "",
 					 questionId: 228,
-					 helpText: "Для того, чтобы вставить символ в строку по указанному индексу, используйте insert(_:at:) метод."),
-
-			Question(question: ["Метод, который позволяет вставить содержимое строки в строку по указанному индексу?",
-								"Какой метод позволяет вставить содержимое строки в строку на указанный индекс?",
-								"С помощью этого метода мы можем вставить содержимое другой строки в строку на указанный индекс"],
+					 helpText: "To insert a single character into a string at a specified index, use the insert(_:at:) method, and to insert the contents of another string at a specified index, use the insert(contentsOf:at:) method."),
+			
+			Question(question: ["A method that allows you to insert the contents of a string into another string at the specified index?",
+								"Which method allows you to insert the contents of a string into another string at the specified index?",
+								"With this method, we can insert the contents of another string into another string at the specified index"],
 					 image: "",
 					 optionA: "insert(contentsOf:at:)",
 					 optionB: "insert(_:at:)",
 					 optionC: "remove(at:)",
 					 optionD: "",
 					 questionId: 229,
-					 helpText: "Для того, чтобы вставить символ в строку по указанному индексу, используйте insert(_:at:) метод, а для того, чтобы вставить содержимое другой строки по указанному индексу, используйте метод insert(contentsOf:at:)."),
-
-			Question(question: ["Какое значение будет у переменной после выполнения кода?",
-								"После исполнения кода какое значение будет у hello?"],
+					 helpText: "To insert a single character into a string at a specified index, use the insert(_:at:) method, and to insert the contents of another string at a specified index, use the insert(contentsOf:at:) method."),
+			
+			Question(question: ["What value will the variable have after executing the code?"],
 					 image: "StringAndCharacters30",
 					 optionA: "Hey, you!",
 					 optionB: "Hey! you,",
 					 optionC: "Hey!, you",
 					 optionD: "",
 					 questionId: 230,
-					 helpText: "Правильный ответ: Hey, you!."),
-
-			Question(question: ["Какое значение будет у переменной, после выполнения кода?",
-								"После исполнения кода какое значение будет у hello?"],
+					 helpText: "Correct answer: Hey, you!."),
+			
+			Question(question: ["What value will the variable have after executing the code?"],
 					 image: "StringAndCharacters31",
 					 optionA: "Hell!o",
 					 optionB: "Hello !",
 					 optionC: "Hello!",
 					 optionD: "",
 					 questionId: 231,
-					 helpText: "Правильный ответ: Hell!o"),
-
-			Question(question: ["Метод, который позволяет удалить символ из строки по указанному индексу?",
-								"Какой метод позволяет удалить символ по указанному индексу?",
-								"С помощью этого метода мы можем удалить символ с указанного индекса"],
+					 helpText: "Correct answer: Hell!o"),
+			
+			Question(question: ["A method that allows you to remove a character from a string at the specified index?",
+								"Which method allows you to delete a character at the specified index?",
+								"With this method we can remove a character from the specified index"],
 					 image: "",
 					 optionA: "remove(at:)",
 					 optionB: "removeSubrange(_:)",
 					 optionC: "delete(at:)",
-					 optionD: "insert(contentsOf:at:)",
+					 optionD: "",
 					 questionId: 232,
-					 helpText: "Для того, чтобы удалить символ из строки по указанному индексу, используйте remove(at:)."),
-
-			Question(question: ["Как удалить значения из строки по указанному диапазону индексов?",
-								"Каким образом мы можем удалить значения из строки по указанному диапазону индексов?"],
+					 helpText: "To remove a single character from a string at a specified index, use the remove(at:) method, and to remove a substring at a specified range, use the removeSubrange(_:) method."),
+			
+			/// 233 - indices is ok to use?
+			
+			Question(question: ["How to remove values from a string at the specified range of indices?",
+								"How can we remove values from a string at a specified range of indices?"],
 					 image: "",
 					 optionA: "removeSubrange(_:)",
 					 optionB: "remove(at:)",
 					 optionC: "delete(at:)",
-					 optionD: "insert(contentsOf:at:)",
+					 optionD: "",
 					 questionId: 233,
-					 helpText: "Для того, чтобы удалить символ из строки по указанному индексу, используйте remove(at:), если вы хотите удалить значения по указанному диапазону индексов, используйте метод removeSubrange(_:)."),
-
-			Question(question: ["Можем ли мы использовать методы insert(_:at:), insert(contentsOf:at:) с любыми типами, которые соответствуют протоколу RangeReplaceableCollection?",
-								"Сможем ли мы использовать методы insert(_:at:), insert(contentsOf:at:) с любыми типами, которые соответствуют протоколу RangeReplaceableCollection?",
-								"Можем ли мы использовать методы remove(at:) и removeSubrange(_:) с типами Array, Dictionary и Set?"],
+					 helpText: "To remove a single character from a string at a specified index, use the remove(at:) method, and to remove a substring at a specified range, use the removeSubrange(_:) method."),
+			
+			Question(question: ["Can we use the insert(_:at:) and insert(contentsOf:at:) methods with any types that conform to the RangeReplaceableCollection protocol?",
+								"Can we use the insert(_:at:), insert(contentsOf:at:) methods with any types that conform to the RangeReplaceableCollection protocol?",
+								"Can we use the remove(at:) and removeSubrange(_:) methods with the Array, Dictionary and Set types?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
+					 optionA: "Yes",
+					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 234,
-					 helpText: "Вы можете использовать методы insert(_:at:), insert(contentsOf:at:), remove(at:) и removeSubrange(_:) с любыми типами, которые соответствуют протоколу RangeReplaceableCollection. Это включает в себя String, как показано тут, а так же коллекции, такие как Array, Dictionary и Set."),
-
-			Question(question: ["Какое значение останется у переменной hello?",
-								"После исполнения кода, какое значение будет у hello?"],
+					 helpText: "You can use the insert(_:at:), insert(contentsOf:at:), remove(at:), and removeSubrange(_:) methods on any type that conforms to the RangeReplaceableCollection protocol. This includes String, as shown here, as well as collection types such as Array, Dictionary, and Set."),
+			
+			/// Если можно меняй чуть-чуть формулировки однотипных вопросов типа Question(question: ["What value will the variable have after executing the code?"]
+			
+			Question(question: ["What value will the variable have after executing the code?"],
 					 image: "StringAndCharacters35",
 					 optionA: "Hello",
 					 optionB: "Hello!",
 					 optionC: "Hello there",
 					 optionD: "there!",
 					 questionId: 235,
-					 helpText: "Правильный ответ: Hello."),
-
-			Question(question: ["Подходят ли подстроки для долгосрочного хранения в памяти?"],
+					 helpText: "Correct answer: Hello."),
+			
+			Question(question: ["Are the substrings suitable for long-term storage?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
+					 optionA: "No",
+					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 236,
-					 helpText: "Подстроки не подходят для долгосрочного хранения, так как они повторно используют хранилище исходной строки."),
-
-			Question(question: ["Может ли подстрока использовать часть памяти, используемую для хранения исходной строки?",
-								"Может ли подстрока использовать часть памяти, которая используется для хранения другой подстроки?"],
+					 helpText: "Substrings aren’t suitable for long-term storage—because they reuse the storage of the original string, the entire original string must be kept in memory as long as any of its substrings are being used."),
+			
+			Question(question: ["Each substring has a region of memory where the characters that make up the substring are stored. Is that true?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
+					 optionA: "Yes",
+					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 237,
-					 helpText: "Как и строки, каждая подстрока имеет область в памяти, где хранятся символы, создающие эту подстроку. Разница между строками и подстроками в том, что для оптимизации производительности подстрока может использовать часть памяти, используемую для хранения исходной строки или часть памяти, которая используется для хранения другой подстроки. (Строки также имеют похожую оптимизацию, но если две строки делят между собой память, то они считаются равными)."),
-
+					 helpText: "Like strings, each substring has a region of memory where the characters that make up the substring are stored. The difference between strings and substrings is that, as a performance optimization, a substring can reuse part of the memory that’s used to store the original string, or part of the memory that’s used to store another substring. (Strings have a similar optimization, but if two strings share memory, they are equal.)"),
+			
 			Question(question: ["Сколько способов сравнения текстовых значений поддерживается в Swift?",
 								"Swift поддерживает именно столько способов сравнения текстовых значений",
 								"В Swift есть именно столько способов сравнения текстовых значений"],
 					 image: "",
-					 optionA: "Три",
-					 optionB: "Два",
-					 optionC: "Один",
-					 optionD: "Четыре",
+					 optionA: "Three",
+					 optionB: "Two",
+					 optionC: "Eleven",
+					 optionD: "",
 					 questionId: 238,
-					 helpText: "Swift предусматривает три способа сравнения текстовых значений: равенство строк и символов, равенство префиксов и равенство суффиксов."),
-
-			Question(question: ["Какими операторами проверяется равенство строк и символов?",
-								"Две строки на равенство можно проверить двумя этими операторами сравнения",
-								"Какими операторами мы можем сравнить две строки или два символа?"],
+					 helpText: "Swift provides three ways to compare textual values: string and character equality, prefix equality, and suffix equality."),
+			
+			Question(question: ["What operators are used to check equality of strings and characters?",
+								"Two strings can be checked for equality with these two comparison operators",
+								"What operators can we use to compare two strings or two characters?"],
 					 image: "",
-					 optionA: "== и !=",
-					 optionB: "== и !==",
-					 optionC: "= и !=",
-					 optionD: ">= и <=",
+					 optionA: "== and !=",
+					 optionB: "== and !==",
+					 optionC: "= and !=",
+					 optionD: ">= and <=",
 					 questionId: 239,
-					 helpText: "Равенство строк и символов проверяется оператором равенства (==) и оператором неравенства (!=). Два String значения (или два Character значения) считаются равными, если их расширенные наборы графем канонически эквивалентны . Расширенные наборы графем канонически эквивалентны, если они имеют один и тот же языковой смысл и внешний вид, даже если они изначально состоят из разных скалярных величин Юникода."),
-
-			Question(question: ["Зависит ли сравнение строк и символов от локализации?",
-								"Сравнение строк и символов зависит от локализации?"],
+					 helpText: "String and character equality is checked with the “equal to” operator (==) and the “not equal to” operator (!=). Two String values (or two Character values) are considered equal if their extended grapheme clusters are canonically equivalent. Extended grapheme clusters are canonically equivalent if they have the same linguistic meaning and appearance, even if they’re composed from different Unicode scalars behind the scenes."),
+			
+			Question(question: ["Does string and character comparisons are locale-sensitive?",
+								"Does string versus character comparisons are locale-sensitive?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
+					 optionA: "No",
+					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 240,
-					 helpText: "Сравнение строк и символов в Swift не зависит от локализации."),
-
-			Question(question: ["Какими методами проверить, имеет ли строка определенный строковый префикс или суффикс?",
-								"Проверить наличие определенных суффикса и префикса в строке можно этими методами"],
+					 helpText: "String and character comparisons in Swift are not locale-sensitive."),
+			
+			Question(question: ["What methods can I use to check if a string has a specific string prefix or suffix?",
+								"You can check for the presence of a certain suffix and prefix in a string using these methods"],
 					 image: "",
-					 optionA: "hasPrefix(_:) и hasSuffix(_:)",
-					 optionB: "prefix() и suffix()",
-					 optionC: "hasPref(_:) и hasSuff(_:)",
+					 optionA: "hasPrefix(_:) and hasSuffix(_:)",
+					 optionB: "prefix() and suffix()",
+					 optionC: "hasPref(_:) and hasSuff(_:)",
 					 optionD: "",
 					 questionId: 241,
-					 helpText: "Чтобы проверить, имеет ли строка определенный строковый префикс или суффикс, вызовите hasPrefix(_:) и hasSuffix(_:) методы, оба из которых принимают единственный аргумент типа String и возвращают логическое значение."),
-
-			Question(question: ["Является ли пустая строка строковым литералом?",
-								"Пустая строка является строковым литералом?"],
+					 helpText: "To check whether a string has a particular string prefix or suffix, call the string’s hasPrefix(_:) and hasSuffix(_:) methods, both of which take a single argument of type String and return a Boolean value."),
+			
+			Question(question: ["Is the empty string a string literal?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
+					 optionA: "Yes",
+					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 242,
-					 helpText: "Пустая строка является строковым литералом. Вы можете передать ее в качестве значения параметру текстового типа данных."),
-
-			Question(question: ["Можете ли вы при приведении типа отправить в инициализатор String(_:) число с плавающей точкой?",
-								"Можем ли мы отправить в инициализатор String(_:) произвольный тип данных?"],
+					 helpText: "An empty string is a string literal. You can pass it as a value to a text data type parameter."),
+			
+			/// Здесь бы проверить как-то. Не смог в доке сходу найти
+			/// Инфа сотка, но наверное не из доки, или не из этого раздела
+			
+			Question(question: ["Can you send a floating point number to the String(_:) initializer when casting a type?",
+								"Can we send an arbitrary data type to the String(_:) initializer?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
-					 optionC: "Только другой String",
-					 optionD: "String и Character",
+					 optionA: "Yes",
+					 optionB: "No",
+					 optionC: "Only another string",
+					 optionD: "",
 					 questionId: 243,
-					 helpText: "Swift позволяет передать произвольное значение методу инициализации String(_:). Этот инициализатор может получать на входе не только текстовое значение, но и переменную произвольного типа данных (например Double). Эта функция преобразует переданное в нее значение в тип String. Подобный механизм есть и для типов Float(_:), Double(_:), или Int(_:).")
+					 helpText: "Swift allows you to pass an arbitrary value to the String(_:) initialization method. This initializer can receive as input not only a text value, but also a variable of an arbitrary data type (for example, Double). This function converts the value passed to it to String. A similar mechanism exists for the types Float(_:), Double(_:), or Int(_:).")
 		]
 	}
-
-
+	
+	
 	///
-
+	
 	
 	static func getDemoQuestions() -> [Question] {
 		return [
@@ -479,7 +513,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 201,
 					 helpText: "Строка представляет собой совокупность символов. Каждая строка состоит из независимых от кодировки символов Unicode и обеспечивает поддержку доступа к этим символам в различных Unicode представлениях."),
-
+			
 			Question(question: ["Каким типом представлены строки в Swift?",
 								"Какой тип у строки в Swift?",
 								"В Swift у строки именно этот тип"],
@@ -490,7 +524,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 202,
 					 helpText: "Строки в Swift представлены типом String."),
-
+			
 			Question(question: ["Фиксированная последовательность символов, окруженная двойными кавычками",
 								"Последовательность произвольных символов внутри двойных кавычек",
 								"Этот литерал состоит из какой-либо последовательности символов"],
@@ -501,7 +535,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 203,
 					 helpText: "Фиксированная последовательность символов, окруженная двойными кавычками, называется строковым литералом. Обычно используется как начальное значение для инициализации константы или переменной, при этом тип можно объявить неявно."),
-
+			
 			Question(question: ["Cколько двойных кавычек нужно ставить при открытии и закрытии многострочного строкового литерала?",
 								"Какое количество двойных кавычек ставится при открытии многострочного строкового литерала?",
 								"При закрытии открытии многострочного строкового литерала ставится именно столько двойных кавычек"],
@@ -512,7 +546,7 @@ class StringAndCharactersSet {
 					 optionD: "4",
 					 questionId: 204,
 					 helpText: "Если вам нужно создать строку, которая поддерживает многострочный вид, используйте литерал многострочной строки - последовательность символов, обернутых в три двойные кавычки. Многострочный литерал строки включает в себя все строки между тремя открывающими и тремя закрывающими кавычками. Строка начинается на первой строке после открывающих кавычек, а заканчивается на строке предшествующей закрывающим кавычкам."),
-
+			
 			Question(question: ["Каким символом осуществляется перенос строки в многострочном строковом литерале (в коде), позволяющий не отображать символ переноса строки в качестве части значения этой строки?",
 								"Этот символ может перенести строку многострочного литерала только внутри кода (для лучшего чтения), не отображая перенос строки как часть значения этой строки"],
 					 image: "",
@@ -522,7 +556,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 205,
 					 helpText: "Если вы хотите использовать символ переноса строки для того, чтобы сделать ваш код более читаемым, но вы не хотите чтобы символ переноса строки отображался в качестве части значения строки, то вам нужно использовать символ обратного слеша в конце этих строк. Проще говоря, если вы хотите перенести строку внутри кода, чтобы сделать его более читаемым, но не хотите, чтобы после компиляции эта строка также перенеслась."),
-
+			
 			Question(question: ["Как мы можем включить в строку специальные символы, не вызывая эффекта этих символов?",
 								"Вы можете включить в строку специальные символы, не вызывая их эффекта, как?",
 								"Как мы можем включить специальные символы в строку, при этом не вызывая их эффекта?"],
@@ -533,7 +567,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 206,
 					 helpText: "Вы можете поместить строковый литерал внутрь расширенного разделителя, чтобы включить в строку специальные символы, не вызывая эффекта самих символов. Вы помещаете вашу строку в кавычки и оборачиваете ее знаками #."),
-
+			
 			Question(question: ["Как можно инициализировать пустую строку?",
 								"Как инициализируется пустой тип String?",
 								"Инициализация пустой строки происходит именно таким(ими) способом(ами)"],
@@ -544,7 +578,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 207,
 					 helpText: "Чтобы создать пустое String значение в качестве отправной точки для создания более длинных строк, либо присвойте литерал пустой строки к переменной, либо инициализируйте объект String c помощью синтаксиса инициализации: = String()."),
-
+			
 			Question(question: ["Через какой свойство типа String мы можем узнать, является ли строка пустой?",
 								"Как узнать, является ли строка пустой?",
 								"Через это свойство мы можем узнать, является ли String пустым"],
@@ -555,7 +589,7 @@ class StringAndCharactersSet {
 					 optionD: ".removeRange",
 					 questionId: 208,
 					 helpText: "Можно узнать пустое ли String значение, через его Boolean свойство isEmpty."),
-
+			
 			Question(question: ["Какой результат возвращает свойство .isEmpty, примененное к строке?",
 								"Свойство .isEmpty, примененное к строке, возвращает этот результат",
 								"Какой результат вернет .isEmpty, примененное к String значению?"],
@@ -566,7 +600,7 @@ class StringAndCharactersSet {
 					 optionD: "Ничего не возвращает",
 					 questionId: 209,
 					 helpText: "Свойство .isEmpty возвращает true или false"),
-
+			
 			Question(question: ["Чему мы должны присвоить String-значение, чтобы его можно было модифицировать?",
 								"Как присвоить String-значение, чтобы в дальнейшем мы могли его изменять?",
 								"Чтобы мы могли модифицировать String-значение, чему мы должны его присвоить?"],
@@ -577,7 +611,7 @@ class StringAndCharactersSet {
 					 optionD: "String-значения неизменяемы",
 					 questionId: 210,
 					 helpText: "Вы можете указать, может ли конкретный String быть модифицирован, путем присвоения его переменной ( в этом случае он может быть модифицирован) или присвоения его константе ( в этом случае он не может быть модифицирован)."),
-
+			
 			Question(question: ["Что происходит с String значением при передаче в функцию или метод?",
 								"При присваивании существующего String значения другой переменной, что происходит со значением?",
 								"Когда String значение присваивается новой константе, что происходит?"],
@@ -588,7 +622,7 @@ class StringAndCharactersSet {
 					 optionD: "Присваивается исходное значение",
 					 questionId: 211,
 					 helpText: "Тип String в Swift является типом значения. Когда вы создаете новое String значение, это значение копируется, когда оно передается функции или методу или когда оно присваивается константе или переменной. В каждом случае создается новая копия существующего String значения и передается либо присваивается новая копия, а не исходная версия."),
-
+			
 			Question(question: ["Когда вы передаете функции или методу String значение, какие изменения с ним происходят?",
 								"Какие изменения происходят со String значением при передаче его функции или методу?",
 								"Какие изменения произойдут со String значением, когда вы передаете его функции или методу?"],
@@ -599,7 +633,7 @@ class StringAndCharactersSet {
 					 optionD: "Возврат в исходное состояние",
 					 questionId: 212,
 					 helpText: "Подход \"копировать по умолчанию\" для String в Swift позволяет быть уверенным в том, что когда вы передаете функции либо методу String значение, то очевидно, что вы имеете точно то же String значение, независимо от того, откуда она пришла. Вы можете быть уверены, что строка, которая вам передана, не будет модифицирована, если вы не модифицируете ее сами."),
-
+			
 			Question(question: ["Когда происходит копирование строк в Swift?",
 								"Копирование строк в Swift происходит в этот момент",
 								"В какой момент происходит копирование строк в Swift?"],
@@ -610,7 +644,7 @@ class StringAndCharactersSet {
 					 optionD: "При индексации файлов",
 					 questionId: 213,
 					 helpText: "Компилятор Swift оптимизирует использование строк, так что фактическое копирование строк происходит только тогда, когда оно действительно необходимо. Это означает, что вы всегда получаете высокую производительность, при работе со строками, как с типами значений."),
-
+			
 			Question(question: ["К чему мы получим доступ, итерируя строку внутри цикла for-in?",
 								"К чему можно получить доступ при итерации String значения внутри цикла for-in?"],
 					 image: "",
@@ -620,7 +654,7 @@ class StringAndCharactersSet {
 					 optionD: "Ни к чему",
 					 questionId: 214,
 					 helpText: "Тип String в Swift представляет собой коллекцию значений Character в указанном порядке. Вы можете получить доступ к отдельным значениям Character в строке с помощью итерации по этой строке в for-in цикле."),
-
+			
 			Question(question: ["Какое значение будет у константы string?",
 								"После компиляции данного кода какое значение будет у string?"],
 					 image: "StringAndCharacters15",
@@ -630,7 +664,7 @@ class StringAndCharactersSet {
 					 optionD: "Столкнемся с ошибкой",
 					 questionId: 215,
 					 helpText: "Значения типа String могут быть созданы путем передачи массива типа [Character] в инициализатор, поэтому значение константы string будет = abc"),
-
+			
 			Question(question: ["С помощью какого математического оператора могут быть добавлены или конкатенированы значения типа String?",
 								"Значения типа String могут быть конкатенированы с помощью этого оператора",
 								"С помощью этого мат.оператора могут быть добавлены новые значения типа String"],
@@ -641,7 +675,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 216,
 					 helpText: "Значения типа String могут быть добавлены или конкатенированы с помощью оператора сложения (+)"),
-
+			
 			Question(question: ["Возможно ли добавление значения типа String к существующей переменной типа Character?",
 								"Можем ли мы добавить Character к существующей переменной типа Character?"],
 					 image: "",
@@ -651,7 +685,7 @@ class StringAndCharactersSet {
 					 optionD: "Да, даже если это константа",
 					 questionId: 217,
 					 helpText: "Вы не можете добавить String или Character к уже существующей переменной типа Character, потому что значение типа Character должно состоять только из одиночного символа."),
-
+			
 			Question(question: ["Способ создать новое значение типа String из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал",
 								"Создание нового String-значения из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал",
 								"Включение разных значений в String, используя обратный слеш и круглые скобки, называется?"],
@@ -662,7 +696,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 218,
 					 helpText: "Интерполяция строк - способ создать новое значение типа String из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал. Каждый элемент, который вы вставляете в строковый литерал, должен быть помещен в скобки и находиться внутри двойных кавычек литерала, а перед открывающей скобкой должен стоять знак обратного слэша."),
-
+			
 			Question(question: ["Каждый экземпляр типа Character в Swift представляет это",
 								"Является последовательностью одного и более скалярных величин Юникода?"],
 					 image: "",
@@ -672,7 +706,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 219,
 					 helpText: "Каждый экземпляр типа Character в Swift представляет один расширенный набор графем. Расширенный набор графем является последовательностью одного и более скалярных величин Юникода, которые (будучи объединенными) производят один читаемый символ."),
-
+			
 			Question(question: ["Могут ли различные символы и различное отображение одного и того же символа потребовать разных объемов памяти для хранения?",
 								"Разные символы и разное отображение одного и того же символа требует разных объемов памяти для хранения, так ли это?",
 								"Может ли разное отображение одного и того же символа потребовать разного размера памяти для хранения?"],
@@ -683,7 +717,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 220,
 					 helpText: "Расширенный набор графем может состоять из одного или более скалярных величин Юникода. Это означает, что различные символы, и различное отображение одного и того же символа, могут требовать разных объемов памяти для хранения. Из-за этого символы в Swift не занимают одинаковый объем памяти в строке. В результате этого количество символов в строке не может быть подсчитано без итерации в строке для определения границ, расширенного набора графем. "),
-
+			
 			Question(question: ["Используйте это свойство для доступа к позиции первого Character в String",
 								"Какое свойство используется для доступа к позиции первого Character в String?",
 								"Для доступа к позиции первого Character в String используется именно это свойство"],
@@ -694,7 +728,7 @@ class StringAndCharactersSet {
 					 optionD: "first",
 					 questionId: 221,
 					 helpText: "Используйте свойство startIndex для доступа позиции первого Character в String."),
-
+			
 			Question(question: ["Используйте это свойство для доступа к позиции после последнего Character в String",
 								"Какое свойство используется для доступа к позиции после последнего Character в String?",
 								"Для доступа к позиции после последнего Character в String используется именно это свойство"],
@@ -705,7 +739,7 @@ class StringAndCharactersSet {
 					 optionD: "last",
 					 questionId: 222,
 					 helpText: "Свойство endIndex — это позиция после последнего символа в String. В результате endIndex свойство не является допустимым значением для сабскрипта строки."),
-
+			
 			Question(question: ["Если String пустая, то startIndex и endIndex будут ...?"],
 					 image: "",
 					 optionA: "Равными",
@@ -714,7 +748,7 @@ class StringAndCharactersSet {
 					 optionD: "= nil",
 					 questionId: 223,
 					 helpText: "Если String пустая, то startIndex и endIndex равны."),
-
+			
 			Question(question: ["Какими методами мы можем получить доступ к индексу до и после указанного индекса?",
 								"Мы можем получить доступ к индексу до и после указанного индекса с помощью этих методов",
 								"С помощью каких методов мы можем получить доступ к индексу до и после указанного?"],
@@ -725,7 +759,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 224,
 					 helpText: "Вы получаете доступ к индексу до и после указанного индекса при помощи методов index(before:) и index(after:)."),
-
+			
 			Question(question: ["Что мы получим при попытке получить доступ к Character за пределами диапазона строки?",
 								"Если мы попытаемся получить доступ к символу за пределами диапазона строки, что мы получим?"],
 					 image: "",
@@ -735,7 +769,7 @@ class StringAndCharactersSet {
 					 optionD: "Ничего",
 					 questionId: 225,
 					 helpText: "Попытка доступа к Character в индексе за пределами диапазона строки выдаст сообщение об ошибке выполнения."),
-
+			
 			Question(question: ["Какой символ будет присвоен переменной character?"],
 					 image: "StringAndCharacters26",
 					 optionA: "h",
@@ -744,7 +778,7 @@ class StringAndCharactersSet {
 					 optionD: "Пробел",
 					 questionId: 226,
 					 helpText: "Правильный ответ: h."),
-
+			
 			Question(question: ["Можем ли мы использовать свойства startIndex, endIndex и методы index(before:), index(after:) и index(_:offsetBy:) с любым типом, который соответствует протоколу Collection?",
 								"Можем ли мы использовать свойства startIndex, endIndex с любым типом, который соответствует протоколу Collection?",
 								"Можем ли мы использовать методы index(before:), index(after:) и index(_:offsetBy:) с типами Array, Dictionary и Set?"],
@@ -755,7 +789,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 227,
 					 helpText: "Вы можете использовать свойства startIndex, endIndex и методы index(before:), index(after:) и index(_:offsetBy:) с любым типом, который соответствует протоколу Collection. Это включает в себя String, как и показано тут, различные типы коллекций, например, Array, Dictionary и Set."),
-
+			
 			Question(question: ["Метод, который позволяет вставить символ в строку по указанному индексу?",
 								"Какой метод позволяет вставить символ в строку на указанный индекс?",
 								"С помощью этого метода мы можем вставить символ в строку на указанный индекс"],
@@ -766,7 +800,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 228,
 					 helpText: "Для того, чтобы вставить символ в строку по указанному индексу, используйте insert(_:at:) метод."),
-
+			
 			Question(question: ["Метод, который позволяет вставить содержимое строки в строку по указанному индексу?",
 								"Какой метод позволяет вставить содержимое строки в строку на указанный индекс?",
 								"С помощью этого метода мы можем вставить содержимое другой строки в строку на указанный индекс"],
@@ -777,7 +811,7 @@ class StringAndCharactersSet {
 					 optionD: "",
 					 questionId: 229,
 					 helpText: "Для того, чтобы вставить символ в строку по указанному индексу, используйте insert(_:at:) метод, а для того, чтобы вставить содержимое другой строки по указанному индексу, используйте метод insert(contentsOf:at:)."),
-
+			
 			Question(question: ["Какое значение будет у переменной после выполнения кода?",
 								"После исполнения кода какое значение будет у hello?"],
 					 image: "StringAndCharacters30",

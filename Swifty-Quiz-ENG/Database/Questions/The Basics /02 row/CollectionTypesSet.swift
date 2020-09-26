@@ -19,7 +19,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 301,
 					 helpText: "Swift provides three primary collection types, known as arrays, sets, and dictionaries, for storing collections of values."),
-
+			
 			Question(question: ["Ordered collections of values",
 								"Collection with ordered values",
 								"Ordered values combined into a collection"],
@@ -30,7 +30,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 302,
 					 helpText: "Arrays are ordered collections of values. An array stores values of the same type in an ordered list. The same value can appear in an array multiple times at different positions."),
-
+			
 			Question(question: ["Unordered collection of unique values",
 								"Unique values collected in an unordered collection",
 								"A collection of unordered unique values"],
@@ -41,7 +41,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 303,
 					 helpText: "Sets are unordered collections of unique values."),
-
+			
 			Question(question: ["Unordered collection storing key-value pairs",
 								"A collection storing unordered key-value pairs",
 								"Unordered key-value pairs are stored in this collection"],
@@ -52,7 +52,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 304,
 					 helpText: "Dictionaries are unordered collections of key-value associations. A dictionary stores associations between keys of the same type and values of the same type in a collection with no defined ordering. Each value is associated with a unique key, which acts as an identifier for that value within the dictionary. Unlike items in an array, items in a dictionary do not have a specified order. You use a dictionary when you need to look up values based on their identifier, in much the same way that a real-world dictionary is used to look up the definition for a particular word."),
-
+			
 			Question(question: ["Which type of collection on the image?"],
 					 image: "Collections5",
 					 optionA: "Dictionary",
@@ -61,7 +61,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 305,
 					 helpText: "This is dictionary, collection of key-values pairs."),
-
+			
 			Question(question: ["Can we mistakenly insert a value of the wrong type into the collection?",
 								"Can we insert a value of the wrong type into an array?",
 								"Is it possible to insert a value of the wrong type into the dictionary?"],
@@ -72,7 +72,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 306,
 					 helpText: "Arrays, sets, and dictionaries in Swift are always clear about the types of values and keys that they can store. This means that you cannot insert a value of the wrong type into a collection by mistake. It also means you can be confident about the type of values you will retrieve from a collection."),
-
+			
 			Question(question: ["If an array or dictionary is assigned to a variable, can we modify it?",
 								"Can we modify a dictionary or array if it assigned to a variable?",
 								"Is it possible to change the dictionary if we assigned it to a variable during definition?"],
@@ -83,7 +83,7 @@ class CollectionTypesSet {
 					 optionD: "No",
 					 questionId: 307,
 					 helpText: "If you create an array, a set, or a dictionary, and assign it to a variable, the collection that is created will be mutable. This means that you can change (or mutate) the collection after it’s created by adding, removing, or changing items in the collection. If you assign an array, a set, or a dictionary to a constant, that collection is immutable, and its size and contents cannot be changed."),
-
+			
 			Question(question: ["What type of collection is in the image?",
 								"What type of collection is shown in the image?"],
 					 image: "Collections8",
@@ -93,7 +93,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 308,
 					 helpText: "The image shows an Array, an ordered collection of values available by their indexes."),
-
+			
 			Question(question: ["What type of collection is in the image?",
 								"What type of collection is shown in the image?"],
 					 image: "Collections9",
@@ -103,7 +103,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 309,
 					 helpText: "This is set. Sets are unordered collections of unique values."),
-
+			
 			Question(question: ["If a collection is assigned to a constant, can we modify it?",
 								"Can we modify a dictionary or an array if it assigned to a constant?",
 								"Is it possible to change a set if we assigned it to a constant during definition?"],
@@ -114,7 +114,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 310,
 					 helpText: "If you assign an array, a set, or a dictionary to a constant, that collection is immutable, and its size and contents cannot be changed. It is good practice to create immutable collections in all cases where the collection does not need to change. Doing so makes it easier for you to reason about your code and enables the Swift compiler to optimize the performance of the collections you create."),
-
+			
 			Question(question: ["How do you write type of a Swift array in full?",
 								"The full form of writing a Swift array is ...",
 								"How can you write a full array notation in Swift?"],
@@ -125,7 +125,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 311,
 					 helpText: "The type of a Swift array is written in full as Array<Element>, where Element is the type of values the array is allowed to store. You can also write the type of an array in shorthand form as [Element]. Although the two forms are functionally identical, the shorthand form is preferred and is used throughout this guide when referring to the type of an array."),
-
+			
 			Question(question: ["How do you write an array shorthand form in Swift?",
 								"An shorthand form of writing an array in Swift is this ...",
 								"How should you write an array shorthand form in Swift?"],
@@ -136,7 +136,7 @@ class CollectionTypesSet {
 					 optionD: "Array(Element)[]",
 					 questionId: 312,
 					 helpText: "You can write the type of an array in shorthand form as [Element]. Although the two forms (Array<Element> and [Element]) are functionally identical, the shorthand form is preferred and is used throughout this guide when referring to the type of an array."),
-
+			
 			Question(question: ["How can you create an empty array using initializer syntax?",
 								"How can you create an empty array?",
 								"An empty array is initialized like this"],
@@ -147,7 +147,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 313,
 					 helpText: "You can create an empty array of a certain type using initializer syntax: var someInts = [Int]()"),
-
+			
 			Question(question: ["An alternative way to create an empty array",
 								"Alternatively, how can you create an empty array?",
 								"An empty array can be initialized like this"],
@@ -158,7 +158,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 314,
 					 helpText: "As an alternative to the initializer syntax, you can create an empty array using an empty array literal, written as [ ] (an empty pair of square brackets)."),
-
+			
 			/// Ну все Саша, начинается большое количество самописных вопросов ! Сжимаем булки и начинаем финишный спринт)
 			/// Там дальше паттерны останутся, в них почти ничего нет из информации, половина будет картинок и все
 			
@@ -172,7 +172,7 @@ class CollectionTypesSet {
 					 optionD: "[Int] and [0.0, 0.0, 0.0]",
 					 questionId: 315,
 					 helpText: "Unless otherwise defined, Swift will set the floating-point array to [Double], and this array initializer specifies that the array should contain 0.0 numbers, repeated three times. Correct answer would be [Double], [0.0, 0.0, 0.0]. Swift’s Array type provides an initializer for creating an array of a certain size with all of its values set to the same default value. You pass this initializer a default value of the appropriate type (called repeating): and the number of times that value is repeated in the new array (called count)"),
-
+			
 			Question(question: ["How can we create a new array by concatenating two existing arrays with compatible types?",
 								"How can we create a new array from two existing ones (their types are compatible)?"],
 					 image: "",
@@ -182,7 +182,7 @@ class CollectionTypesSet {
 					 optionD: "Logical operator &&",
 					 questionId: 316,
 					 helpText: "You can create a new array by adding together two existing arrays with compatible types with the addition operator (+). The new array’s type is inferred from the type of the two arrays you add together. You can also add one array to another via firstArray.append(contentsOf: secondArray)."),
-
+			
 			Question(question: ["We can create an array using array literal syntax just like this"],
 					 image: "",
 					 optionA: "var nums: [Int] = [0, 1, 2, 3]",
@@ -191,7 +191,7 @@ class CollectionTypesSet {
 					 optionD: "var nums: [Int](0, 1, 2, 3)",
 					 questionId: 317,
 					 helpText: "You can also initialize an array with an array literal, which is a shorthand way to write one or more values as an array collection. An array literal is written as a list of values, separated by commas, surrounded by a pair of square brackets: [value 1, value 2, value 3]. Example: var number: [Int] = [1, 2, 3, 4, 5]."),
-
+			
 			Question(question:["Do you have to write the type of the array if you’re initializing it with an array literal containing values of the same type?",
 							   "Could you write this array initialization in sorter form by ommiting array type: var array: [Int] = [1, 2]?"],
 					 image: "",
@@ -201,7 +201,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 318,
 					 helpText: "Thanks to Swift’s type inference, you don’t have to write the type of the array if you’re initializing it with an array literal containing values of the same type, for example var array: [Int] = [1, 2]. The initialization could have been written in a shorter form instead: var array = [1, 2]. Because all values in the array literal are of the same type, Swift can infer that [Int] is the correct type to use for the shoppingList variable."),
-
+			
 			Question(question: ["A quick way to get the number of elements in an array?",
 								"You can get the number of elements of an array through this property",
 								"Which property will help you get the number of elements in an array?"],
@@ -212,7 +212,7 @@ class CollectionTypesSet {
 					 optionD: "array.append()",
 					 questionId: 319,
 					 helpText: "To find out the number of items in an array, check its read-only count property."),
-
+			
 			Question(question: ["What will we get to the console after running this code?"],
 					 image: "Collections20",
 					 optionA: "Array is empty",
@@ -221,7 +221,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 320,
 					 helpText: "Use the Boolean isEmpty property as a shortcut for checking whether the count property is equal to 0. In this example, we have an empty array array, which means we will pass the check by the first condition and display \"Array is empty\""),
-
+			
 			Question(question: ["Where is the element added when we add it to the array via .append?",
 								"How is the element added when we add it into the array via .append?",
 								"If we add an element to the array via .append, where will it fit?"],
@@ -232,7 +232,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 321,
 					 helpText: "You can add a new item to the end of an array by calling the array’s append(_:) method."),
-
+			
 			Question(question: ["What result will we get after running this code?"],
 					 image: "Collections22",
 					 optionA: "We'll get an error",
@@ -241,7 +241,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 322,
 					 helpText: "You can add an array with one or more compatible (types) elements using the addition operator (+), but in this case we will run into an error because numbers is a constant."),
-
+			
 			Question(question: ["What will be in the numbers array after this code is executed?"],
 					 image: "Collections23",
 					 optionA: "[1.0, 2.0, 3.0, 4.0, 5.0]",
@@ -250,7 +250,7 @@ class CollectionTypesSet {
 					 optionD: "[1.0, 2.0]",
 					 questionId: 323,
 					 helpText: "The correct answer is [1.0, 2.0, 3.0, 4.0, 5.0]. The addition assignment operator will add the values 3, 4, and 5 to this array, but since the numbers array is of type [Double], the values will be 3.0, 4.0, 5.0."),
-
+			
 			Question(question: ["How can you retrieve a value from an array using subscript syntax?"],
 					 image: "",
 					 optionA: "arrayName[1]",
@@ -259,7 +259,7 @@ class CollectionTypesSet {
 					 optionD: "arrayName.3",
 					 questionId: 324,
 					 helpText: "Retrieve a value from the array by using subscript syntax, passing the index of the value you want to retrieve within square brackets immediately after the name of the array. The first item in the array has an index of 0, not 1. Arrays in Swift are always zero-indexed."),
-
+			
 			Question(question: ["What elements will be in the numbers array after this code is executed?",
 								"Select the final order of elements of the numbers array after executing this code",
 								"After executing the code, what is the order of the elements in the numbers array?"],
@@ -270,7 +270,7 @@ class CollectionTypesSet {
 					 optionD: "[1.0, 1.0, 3.0, 4.0]",
 					 questionId: 325,
 					 helpText: "You can use subscript syntax to change an existing value at a given index. The correct answer is [1.0, 2.0, 1.0, 4.0], since we are initializing a new value to the array element at index [2], starting at 0 this will be the third element (3.0)."),
-
+			
 			Question(question: ["What elements will be in the numbers array after this code is executed?",
 								"Select the final order of elements of the numbers array after executing this code",
 								"After executing the code, what is the order of the elements in the numbers array?"],
@@ -281,7 +281,7 @@ class CollectionTypesSet {
 					 optionD: "[4.0, 5.0, 6.0, 4.0]",
 					 questionId: 326,
 					 helpText: "You can use subscript syntax to change a range of values at once, even if the replacement set of values has a different length than the range you are replacing. Correct answer: [1.0, 4.0, 5.0, 6.0], since we are changing values from 1 to 3 index, which is 2.0, 3.0, 4.0."),
-
+			
 			Question(question: ["What elements will be in the numbers array after this code is executed?",
 								"Select the final order of elements of the numbers array after executing this code",
 								"After executing the code, what is the order of the elements in the numbers array?"],
@@ -292,7 +292,7 @@ class CollectionTypesSet {
 					 optionD: "[1.0, 2.0, 11.0, 12.0, 13.0]",
 					 questionId: 327,
 					 helpText: "You can use subscript syntax to change a range of values at once, even if the replacement set of values has a different length than the range you are replacing. The correct answer is [1.0, 2.0, 11.0, 12.0, 13.0, 5.0], since we change the values from 2 to 3 index, which is 3.0, 4.0, but we are inserting three elements instead of the two deleted."),
-
+			
 			Question(question: ["Which method will help insert an element into the array at a specific index?",
 								"To insert an element at a specific index in the array you should use this method",
 								"What method should you use to insert an element at a specific array index?"],
@@ -303,7 +303,7 @@ class CollectionTypesSet {
 					 optionD: "remove(_ :at:)",
 					 questionId: 328,
 					 helpText: "To insert an item into the array at a specified index, call the array’s insert(_:at:) method."),
-
+			
 			Question(question: ["Which method will help remove an element from the array specified index?"],
 					 image: "",
 					 optionA: "remove(_ :at:)",
@@ -312,7 +312,7 @@ class CollectionTypesSet {
 					 optionD: "insert(_:at:)",
 					 questionId: 329,
 					 helpText: "You remove an item from the array with the remove(at:) method. This method removes the item at the specified index and returns the removed item (although you can ignore the returned value if you do not need it)."),
-
+			
 			Question(question: ["What happens if you try to access or change the value of an index that is outside the existing bounds of the array?",
 								"If you try to change an index value that is outside the existing array boundaries, what happens?"],
 					 image: "",
@@ -322,7 +322,7 @@ class CollectionTypesSet {
 					 optionD: "We'll get last element",
 					 questionId: 330,
 					 helpText: "If you try to access or modify a value for an index that is outside of an array’s existing bounds, you will trigger a runtime error. You can check that an index is valid before using it by comparing it to the array’s count property. The largest valid index in an array is count - 1 because arrays are indexed from zero—however, when count is 0 (meaning the array is empty), there are no valid indexes."),
-
+			
 			Question(question: ["What elements will the array contain after this code is executed?",
 								"Select which values will be contained in the array after insert and remove are executed?"],
 					 image: "Collections30",
@@ -345,7 +345,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 332,
 					 helpText: "If you want to remove the last one or last few elements from the array, you can use the dropLast() method, in parentheses you need to indicate the number of elements you want to remove. After implementing this method, dropLast() returns a subsequence containing all but the specified number of final elements."),
-
+			
 			Question(question: ["What method can we use to remove the last element of the array, and return it?",
 								"Which method removes the last element of the array and returns it?",
 								"This method can remove the last element of the array and return it"],
@@ -356,7 +356,7 @@ class CollectionTypesSet {
 					 optionD: ".deleteLast()",
 					 questionId: 333,
 					 helpText: "If you want to remove the final item from an array, use the removeLast() method rather than the remove(at:) method to avoid the need to query the array’s count property. Like the remove(at:) method, removeLast() returns the removed item."),
-
+			
 			/// Тут много самописного будет, 334 в том числе
 			
 			Question(question: ["Choose what values the first and second variables will be after running this code"],
@@ -367,7 +367,7 @@ class CollectionTypesSet {
 					 optionD: "[1, 2, 3, 4] and 5",
 					 questionId: 334,
 					 helpText: "The first expression var first = numbers.dropLast () will assign to the variable first an array with the remaining elements, this is [1, 2, 3, 4]. The second expression var second = first.removeLast () will assign to the second variable the last element of the first array, that is, the number 4, but it will remove it from this variable, and only [1, 2, 3] will remain there. Correct answer: [1, 2, 3] and 4." ),
-
+			
 			Question(question: ["You can iterate over the entire set of values in an array with that loop",
 								"This way, you can do a simple iteration of the array, returning only elements without indices",
 								"How can we simply iterate over an array to return only the non-indexed elements?"],
@@ -378,7 +378,7 @@ class CollectionTypesSet {
 					 optionD: "switch-case",
 					 questionId: 335,
 					 helpText: "You can iterate over the entire set of values in an array with the for-in loop. If you need the integer index of each item as well as its value, use the enumerated() method to iterate over the array instead. For each item in the array, the enumerated() method returns a tuple composed of an integer and the item."),
-
+			
 			Question(question: ["How can we iterate through an array to return tuples containing the index and the value at that index?",
 								"This way, you can iterate over the array, returning tuples of values, consisting of the index and the value at this index"],
 					 image: "",
@@ -399,7 +399,7 @@ class CollectionTypesSet {
 					 optionD: "index - value and index - value",
 					 questionId: 337,
 					 helpText: "Correct answer: 0 - 0.1 and 1 - 0.2."),
-
+			
 			Question(question: ["If it is critical that the values in the collection are not duplicated, what type will you use?",
 								"What type of collection would you use if it is important that the values inside are not repeated?",
 								"What collection will you use so that all values in it are unique?"],
@@ -410,7 +410,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 338,
 					 helpText: "A set stores distinct values of the same type in a collection with no defined ordering. You can use a set instead of an array when the order of items is not important, or when you need to ensure that an item only appears once."),
-
+			
 			/// 339 - Сомневаюсь, потому что здесь именно надо спрашивать "тип должен быть таким" но не в плане числовой / строковый, а как бы про его качества
 			/// Не знаю как объяснить, если вдруг подумаешь что это кривой вопрос - давай удалим
 			
@@ -423,7 +423,7 @@ class CollectionTypesSet {
 					 optionD: "Computable",
 					 questionId: 339,
 					 helpText: "A type must be hashable in order to be stored in a set—that is, the type must provide a way to compute a hash value for itself. A hash value is an Int value that is the same for all objects that compare equally, such that if a == b, the hash value of a is equal to the hash value of b. You can use your own custom types as set value types or dictionary key types by making them conform to the Hashable protocol from the Swift standard library."),
-
+			
 			Question(question: ["How can you write a set type in Swift?",
 								"This is how set type is written in Swift",
 								"How should we write a set type in Swift?"],
@@ -434,7 +434,7 @@ class CollectionTypesSet {
 					 optionD: "(Set<ElementType>)",
 					 questionId: 340,
 					 helpText: "The type of a Swift set is written as Set<Element>, where Element is the type that the set is allowed to store. Unlike arrays, sets do not have an equivalent shorthand form."),
-
+			
 			Question(question: ["Does sets have an equivalent shorthand form?",
 								"Does sets have an equivalent shorthand form? If so, which one?"],
 					 image: "",
@@ -444,7 +444,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 341,
 					 helpText: "Unlike arrays, sets do not have an equivalent shorthand form. But you can initialize a set with an array literal, as a shorthand way to write one or more values as a set collection."),
-
+			
 			Question(question: ["You can create an empty set of a certain type using initializer syntax. How?"],
 					 image: "",
 					 optionA: "= Set<String>()",
@@ -453,7 +453,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 342,
 					 helpText: "You can create an empty set of a certain type using initializer syntax: var letters = Set<Character>(). The type of the letters variable is inferred to be Set<Character>, from the type of the initializer."),
-
+			
 			Question(question: ["If the context already provides type information, can we create an empty set using an empty array literal?",
 								"If we have an explicit type indication, can we cast existing set to empty set using an array literal (empty square brackets)?",
 								"Can we create an empty set using an empty array literal (empty square brackets) if we have an explicitly specified type for that set?"],
@@ -464,7 +464,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 343,
 					 helpText: "Alternatively, if the context already provides type information, such as a function argument or an already typed variable or constant, you can create an empty set (cast existed set to empty set) with an empty array literal: var letters = Set<Character>(); letters.insert(\"a\"); letters = []"),
-
+			
 			Question(question: ["Can we initialize a set with an array literal?",
 								"Can we initialize the set with an array literal?"],
 					 image: "",
@@ -474,7 +474,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 344,
 					 helpText: "You can also initialize a set with an array literal, as a shorthand way to write one or more values as a set collection. The example below creates a set called favoriteGenres to store String values: var favoriteGenres: Set<String> = [\"Rock\", \"Classical\", \"Hip hop\"]"),
-
+			
 			Question(question: ["Pick the full form this set will be assigned"],
 					 image: "Collections45",
 					 optionA: "Set<String>",
@@ -483,7 +483,7 @@ class CollectionTypesSet {
 					 optionD: "Set<Character>",
 					 questionId: 345,
 					 helpText: "Any character is assigned by the type String, unless otherwise specified (Character). And since it's a set, the correct answer is Set<String>."),
-
+			
 			Question(question: ["If you try to remove an element of a set that is not in it, what will happen?",
 								"When removing a nonexistent element of a set using remove(_ :), what do we get?",
 								"If we try to remove an element from the set, but it is not there, what do we get?"],
@@ -513,7 +513,7 @@ class CollectionTypesSet {
 					 optionD: ".flatMap()",
 					 questionId: 34700,
 					 helpText: "Swift’s Set type does not have a defined ordering. To iterate over the values of a set in a specific order, use the sorted() method, which returns the set’s elements as an array sorted using the < operator."),
-
+			
 			Question(question: ["What method creates a new set with all of the values in both sets?"],
 					 image: "Collections48",
 					 optionA: "union(_:)",
@@ -522,7 +522,7 @@ class CollectionTypesSet {
 					 optionD: "symmetricDifference(_:)",
 					 questionId: 348,
 					 helpText: "Use the union(_:) method to create a new set with all of the values in both sets. If the values are repeated in the sets, they will not be repeated in the new set (all values within the set are unique). Suppose there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when executing one.union(two).sorted() we we get [0, 1, 2, 3, 4, 5, 6]."),
-
+			
 			Question(question: ["How to create a new set with only the values common to both sets?"],
 					 image: "Collections49",
 					 optionA: "intersection(_:)",
@@ -531,7 +531,7 @@ class CollectionTypesSet {
 					 optionD: "symmetricDifference(_:)",
 					 questionId: 349,
 					 helpText: "Use the intersection(_:) method to create a new set with only the values common to both sets. Let's say there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when executing one.intersection(two).sorted() we will get [3, 4, 5]."),
-
+			
 			Question(question: ["How can we create a new set with values not in the specified set?"],
 					 image: "Collections50",
 					 optionA: "subtracting(_:)",
@@ -540,7 +540,7 @@ class CollectionTypesSet {
 					 optionD: "symmetricDifference(_:)",
 					 questionId: 350,
 					 helpText: "Use the subtracting(_:) method to create a new set with values not in the specified set. Let's say there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when doing one.subtracting(two).sorted() we will get [0, 1, 2]."),
-
+			
 			Question(question: ["Метод создания множества из неповторяющихся значений двух входных множеств?"],
 					 image: "Collections51",
 					 optionA: "symmetricDifference(_:)",
@@ -549,7 +549,7 @@ class CollectionTypesSet {
 					 optionD: "union(_:)",
 					 questionId: 351,
 					 helpText: "Use the intersection(_:) method to create a new set with only the values common to both sets. Let's say there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when executing one.symmetricDifference(two).sorted() we will get [0, 1, 2, 6]."),
-
+			
 			Question(question: ["Which set is the superset?"],
 					 image: "Collections52",
 					 optionA: "a",
@@ -558,7 +558,7 @@ class CollectionTypesSet {
 					 optionD: "There is no superset",
 					 questionId: 352,
 					 helpText: "The illustration below depicts three sets—a, b and c—with overlapping regions representing elements shared among sets. Set a is a superset of set b, because a contains all elements in b."),
-
+			
 			Question(question: ["Which set is the subset?"],
 					 image: "Collections52",
 					 optionA: "b",
@@ -567,7 +567,7 @@ class CollectionTypesSet {
 					 optionD: "There is no subset",
 					 questionId: 353,
 					 helpText: "The illustration below depicts three sets—a, b and c—with overlapping regions representing elements shared among sets. Set a is a superset of set b, because a contains all elements in b. Conversely, set b is a subset of set a, because all elements in b are also contained by a."),
-
+			
 			Question(question: ["Which sets are disjoint?"],
 					 image: "Collections52",
 					 optionA: "b and c",
@@ -576,7 +576,7 @@ class CollectionTypesSet {
 					 optionD: "There are no disjoint sets",
 					 questionId: 354,
 					 helpText: "The illustration below depicts three sets—a, b and c—with overlapping regions representing elements shared among sets. Set a is a superset of set b, because a contains all elements in b. Conversely, set b is a subset of set a, because all elements in b are also contained by a. Set b and set c are disjoint with one another, because they share no elements in common."),
-
+			
 			Question(question: ["How can we determine whether two sets contain all of the same values?"],
 					 image: "",
 					 optionA: "==",
@@ -594,7 +594,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 355,
 					 helpText: "Use the isSubset(of:) method to determine whether all of the values of a set are contained in the specified set. For example, let one: Set = [1, 2], let two: Set = [1, 2, 3, 4, 5], one.isSubset(of: two) will return true because all the values of set one are contained in the set two. In fact, we determine whether a set is a subset of the specified set."),
-
+			
 			Question(question: ["Which method we need to use to determine whether a set contains all of the values in a specified set?"],
 					 image: "",
 					 optionA: "isSuperset(of:)",
@@ -603,7 +603,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 356,
 					 helpText: "Use the isSuperset(of:) method to determine whether a set contains all of the values in a specified set. For example, let one: Set = [1, 2], let two: Set = [1, 2, 3, 4, 5], two.isSuperset(of: one) will return true because all the values of set one are contained in the set two. In fact, we determine whether a set is a superset of the specified set."),
-
+			
 			Question(question: ["The type of a Swift dictionary is written in full as..."],
 					 image: "",
 					 optionA: "Dictionary<KeyType, ValueType>",
@@ -612,7 +612,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 357,
 					 helpText: "The type of a Swift dictionary is written in full as Dictionary<Key, Value>, where Key is the type of value that can be used as a dictionary key, and Value is the type of value that the dictionary stores for those keys. A dictionary Key type must conform to the Hashable protocol, like a set’s value type."),
-
+			
 			Question(question: ["Does dictionary in Swift have a shorthand form?"],
 					 image: "",
 					 optionA: "Yes, [KeyType: ValueType]",
@@ -621,7 +621,7 @@ class CollectionTypesSet {
 					 optionD: "No",
 					 questionId: 358,
 					 helpText: "You can also write the type of a dictionary in shorthand form as [Key: Value]. Although the two forms (full and shorthand) are functionally identical, the shorthand form is preferred."),
-
+			
 			Question(question: ["You can create an empty Dictionary of a certain type by using initializer syntax. How exactly?"],
 					 image: "",
 					 optionA: "var names = [Int: String]()",
@@ -630,7 +630,7 @@ class CollectionTypesSet {
 					 optionD: "var names: (Int: String) = []",
 					 questionId: 359,
 					 helpText: "As with arrays, you can create an empty Dictionary of a certain type by using initializer syntax: var namesOfIntegers = [Int: String](). This example creates an empty dictionary of type [Int: String] to store human-readable names of integer values. Its keys are of type Int, and its values are of type String."),
-
+			
 			Question(question: ["Pick an empty dictionary literal"],
 					 image: "",
 					 optionA: "[:]",
@@ -639,7 +639,7 @@ class CollectionTypesSet {
 					 optionD: "{:}",
 					 questionId: 360,
 					 helpText: "If the context already provides type information, you can create an empty dictionary with an empty dictionary literal, which is written as [:] (a colon inside a pair of square brackets)."),
-
+			
 			Question(question: ["You can initialize a dictionary with a dictionary literal. How?"],
 					 image: "",
 					 optionA: "var a: [Int: String] = [0: \"Name\"]",
@@ -648,7 +648,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 361,
 					 helpText: "You can initialize a dictionary with a dictionary literal, which has a similar syntax to the array literal seen earlier. A dictionary literal is a shorthand way to write one or more key-value pairs as a Dictionary collection. A key-value pair is a combination of a key and a value. In a dictionary literal, the key and value in each key-value pair are separated by a colon. The key-value pairs are written as a list, separated by commas, surrounded by a pair of square brackets."),
-
+			
 			Question(question: ["What type will Swift assign to this dictionary?"],
 					 image: "Collections62",
 					 optionA: "[Double : String]",
@@ -657,7 +657,7 @@ class CollectionTypesSet {
 					 optionD: "[Float : String]",
 					 questionId: 362,
 					 helpText: "The correct answer is [Double: String], because the default type to any floating point number is Double, without explicitly specifying the type. The second part, the dictionary value is String."),
-
+			
 			Question(question: ["How can we add a new item to a dictionary with subscript syntax"],
 					 image: "",
 					 optionA: "dictionary[Key] = Value",
@@ -666,7 +666,7 @@ class CollectionTypesSet {
 					 optionD: "We can't modify dictionaries",
 					 questionId: 363,
 					 helpText: "You can add a new item to a dictionary with subscript syntax. Use a new key of the appropriate type as the subscript index, and assign a new value of the appropriate type. You can also use subscript syntax to change the value associated with a particular key. Correct answer: dictionary[Key] = Value."),
-
+			
 			Question(question: ["Alternative way to set or update a value for a specific dictionary key",
 								"You can set or update the value for a specific dictionary key like that",
 								"How can you set or update a value for a specific dictionary key without using subscript syntax?"],
@@ -677,7 +677,7 @@ class CollectionTypesSet {
 					 optionD: "change(key:)",
 					 questionId: 364,
 					 helpText: "As an alternative to subscripting, use a dictionary’s updateValue(_:forKey:) method to set or update the value for a particular key. Like the subscript examples above, the updateValue(_:forKey:) method sets a value for a key if none exists, or updates the value if that key already exists. Unlike a subscript, however, the updateValue(_:forKey:) method returns the old value after performing an update. This enables you to check whether or not an update took place."),
-
+			
 			Question(question: ["updateValue(_:forKey:) method returns this, if no value existed"],
 					 image: "",
 					 optionA: "nil",
@@ -686,7 +686,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 365,
 					 helpText: "The updateValue(_:forKey:) method returns an optional value of the dictionary’s value type. For a dictionary that stores String values, for example, the method returns a value of type String?, or “optional String”. This optional value contains the old value for that key if one existed before the update, or nil if no value existed."),
-
+			
 			Question(question: ["If we try to access a nonexistent dictionary value through the subscript syntax, what do we get?",
 								"What will be returned when we are trying to access a nonexistent dictionary value through the subscript syntax?"],
 					 image: "",
@@ -696,7 +696,7 @@ class CollectionTypesSet {
 					 optionD: "We'll get an error",
 					 questionId: 366,
 					 helpText: "You can also use subscript syntax to retrieve a value from the dictionary for a particular key. Because it is possible to request a key for which no value exists, a dictionary’s subscript returns an optional value of the dictionary’s value type. If the dictionary contains a value for the requested key, the subscript returns an optional value containing the existing value for that key. Otherwise, the subscript returns nil."),
-
+			
 			Question(question: ["How can we remove a key-value pair from a dictionary using the subscript syntax?",
 								"We can remove a key-value pair from a dictionary using the subscript syntax like?",
 								"How can you remove a key-value pair from a dictionary using subscript syntax?"],
@@ -707,7 +707,7 @@ class CollectionTypesSet {
 					 optionD: "dict[Key].remove()",
 					 questionId: 367,
 					 helpText: "You can use subscript syntax to remove a key-value pair from a dictionary by assigning a value of nil for that key."),
-
+			
 			Question(question: ["This method removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed"],
 					 image: "",
 					 optionA: "removeValue(forKey:)",
@@ -716,7 +716,7 @@ class CollectionTypesSet {
 					 optionD: "deleteValue(forKey:)",
 					 questionId: 368,
 					 helpText: "You can remove a key-value pair from a dictionary with the removeValue(forKey:) method. This method removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed."),
-
+			
 			Question(question: ["What is the value of the \"first\" constant?"],
 					 image: "Collections69",
 					 optionA: "9",
@@ -725,7 +725,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 369,
 					 helpText: "Numbers (indices) below 10 can be assigned zeros. This stylistic add-on is not strictly necessary, but it can sometimes make your code more readable."),
-
+			
 			/// 370 и 371 - проверены ранее в других темах
 			
 			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Within this approach, the elements are copied ...",
@@ -747,7 +747,7 @@ class CollectionTypesSet {
 					 optionD: "We'll get an error",
 					 questionId: 371,
 					 helpText: "Correct answer: Four. This example defines a variable called numberOfLegs and initializes it with a dictionary literal containing three key-value pairs. The type of the numberOfLegs dictionary is inferred to be [String: Int]. After creating the dictionary, this example uses subscript assignment to add a String key of \"bird\" and an Int value of 2 to the dictionary."),
-
+			
 			/// Ниже все вопросы самописные (делал как-то тестовое задание одно, не прошел, но запилил хорошие вопросы)
 			
 			Question (question: ["What will the addNewBook() function return if our library already has a Book with this book.id?"],
@@ -758,7 +758,7 @@ class CollectionTypesSet {
 					  optionD: "We will get an error",
 					  questionId: 372,
 					  helpText: "The updateValue(forKey:) method sets the value for the key if it doesn't exist, or updates the value if the key already exists. For example, for a dictionary that stores String values, the method will return a String? type, or an optional String. This optional value contains the old value for this key, if it existed before the update, or nil if the value did not exist. In our case, since the book is already in our library, the function will return us Book?, which means when comparing with nil (== nil) we get false."),
-
+			
 			/// 373 - 374 в хелпах есть предложения из доки, там можно сильно не рубить с плеча
 			
 			Question(question: ["What will the deleteBook() function return if our library already has a Book with this book.id?"],
@@ -769,7 +769,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 373,
 					 helpText: "You can remove a key-value pair from a dictionary with the removeValue(forKey:) method. This method removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed. In our case, the book is already in the library, which means that when deleted, its value will be returned to us. When we are comparing it for the inequality nil (!= nil), we get true."),
-
+			
 			Question(question: ["What will we get in the console?"],
 					 image: "Collections74",
 					 optionA: "[1, 2, 3]",
@@ -778,7 +778,7 @@ class CollectionTypesSet {
 					 optionD: "3",
 					 questionId: 374,
 					 helpText: "prefix(_ maxLength: Int) returns a subsequence, up to the specified maximum length, containing the initial elements of the collection, that's why we will get [1, 2, 3]."),
-
+			
 			Question(question: ["What will we get in the console?"],
 					 image: "Collections75",
 					 optionA: "[3, 4, 5]",
@@ -787,7 +787,7 @@ class CollectionTypesSet {
 					 optionD: "3",
 					 questionId: 375,
 					 helpText: "suffix(_ maxLength: Int) Returns a subsequence, up to the given maximum length, containing the final elements of the collection. We get [3, 4, 5]. If maxLength exceeds the number of elements of the original sequence, we will get all its elements."),
-
+			
 			Question(question: ["Which cities will be combined in the grouped dictionary when we are grouping the dictionary by this criterion?"],
 					 image: "Collections76",
 					 optionA: "Shanghai and Seoul",
@@ -796,7 +796,7 @@ class CollectionTypesSet {
 					 optionD: "Beijing and Karachi",
 					 questionId: 376,
 					 helpText: "Shanghai and Seoul. When initializing the dictionary, the input argument grouping is used, which is passed the analyzed keys of the cities dictionary as its value. After the initializer, a closure is specified, according to which the values are grouped (in this case, by the first character of the key)."),
-
+			
 			/// Тут полностью самописное, но в целом хелп собран из похожих вопросов
 			
 			Question(question: ["Can we assign a default value to the dictionary element that will be returned when we are trying to access a key that does not exist?"],
@@ -807,7 +807,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 377,
 					 helpText: "If you use subscript syntax to access elements of the dictionary, then nil will be returned when you try to access a name that does not exist. You can specify a default value that will be returned when trying to access a nonexistent element. This is done using the default property specified in the subscript [key, default: value]."),
-
+			
 			Question(question: ["What keyword is used for dictionary mapping?"],
 					 image: "",
 					 optionA: ".mapValues",
@@ -816,7 +816,7 @@ class CollectionTypesSet {
 					 optionD: ".reduce",
 					 questionId: 378,
 					 helpText: "Processing (mapping) the values of dictionary elements is done by using the mapValues(_ :) method, into which the closure is passed. Access is performed one by one to the value of each element of the dictionary. Returns a new dictionary containing the keys of this dictionary with the values transformed by the given closure."),
-
+			
 			Question(question: ["Do we get a new collection of elements as a result of filtering the dictionary through .filter?",
 								"When filtering a dictionary through .filter, the old collection remains unchanged. Is that so?",
 								"The result of filtering a dictionary through .filter is a new collection of the same type, is that true?"],
@@ -827,7 +827,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 379,
 					 helpText: "Returns an array containing, in order, the elements of the sequence that satisfy the given predicate. Filtering the dictionary through .filter {} will return a new collection of the same type as the original one. The old collection remains unchanged."),
-
+			
 			Question(question: ["What method can we use to combine two different sequences of values into one dictionary?",
 								"This method will allow you to combine two sequences into one dictionary",
 								"With this method you can initialize two sequences of values into one dictionary"],
@@ -840,11 +840,11 @@ class CollectionTypesSet {
 					 helpText: "zip(_:_:) creates a sequence of pairs built out of two underlying sequences, after which it should pass it to the uniqueKeysWithValues property of the Dictionary initializer. The resulting dictionary will contain the values of the first base collection as keys, and the elements of the second base collection as the value.")
 		]
 	}
-
-
+	
+	
 	///
-
-
+	
+	
 	static func getDemoQuestions() -> [Question] {
 		return [
 			Question(question: ["Сколько основных типов коллекций обеспечивает Swift?",
@@ -857,7 +857,7 @@ class CollectionTypesSet {
 					 optionD: "Пять",
 					 questionId: 301,
 					 helpText: "Swift обеспечивает три основных типа коллекций - это Массивы, Множества и Словари для хранения коллекций значений."),
-
+			
 			Question(question: ["Упорядоченная коллекция значений",
 								"Коллекция с упорядоченными значениями",
 								"Упорядоченные значения, объединенные в коллекцию"],
@@ -868,7 +868,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 302,
 					 helpText: "Массивы - это упорядоченные коллекции значений. Массивы хранят много значений одинакового типа в упорядоченном списке. Одно и то же значение в массиве может появиться несколько раз, в разных позициях."),
-
+			
 			Question(question: ["Неупорядоченная коллекция уникальных значений",
 								"Уникальные значения, собранные в неупорядоченную коллекцию",
 								"Коллекция неупорядоченных уникальных значений"],
@@ -879,7 +879,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 303,
 					 helpText: "Множества - это неупорядоченные коллекции уникальных значений."),
-
+			
 			Question(question: ["Неупорядоченная коллекция, хранящая пары ключ-значение",
 								"Коллекция, хранящая неупорядоченные пары ключ-значение",
 								"Неупорядоченные пары ключ-значение хранятся именно в этой коллекции"],
@@ -890,7 +890,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 304,
 					 helpText: "Словари - это неупорядоченные коллекции, хранящие пары ключ-значение. Словарь представляет собой контейнер, который хранит несколько значений одного и того же типа. Каждое значение связано с уникальным ключом, который выступает в качестве идентификатора этого значения внутри словаря. В отличие от элементов в массиве, элементы в словаре не имеют определенного порядка. Используйте словарь, когда вам нужно искать значения на основе их идентификатора, так же как в реальном мире словарь используется для поиска определения конкретного слова."),
-
+			
 			Question(question: ["Какой тип коллекции на изображении?"],
 					 image: "Collections5",
 					 optionA: "Словарь",
@@ -899,7 +899,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 305,
 					 helpText: "На изображении словарь, коллекция пар ключ-значение"),
-
+			
 			Question(question: ["Можем ли мы по ошибке вставить значение неверного типа в коллекцию?",
 								"Можем ли мы вставить значение неверного типа в массив?",
 								"Возможно ли вставить значение неверного типа в словарь? "],
@@ -910,7 +910,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 306,
 					 helpText: "Массивам, множествам и словарям в Swift всегда понятно, какие типы значений и ключи они могут хранить. Это означает, что вы не можете по ошибке вставить неверное значение в коллекцию. Это также означает, что вы можете быть уверены в типах значений, которые вы получите из коллекции."),
-
+			
 			Question(question: ["Если массив или словарь присвоены переменной, можем ли мы их изменять?",
 								"Можем ли мы изменять словарь или массив, если он присвоен переменной?",
 								"Возможно ли изменять словарь, если при создании мы присвоили его переменной?"],
@@ -921,7 +921,7 @@ class CollectionTypesSet {
 					 optionD: "Нет",
 					 questionId: 307,
 					 helpText: "Когда вы создаете массив или словарь и присваиваете его переменной, то созданная коллекция будет изменяемой. Это означает, что вы можете изменить коллекцию после ее создания путем добавления, удаления, или изменения элементов этой коллекции. И наоборот, когда вы присвоите массив или словарь константе, то он будет неизменяемым, а его размер и содержимое не может быть изменено."),
-
+			
 			Question(question: ["Какой тип коллекции на изображении?",
 								"Укажите какой тип коллекции изображен на изображении?",
 								"На этом изображении именно этот тип коллекции"],
@@ -932,7 +932,7 @@ class CollectionTypesSet {
 					 optionD: "Словарь",
 					 questionId: 308,
 					 helpText: "На изображении массив, упорядоченная коллекция значений, доступных по индексу."),
-
+			
 			Question(question: ["Какой тип коллекции на изображении?",
 								"Укажите какой тип коллекции изображен на изображении?",
 								"На этом изображении именно этот тип коллекции"],
@@ -943,7 +943,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 309,
 					 helpText: "На изображении множество, неупорядоченная коллекция уникальных значений."),
-
+			
 			Question(question: ["Если коллекция присвоена константе, можем ли мы ее изменять?",
 								"Можем ли мы изменять словарь или массив, если он присвоен константе?",
 								"Возможно ли изменять множество, если при создании мы присвоили его константе?"],
@@ -954,7 +954,7 @@ class CollectionTypesSet {
 					 optionD: "Да",
 					 questionId: 310,
 					 helpText: "Когда вы присвоите массив или словарь константе, то он будет неизменяемым, а его размер и содержимое не может быть изменено. Хорошей практикой является создание неизменяемых коллекций во всех случаях, когда коллекцию не нужно менять. Делая это, мы позволяем компилятору Swift оптимизировать производительность наших коллекций."),
-
+			
 			Question(question: ["Как пишется полная форма записи массива в Swift?",
 								"Полная форма записи массива в Swift пишется так",
 								"Как нужно писать полную форму записи массива в Swift?"],
@@ -965,7 +965,7 @@ class CollectionTypesSet {
 					 optionD: "Array(ElementType)[]",
 					 questionId: 311,
 					 helpText: "Полная форма записи массива в Swift пишется Array<ElementType>, где ElementType это тип значений, которые могут храниться в массиве."),
-
+			
 			Question(question: ["Как пишется сокращенная форма записи массива в Swift?",
 								"Сокращенная форма записи массива в Swift пишется так",
 								"Как нужно писать сокращенную форму записи массива в Swift?"],
@@ -976,7 +976,7 @@ class CollectionTypesSet {
 					 optionD: "Array(ElementType)[]",
 					 questionId: 312,
 					 helpText: "Вы можете также написать массив в сокращенной форме как [ElementType]. Хотя две формы функционально идентичны, краткая форма является предпочтительной."),
-
+			
 			Question(question: ["Как можно создать пустой массив с помощью синтаксиса инициализатора?",
 								"Как вы можете создать пустой массив?",
 								"Пустой массив инициализируется именно так"],
@@ -987,7 +987,7 @@ class CollectionTypesSet {
 					 optionD: "var array: [String]?",
 					 questionId: 313,
 					 helpText: "Вы можете создать пустой массив определенного типа с помощью синтаксиса инициализатора: var array = [String]()."),
-
+			
 			Question(question: ["Альтернативный способ создания пустого массива",
 								"Альтернативный вариант, как вы можете создать пустой массив",
 								"Пустой массив может инициализироваться именно так"],
@@ -998,7 +998,7 @@ class CollectionTypesSet {
 					 optionD: "var array: [String]?",
 					 questionId: 314,
 					 helpText: "В качестве альтернативы синтаксису инизиализатора, вы можете создать пустой массив с помощью пустого литерала массива, который записывается в виде [] (пустой пары квадратных скобок)."),
-
+			
 			Question(question: ["Какой тип будет у данного массива ints, и что будет внутри?",
 								"Выберите ответ с правильным типом и содержанием коллекции ints",
 								"Выберите тип и содержание данного массива ints"],
@@ -1009,7 +1009,7 @@ class CollectionTypesSet {
 					 optionD: "[Int] и [0.0, 0.0, 0.0]",
 					 questionId: 315,
 					 helpText: "Если не указывать иного, Swift присвоит массиву чисел с плавающей точкой тип [Double], а данный инициализатор массива указывает, что в этом массиве должны быть числа 0.0, повторяющиеся три раза. То есть правильный ответ будет [Double], [0.0, 0.0, 0.0]."),
-
+			
 			Question(question: ["Как мы можем создать новый массив, объединив два существующих массива с совместимыми типами?",
 								"Каким образом мы можем создать новый массив из двух существующих (их типа совместимы)?",
 								"Из двух существующих массивов с одинаковым типом необходимо создать новый, как это сделать?"],
@@ -1020,7 +1020,7 @@ class CollectionTypesSet {
 					 optionD: "Логическим оператором И &&",
 					 questionId: 316,
 					 helpText: "Вы можете создать новый массив, объединив два существующих массива с совместимыми типами с оператором сложения (+). Новый тип массива выводится из типа двух массивов, которые вы объединяете вместе. Так же можно добавить один массив к другому через firstArray.append(contentsOf: secondArray)."),
-
+			
 			Question(question: ["Выберите создание массива через синтаксис литерала массива",
 								"Какой из этих способов описывается как «создание массива через литерал массива»?",
 								"Мы можем создать массив с помощью синтаксиса литерала массива именно так"],
@@ -1031,7 +1031,7 @@ class CollectionTypesSet {
 					 optionD: "var nums: [Int](0, 1, 2, 3)",
 					 questionId: 317,
 					 helpText: "Вы можете инициализировать массив с помощью литерала массива, который является быстрым способом писать одно или несколько значений как набор значений массива. Литерал массива пишется в виде списка значений, разделенных запятыми и окруженными парами скобок: [value 1, value 2, value 3]. Пример: создается массив под названием numbers для хранения Int значений: var number: [Int] = [1, 2, 3, 4, 5]."),
-
+			
 			Question(question: ["В каком из этих случаев мы можем не указывать тип массива?",
 								"Выберите вариант, в котором мы можем убрать указание типа массива, и это не вызовет ошибку?",
 								"Выберите вариант, при котором мы можем убрать явное указание типа массива?"],
@@ -1042,7 +1042,7 @@ class CollectionTypesSet {
 					 optionD: "var array = []",
 					 questionId: 318,
 					 helpText: "Благодаря выводу типов Swift, вы можете не писать тип для массива, который вы инициализируйте с помощью литерала массива, хранящего значения того же типа, например var array: [Int] = [1, 2]. Вместо этого, инициализация array может быть записана в сокращенной форме: var array = [1, 2]. Поскольку все значения внутри литерала массива одинакового типа (Int), Swift может вывести, что [Int] является правильным типом для переменной array."),
-
+			
 			Question(question: ["Быстрый способ получить количество элементов массива?",
 								"Получить количество элементов массива можно через это свойство",
 								"Какое свойство поможет вам получить количество элементов массива?"],
@@ -1053,7 +1053,7 @@ class CollectionTypesSet {
 					 optionD: "array.append()",
 					 questionId: 319,
 					 helpText: "Чтобы узнать количество элементов в массиве, проверьте его свойство count."),
-
+			
 			Question(question: ["Что выведется в консоль после запуска данного кода?",
 								"Какой результат запуска мы увидим в консоли?",
 								"Выберите вариант, который окажется в консоли после запуска этого кода"],
@@ -1064,7 +1064,7 @@ class CollectionTypesSet {
 					 optionD: "Столкнемся с ошибкой",
 					 questionId: 320,
 					 helpText: "Логическое свойство isEmpty можно использовать в качестве быстрого способа узнать, является ли свойство count равным 0. В данном примере у нас пустой массив array, значит мы пройдем проверку по первому условию и выведем «Array is empty»"),
-
+			
 			Question(question: ["Куда добавляется элемент, когда мы вносим его в массив через .append?",
 								"Как добавится элемент, когда мы вставляем его в массив через .append?",
 								"Если мы добавим элемент в массив через .append, куда он поместится?"],
@@ -1075,7 +1075,7 @@ class CollectionTypesSet {
 					 optionD: "",
 					 questionId: 321,
 					 helpText: "Через вызов метода append вы можете добавлять новые элементы в конец массива."),
-
+			
 			Question(question: ["Какой результат мы получим, после запуска этого кода?"],
 					 image: "Collections22",
 					 optionA: "Столкнемся с ошибкой",
@@ -1084,7 +1084,7 @@ class CollectionTypesSet {
 					 optionD: "Ничего",
 					 questionId: 322,
 					 helpText: "Добавить массив с одним или несколькими совместимыми (типами) элементами можно с помощью оператора сложения с присвоением (+=), но в данном случае мы столкнемся с ошибкой, поскольку numbers является константой."),
-
+			
 			Question(question: ["Что будет содержаться внутри массива numbers после выполнения этого кода?",
 								"Какие значения будут содержаться внутри numbers в результате?",
 								"Выберите верный вариант итогового вида массива numbers"],
@@ -1095,7 +1095,7 @@ class CollectionTypesSet {
 					 optionD: "[1.0, 2.0]",
 					 questionId: 323,
 					 helpText: "Правильный ответ [1.0, 2.0, 3.0, 4.0, 5.0]. Оператор присваивания со сложением добавит в данный массив значения 3, 4 и 5, но, так как массив numbers имеет тип [Double], значения примут вид 3.0, 4.0, 5.0."),
-
+			
 			Question(question: ["Как с помощью синтаксиса сабскриптов извлечь значение из массива?",
 								"В каком из вариантов используется корректное обращение к элементу массива с помощью синтаксиса сабскриптов?",
 								"Как выглядит извлечение из массива с помощью синтаксиса сабскриптов?"],
@@ -1106,7 +1106,7 @@ class CollectionTypesSet {
 					 optionD: "arrayName.3",
 					 questionId: 324,
 					 helpText: "Можно извлечь значение из массива с помощью синтаксиса сабскриптов, поместив индекс значения, который вы хотите получить, внутри квадратных скобок сразу после имени массива. Первый элемент в массиве имеет индекс 0, а не 1. Массивы в Swift всегда начинаются с 0."),
-
+			
 			Question(question: ["Какие элементы будут в массиве numbers после выполнения данного кода?",
 								"Выберите итоговый порядок элементов массива numbers после исполнения данного кода",
 								"После выполнения кода, какой порядок элементов будет у массива numbers?"],
@@ -1117,7 +1117,7 @@ class CollectionTypesSet {
 					 optionD: "[1.0, 1.0, 3.0, 4.0]",
 					 questionId: 325,
 					 helpText: "Вы можете использовать синтаксис сабскриптов для изменения существующего значения по указанному индексу. Правильный ответ: [1.0, 2.0, 1.0, 4.0], поскольку мы инициализируем новое значение элементу массива, который находится на индексе [2], начиная с 0 это будет третий элемент (3.0)."),
-
+			
 			Question(question: ["Какие элементы будут в массиве numbers после выполнения данного кода?",
 								"Выберите итоговый порядок элементов массива numbers после исполнения данного кода",
 								"После выполнения кода, какой порядок элементов будет у массива numbers?"],
@@ -1128,7 +1128,7 @@ class CollectionTypesSet {
 					 optionD: "[4.0, 5.0, 6.0, 4.0]",
 					 questionId: 326,
 					 helpText: "Вы можете использовать синтаксис сабскриптов для изменения диапазона значений за раз, даже если набор изменяемых значений имеет разную длину, по сравнению с диапазоном который требуется заменить. Правильный ответ: [1.0, 4.0, 5.0, 6.0], поскольку мы меняем значения с 1 по 3 индекс, а это 2.0, 3.0, 4.0."),
-
+			
 			Question(question: ["Какие элементы будут в массиве numbers после выполнения данного кода?",
 								"Выберите итоговый порядок элементов массива numbers после исполнения данного кода",
 								"После выполнения кода, какой порядок элементов будет у массива numbers?"],
@@ -1139,7 +1139,7 @@ class CollectionTypesSet {
 					 optionD: "[1.0, 2.0, 11.0, 12.0, 13.0]",
 					 questionId: 327,
 					 helpText: "Вы можете использовать синтаксис сабскриптов для изменения диапазона значений за раз, даже если набор изменяемых значений имеет разную длину, по сравнению с диапазоном который требуется заменить. Правильный ответ: [1.0, 2.0, 11.0, 12.0, 13.0, 5.0], поскольку мы меняем значения с 2 по 3 индекс, а это 3.0, 4.0, но вставляем уже три элемента, вместо удаленных двух."),
-
+			
 			Question(question: ["Вызов какого метода поможет вставить элемент в массив на определенный индекс?",
 								"Чтобы вставить элемент на определенный индекс массива, какой мы будем использовать метод?",
 								"Какой метод нужно использовать, чтобы вставить элемент на определенный индекс массива?"],
@@ -1150,7 +1150,7 @@ class CollectionTypesSet {
 					 optionD: "remove(_ :at:)",
 					 questionId: 328,
 					 helpText: "Для вставки элемента по заданному индексу внутрь массива, вызовите его метод insert(_:at:)."),
-
+			
 			Question(question: ["Вызов какого метода поможет удалить элемент из массива с определенного индекса?",
 								"Чтобы удалить элемент с определенного индекса массива, какой мы будем использовать метод?",
 								"Какой метод нужно использовать, чтобы удалить элемент с определенного индекса массива?"],
@@ -1161,7 +1161,7 @@ class CollectionTypesSet {
 					 optionD: "insert(_:at:)",
 					 questionId: 329,
 					 helpText: "Можно удалить элемент из массива с помощью метода remove(at:). Этот метод удаляет элемент с указанным индексом и возвращает удаленный элемент (хотя вы можете проигнорировать возвращаемое значение, если оно вам не нужно)."),
-
+			
 			Question(question: ["Что будет, если вы попытаетесь получить доступ или изменить значение индекса, который находится за пределами существующих границ массива?",
 								"Если вы попытаетесь изменить значение индекса, который находится за пределами существующих границ массива, что произойдет?"],
 					 image: "",
