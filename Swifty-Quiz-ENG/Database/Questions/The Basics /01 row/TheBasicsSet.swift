@@ -19,7 +19,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 1,
 					 helpText: "The convention is to use Lower Camel Case while naming properties and methods. Their names should start with a lowercase letter. And if a name consists of several words, only the first word should be lowercased. At the same time, type names should start with an uppercase letter (Upper Camel Case)."),
-
+			
 			Question(question: ["What word can be defined as the introduction of a new object that you are going to use?",
 								"The process of creating a new object that you are going to use is called ..."],
 					 image: "",
@@ -29,7 +29,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 2,
 					 helpText: "A declaration introduces a new object into the program. Initialization assigns a specific value to the declared object."),
-
+			
 			Question(question: ["A variable name must be ...",
 								"All constant and variable names must be ...",
 								"It is required to give each variable and constant a ... name"],
@@ -40,7 +40,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 3,
 					 helpText: "All variables and constants must have unique names. You can't use several variables or constants with the same name within the same program. And it's a good practice to name them using so-called lowerCamelCase. It means that names should begin with a lowercase letter. If the name consists of several words, only the first word should start with a lowercase letter."),
-
+			
 			Question(question: ["Is it necessary to use var or let keywords every time you call an existing variable or constant?",
 								"It is true that every time you want to access a variable or a constant, you must use var or let operators?"],
 					 image: "",
@@ -50,7 +50,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 63,
 					 helpText: "Var and let operators are required only while declaring variables and constants. To call them afterwards, you need to use only their names."),
-
+			
 			Question(question: ["Is it possible to create a variable that has the same name as another variable?",
 								"Can we give the same name to two different constants?"],
 					 image: "",
@@ -60,7 +60,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 64,
 					 helpText: "Names must be unique. It's impossible to declare a constant or a variable that has the same name as another constant or variable. The only exception is when these variables and constants are in different scopes. For example: you can name a local variable (inside a function) the same as you called a global variable."),
-
+			
 			Question(question: ["What is a separate Swift command usually called?",
 								"This word can be defined as a separate Swift command"],
 					 image: "",
@@ -70,7 +70,7 @@ class TheBasicsSet {
 					 optionD: "Sentence",
 					 questionId: 4,
 					 helpText: "A separate command in Swift is called a statement. Just like any other programming language, Swift performs all actions by following the commands given (written) by the developer. A file with code usually consists of multiple statements written on separate lines."),
-
+			
 			Question(question: ["Is it possible to declare multiple constants on a single line?",
 								"Can you declare two variables on a single line?",
 								"Is it possible to declare two or more variables or constants on a single line?"],
@@ -81,7 +81,7 @@ class TheBasicsSet {
 					 optionD: "Yes, separated by a colon",
 					 questionId: 5,
 					 helpText: "You can declare multiple constants or multiple variables on a single line, separated by commas."),
-
+			
 			Question(question: ["Can we change the value of a variable?",
 								"Is the value of a variable mutable?",
 								"Is it possible to change the value assigned to a variable?"],
@@ -92,7 +92,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 6,
 					 helpText: "The distinctive feature of variables is that we can change their values many times during the program execution."),
-
+			
 			Question(question: ["A named block of memory whose value can't be changed once it is set",
 								"The value of this type of memory block can be set only once with no option of changing it" ],
 					 image: "",
@@ -102,7 +102,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 7,
 					 helpText: "Constants are pretty similar to variables since they also store some value, but they are declared with the let keyword, and you can't change their value once they are initialized. So, if the value of a variable remains the same throughout the program, you should consider using a constant instead."),
-
+			
 			Question(question: ["The keyword that is used to determine a constant",
 								"Which keyword is used to introduce a constant?",
 								"This keyword can be used to define a constant"],
@@ -113,7 +113,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 8,
 					 helpText: "Constants are pretty similar to variables since they also store some value, but they are declared with the let keyword, and you can't change their value once they are initialized. So, if the value of a variable remains the same throughout the program, you should consider using a constant instead."),
-
+			
 			Question(question: ["In what case the data stored in a constant can be overwritten?",
 								"The data stored in a constant can't be overwritten except while..."],
 					 image: "",
@@ -123,7 +123,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 9,
 					 helpText: "A constant used in a loop will be overwritten with each iteration."),
-
+			
 			Question(question: ["Which keyword is used for defining a variable?",
 								"The keyword that must be used while declaring a variable",
 								"The keyword we use to define a variable"],
@@ -134,7 +134,7 @@ class TheBasicsSet {
 					 optionD: "set",
 					 questionId: 10,
 					 helpText: "In Swift, you define variables using the var keyword. The distinctive feature of variables is that their value can be changed many times during the program execution."),
-
+			
 			Question(question: ["How multi-line documentation comments are created?"],
 					 image: "",
 					 optionA: "/** Comment */",
@@ -143,7 +143,7 @@ class TheBasicsSet {
 					 optionD: "// MARK: Comment",
 					 questionId: 66,
 					 helpText: "In addition to the standard comments used in any other programming language, Swift allows adding comments right into the program's documentation. You may need such comments while developing a function library. Here is how documentation comments are created: /** Comment */. After adding the documentation comment to a function, you can click the function's name with the Opt (Alt) key pressed to see the comment."),
-
+			
 			Question(question: ["A named unit of data that stores an associated value",
 								"What do you call a named storage location which contains a value?",
 								"A memory storage location that contains a value and can be accessed by a name or another identifier"],
@@ -154,7 +154,7 @@ class TheBasicsSet {
 					 optionD: "Library",
 					 questionId: 11,
 					 helpText: "Just like most other programming languages, Swift relies on variables and constants to store data. A variable or a constant is a named unit of storage location that is assigned a value."),
-
+			
 			Question(question: ["A data type that stores individual Unicode symbols",
 								"Which type of data stores individual letters and other symbols?",
 								"Individual Unicode symbols are stored in this data type"],
@@ -165,7 +165,7 @@ class TheBasicsSet {
 					 optionD: "String",
 					 questionId: 12,
 					 helpText: "Swift’s String and Character types provide a fast, Unicode-compliant way to work with text. Each String is composed of independent Character values, while each Character represents an individual Unicode symbol."),
-
+			
 			Question(question: ["A data type responsible for storing any text value",
 								"Which data type represents arbitrary text values",
 								"An arbitrary text literal can be stored in this data type"],
@@ -176,7 +176,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 13,
 					 helpText: "Swift’s String and Character types provide a fast, Unicode-compliant way to work with text. Each String is composed of independent Character values, while each Character represents an individual Unicode symbol."),
-
+			
 			Question(question: ["What should we use if we are sure that the value of a variable won't change?",
 								"What can we use instead of a variable if its value won't change??"],
 					 image: "",
@@ -186,7 +186,7 @@ class TheBasicsSet {
 					 optionD: "A Structure",
 					 questionId: 14,
 					 helpText: "Besides variables, constants provide an additional way to store data in a program. They are pretty similar to variables since they also store some value, but constants are declared with the let keyword, and you can't change their value once they are initialized. So, if the value of a variable remains the same throughout the program, you should consider using a constant instead."),
-
+			
 			Question(question: ["A data type that stores whole numbers with no fractions or decimals. For instance, 42 or -23",
 								"Which data type stores whole signed numbers?",
 								"This type represents any whole number with no fractions"],
@@ -197,7 +197,7 @@ class TheBasicsSet {
 					 optionD: "Double",
 					 questionId: 15,
 					 helpText: "An Int is a whole signed number, for example, 1, -30, 458. On a 32-bit platform, Int is the same size as Int32, while on a 64-bit platform, Int is the same size as Int64."),
-
+			
 			Question(question: ["All types in Swift start with a(n) ... letter",
 								"Which letter case should you use for the first letter of any type in Swift?",
 								"The names of all Swift's types start with this letter case"],
@@ -208,7 +208,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 16,
 					 helpText: "Type names in Swift are always capitalized, so they start with an uppercase letter."),
-
+			
 			Question(question: ["How can you access the minimum and maximum values of each integer type?",
 								"How can you get the minimum and maximum values of Int or UInt?",
 								"You can use these properties to access the minimum and maximum values of Int or UInt"],
@@ -219,7 +219,7 @@ class TheBasicsSet {
 					 optionD: "first и max",
 					 questionId: 17,
 					 helpText: "You can access the minimum and maximum values of each integer type with its min and max properties"),
-
+			
 			Question(question: ["Which of the following types has a higher precision?",
 								"Which type that stores numbers with a decimal point has a higher precision?",
 								"Pick the type that stores the largest number of decimal digits"],
@@ -230,7 +230,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 18,
 					 helpText: "Double represents a 64-bit floating-point number - in most cases, it is preferable to a Float because it has higher precision and is less likely to lose valuable accuracy. It has a precision of 15 decimal digits, whereas Float's precision can be as little as 6 decimal digits."),
-
+			
 			Question(question: ["Which type stores only the integers that are either positive or equal to zero?",
 								"The type that stores only unsigned integers",
 								"Pick the type that can store nonnegative integers only"],
@@ -241,7 +241,7 @@ class TheBasicsSet {
 					 optionD: "Double",
 					 questionId: 19,
 					 helpText: "Swift provides an unsigned integer type, UInt (Unsigned Integer), which has the same size as the current platform’s native word size. Use it only when you specifically need an unsigned integer type with the same size as the platform’s native word size. Otherwise, Int is preferred, even when the values to be stored are known to be nonnegative. A consistent use of Int for integer values aids code interoperability, avoids the need to convert between different number types, and matches integer type inference."),
-
+			
 			Question(question: ["A sequence of characters surrounded by double quotation marks",
 								"A series of Unicode characters enclosed in quotes",
 								"Choose a literal that consists of a sequence of characters surrounded by double quotes"],
@@ -252,8 +252,8 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 20,
 					 helpText: "A string literal is a sequence of characters surrounded by double quotation marks."),
-
-
+			
+			
 			Question(question: ["The source code representation of a numeric value",
 								"A positive or negative number expressed in the source code",
 								"What do we call the following values in Swift: -2234, 10, 0?"],
@@ -264,7 +264,7 @@ class TheBasicsSet {
 					 optionD: "Random number",
 					 questionId: 21,
 					 helpText: "Integer literals represent integer values of unspecified precision. An integer literal can be a positive or negative number, or zero."),
-
+			
 			Question(question: ["What approach(es) can you take to provide a constant or variable with a type?",
 								"Choose the way(s) types can be declared in Swift",
 								"How Swift can work out an object’s type?"],
@@ -275,7 +275,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 22,
 					 helpText: "Explicitly, via type annotation by placing a colon after the constant or variable name, followed by a space, followed by the name of the type to use. Implicitly, via type inference that enables a compiler to deduce the type of a particular expression automatically when it compiles your code, simply by examining the values you provide."),
-
+			
 			Question(question: ["Is it possible to use a variable of non-optional type before it is initialized?",
 								"Can we use a non-optional variable before initializing it?",
 								"Is it possible to use a variable before initialization if it is not represented by an optional?"],
@@ -286,7 +286,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 23,
 					 helpText: "All variables and constants must be initialized before used (unless they are optional types)."),
-
+			
 			Question(question: ["Which data type can store any integer within the following boundaries: -2 147 483 648 ... 2 147 483 647?",
 								"The type that can store any integer from -2 147 483 648 to 2 147 483 647",
 								"Pick the type whose maximum and minimum values can't exceed -2 147 483 648 and 2 147 483 647"],
@@ -297,7 +297,7 @@ class TheBasicsSet {
 					 optionD: "Int64",
 					 questionId: 24,
 					 helpText: "Values from -2 147 483 648 to 2 147 483 647 can be stored in Int32."),
-
+			
 			Question(question: ["If you don't specify an integer’s size in code, what will it be?",
 								"If you don't specify an integer's size within its type declaration, what size will that integer have?",
 								"What size will all integers have unless it is explicitly specified in code?"],
@@ -308,7 +308,7 @@ class TheBasicsSet {
 					 optionD: "128",
 					 questionId: 25,
 					 helpText: "Unless it is explicitly specified, integers always have the same size as the current platform’s native word size"),
-
+			
 			Question(question: ["What do we call the process of preparing a constant, variable, or any other object for use?",
 								"What is the process of declaring a variable along with assigning its value called?",
 								"Assigning a value to a previously declared object for the first time is called..."],
@@ -319,424 +319,409 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 26,
 					 helpText: "Initialization is the process of preparing a constant, variable or any other object for use. This process involves setting an initial value for each stored property and performing any other setup required before the new object is ready for use."),
-
-
+			
+			
 			///
-
-
-			Question(question: ["Какую точность в десятичных знаках имеет тип Double?",
-								"Сколько десятичных цифр может хранить тип Double?",
-								"Double может хранить именно столько цифр после запятой"],
+			
+			
+			Question(question: ["What is the precision in decimal digits for Double type?"],
 					 image: "",
-					 optionA: "15 десятичных цифр",
-					 optionB: "6 десятичных цифр",
-					 optionC: "12 десятичных цифр",
-					 optionD: "18 десятичных цифр",
+					 optionA: "At least 15 decimal digits",
+					 optionB: "At least 6 decimal digits",
+					 optionC: "At least 12 decimal digits",
+					 optionD: "",
 					 questionId: 27,
-					 helpText: "Double является 64 битным числом с плавающей точкой. Он имеет точность в 15 десятичных знаков."),
-
-			Question(question: ["Какую точность в десятичных знаках имеет тип Float?",
-								"Сколько десятичных цифр может хранить тип Float?",
-								"Float может хранить именно столько цифр после запятой"],
+					 helpText: "Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits. The appropriate floating-point type to use depends on the nature and range of values you need to work with in your code."),
+			
+			Question(question: ["What is the precision in decimal digits for Float type?"],
 					 image: "",
-					 optionA: "6 десятичных цифр",
-					 optionB: "4 десятичных цифр",
-					 optionC: "12 десятичных цифр",
-					 optionD: "10 десятичных цифр",
+					 optionA: "At least 6 decimal digits",
+					 optionB: "At least 15 decimal digits",
+					 optionC: "At least 12 decimal digits",
+					 optionD: "",
 					 questionId: 28,
-					 helpText: "Float имеет точность в 6 десятичных знаков."),
-
-			Question(question: ["Если равноценно использование обоих типов с плавающей точкой, использование какого предпочтительнее?",
-								"В случаях, где возможно использование обоих типов (Float и Double), какой предпочтительнее?",
-								"В ситуациях, где нужна бОльшая точность вычислений, какой тип необходимо использовать?"],
+					 helpText: "Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits. The appropriate floating-point type to use depends on the nature and range of values you need to work with in your code."),
+			
+			Question(question: ["If using both floating point types is equivalent, which is preferred?",
+								"In cases where it is possible to use both types (Float and Double), which is preferable?",
+								"In situations where greater precision is needed, which type should be used?"],
 					 image: "",
 					 optionA: "Double",
 					 optionB: "Float",
-					 optionC: "Character",
-					 optionD: "String",
+					 optionC: "",
+					 optionD: "",
 					 questionId: 29,
-					 helpText: "Double имеет точность минимум 15 десятичных цифр, в то время как точность Float может быть всего лишь 6 десятичных цифр. Соответствующий тип числа с плавающей точкой используется в зависимости от характера и диапазона значений, с которыми вы должны работать в коде. В случаях, где возможно использование обоих типов, предпочтительным считается Double."),
-
-			Question(question: ["Можете ли вы передать тип Int, если некоторая часть кода ожидает тип String?",
-								"Если некоторая часть кода ожидает тип String, можете ли вы передать Character?",
-								"Можете ли вы передать положительное число типа Int32, если некоторая часть кода ожидает Uint32?"],
+					 helpText: "Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits. The appropriate floating-point type to use depends on the nature and range of values you need to work with in your code. In situations where either type would be appropriate, Double is preferred."),
+			
+			Question(question: ["Can you pass an Int type if some of the code requires a String type?",
+								"If some part of the code requires a String type, can you pass in Character?",
+								"Can you pass a positive Int32 number if some part of the code requires Uint32?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
-					 optionC: "В некоторых случаях",
+					 optionA: "No",
+					 optionB: "Yes",
+					 optionC: "In some cases",
 					 optionD: "",
 					 questionId: 30,
-					 helpText: "Swift - язык со строгой типизацией. Язык со строгой типизацией призывает вас иметь четкое представление о типах значений, с которыми может работать ваш код. Если часть вашего кода ожидает String (например), вы не сможете передать ему Int (или любой другой тип, кроме String) по ошибке."),
-
-			Question(question: ["Cколько двойных кавычек нужно ставить при открытии и закрытии многострочного строкового литерала?",
-								"Какое количество двойных кавычек ставится при открытии многострочного строкового литерала?",
-								"При закрытии открытии многострочного строкового литерала ставится именно столько двойных кавычек"],
+					 helpText: "Swift is a type-safe language. A type safe language encourages you to be clear about the types of values your code can work with. If part of your code requires a String, you can’t pass it an Int by mistake."),
+			
+			/// Все вопросы ниже, пока не напишу комментарий - из другой темы, но к этому моменту ты ее еще не проверял (probably)
+			/// Если что этот вопрос могу потом сам взять, тема "String and Characters" (204 id)
+			
+			Question(question: ["How many double quotation marks should we use when we are opening and closing a multiline string literal?",
+								"How many double quotation marks are there when we are opening a multiline string literal?",
+								"Exactly so many double quotation marks are put when we are closing and opening a multi-line string literal"],
 					 image: "",
-					 optionA: "По три",
-					 optionB: "По две",
-					 optionC: "По одной",
-					 optionD: "По четыре",
+					 optionA: "Three",
+					 optionB: "Two",
+					 optionC: "One",
+					 optionD: "",
 					 questionId: 31,
-					 helpText: "Если вам нужно создать строку, которая поддерживает многострочный вид, используйте литерал многострочной строки - последовательность символов, обернутых в три двойные кавычки. Многострочный литерал строки включает в себя все строки между тремя открывающими и тремя закрывающими кавычками. Строка начинается на первой строке после открывающих кавычек, а заканчивается на строке предшествующей закрывающим кавычкам."),
-
-			Question(question: ["Каким символом осуществляется перенос строки в многострочном строковом литерале (в коде), позволяющий не отображать символ переноса строки в качестве части значения этой строки?",
-								"Этот символ может перенести строку многострочного литерала только внутри кода (для лучшего чтения), не отображая перенос строки как часть значения этой строки"],
+					 helpText: "If you need a string that spans several lines, use a multiline string literal—a sequence of characters surrounded by three double quotation marks. A multiline string literal includes all of the lines between its opening and closing quotation marks. The string begins on the first line after the opening quotation marks (\"\"\") and ends on the line before the closing quotation marks, which means that neither of the strings below start or end with a line break"),
+			
+			/// Если что этот вопрос могу потом сам взять, тема "String and Characters" (205 id)
+			
+			Question(question: ["What character is a line break in a multiline string literal (in code) that allows you not to display a line break as part of the value of this line?"],
 					 image: "",
-					 optionA: "Обратный слеш",
-					 optionB: "Звездочка",
-					 optionC: "Тире",
+					 optionA: "Backslash",
+					 optionB: "Asterisk",
+					 optionC: "Dash",
 					 optionD: "",
 					 questionId: 32,
-					 helpText: "Если вы хотите использовать символ переноса строки для того, чтобы сделать ваш код более читаемым, но вы не хотите чтобы символ переноса строки отображался в качестве части значения строки, то вам нужно использовать символ обратного слеша в конце этих строк. Проще говоря, если вы хотите перенести строку внутри кода, чтобы сделать его более читаемым, но не хотите, чтобы после компиляции эта строка также перенеслась."),
-
-			Question(question: ["Как можно инициализировать пустую строку?",
-								"Как инициализируется пустой тип String?",
-								"Инициализация пустой строки происходит именно таким(ими) способом(ами)"],
+					 helpText: "When your source code includes a line break inside of a multiline string literal, that line break also appears in the string’s value. If you want to use line breaks to make your source code easier to read, but you don’t want the line breaks to be part of the string’s value, write a backslash at the end of those lines. To simplify - If you want to wrap a line inside your code to make it more readable, but don't want that line to wrap as well after compilation."),
+			
+			/// Если что этот вопрос могу потом сам взять, тема "String and Characters" (207 id)
+			
+			Question(question: ["How can you initialize an empty string with initializer syntax?",
+								"How is an empty String type initialized with initializer syntax?",
+								"An empty string is initialized with initializer syntax exactly like that"],
 					 image: "",
 					 optionA: "= String()",
 					 optionB: "= [String]",
 					 optionC: "= (String)",
 					 optionD: "",
 					 questionId: 33,
-					 helpText: "Чтобы создать пустое String значение в качестве отправной точки для создания более длинных строк, либо присвойте литерал пустой строки к переменной, либо инициализируйте объект String c помощью синтаксиса инициализации: = String()."),
-
-			Question(question: ["Способ создать новое значение типа String из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал",
-								"Создание нового String-значения из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал",
-								"Включение разных значений в String, используя обратный слеш и круглые скобки, называется?"],
+					 helpText: "To create an empty String value as the starting point for building a longer string, either assign an empty string literal to a variable: var emptyString = \"\", or initialize a new String instance with initializer syntax: var anotherEmptyString = String()"),
+			
+			/// Если что этот вопрос могу потом сам взять, тема "String and Characters" (218 id)
+			
+			Question(question: ["A way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal"],
 					 image: "",
-					 optionA: "Интерполяция",
-					 optionB: "Конкатенация",
-					 optionC: "Объединение строк",
-					 optionD: "Вкрапление значений",
+					 optionA: "String interpolation",
+					 optionB: "String concatenation",
+					 optionC: "Combining strings",
+					 optionD: "",
 					 questionId: 34,
-					 helpText: "Интерполяция строк - способ создать новое значение типа String из разных констант, переменных, литералов и выражений, включая их значения в строковый литерал. Каждый элемент, который вы вставляете в строковый литерал, должен быть помещен в скобки и находиться внутри двойных кавычек литерала, а перед открывающей скобкой должен стоять знак обратного слэша."),
-
-			Question(question: ["Каким образом можно добавить значение типа Character к переменной типа String?",
-								"Как мы можем добавить один Character к переменной типа String?",
-								"Используя какой метод мы можем добавить Character к переменной String?"],
+					 helpText: "String interpolation is a way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal. You can use string interpolation in both single-line and multiline string literals. Each item that you insert into the string literal is wrapped in a pair of parentheses, prefixed by a backslash."),
+			
+			/// Если что этот вопрос могу потом сам взять, тема "String and Characters" (21601 id)
+			
+			Question(question: ["Can we append a Character value to a String variable with the String type’s append() method?"],
 					 image: "",
-					 optionA: "Используя String append",
-					 optionB: "Конкатенация",
-					 optionC: "Приведение типов",
-					 optionD: "Через оператор сложения",
+					 optionA: "Yes",
+					 optionB: "No",
+					 optionC: "",
+					 optionD: "",
 					 questionId: 35,
-					 helpText: "Вы можете добавить значение типа Character к переменной типа String, используя метод String append. Вы не можете добавить String или Character к уже существующей переменной типа Character, потому что значение типа Character должно состоять только из одиночного символа."),
-
-			Question(question: ["Можно ли сравнивать две строки?",
-								"Возможно ли сравнение двух значений типа String?",
-								"Можем ли мы сравнить два значения String?"],
+					 helpText: "You can append a Character value to a String variable with the String type’s append() method."),
+			
+			/// Если что этот вопрос могу потом сам взять, тема "String and Characters" (238 id)
+			
+			Question(question: ["How many ways does Swift support to compare textual values?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Только ==",
-					 optionC: "Только !=",
-					 optionD: "Нет",
+					 optionA: "Three",
+					 optionB: "Two",
+					 optionC: "Eleven",
+					 optionD: "",
 					 questionId: 36,
-					 helpText: "Swift предусматривает три способа сравнения текстовых значений: равенство строк и символов, равенство префиксов, и равенство суффиксов. Равенство строк и символов проверяется оператором равенства (==) и оператором неравенства (!=). Два String значения (или два Character значения) считаются равными, если их расширенные наборы графем канонически эквивалентны. Расширенные наборы графем канонически эквивалентны, если они имеют один и тот же языковой смысл и внешний вид, даже если они изначально состоят из разных скалярных величин Юникода."),
-
-			Question(question: ["Что вернется, при сравнении двух String?",
-								"Какой тип вернется в результате сравнения двух String значений?",
-								"Что мы получим после сравнения двух Character?"],
+					 helpText: "Swift provides three ways to compare textual values: string and character equality, prefix equality, and suffix equality."),
+			
+			/// Ну вроде бы все
+			/// Дальше самостоятельные вопросы
+			
+			Question(question: ["What will we get when we are comparing two Strings?",
+								"What type will be returned as a result of comparing two String values?",
+								"What do we get after comparing two Character?"],
 					 image: "",
 					 optionA: "Bool",
 					 optionB: "String",
 					 optionC: "Character",
-					 optionD: "1 или 0",
+					 optionD: "",
 					 questionId: 37,
-					 helpText: "При сравнении String или Character возвращается Bool-значение (true или false)."),
-
-			Question(question: ["Какой тип будет присвоен переменной с изображения?",
-								"Какой тип будет присвоен при подобной неявной типизации?"],
+					 helpText: "Comparing String or Character returns a Bool value (true or false)."),
+			
+			Question(question: ["What type will be assigned to the variable from the image?",
+								"What type will be assigned with this implicit typing?"],
 					 image: "TheBasics36",
 					 optionA: "Double",
 					 optionB: "Float",
 					 optionC: "Decimal",
 					 optionD: "",
 					 questionId: 38,
-					 helpText: "При неявной типизации, числу с плавающей точкой присваивается тип Double, так как он является предпочтительным выбором."),
-
-			Question(question: ["Что мы получим, при попытке запустить этот код?"],
+					 helpText: "With implicit typing, a floating-point number is assigned the Double type, as it is the preferred choice. In situations where either type would be appropriate, Double is preferred."),
+			
+			Question(question: ["What will we get after running this code?"],
 					 image: "TheBasics37",
-					 optionA: "Столкнемся с ошибкой",
-					 optionB: "Ничего не произойдет",
-					 optionC: "Переменной присваивается число",
-					 optionD: "Переменная обнуляется",
+					 optionA: "We will get an error",
+					 optionB: "We will change the value",
+					 optionC: "",
+					 optionD: "",
 					 questionId: 39,
-					 helpText: "Swift является типобезопасным языком со строгой типизацией, поэтому после того, как мы присвоили переменной тип, мы не можем его изменить. Так, в этом случае мы столкнемся с ошибкой. Ошибка возникает, так как переменная name ожидает строковый литерал, а число с плавающей точкой не является строкой и не соответствует переменной name по типу."),
-
-			Question(question: ["Набор символов, зарезервированный языком программирования?",
-								"Зарезервированные языком программирования наборы символов, которые не могут быть использованы в качестве идентификаторов"],
+					 helpText: "Swift is a type-safe language. A type safe language encourages you to be clear about the types of values your code can work with. If part of your code requires a String, you can’t pass it an Int by mistake. The error occurs because the variable name expects a string literal, and the floating point number is not a string and does not match the variable name type."),
+			
+			Question(question: ["The words reserved for a purpose by the programming language?"],
 					 image: "",
-					 optionA: "Ключевое слово",
-					 optionB: "Функция",
-					 optionC: "Замыкание",
-					 optionD: "Идентификатор",
+					 optionA: "Keyword",
+					 optionB: "Function",
+					 optionC: "Closure",
+					 optionD: "Identifier",
 					 questionId: 40,
-					 helpText: "Ключевые слова зарезервированы и не могут быть использованы в качестве идентификаторов, если не помещены в одиночные кавычки. Ключевые слова, кроме inout, var,  и let, могут быть использованы в качестве внешних имен параметров в объявлении функции или в вызове функции без необходимости помещать их в одиночные кавычки."),
-
-			Question(question: ["Что мы получим, при сравнении переменных name и char?"],
+					 helpText: "Swift keywords are the words reserved for a purpose. They cannot be used for variable names constants or any other identifiers. There are four types of keywords in Swift based on the location of their usage in a swift program: Keywords in Declarations, Keywords in Statements, Keywords in Expressions and Types, Keywords in Specific Contexts."),
+			
+			Question(question: ["What do we get after comparing the variables name and char?"],
 					 image: "TheBasics39",
 					 optionA: "true",
 					 optionB: "false",
-					 optionC: "Ошибку",
+					 optionC: "\"not sure\"",
 					 optionD: "",
 					 questionId: 41,
-					 helpText: "Хотя мы и присваиваем переменной char всего один отдельный символ, без явного указания типа данных Swift автоматически присвоит тип String, поэтому две этих переменных могут сравниваться, и результатом сравнения будет true (потому что в данном случае значения у переменных равны)"),
-
-			Question(question: ["Что мы получим, при сравнении переменных name и name2?"],
+					 helpText: "Although we only assign a single character to a char variable, without explicitly specifying the data type, Swift will automatically assign the type to String, so these two variables can be compared, and the result of the comparison will be true (because in this case the values of the variables are equal)"),
+			
+			Question(question: ["What do we get after comparing the variables name and char?"],
 					 image: "TheBasics40",
-					 optionA: "Ошибку сравнения",
+					 optionA: "Comparison error",
 					 optionB: "false",
 					 optionC: "true",
 					 optionD: "",
 					 questionId: 42,
-					 helpText: "Перед нами две переменных с разными значениями, и если поторопиться, то можно ответить, что результатом сравнения будет false, так как их значения не равны. Но в данном случае, у переменных разные типы данных, и подобное сравнение вызовет ошибку Binary operator '==' cannot be applied to operands of type 'String' and 'Character'"),
-
-			Question(question: ["Являются ли все базовые типы (Int, String, Double, Bool) в Swift хешируемыми?",
-								"Все базовые типы (Int, String, Double, Bool) в Swift являются хешируемыми, так ли это?",],
+					 helpText: "We have two variables with different values, and if we hurry, we can answer that the result of the comparison will be false, since their values are not equal. But in this case, the variables have different data types, and such a comparison will cause the error \"Binary operator '==' cannot be applied to operands of type 'String' and 'Character'\""),
+			
+			Question(question: ["Are all basic Swift types (Int, String, Double, Bool) hashable?"],
 					 image: "",
-					 optionA: "Да",
-					 optionB: "Нет",
-					 optionC: "Все, кроме Bool",
-					 optionD: "Все, кроме String",
+					 optionA: "Yes",
+					 optionB: "No",
+					 optionC: "",
+					 optionD: "",
 					 questionId: 43,
-					 helpText: "Все базовые типы Swift (Int, String, Double, Bool) являются хешируемыми типами по умолчанию и могут быть использованы в качестве типов значений множества или в качестве типов ключей словаря. Значения членов перечисления без каких-либо связанных значений так жетакже являются хешируемыми по умолчанию."),
-
-			Question(question: ["Что позволяет создавать и передавать группы значений, и возвращать несколько значений из функции?",
-								"С помощью этого можно вернуть несколько значений из функции как одно целое значение",
-								"С помощью чего мы можем создавать и передавать группы значений в Swift?"],
+					 helpText: "All basic Swift types (Int, String, Double, Bool) are hashable types by default and can be used as set value types or as dictionary key types. Enumeration member values without any associated values are also hashable by default."),
+			
+			Question(question: ["What allows you to create and pass around groupings of values, and return multiple values from a function as a single compound value?"],
 					 image: "",
-					 optionA: "Кортеж",
-					 optionB: "Опционал",
-					 optionC: "Множество",
-					 optionD: "Переменная",
+					 optionA: "Tuple",
+					 optionB: "Dictionary",
+					 optionC: "Set",
+					 optionD: "",
 					 questionId: 44,
-					 helpText: "В дополнение к знакомым типам, Swift включает расширенные типы, которых нет в Objective-C. К ним относятся кортежи, которые позволяют создавать и передавать группы значений. Кортежи могут возвращать несколько значений из функции как одно целое значение."),
-
-			Question(question: ["Тип, позволяющий работать с отсутствующими значениями",
-								"Какой тип позволяет работать с отсутствующими значениями?",
-								"С отсутствующими значениями можно работать с помощью этого типа"],
+					 helpText: "In addition to familiar types, Swift introduces advanced types not found in Objective-C, such as tuples. Tuples enable you to create and pass around groupings of values. You can use a tuple to return multiple values from a function as a single compound value."),
+			
+			Question(question: ["A type that handle the absence of a value"],
 					 image: "",
-					 optionA: "Опциональный тип",
-					 optionB: "Тип кортежа",
-					 optionC: "Тип коллекции",
+					 optionA: "Optional types",
+					 optionB: "Tuple types",
+					 optionC: "Collection types",
 					 optionD: "",
 					 questionId: 45,
-					 helpText: "Swift также включает опциональные типы, которые позволяют работать с отсутствующими значениями. Опциональные значения говорят либо «здесь есть значение, и оно равно х», либо «здесь нет значения вообще». Опциональные типы подобны использованию nil с указателями в Objective-C, но они работают со всеми типами, не только с классами. Опциональные значения безопаснее и выразительнее чем nil указатели в Objective-C, и находятся в сердце многих наиболее мощных особенностей Swift."),
-
-			Question(question: ["Можем ли мы передать опциональный String куску кода, который ожидает неопциональный String?",
-								"Можете ли вы передать опциональный тип Double куску кода, который ждет неопциональный тип Double?"],
+					 helpText: "Swift introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using nil with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they’re at the heart of many of Swift’s most powerful features."),
+			
+			Question(question: ["Can we pass an optional String to a piece of code that expects a non-optional String?",
+								"Can you pass an optional Double to a piece of code that expects a non-optional Double?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
+					 optionA: "No",
+					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 46,
-					 helpText: "Swift - язык типобезопасный, что означает, что Swift помогает вам понять, с какими типами значений ваш код может работать. Если кусок вашего кода ожидает String, безопасность типов не даст вам передать ему Int по ошибке. Кроме того, безопасность типов не позволит вам случайно передать опциональный String куску кода, который ожидает неопциональный String. Безопасность типов позволяет вам улавливать и исправлять ошибки как можно раньше в процессе разработки."),
-
-			Question(question: ["Выберите соответствующий вариант: Объявляем константу с именем numbers, тип которой будет Double со значением 1.0.",
-								"Как мы запишем следующее: Объявляем константу с именем numbers, тип которой будет Double со значением 1.0."],
+					 helpText: "Swift is a type-safe language, which means the language helps you to be clear about the types of values your code can work with. If part of your code requires a String, type safety prevents you from passing it an Int by mistake. Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that requires a non-optional String. Type safety helps you catch and fix errors as early as possible in the development process."),
+			
+			Question(question: ["Choose the appropriate option: Declare a constant named numbers, the type of which will be Double with a value of 1.0.",
+								"How we write this: Declare a constant named numbers, which will be of type Double with a value of 1.0."],
 					 image: "",
 					 optionA: "let numbers: Double = 1.0",
 					 optionB: "var numbers: Double = 1.0",
 					 optionC: "let numbers = Double(1.0)",
 					 optionD: "let numbers = Double : 1.0",
 					 questionId: 47,
-					 helpText: "Правильный ответ будет: let numbers: Double = 1.0."),
-
-			Question(question: ["Можем ли мы использовать значение с типом Int? как операнд в математической операции?",
-								"Можете ли вы использовать Double? как операнд в математической операции?"],
+					 helpText: "Correct answer: let numbers: Double = 1.0."),
+			
+			Question(question: ["Can we use an Int? value as an operand in a math operation?",
+								"Can you use Double? as an operand in a math operation?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
+					 optionA: "No",
+					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 71,
-					 helpText: "Запомните, опциональный тип данных - это совершенно новый тип данных, поэтому, несмотря на то, что опционалы могут принимать значения основных типов данных, остальные свойства этих типов к опционалам не относятся. Например вы не можете использовать типы Int? или Double? при выполнении математических операций."),
-
-			Question(question: ["Что не могут содержать имена констант и переменных?",
-								"Это нельзя использовать при написании имен констант и переменных",
-								"Выберите, что не могут содержать имена переменных и констант?"],
+					 helpText: "You can't use Int? types or Double? as is when performing mathematical operations. You need to unwrap them first."),
+			
+			Question(question: ["What can't constant and variable names contain?",
+								"This cannot be used when writing constant and variable names",
+								"Choose what variable and constant names cannot contain?"],
 					 image: "",
-					 optionA: "Пробелы и стрелки",
-					 optionB: "Латинские буквы",
-					 optionC: "Нижнее подчеркивание",
-					 optionD: "Unicode-символы",
+					 optionA: "whitespace characters and arrows",
+					 optionB: "Unicode-symbols",
+					 optionC: "Underscores",
+					 optionD: "",
 					 questionId: 48,
-					 helpText: "Имена констант и переменных не могут содержать пробелы, математические символы, стрелки, приватные (или невалидные) кодовые точки Unicode, а так жетакже символы отрисовки линий или прямоугольников. Так жеТакже имена не могут начинаться с цифр, хотя цифры могут быть включены в имя в любом другом месте. "),
-
-			Question(question: ["Можем ли мы после объявления константы, дальше по коду изменить ее на переменную?",
-								"После объявление переменной, дальше по коду, можем ли мы поменять ее на константу?",
-								"Можем ли мы менять константы на переменные, а переменные - на константы?"],
+					 helpText: "Constant and variable names can’t contain whitespace characters, mathematical symbols, arrows, private-use Unicode scalar values, or line- and box-drawing characters. Nor can they begin with a number, although numbers may be included elsewhere within the name."),
+			
+			Question(question: ["Can we, after declaring a constant, further down the code, change it to a variable?",
+								"After declaring a variable, can we change it to a constant?",
+								"Can we change constants to variables, and variables to constants after declaring?"],
 					 image: "",
-					 optionA: "Нет",
-					 optionB: "Да",
+					 optionA: "No",
+					 optionB: "Yes",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 49,
-					 helpText: "Если вы объявили константу или переменную определенного типа, то вы не можете объявить ее заново с тем же именем или заставить хранить внутри себя значение другого типа. Также вы не можете изменить константу на переменную, а переменную - на константу."),
-
-			Question(question: ["Какая глобальная функция может вывести одно или более значений в консоль?",
-								"Глобальная функция, которая используется для выведения значений в консоль",
-								"Функция, являющаяся глобальной, и позволяющая выводить одно или более значений в консоль?"],
+					 helpText: "Once you’ve declared a constant or variable of a certain type, you can’t declare it again with the same name, or change it to store values of a different type. Nor can you change a constant into a variable or a variable into a constant."),
+			
+			Question(question: ["Which global function can output one or more values to the console?"],
 					 image: "",
 					 optionA: "print(_:separator:terminator:)",
 					 optionB: "show()",
 					 optionC: "alert()",
 					 optionD: "Console.WriteLine",
 					 questionId: 50,
-					 helpText: "Функция print(_:separator:terminator:) является глобальной, которая выводит одно или более значений в подходящем виде. В Xcode, например, функция print(_:separator:terminator:) выводит значения в консоль. Параметры separator и terminator имеют дефолтные значения, так что при использовании функции их можно просто пропустить. По умолчанию функция заканчивает вывод символом переноса строки. Чтобы вывести в консоль значения без переноса на новую строку, вам нужно указать пустую строку в параметре terminator."),
-
-			Question(question: ["Как называется игнорируемый компилятором, неисполняемый текст в коде?",
-								"Как называется неисполняемый текст в коде?",
-								"Что нужно добавить, чтобы у вас появился неисполняемый участок кода?"],
+					 helpText: "The print(_:separator:terminator:) function is a global function that prints one or more values to an appropriate output. In Xcode, for example, the print(_:separator:terminator:) function prints its output in Xcode’s “console” pane. The separator and terminator parameter have default values, so you can omit them when you call this function. By default, the function terminates the line it prints by adding a line break. To print a value without a line break after it, pass an empty string as the terminator—for example, print(someValue, terminator: \"\")."),
+			
+			Question(question: ["What is the name of a compiler-ignored, non-executable text in the code?",
+								"What is the name of the non-executable text in the code?",
+								"What do you need to add to get a non-executable piece of code?"],
 					 image: "",
-					 optionA: "Комментарий",
-					 optionB: "Исключение",
-					 optionC: "Примечание",
+					 optionA: "Comments",
+					 optionB: "Exeptions",
+					 optionC: "Notation",
 					 optionD: "",
 					 questionId: 51,
-					 helpText: "Используйте комментарии, чтобы добавить неисполняемый текст в коде,  как примечание или напоминание самому себе. Комментарии игнорируются компилятором Swift во время компиляции кода. Комментарии в Swift очень похожи на комментарии в C. Однострочные комментарии начинаются с двух слешей (//), многострочные комментарии начинаются со слеша и звездочки (/*) и заканчиваются звездочкой, за которой следует слеш (*/). Внутри многострочного комментария вы можете поместить любой участок кода, который хотите сделать неисполняемым."),
-
-			Question(question: ["Один случай, когда в Swift необходимо ставить точку с запятой (;) в коде?",
-								"В каком случае вам необходимо будет поставить точку с запятой (;) в коде?",
-								"В этом случае вам нужно ставить точку с запятой в коде"],
+					 helpText: "Use comments to include nonexecutable text in your code, as a note or reminder to yourself. Comments are ignored by the Swift compiler when your code is compiled. Comments in Swift are very similar to comments in C. Single-line comments begin with two forward-slashes (//). Multiline comments start with a forward-slash followed by an asterisk (/*) and end with an asterisk followed by a forward-slash (*/)"),
+			
+			Question(question: ["One case when you need to use a semicolon (;) in your code in Swift?",
+								"When would you need to put a semicolon (;) in your code?",
+								"In this case, you need to put a semicolon in the code"],
 					 image: "",
-					 optionA: "Несколько выражений на строке",
-					 optionB: "Объявление двух переменных",
-					 optionC: "После каждого выражения",
+					 optionA: "Multiple statements on a single line",
+					 optionB: "Inside a closure",
+					 optionC: "After each statement",
 					 optionD: "",
 					 questionId: 52,
-					 helpText: "В отличие от многих других языков, Swift не требует писать точку с запятой (;) после каждого выражения в коде, хотя вы можете делать это, если хотите. Однако точки с запятой требуются, если вы хотите написать несколько отдельных выражений на одной строке. Пример: let name = SomeValue; print(name)."),
-
-			Question(question: ["Какой тип будет у константы number?",
-								"Выберите правильный тип, который Swift присвоит константе number?",
-								"У константы number будет именно такой тип"],
+					 helpText: "Unlike many other languages, Swift doesn’t require you to write a semicolon (;) after each statement in your code, although you can do so if you wish. However, semicolons are required if you want to write multiple separate statements on a single line: let cat = \"🐱\"; print(cat) // Prints \"🐱\""),
+			
+			Question(question: ["What type will the number constant be?",
+								"Choose the correct type for Swift to assign to the number constant?"],
 					 image: "TheBasics51",
 					 optionA: "Double",
 					 optionB: "Float",
 					 optionC: "Int",
 					 optionD: "Character",
 					 questionId: 53,
-					 helpText: "Если объединить целые литералы и литералы с плавающей точкой в одном выражении, в этом случае тип будет выводиться как Double. Swift всегда выбирает Double (вместо Float), когда выводит тип чисел с плавающей точкой. Литеральное значение 1 не имеет явного типа само по себе, так что соответствующий тип Double выводится из наличия литерала с плавающей точкой как части сложения."),
-
-			Question(question: ["Как изменить имя существующего типа на более подходящее по контексту?",
-								"Как вы можете изменить имя существующего типа на подходящее по контексту?",
-								"Как можно задать альтернативное имя для существующего типа?"],
+					 helpText: "If you combine integer and floating-point literals in an expression, a type of Double will be inferred from the context. The literal value of 1 has no explicit type in and of itself, and so an appropriate output type of Double is inferred from the presence of a floating-point literal as part of the addition."),
+			
+			Question(question: ["How can you change the name of an existing type to type that is contextually more appropriate?"],
 					 image: "",
-					 optionA: "Создать typealias",
-					 optionB: "Создать копию типа",
-					 optionC: "Создать контекстное имя",
-					 optionD: "Это невозможно",
+					 optionA: "Define typealias",
+					 optionB: "Define type copy",
+					 optionC: "Define context name",
+					 optionD: "",
 					 questionId: 54,
-					 helpText: "Псевдонимы типов задают альтернативное имя для существующего типа. Можно задать псевдоним типа с помощью ключевого слова typealias. Псевдонимы типов полезны, когда вы хотите обратиться к существующему типу по имени, которое больше подходит по контексту. После того как вы один раз задали псевдоним типа, вы можете использовать псевдоним везде, где вы хотели бы его использовать. "),
-
-			Question(question: ["Какие две логические константы предусматривает Swift для типа Bool?",
-								"В Swift есть две логические постоянные для типа Bool, какие?",
-								"Какие два логических значения мы можем присваивать переменным типа Bool?"],
+					 helpText: "Type aliases define an alternative name for an existing type. You define type aliases with the typealias keyword. Type aliases are useful when you want to refer to an existing type by a name that is contextually more appropriate, such as when working with data of a specific size from an external source."),
+			
+			Question(question: ["What two Boolean constants does Swift provide for the Bool type?",
+								"Swift has two logical constants for the Bool type, which ones?",
+								"What two booleans can we assign to variables of type Bool?"],
 					 image: "",
-					 optionA: "true и false",
-					 optionB: "true и not true",
-					 optionC: "1 и 0",
-					 optionD: "truth и false",
+					 optionA: "true and false",
+					 optionB: "true and not true",
+					 optionC: "1 and 0",
+					 optionD: "truth and not truth",
 					 questionId: 55,
-					 helpText: "В Swift есть простой логический тип Bool. Этот тип называют логическим, потому что он может быть только true или false. Swift предусматривает две логические константы, true и false соответственно. Так же как с Int и Double в предыдущих главах, вам не нужно указывать константы или переменные как Bool, если при создании вы присвоили им значения true или false. Вывод типов помогает сделать код Swift кратким и читабельным тогда, когда вы создаете константы или переменные со значениями которые точно известны."),
-
-			Question(question: ["Как корректно обратиться в первому элементу кортежа?",
-								"Каким образом мы можем обратиться к первому элементу кортежа?",
-								"Мы можем обратиться к первому элементу кортежа через числовой индекс, как именно?"],
+					 helpText: "Swift has a basic Boolean type, called Bool. Boolean values are referred to as logical, because they can only ever be true or false. Swift provides two Boolean constant values, true and false. As with Int and Double above, you don’t need to declare constants or variables as Bool if you set them to true or false as soon as you create them. Type inference helps make Swift code more concise and readable when it initializes constants or variables with other values whose type is already known."),
+			
+			Question(question: ["How can you correctly refer to the first element of a tuple?",
+								"How can we refer to the first element of the tuple?",
+								"We can refer to the first element of the tuple through the dot syntax. How?"],
 					 image: "",
 					 optionA: "someTuples.0",
 					 optionB: "someTuples.1",
 					 optionC: "someTuples[0]",
 					 optionD: "someTuples(1)",
 					 questionId: 56,
-					 helpText: "Вы можете разложить содержимое кортежа на отдельные константы и переменные, к которым можно получить доступ привычным способом. Если вам нужны только некоторые из значений кортежа, вы можете игнорировать части кортежа во время разложения с помощью символа подчеркивания (_). В качестве альтернативы можно получать доступ к отдельным частям кортежа, используя числовые индексы, начинающиеся с нуля."),
-
-			Question(question: ["Когда мы можем дать имена отдельным элементам кортежа?",
-								"В какой момент мы можем дать имена отдельным элементам кортежа?"],
+					 helpText: "You can decompose a tuple’s contents into separate constants or variables, which you then access as usual. If you only need some of the tuple’s values, ignore parts of the tuple with an underscore (_) when you decompose the tuple. Alternatively, access the individual element values in a tuple using index numbers starting at zero. You can name the individual elements in a tuple when the tuple is defined."),
+			
+			Question(question: ["When can we give names to the individual elements of a tuple?",
+								"At what point can we give names to the individual elements of the tuple?"],
 					 image: "",
-					 optionA: "Во время объявления",
-					 optionB: "После инициализации",
-					 optionC: "После первого использования",
-					 optionD: "В момент обращения к элементу",
+					 optionA: "When the tuple is defined",
+					 optionB: "After the tuple is defined",
+					 optionC: "After the first usage",
+					 optionD: "",
 					 questionId: 57,
-					 helpText: "Вы можете давать имена отдельным элементам кортежа во время объявления. Например: let gameRecord = (questionNumber: 50, score: 49)."),
-
+					 helpText: "You can name the individual elements in a tuple when the tuple is defined. For example: let gameRecord = (questionNumber: 50, score: 49)."),
+			
+			/// Пожалуйста переведи 68, уже не вывез
+			
 			Question(question: ["Особый объект, который группирует значения различных типов в пределах одного составного значения",
 								"Объект, предлагающий наиболее простой способ объединения значений различных типов в пределах одного значения",
 								"У каждого отдельного значения в составе этого объекта может быть собственный тип данных, который никак не зависит от других"],
 					 image: "",
-					 optionA: "Кортеж",
-					 optionB: "Массив",
-					 optionC: "Коллекция",
+					 optionA: "Tuple",
+					 optionB: "Array",
+					 optionC: "Collection",
 					 optionD: "",
 					 questionId: 68,
 					 helpText: "Кортеж - это особый объект, который группирует значения различных типов в пределах одного составного значения. Более того, кортеж предлагает наиболее простой способ объединения значений различных типов в пределах одного значения. У каждого отдельного значения в составе кортежа может быть собственный тип данных, который никак не зависит от других."),
-
-			Question(question: ["Какой тип используется, когда значение может отсутствовать?",
-								"Если значение можно отсутствовать, какой тип мы будем использовать?",
-								"Этот тип используется, если значение может отсутствовать"],
-					 image: "",
-					 optionA: "Опциональный",
-					 optionB: "Логический Bool",
-					 optionC: "Кортеж",
-					 optionD: "Неявный тип",
-					 questionId: 58,
-					 helpText: "Опциональные типы используются в тех случаях, когда значение может отсутствовать. Опциональный тип подразумевает, что возможны два варианта: или значение есть, и его можно извлечь из опционала, либо его вообще нет."),
-
-			Question(question: ["Какой тип Swift присвоит константе convertedNum?",
-								"Константе convertedNum присвоится именно этот тип",
-								"Swift присвоит этот тип константе convertedNum"],
+			
+			Question(question: ["What type will Swift assign to convertedNum?"],
 					 image: "TheBasics57",
 					 optionA: "Int?",
 					 optionB: "Int",
 					 optionC: "String",
-					 optionD: "Столкнемся с ошибкой",
+					 optionD: "",
 					 questionId: 59,
-					 helpText: "Поскольку метод Int() может иметь недопустимый аргумент, он возвращает опциональный Int, вместо Int. Опциональный Int записывается как Int?, а не Int. Знак вопроса означает, что содержащееся в ней значение является опциональным, что означает, что он может содержать некое Int значение, или он может вообще не содержать никакого значения. (Он не может содержать ничего другого, например, Bool значение или значение String. Он либо Int, либо вообще ничто)."),
-
-			Question(question: ["Каким образом мы можем установить опциональную переменную в состояние отсутствия значения?",
-								"Каким путем вы можете присвоить опциональной переменной отсутствующее значение?",
-								"Отсутствующее значение для опциональной переменной можно установить именно так"],
+					 helpText: "Because the initializer might fail, it returns an optional Int, rather than an Int. An optional Int is written as Int?, not Int. The question mark indicates that the value it contains is optional, meaning that it might contain some Int value, or it might contain no value at all. (It can’t contain anything else, such as a Bool value or a String value. It’s either an Int, or it’s nothing at all.)"),
+			
+			Question(question: ["How can we set an optional variable to no value?"],
 					 image: "",
-					 optionA: "Присвоить nil",
-					 optionB: "Присвоить 0",
-					 optionC: "Присвоить литерал пустого массива",
+					 optionA: "By assigning it the special value nil",
+					 optionB: "By assigning it 0",
+					 optionC: "by assigning it empty array literal",
 					 optionD: ".removeValue",
 					 questionId: 60,
-					 helpText: "Мы можем установить опциональную переменную в состояние отсутствия значения, путем присвоения ему специального значения nil. nil не может быть использован с не опциональными константами и переменными. Если значение константы или переменной при определенных условиях в коде должно когда-нибудь отсутствовать, всегда объявляйте их как опциональное значение соответствующего типа."),
-
-			Question(question: ["Каким образом мы можем проверить, содержит ли опционал значение?",
-								"Как мы можем узнать, содержит опционал значение или нет?",
-								"Таким образом вы можете узнать, содержит опционал значение или нет"],
+					 helpText: "You set an optional variable to a valueless state by assigning it the special value nil. You can’t use nil with non-optional constants and variables. If a constant or variable in your code needs to work with the absence of a value under certain conditions, always declare it as an optional value of the appropriate type."),
+			
+			/// На самом деле 90% вопросов есть в доке в чистом виде, нормик, думал будет хуже
+			
+			Question(question: ["How can we check if an optional contains a value?",
+								"How do we know if an optional contains a value or not?",
+								"This way you can find out if an optional contains a value or not"],
 					 image: "",
-					 optionA: "Сравнивая с nil через if",
-					 optionB: "Через оператор ===",
-					 optionC: "Внутри цикла for-in",
-					 optionD: "Через forced unwrap",
+					 optionA: "By comparing it against nil",
+					 optionB: "By identical to operator ===",
+					 optionC: "Inside for-in loop",
+					 optionD: "Trough forced unwrap",
 					 questionId: 61,
-					 helpText: "Вы можете использовать инструкцию if, сравнивая опционал с nil, чтобы проверить, содержит ли опционал значение. Это сравнение можно сделать с помощью оператора «равенства» (==) или оператора «неравенства» (!=). Если опционал имеет значение, он будет рассматриваться как «неравным» nil."),
-
-			Question(question: ["Если мы точно уверены, что опционал имеет значение, каким наиболее быстрым образом мы можем его получить?",
-								"Каким самым быстрым образом мы можем получить значение опционала, если уверены, что оно присутствует?",
-								"Как быстро получить значение опционала, если значение точно есть?"],
+					 helpText: "You can use an if statement to find out whether an optional contains a value by comparing the optional against nil. You perform this comparison with the “equal to” operator (==) or the “not equal to” operator (!=). If an optional has a value, it’s considered to be “not equal to” nil"),
+			
+			Question(question: ["Once you’re sure that the optional does contain a value, what is the fastest way to get it?",
+								"What is the fastest way we can get the value, once you’re sure that the optional does contain it?"],
 					 image: "",
-					 optionA: "Принудительное извлечение (!)",
-					 optionB: "Внутри цикла while",
-					 optionC: "Привязка опционалов",
-					 optionD: "Оператор ??",
+					 optionA: "Forced unwrapping (!)",
+					 optionB: "Inside while loop",
+					 optionC: "Nil-Coalescing Operator",
+					 optionD: "",
 					 questionId: 62,
-					 helpText: "Если вы уверены, что опционал содержит значение, вы можете получить доступ к его значению, добавив восклицательный знак (!) в конце имени опционала. Восклицательный знак фактически говорит: «Я знаю точно, что этот опционал содержит значение, пожалуйста, используй его». Это выражение известно как Принудительное извлечение значения опционала."),
-
-			Question(question: ["Объекты, доступные в любой точке программы?"],
+					 helpText: "Once you’re sure that the optional does contain a value, you can access its underlying value by adding an exclamation point (!) to the end of the optional’s name. The exclamation point effectively says, “I know that this optional definitely has a value; please use it.” This is known as forced unwrapping of the optional’s value."),
+			
+			Question(question: ["Objects available anywhere in the program?"],
 					 image: "",
-					 optionA: "Глобальные объекты",
-					 optionB: "Локальные объекты",
+					 optionA: "Global objects",
+					 optionB: "Local objects",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 65,
-					 helpText: "Каждый созданный объект может использоваться только по определенным правилам, одно из которых называется областью видимости. Область видимости определяет, где именно в коде можно использовать тот или иной объект. По принадлежности к области видимости объекты делятся на локальные и глобальные."),
-
+					 helpText: "Each created object can only be used according to certain rules, one of which is called the scope. Scope defines where exactly in the code you can use this or that object. By belonging to the scope, objects are divided into local and global."),
+			
+			// Дальше похоже пошли из книжки Василия
+			// Пожалуйста возьми их на себя, я в этом моменте уже все.
+			
 			Question(question: ["Как называется возможность сослаться на свойство динамически, а не напрямую?"],
 					 image: "TheBasics67",
 					 optionA: "KeyPath",
@@ -745,7 +730,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 67,
 					 helpText: "Одной из полезных особенностей Objective-C была возможность сослаться на свойство динамически, а не напрямую. Другими словами, вы могли указать объект и его свойство, которое необходимо использовать, но при этом не производить чтение или запись данного свойства сейчас, а сделать это позже. После создания структуры и константы, использующей эту структуру, вы можете использовать символ обратного слеша перед указанием параметра для создания динамический ссылки. В константу name записывается ссылка на значение свойства name из Starship."),
-
+			
 			Question(question: ["Какой тип будет у данного кортежа?",
 								"У этого кортежа будет такой тип данных",
 								"Какой тип данных будет присвоен этому кортежу?"],
@@ -756,7 +741,7 @@ class TheBasicsSet {
 					 optionD: "(Character, Double, True)",
 					 questionId: 69,
 					 helpText: "У вас мог возникнуть вопрос: если кортеж группирует значения различных типов данных в одно, то какой же тогда тип данных у самого кортежа? Правильный ответ: (String, Double, Bool). Тип данных кортежа - это фиксированный упорядоченный набор типов данных, входящих в него значений, который записывается в скобках и элементы которого отделяются запятыми друг от друга. Для кортежа из нашего примера это (String, Double, Bool) и у нас он задается неявно. Порядок указания типов данных должен соответствовать порядку следования элементов в кортеже."),
-
+			
 			Question(question: ["Можем ли мы задать имя для каждого элемента кортежа?",
 								"Мы не можем задать имена для части элементов кортежа, мы обязаны либо не использовать их вовсе, либо задать их для каждого элемента. Так ли это?",
 								"Присвоение элементам кортежа имен не лишает нас возможности использовать их индексы. Так ли это?"],
@@ -766,24 +751,14 @@ class TheBasicsSet {
 					 optionC: "",
 					 optionD: "",
 					 questionId: 70,
-					 helpText: "Для каждого элемента кортежа можно задать не только значение, но и имя. Имя элемента указывается отдельно перед каждым элементом через двоеточие. При этом задать имена для отдельных элементов невозможно: вы должны либо указать имена для всех элементов, либо не использовать их вовсе. Указанные имена кортежа можно использовать при получении значений этих элементов. При этом применяется тот же синтаксис, что и при доступе через индексы. Присвоение имен значениям не лишает вас возможности использовать индексы. Индексы в кортеже можно задействовать всегда. Доступ к элементам с использованием имен удобнее и нагляднее, чем доступ через индексы."),
-
-			Question(question: ["Как называется принудительное извлечение опционального значения?",
-								"Извлечение опционального значения с помощью оператора (!)"],
-					 image: "",
-					 optionA: "Force unwrap",
-					 optionB: "Unwrapping",
-					 optionC: "Optional Chaining",
-					 optionD: "",
-					 questionId: 72,
-					 helpText: "Swift предлагает механизм извлечения опционального значения, который называется принудительным извлечением. При этом с помощью специального оператора значение опционального типа данных преобразуется в значение основного (для этого опционала) типа данных, например Int? преобразуется в Int. Для принудительного извлечения используется знак восклицания в качестве постфикса названия параметра, содержащего значение опционального типа. При принудительном извлечении значения вы должны гарантировать, что параметр с опциональным типом данных содержит какое-либо значение, а не равен nil. В противном случае будет иметь место попытка преобразовать в основной тип данных несуществующее значение, после компиляции такого кода мы столкнемся с ошибкой.")
+					 helpText: "Для каждого элемента кортежа можно задать не только значение, но и имя. Имя элемента указывается отдельно перед каждым элементом через двоеточие. При этом задать имена для отдельных элементов невозможно: вы должны либо указать имена для всех элементов, либо не использовать их вовсе. Указанные имена кортежа можно использовать при получении значений этих элементов. При этом применяется тот же синтаксис, что и при доступе через индексы. Присвоение имен значениям не лишает вас возможности использовать индексы. Индексы в кортеже можно задействовать всегда. Доступ к элементам с использованием имен удобнее и нагляднее, чем доступ через индексы.")
 		]
 	}
-
-
+	
+	
 	///
-
-
+	
+	
 	static func getDemoQuestions() -> [Question] {
 		return [
 			Question(question: ["According to Swift's best practices, which letter case should the variable names start with?",
@@ -796,7 +771,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 1,
 					 helpText: "The convention is to use Lower Camel Case while naming properties and methods. Their names should start with a lowercase letter. And if a name consists of several words, only the first word should be lowercased. At the same time, type names should start with an uppercase letter (Upper Camel Case)."),
-
+			
 			Question(question: ["What word can be defined as the introduction of a new object that you are going to use?",
 								"The process of creating a new object that you are going to use is called ..."],
 					 image: "",
@@ -806,7 +781,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 2,
 					 helpText: "A declaration introduces a new object into the program. Initialization assigns a specific value to the declared object."),
-
+			
 			Question(question: ["A variable name must be ...",
 								"All constant and variable names must be ...",
 								"It is required to give each variable and constant a ... name"],
@@ -817,7 +792,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 3,
 					 helpText: "All variables and constants must have unique names. You can't use several variables or constants with the same name within the same program. And it's a good practice to name them using so-called lowerCamelCase. It means that names should begin with a lowercase letter. If the name consists of several words, only the first word should start with a lowercase letter."),
-
+			
 			Question(question: ["Is it necessary to use var or let keywords every time you call an existing variable or constant?",
 								"It is true that every time you want to access a variable or a constant, you must use var or let operators?"],
 					 image: "",
@@ -827,7 +802,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 63,
 					 helpText: "Var and let operators are required only while declaring variables and constants. To call them afterwards, you need to use only their names."),
-
+			
 			Question(question: ["Is it possible to create a variable that has the same name as another variable?",
 								"Can we give the same name to two different constants?"],
 					 image: "",
@@ -837,7 +812,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 64,
 					 helpText: "Names must be unique. It's impossible to declare a constant or a variable that has the same name as another constant or variable. The only exception is when these variables and constants are in different scopes. For example: you can name a local variable (inside a function) the same as you called a global variable."),
-
+			
 			Question(question: ["What is a separate Swift command usually called?",
 								"This word can be defined as a separate Swift command"],
 					 image: "",
@@ -847,7 +822,7 @@ class TheBasicsSet {
 					 optionD: "Sentence",
 					 questionId: 4,
 					 helpText: "A separate command in Swift is called a statement. Just like any other programming language, Swift performs all actions by following the commands given (written) by the developer. A file with code usually consists of multiple statements written on separate lines."),
-
+			
 			Question(question: ["Is it possible to declare multiple constants on a single line?",
 								"Can you declare two variables on a single line?",
 								"Is it possible to declare two or more variables or constants on a single line?"],
@@ -858,7 +833,7 @@ class TheBasicsSet {
 					 optionD: "Yes, separated by a colon",
 					 questionId: 5,
 					 helpText: "You can declare multiple constants or multiple variables on a single line, separated by commas."),
-
+			
 			Question(question: ["Can we change the value of a variable?",
 								"Is the value of a variable mutable?",
 								"Is it possible to change the value assigned to a variable?"],
@@ -869,7 +844,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 6,
 					 helpText: "The distinctive feature of variables is that we can change their values many times during the program execution."),
-
+			
 			Question(question: ["A named block of memory whose value can't be changed once it is set",
 								"The value of this type of memory block can be set only once with no option of changing it" ],
 					 image: "",
@@ -879,7 +854,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 7,
 					 helpText: "Constants are pretty similar to variables since they also store some value, but they are declared with the let keyword, and you can't change their value once they are initialized. So, if the value of a variable remains the same throughout the program, you should consider using a constant instead."),
-
+			
 			Question(question: ["The keyword that is used to determine a constant",
 								"Which keyword is used to introduce a constant?",
 								"This keyword can be used to define a constant"],
@@ -890,7 +865,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 8,
 					 helpText: "Constants are pretty similar to variables since they also store some value, but they are declared with the let keyword, and you can't change their value once they are initialized. So, if the value of a variable remains the same throughout the program, you should consider using a constant instead."),
-
+			
 			Question(question: ["In what case the data stored in a constant can be overwritten?",
 								"The data stored in a constant can't be overwritten except while..."],
 					 image: "",
@@ -900,7 +875,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 9,
 					 helpText: "A constant used in a loop will be overwritten with each iteration."),
-
+			
 			Question(question: ["Which keyword is used for defining a variable?",
 								"The keyword that must be used while declaring a variable",
 								"The keyword we use to define a variable"],
@@ -911,7 +886,7 @@ class TheBasicsSet {
 					 optionD: "set",
 					 questionId: 10,
 					 helpText: "In Swift, you define variables using the var keyword. The distinctive feature of variables is that their value can be changed many times during the program execution."),
-
+			
 			Question(question: ["How multi-line documentation comments are created?"],
 					 image: "",
 					 optionA: "/** Comment */",
@@ -920,7 +895,7 @@ class TheBasicsSet {
 					 optionD: "// MARK: Comment",
 					 questionId: 66,
 					 helpText: "In addition to the standard comments used in any other programming language, Swift allows adding comments right into the program's documentation. You may need such comments while developing a function library. Here is how documentation comments are created: /** Comment */. After adding the documentation comment to a function, you can click the function's name with the Opt (Alt) key pressed to see the comment."),
-
+			
 			Question(question: ["A named unit of data that stores an associated value",
 								"What do you call a named storage location which contains a value?",
 								"A memory storage location that contains a value and can be accessed by a name or another identifier"],
@@ -931,7 +906,7 @@ class TheBasicsSet {
 					 optionD: "Library",
 					 questionId: 11,
 					 helpText: "Just like most other programming languages, Swift relies on variables and constants to store data. A variable or a constant is a named unit of storage location that is assigned a value."),
-
+			
 			Question(question: ["A data type that stores individual Unicode symbols",
 								"Which type of data stores individual letters and other symbols?",
 								"Individual Unicode symbols are stored in this data type"],
@@ -942,7 +917,7 @@ class TheBasicsSet {
 					 optionD: "String",
 					 questionId: 12,
 					 helpText: "Swift’s String and Character types provide a fast, Unicode-compliant way to work with text. Each String is composed of independent Character values, while each Character represents an individual Unicode symbol."),
-
+			
 			Question(question: ["A data type responsible for storing any text value",
 								"Which data type represents arbitrary text values",
 								"An arbitrary text literal can be stored in this data type"],
@@ -953,7 +928,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 13,
 					 helpText: "Swift’s String and Character types provide a fast, Unicode-compliant way to work with text. Each String is composed of independent Character values, while each Character represents an individual Unicode symbol."),
-
+			
 			Question(question: ["What should we use if we are sure that the value of a variable won't change?",
 								"What can we use instead of a variable if its value won't change??"],
 					 image: "",
@@ -963,7 +938,7 @@ class TheBasicsSet {
 					 optionD: "A Structure",
 					 questionId: 14,
 					 helpText: "Besides variables, constants provide an additional way to store data in a program. They are pretty similar to variables since they also store some value, but constants are declared with the let keyword, and you can't change their value once they are initialized. So, if the value of a variable remains the same throughout the program, you should consider using a constant instead."),
-
+			
 			Question(question: ["A data type that stores whole numbers with no fractions or decimals. For instance, 42 or -23",
 								"Which data type stores whole signed numbers?",
 								"This type represents any whole number with no fractions"],
@@ -974,7 +949,7 @@ class TheBasicsSet {
 					 optionD: "Double",
 					 questionId: 15,
 					 helpText: "An Int is a whole signed number, for example, 1, -30, 458. On a 32-bit platform, Int is the same size as Int32, while on a 64-bit platform, Int is the same size as Int64."),
-
+			
 			Question(question: ["All types in Swift start with a(n) ... letter",
 								"Which letter case should you use for the first letter of any type in Swift?",
 								"The names of all Swift's types start with this letter case"],
@@ -985,7 +960,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 16,
 					 helpText: "Type names in Swift are always capitalized, so they start with an uppercase letter."),
-
+			
 			Question(question: ["How can you access the minimum and maximum values of each integer type?",
 								"How can you get the minimum and maximum values of Int or UInt?",
 								"You can use these properties to access the minimum and maximum values of Int or UInt"],
@@ -996,7 +971,7 @@ class TheBasicsSet {
 					 optionD: "first и max",
 					 questionId: 17,
 					 helpText: "You can access the minimum and maximum values of each integer type with its min and max properties"),
-
+			
 			Question(question: ["Which of the following types has a higher precision?",
 								"Which type that stores numbers with a decimal point has a higher precision?",
 								"Pick the type that stores the largest number of decimal digits"],
@@ -1007,7 +982,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 18,
 					 helpText: "Double represents a 64-bit floating-point number - in most cases, it is preferable to a Float because it has higher precision and is less likely to lose valuable accuracy. It has a precision of 15 decimal digits, whereas Float's precision can be as little as 6 decimal digits."),
-
+			
 			Question(question: ["Which type stores only the integers that are either positive or equal to zero?",
 								"The type that stores only unsigned integers",
 								"Pick the type that can store nonnegative integers only"],
@@ -1018,7 +993,7 @@ class TheBasicsSet {
 					 optionD: "Double",
 					 questionId: 19,
 					 helpText: "Swift provides an unsigned integer type, UInt (Unsigned Integer), which has the same size as the current platform’s native word size. Use it only when you specifically need an unsigned integer type with the same size as the platform’s native word size. Otherwise, Int is preferred, even when the values to be stored are known to be nonnegative. A consistent use of Int for integer values aids code interoperability, avoids the need to convert between different number types, and matches integer type inference."),
-
+			
 			Question(question: ["A sequence of characters surrounded by double quotation marks",
 								"A series of Unicode characters enclosed in quotes",
 								"Choose a literal that consists of a sequence of characters surrounded by double quotes"],
@@ -1029,8 +1004,8 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 20,
 					 helpText: "A string literal is a sequence of characters surrounded by double quotation marks."),
-
-
+			
+			
 			Question(question: ["The source code representation of a numeric value",
 								"A positive or negative number expressed in the source code",
 								"What do we call the following values in Swift: -2234, 10, 0?"],
@@ -1041,7 +1016,7 @@ class TheBasicsSet {
 					 optionD: "Random number",
 					 questionId: 21,
 					 helpText: "Integer literals represent integer values of unspecified precision. An integer literal can be a positive or negative number, or zero."),
-
+			
 			Question(question: ["What approach(es) can you take to provide a constant or variable with a type?",
 								"Choose the way(s) types can be declared in Swift",
 								"How Swift can work out an object’s type?"],
@@ -1052,7 +1027,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 22,
 					 helpText: "Explicitly, via type annotation by placing a colon after the constant or variable name, followed by a space, followed by the name of the type to use. Implicitly, via type inference that enables a compiler to deduce the type of a particular expression automatically when it compiles your code, simply by examining the values you provide."),
-
+			
 			Question(question: ["Is it possible to use a variable of non-optional type before it is initialized?",
 								"Can we use a non-optional variable before initializing it?",
 								"Is it possible to use a variable before initialization if it is not represented by an optional?"],
@@ -1063,7 +1038,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 23,
 					 helpText: "All variables and constants must be initialized before used (unless they are optional types)."),
-
+			
 			Question(question: ["Which data type can store any integer within the following boundaries: -2 147 483 648 ... 2 147 483 647?",
 								"The type that can store any integer from -2 147 483 648 to 2 147 483 647",
 								"Pick the type whose maximum and minimum values can't exceed -2 147 483 648 and 2 147 483 647"],
@@ -1074,7 +1049,7 @@ class TheBasicsSet {
 					 optionD: "Int64",
 					 questionId: 24,
 					 helpText: "Values from -2 147 483 648 to 2 147 483 647 can be stored in Int32."),
-
+			
 			Question(question: ["If you don't specify an integer’s size in code, what will it be?",
 								"If you don't specify an integer's size within its type declaration, what size will that integer have?",
 								"What size will all integers have unless it is explicitly specified in code?"],
@@ -1085,7 +1060,7 @@ class TheBasicsSet {
 					 optionD: "128",
 					 questionId: 25,
 					 helpText: "Unless it is explicitly specified, integers always have the same size as the current platform’s native word size"),
-
+			
 			Question(question: ["What do we call the process of preparing a constant, variable, or any other object for use?",
 								"What is the process of declaring a variable along with assigning its value called?",
 								"Assigning a value to a previously declared object for the first time is called..."],
@@ -1096,7 +1071,7 @@ class TheBasicsSet {
 					 optionD: "",
 					 questionId: 26,
 					 helpText: "Initialization is the process of preparing a constant, variable or any other object for use. This process involves setting an initial value for each stored property and performing any other setup required before the new object is ready for use."),
-
+			
 			Question(question: ["Какую точность в десятичных знаках имеет тип Double?",
 								"Сколько десятичных цифр может хранить тип Double?",
 								"Double может хранить именно столько цифр после запятой"],
@@ -1107,7 +1082,7 @@ class TheBasicsSet {
 					 optionD: "18 десятичных цифр",
 					 questionId: 27,
 					 helpText: "Double является 64 битным числом с плавающей точкой. Он имеет точность в 15 десятичных знаков.")
-
+			
 		]
 	}
 }
