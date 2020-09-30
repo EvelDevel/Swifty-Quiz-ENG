@@ -30,6 +30,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="ykh-Ft-eTC"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                         <state key="normal" title="Randomise questions?">
                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>

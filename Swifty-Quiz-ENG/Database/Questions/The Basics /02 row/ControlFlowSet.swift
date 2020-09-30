@@ -9,7 +9,7 @@ import Foundation
 class ControlFlowSet {
 	static func getQuestions() -> [Question] {
 		return [
-			Question (question: ["How many ways to loop through code does Swift support?",
+			Question (question: ["How many ways to loop through blocks of code does Swift support?",
 								 "Swift provides this many ways to loop through blocks of code"],
 					  image: "",
 					  optionA: "Three",
@@ -19,13 +19,13 @@ class ControlFlowSet {
 					  questionId: 401,
 					  helpText: "Three: for-in, while, repeat-while."),
 			
-			Question(question: ["What is the for-in loop used for?",
-								"The for-in loop is used ..."],
+			Question(question: ["What is the for-in loop normally used for?",
+								"The for-in loop is normally used for ..."],
 					 image: "",
-					 optionA: "To iterate over a sequence",
-					 optionB: "When the number of iterations is not known",
-					 optionC: "To perform an infinite set of statements",
-					 optionD: "",
+					 optionA: "Iterating over a sequence",
+					 optionB: "Perfoming a single pass through the loop",
+					 optionC: "Storing key-values pairs",
+					 optionD: "Iterating while condition is true",
 					 questionId: 402,
 					 helpText: "You use the for-in loop to iterate over a sequence, such as items in an array, ranges of numbers, or characters in a string."),
 			
@@ -425,7 +425,7 @@ class ControlFlowSet {
 	
 	static func getDemoQuestions() -> [Question] {
 		return [
-			Question (question: ["How many ways to loop through code does Swift support?",
+			Question (question: ["How many ways to loop through blocks of code does Swift support?",
 								 "Swift provides this many ways to loop through blocks of code"],
 					  image: "",
 					  optionA: "Three",
@@ -435,13 +435,13 @@ class ControlFlowSet {
 					  questionId: 401,
 					  helpText: "Three: for-in, while, repeat-while."),
 			
-			Question(question: ["What is the for-in loop used for?",
-								"The for-in loop is used ... "],
+			Question(question: ["What is the for-in loop normally used for?",
+								"The for-in loop is normally used for ..."],
 					 image: "",
-					 optionA: "To iterate over a sequence",
-					 optionB: "When the number of iterations is not known",
-					 optionC: "To perform an infinite set of statements",
-					 optionD: "",
+					 optionA: "Iterating over a sequence",
+					 optionB: "Perfoming a single pass through the loop",
+					 optionC: "Storing key-values pairs",
+					 optionD: "Iterating while condition is true",
 					 questionId: 402,
 					 helpText: "You use the for-in loop to iterate over a sequence, such as items in an array, ranges of numbers, or characters in a string."),
 			
