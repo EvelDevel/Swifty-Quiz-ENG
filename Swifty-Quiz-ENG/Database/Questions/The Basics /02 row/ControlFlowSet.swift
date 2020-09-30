@@ -20,7 +20,7 @@ class ControlFlowSet {
 					  helpText: "Three: for-in, while, repeat-while."),
 			
 			Question(question: ["What is the for-in loop used for?",
-								"The for-in loop is used … "],
+								"The for-in loop is used ..."],
 					 image: "",
 					 optionA: "To iterate over a sequence",
 					 optionB: "When the number of iterations is not known",
@@ -38,7 +38,7 @@ class ControlFlowSet {
 					 optionC: "Array",
 					 optionD: "",
 					 questionId: 403,
-					 helpText: "You can also iterate over a dictionary to access its key-value pairs. Each item in the dictionary is returned as a (key, value) tuple when the dictionary is iterated, and you can decompose the (key, value) tuple’s members as explicitly named constants for use within the body of the for-in loop."),
+					 helpText: "You can iterate over a dictionary to access its key-value pairs. Each item in the dictionary is returned as a (key, value) tuple when the dictionary is iterated, and you can decompose the (key, value) tuple’s members as explicitly named constants for use within the body of the for-in loop."),
 			
 			Question(question: ["In the given code snippet, is index a variable or a constant?"],
 					 image: "ControlFlow4",
@@ -98,8 +98,8 @@ class ControlFlowSet {
 					 questionId: 409,
 					 helpText: "Closed ranges are also available, by using stride(from:through:by:), so the correct answer: 2, 4, 6, 8. The \"through\" inside this method tells us that the last value in the range will also be captured and printed to the console."),
 			
-			Question(question: ["A while loop performs a set of statements until … ",
-								"The while loop executes a set of instructions until as long as … ",
+			Question(question: ["A while loop performs a set of statements until ... ",
+								"The while loop executes a set of instructions until as long as ... ",
 								"What must happen in a while loop for it to stop executing its set of instructions?"],
 					 image: "",
 					 optionA: "Condition becomes false",
@@ -110,7 +110,7 @@ class ControlFlowSet {
 					 helpText: "A while loop performs a set of statements until a condition becomes false. These kinds of loops are best used when the number of iterations is not known before the first iteration begins. Swift provides two kinds of while loops: while evaluates its condition at the start of each pass through the loop, repeat-while evaluates its condition at the end of each pass through the loop."),
 			
 			Question(question: ["The first iteration of the while loop will be executed only in this case",
-								"The first iteration of the while loop will run … ",
+								"The first iteration of the while loop will run ... ",
 								"On what condition will the first iteration of the while loop be executed?"],
 					 image: "",
 					 optionA: "If the condition is true",
@@ -121,7 +121,7 @@ class ControlFlowSet {
 					 helpText: "A while loop starts by evaluating a single condition. If the condition is true, a set of statements is repeated until the condition becomes false."),
 			
 			Question(question: ["The first iteration of the repeat-while loop will be executed only in this case",
-								"The first iteration of the repeat-while loop will run … ",
+								"The first iteration of the repeat-while loop will run ... ",
 								"When will the first iteration of the repeat-while loop start executing?"],
 					 image: "",
 					 optionA: "In any case",
@@ -418,6 +418,8 @@ class ControlFlowSet {
 	}
 	
 	
+	
+	
 	/// 
 	
 	
@@ -434,7 +436,7 @@ class ControlFlowSet {
 					  helpText: "Three: for-in, while, repeat-while."),
 			
 			Question(question: ["What is the for-in loop used for?",
-								"The for-in loop is used … "],
+								"The for-in loop is used ... "],
 					 image: "",
 					 optionA: "To iterate over a sequence",
 					 optionB: "When the number of iterations is not known",
@@ -512,8 +514,8 @@ class ControlFlowSet {
 					 questionId: 409,
 					 helpText: "Closed ranges are also available, by using stride(from:through:by:), so the correct answer: 2, 4, 6, 8. The \"through\" inside this method tells us that the last value in the range will also be captured and printed to the console."),
 			
-			Question(question: ["A while loop performs a set of statements until … ",
-								"The while loop executes a set of instructions until as long as … ",
+			Question(question: ["A while loop performs a set of statements until ... ",
+								"The while loop executes a set of instructions until as long as ... ",
 								"What must happen in a while loop for it to stop executing its set of instructions?"],
 					 image: "",
 					 optionA: "Condition becomes false",
@@ -524,7 +526,7 @@ class ControlFlowSet {
 					 helpText: "A while loop performs a set of statements until a condition becomes false. These kinds of loops are best used when the number of iterations is not known before the first iteration begins. Swift provides two kinds of while loops: while evaluates its condition at the start of each pass through the loop, repeat-while evaluates its condition at the end of each pass through the loop."),
 			
 			Question(question: ["The first iteration of the while loop will be executed only in this case",
-								"The first iteration of the while loop will run … ",
+								"The first iteration of the while loop will run ... ",
 								"On what condition will the first iteration of the while loop be executed?"],
 					 image: "",
 					 optionA: "If the condition is true",
@@ -535,7 +537,7 @@ class ControlFlowSet {
 					 helpText: "A while loop starts by evaluating a single condition. If the condition is true, a set of statements is repeated until the condition becomes false."),
 			
 			Question(question: ["The first iteration of the repeat-while loop will be executed only in this case",
-								"The first iteration of the repeat-while loop will run … ",
+								"The first iteration of the repeat-while loop will run ... ",
 								"When will the first iteration of the repeat-while loop start executing?"],
 					 image: "",
 					 optionA: "In any case",

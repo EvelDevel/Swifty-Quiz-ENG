@@ -220,7 +220,7 @@ class FunctionsSet {
 					 questionId: 520,
 					 helpText: "Correct answer: and. Each function parameter has both an argument label and a parameter name. The argument label is used when calling the function; each argument is written in the function call with its argument label before it. The use of argument labels can allow a function to be called in an expressive, sentence-like manner, while still providing a function body that is readable and clear in intent."),
 			
-			Question(question: ["If you don’t want an argument label for a parameter, use a(n) … instead",
+			Question(question: ["If you don’t want an argument label for a parameter, use a(n) ... instead",
 								"You can use a(n) ... instead of an explicit argument label for a parameter"],
 					 image: "",
 					 optionA: "Underscore (_)",
@@ -271,7 +271,7 @@ class FunctionsSet {
 					 helpText: "A variadic parameter accepts zero or more values of a specified type. You use a variadic parameter to specify that the parameter can be passed a varying number of input values when the function is called. Write variadic parameters by inserting three period characters (...) after the parameter’s type name."),
 			
 			Question(question: ["Variadic parameters are turned into one of the following types within the function’s body, and can be used as an instance of that type",
-								"Variadic parameters are available inside the function … ",
+								"Variadic parameters are available inside the function ... ",
 								"How can you use a variadic input parameter inside a function?"],
 					 image: "",
 					 optionA: "As an array",
@@ -312,7 +312,7 @@ class FunctionsSet {
 					 helpText: "If you want a function to modify a parameter’s value, and you want those changes to persist after the function call has ended, define that parameter as an in-out parameter instead. You write an in-out parameter by placing the inout keyword right before a parameter’s type. An in-out parameter has a value that is passed in to the function, is modified by the function, and is passed back out of the function to replace the original value."),
 			
 			Question(question: ["You can only pass a ... as the argument for an in-out parameter",
-								"You must make sure that you pass a … as the argument for an in-out parameter"],
+								"You must make sure that you pass a ... as the argument for an in-out parameter"],
 					 image: "",
 					 optionA: "Variable",
 					 optionB: "Constant",

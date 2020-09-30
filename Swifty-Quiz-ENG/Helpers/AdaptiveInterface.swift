@@ -99,7 +99,7 @@ class AdaptiveInterface {
 		if view.frame.size.width <= 320 {
 			IapSupportLabel.font = UIFont.systemFont(ofSize: 13.0, weight: .regular)
 			IapMainTextLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .thin)
-			getYourFullAccessHeight.constant = 150
+			getYourFullAccessHeight.constant = 120
 			topMargin.constant = 20
 			textTopMargin.constant = 5
 			labelsTrailingSpace.constant = 20
@@ -107,7 +107,7 @@ class AdaptiveInterface {
 
 		} else if view.frame.size.width <= 410 {
 			IapSupportLabel.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
-			IapMainTextLabel.font = UIFont.systemFont(ofSize: 18.0, weight: .thin)
+			IapMainTextLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .thin)
 			getYourFullAccessHeight.constant = 170
 			topMargin.constant = 20
 			textTopMargin.constant = 5
@@ -116,7 +116,7 @@ class AdaptiveInterface {
 
 		} else {
 			IapSupportLabel.font = UIFont.systemFont(ofSize: 18.0, weight: .regular)
-			IapMainTextLabel.font = UIFont.systemFont(ofSize: 20, weight: .thin) 
+			IapMainTextLabel.font = UIFont.systemFont(ofSize: 18, weight: .thin) 
 			getYourFullAccessHeight.constant = 200
 			topMargin.constant = 40
 			textTopMargin.constant = 20

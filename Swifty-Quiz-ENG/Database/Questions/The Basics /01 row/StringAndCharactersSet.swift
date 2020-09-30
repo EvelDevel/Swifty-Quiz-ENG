@@ -104,7 +104,7 @@ class StringAndCharactersSet {
 					 helpText: "Find out whether a String value is empty by checking its Boolean isEmpty property."),
 			
 			Question(question: ["What result can be returned after applying the .isEmpty property to a string?",
-								"The .isEmpty property applied to a string returns … ",
+								"The .isEmpty property applied to a string returns ... ",
 								"What the result of .isEmpty property we expect to get when applying it to a String value?"],
 					 image: "",
 					 optionA: "true or false",
@@ -433,7 +433,7 @@ class StringAndCharactersSet {
 					 helpText: "String and character comparisons in Swift are not locale-sensitive."),
 			
 			Question(question: ["What methods can you use to check if a string has a specific string prefix or suffix?",
-								"You can check the presence of a certain suffix and prefix in a string using … methods"],
+								"You can check the presence of a certain suffix and prefix in a string using ... methods"],
 					 image: "",
 					 optionA: "hasPrefix(_:) and hasSuffix(_:)",
 					 optionB: "prefix() and suffix()",
@@ -564,7 +564,7 @@ class StringAndCharactersSet {
 					 helpText: "Find out whether a String value is empty by checking its Boolean isEmpty property."),
 			
 			Question(question: ["What result can be returned after applying the .isEmpty property to a string?",
-								"The .isEmpty property applied to a string returns … ",
+								"The .isEmpty property applied to a string returns ... ",
 								"What the result of .isEmpty property we expect to get when applying it to a String value?"],
 					 image: "",
 					 optionA: "true or false",

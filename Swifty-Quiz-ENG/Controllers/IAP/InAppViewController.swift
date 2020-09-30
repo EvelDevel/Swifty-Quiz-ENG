@@ -77,6 +77,12 @@ class InAppViewController: UIViewController {
 												 labelsTrailingSpace: labelsTrailingSpace,
 												 labelsLeadingSpace: labelsLeadingSpace)
 	}
+	
+	@IBAction func privacyPolicyTapped(_ sender: Any) {
+		let urlComponents = URLComponents(string: "https://swifty-quiz.online/privacyen.html")!
+		UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+	}
 }
 
 
