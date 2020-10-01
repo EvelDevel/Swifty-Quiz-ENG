@@ -97,6 +97,8 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 	}
 
 	@IBAction func restoreButtonTapped(_ sender: Any) {
+		// Открыть на симуляторе
+		// Game.shared.openFullAccess()
 		print("Restore button tapped")
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 		SKPaymentQueue.default().restoreCompletedTransactions()

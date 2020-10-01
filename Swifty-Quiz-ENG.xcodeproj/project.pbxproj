@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB0807EF24A090CA00016E18 /* GuideRandomSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0807EE24A090CA00016E18 /* GuideRandomSet.swift */; };
-		FB0807F124A0948500016E18 /* PatternsRandomSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0807F024A0948500016E18 /* PatternsRandomSet.swift */; };
+		FB0807EF24A090CA00016E18 /* RandomFromGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0807EE24A090CA00016E18 /* RandomFromGuide.swift */; };
+		FB0807F124A0948500016E18 /* RandomFromPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0807F024A0948500016E18 /* RandomFromPatterns.swift */; };
 		FB119C16246A54BC005F5289 /* StructuresAndClassesSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB119C15246A54BC005F5289 /* StructuresAndClassesSet.swift */; };
 		FB119C1A246A5522005F5289 /* PropertiesSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB119C19246A5522005F5289 /* PropertiesSet.swift */; };
 		FB119C1C246A554B005F5289 /* MethodsSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB119C1B246A554B005F5289 /* MethodsSet.swift */; };
@@ -37,6 +37,7 @@
 		FB37AA3F246D2D7C001E08CE /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37AA3E246D2D7C001E08CE /* TopicViewController.swift */; };
 		FB395E262500E19700C6000C /* AdaptiveInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB395E252500E19700C6000C /* AdaptiveInterface.swift */; };
 		FB39FCBB24FFA7FC00B0685D /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB39FCBA24FFA7FB00B0685D /* error.mp3 */; };
+		FB63899725263A5C0094E16C /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63899625263A5C0094E16C /* QuestionManager.swift */; };
 		FB6624E324DFF4B7008C9CE5 /* GameHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6624E224DFF4B7008C9CE5 /* GameHistory.swift */; };
 		FB6624E524E014FA008C9CE5 /* GameHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6624E424E014FA008C9CE5 /* GameHistoryViewController.swift */; };
 		FB6624E924E0202C008C9CE5 /* GameHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6624E724E0202C008C9CE5 /* GameHistoryCell.swift */; };
@@ -87,7 +88,7 @@
 		FBAD8EFA2445EFD500494BE7 /* SelectedTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD8EF92445EFD500494BE7 /* SelectedTopic.swift */; };
 		FBADAAEF246825560014501E /* CollectionTypesSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBADAAEE246825560014501E /* CollectionTypesSet.swift */; };
 		FBB3584524BF229300C33A79 /* AboutProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3584424BF229300C33A79 /* AboutProjectController.swift */; };
-		FBB4405524991C1E00D88937 /* RandomSuperSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4405424991C1E00D88937 /* RandomSuperSets.swift */; };
+		FBB4405524991C1E00D88937 /* RandomFromAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4405424991C1E00D88937 /* RandomFromAll.swift */; };
 		FBB48FAE2501124900167C24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB48FAD2501124900167C24 /* StoreKit.framework */; };
 		FBC1D4842474EE020055FF62 /* AnswerButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */; };
 		FBC1D48A247574730055FF62 /* ShadowsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D489247574730055FF62 /* ShadowsHelper.swift */; };
@@ -105,8 +106,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB0807EE24A090CA00016E18 /* GuideRandomSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideRandomSet.swift; sourceTree = "<group>"; };
-		FB0807F024A0948500016E18 /* PatternsRandomSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsRandomSet.swift; sourceTree = "<group>"; };
+		FB0807EE24A090CA00016E18 /* RandomFromGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFromGuide.swift; sourceTree = "<group>"; };
+		FB0807F024A0948500016E18 /* RandomFromPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFromPatterns.swift; sourceTree = "<group>"; };
 		FB119C15246A54BC005F5289 /* StructuresAndClassesSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClassesSet.swift; sourceTree = "<group>"; };
 		FB119C19246A5522005F5289 /* PropertiesSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesSet.swift; sourceTree = "<group>"; };
 		FB119C1B246A554B005F5289 /* MethodsSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsSet.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		FB37AA3E246D2D7C001E08CE /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		FB395E252500E19700C6000C /* AdaptiveInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveInterface.swift; sourceTree = "<group>"; };
 		FB39FCBA24FFA7FB00B0685D /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		FB63899625263A5C0094E16C /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		FB6624E224DFF4B7008C9CE5 /* GameHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistory.swift; sourceTree = "<group>"; };
 		FB6624E424E014FA008C9CE5 /* GameHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryViewController.swift; sourceTree = "<group>"; };
 		FB6624E724E0202C008C9CE5 /* GameHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryCell.swift; sourceTree = "<group>"; };
@@ -186,7 +188,7 @@
 		FBAD8EF92445EFD500494BE7 /* SelectedTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTopic.swift; sourceTree = "<group>"; };
 		FBADAAEE246825560014501E /* CollectionTypesSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypesSet.swift; sourceTree = "<group>"; };
 		FBB3584424BF229300C33A79 /* AboutProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectController.swift; sourceTree = "<group>"; };
-		FBB4405424991C1E00D88937 /* RandomSuperSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSuperSets.swift; sourceTree = "<group>"; };
+		FBB4405424991C1E00D88937 /* RandomFromAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFromAll.swift; sourceTree = "<group>"; };
 		FBB48FAD2501124900167C24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButtonsView.swift; sourceTree = "<group>"; };
 		FBC1D489247574730055FF62 /* ShadowsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsHelper.swift; sourceTree = "<group>"; };
@@ -509,9 +511,10 @@
 		FBB4405324991BD700D88937 /* Super Sets */ = {
 			isa = PBXGroup;
 			children = (
-				FBB4405424991C1E00D88937 /* RandomSuperSets.swift */,
-				FB0807EE24A090CA00016E18 /* GuideRandomSet.swift */,
-				FB0807F024A0948500016E18 /* PatternsRandomSet.swift */,
+				FB63899625263A5C0094E16C /* QuestionManager.swift */,
+				FBB4405424991C1E00D88937 /* RandomFromAll.swift */,
+				FB0807EE24A090CA00016E18 /* RandomFromGuide.swift */,
+				FB0807F024A0948500016E18 /* RandomFromPatterns.swift */,
 			);
 			path = "Super Sets";
 			sourceTree = "<group>";
@@ -718,7 +721,7 @@
 				FB119C23246A5AB3005F5289 /* SubscriptsSet.swift in Sources */,
 				FBC1D48A247574730055FF62 /* ShadowsHelper.swift in Sources */,
 				FB119C29246A5AD7005F5289 /* DeinitializationSet.swift in Sources */,
-				FB0807F124A0948500016E18 /* PatternsRandomSet.swift in Sources */,
+				FB0807F124A0948500016E18 /* RandomFromPatterns.swift in Sources */,
 				FB119C36246A5B2F005F5289 /* ProtocolsSet.swift in Sources */,
 				FB119C3E246A5B63005F5289 /* ARCSet.swift in Sources */,
 				FB99F88D247B978C0053166C /* StructuralPatternsSet.swift in Sources */,
@@ -730,7 +733,7 @@
 				FB119C27246A5ACC005F5289 /* InitializationSet.swift in Sources */,
 				FB66C0532454782B009FADDE /* Topic.swift in Sources */,
 				FB2EAC94243EEE0F0098FAC3 /* AppDelegate.swift in Sources */,
-				FB0807EF24A090CA00016E18 /* GuideRandomSet.swift in Sources */,
+				FB0807EF24A090CA00016E18 /* RandomFromGuide.swift in Sources */,
 				FB119C38246A5B3C005F5289 /* GenericsSet.swift in Sources */,
 				FB119C25246A5AC2005F5289 /* InheritanceSet.swift in Sources */,
 				FB1D0BAF244D918900E9C56D /* RecordCell.swift in Sources */,
@@ -741,6 +744,7 @@
 				FB86ACA02469A3E9002BA8B3 /* ControlFlowSet.swift in Sources */,
 				FB1D0B9924470D7E00E9C56D /* BasicOperatorsSet.swift in Sources */,
 				FB66C058245591AC009FADDE /* SettingEnums.swift in Sources */,
+				FB63899725263A5C0094E16C /* QuestionManager.swift in Sources */,
 				FB119C32246A5B12005F5289 /* ExtensionsSet.swift in Sources */,
 				FBA8A37C24F24EBF006CCE3F /* Colors.swift in Sources */,
 				FB92A5A62507EBAA00612F4B /* InAppStatuses.swift in Sources */,
@@ -750,7 +754,7 @@
 				FB2EAC96243EEE0F0098FAC3 /* SceneDelegate.swift in Sources */,
 				FB8606AA2441D4B300A692AD /* InitialViewController.swift in Sources */,
 				FB954D4A246E5BD0000C952E /* StringAndCharactersSet.swift in Sources */,
-				FBB4405524991C1E00D88937 /* RandomSuperSets.swift in Sources */,
+				FBB4405524991C1E00D88937 /* RandomFromAll.swift in Sources */,
 				FB66C05524547916009FADDE /* TopicCaretaker.swift in Sources */,
 				FB8606B224445E0600A692AD /* RecordsCaretaker.swift in Sources */,
 			);
