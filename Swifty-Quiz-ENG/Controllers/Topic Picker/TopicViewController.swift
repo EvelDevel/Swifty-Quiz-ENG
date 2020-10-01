@@ -59,7 +59,7 @@ class TopicViewController: UIViewController, InAppViewControllerDelegate {
 	/// Работа кнопки UNLOCK
 	func setOrHideUnlockButton() {
 		if !Game.shared.wePurchasedFullAccess() {
-			_ = RandomSuperSets.getQuestions(limit: 0)
+			weak var _ = RandomSuperSets.getQuestions(limit: 0)
 			let total = RandomSuperSets.showTotalquestionsNumber()
 			buyButton.setTitle("Unlock \(total) questions", for: .normal)
 		} else {

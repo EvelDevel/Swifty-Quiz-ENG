@@ -101,9 +101,9 @@ extension InitialViewController {
 	/// Показываем общее количество вопросов в игре
 	func showTotalQuestions() {
 		if Game.shared.wePurchasedFullAccess() {
-			_ = RandomSuperSets.getQuestions(limit: 0)
+			weak var _ = RandomSuperSets.getQuestions(limit: 0)
 		} else {
-			_ = RandomSuperSets.getDemoQuestions(limit: 0)
+			weak var _ = RandomSuperSets.getDemoQuestions(limit: 0)
 		}
 		totalQuestionsLabel.text = "Questions in game: \(RandomSuperSets.showTotalquestionsNumber())"
 	}
