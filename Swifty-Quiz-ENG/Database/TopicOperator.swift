@@ -9,13 +9,13 @@ class TopicOperator {
     
     // MARK: Super Sets
     // Руководство, Паттерны
-    static func getRandom20() -> [Question] { return RandomFromAll.getQuestions(limit: 20) }
-	static func getDemoRandom20() -> [Question] { return RandomFromAll.getDemoQuestions(limit: 20) }
-    static func getRandom50() -> [Question] { return RandomFromAll.getQuestions(limit: 50) }
-	static func getDemoRandom50() -> [Question] { return RandomFromAll.getDemoQuestions(limit: 50) }
-    static func getRandom100() -> [Question] { return RandomFromAll.getQuestions(limit: 100) }
-    static func getGuide20() -> [Question] { return RandomFromGuide.getQuestions(limit: 20) }
-    static func getPatterns20() -> [Question] { return RandomFromPatterns.getQuestions(limit: 20) }
+    static func getRandom20() -> [Question] { return RandomSetManager.getQuestions(20, .all) }
+	static func getDemoRandom20() -> [Question] { return RandomSetManager.getQuestions(20, .demo) }
+    static func getRandom50() -> [Question] { return RandomSetManager.getQuestions(50, .all) }
+	static func getDemoRandom50() -> [Question] { return RandomSetManager.getQuestions(50, .demo) }
+    static func getRandom100() -> [Question] { return RandomSetManager.getQuestions(100, .all) }
+    static func getGuide20() -> [Question] { return RandomSetManager.getQuestions(20, .guide) }
+    static func getPatterns20() -> [Question] { return RandomSetManager.getQuestions(20, .patterns) }
     
     
     // MARK: THE BASICS
