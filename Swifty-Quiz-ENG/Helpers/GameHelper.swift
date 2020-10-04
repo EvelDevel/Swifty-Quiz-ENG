@@ -53,7 +53,7 @@ class GameHelper {
             && Game.shared.showNewGameAlertStatus() != true {
             
             DispatchQueue.main.async {
-                let alert = UIAlertController(title: "You have an unfinished game", message: "If you answer at least one question, change your settings, or choose a different category, you will lose the opportunity to complete the unfinished game.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "You have an unfinished game", message: "If you answer at least one question or choose a different category, you will lose the opportunity to complete the unfinished game.", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Continue", style: .default, handler: { action in })
                 alert.addAction(okAction)
                 view.present(alert, animated: true, completion: nil)

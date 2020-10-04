@@ -115,15 +115,12 @@ extension GameViewController {
     }
     
     /// Загружаем сет вопросов
-    func addQuestionSet() {
-        let normal = SelectedTopic.shared.topic.questionSet
-        let random = SelectedTopic.shared.topic.questionSet.shuffled()
-
-        if weContinueLastGame == false {
+	func addQuestionSet() {
+        if !weContinueLastGame {
             if questionOrderSetting == 0 {
-                localQuestionSet = normal
+                localQuestionSet = SelectedTopic.shared.topic.questionSet
             } else {
-                localQuestionSet = random
+                localQuestionSet = SelectedTopic.shared.topic.questionSet.shuffled()
             }
         }
     }

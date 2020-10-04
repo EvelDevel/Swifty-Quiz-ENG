@@ -39,21 +39,6 @@ class SettingsViewController: UIViewController {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 		dismiss(animated: true, completion: nil)
 	}
-    
-    func showAlertIfNeeded() {
-        /// Показываем алерт о том, что есть незавершенная игра, чтобы пользователь не сбросил ее
-        /// Проверяем, что у нас есть незавершенная игра, проверяем, что алерт еще не был показан
-        if Game.shared.records.count != 0 && Game.shared.records[0].continueGameStatus == true {
-            if Game.shared.showSettingsAlertStatus() != true {
-                let alert = UIAlertController(title: "You have an unfinished game", message: "If you change the settings, choose a different category, or answer at least one question in the new game, you will lose the opportunity to complete the unfinished game.", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "Continue", style: .default, handler: { action in })
-                alert.addAction(okAction)
-                present(alert, animated: true, completion: nil)
-            }
-            /// Выставляем что показали алерт, и больше не показываем до перезапуска приложения
-            Game.shared.setThatWeShowedAlert()
-        }
-    }
 }
 
 
@@ -80,12 +65,8 @@ extension SettingsViewController: SettingCellDelegate {
     
     func showInformationAlert(_ title: String, _ message: String) {
         let alert = UIAlertController(title: "\(title)", message: "\(message)", preferredStyle: .alert)
-        let quitAction = UIAlertAction(title: "Back to settengs", style: .default, handler: { action in })
+        let quitAction = UIAlertAction(title: "Back to settings", style: .default, handler: { action in })
         alert.addAction(quitAction)
         present(alert, animated: true, completion: nil)
-    }
-    
-    func showAlert() {
-        self.showAlertIfNeeded()
     }
 }

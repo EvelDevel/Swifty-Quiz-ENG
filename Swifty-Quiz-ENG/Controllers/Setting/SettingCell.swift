@@ -6,7 +6,6 @@ import UIKit
 
 protocol SettingCellDelegate: class {
     func showInformationAlert(_ title: String, _ message: String)
-    func showAlert()
 }
 
 class SettingCell: UITableViewCell {
@@ -20,7 +19,6 @@ class SettingCell: UITableViewCell {
     weak var delegate: SettingCellDelegate?
     
     @IBAction func settingSwitchSound(_ sender: Any) {
-        Game.shared.changeContinueStatus()
         SoundPlayer.shared.playSound(sound: .topicAndSettingsButton)
     }
     
@@ -30,11 +28,7 @@ class SettingCell: UITableViewCell {
         addingTargets()
         settingsInitialValues()
     }
-    
-    override func layoutSubviews() {
-        delegate?.showAlert()
-    }
-
+	
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -176,10 +170,10 @@ extension SettingCell {
         switch sender.tag {
         case 1:
             title = "Questions order"
-            message = "In the case of direct order, the questions will go in the same order for each game. If you choose a random order, the order of the questions will never be repeated twice."
+            message = "In the case of direct order, the questions will go in the same order for each game. If you choose a random order, the order of the questions will never be repeated twice for new games (won't affect games, that you continue)."
         case 2:
-            title = "Wording of question"
-            message = "Each question in the game has several question wordings - from one to three. If you want to make the game harder, include a change in wording, then it will be more difficult for the eye to remember the question."
+            title = "Question text"
+            message = "Each question in the game has several different question texts - from one to three. If you want to make the game harder, include a change in texts, then it will be more difficult for the eye to remember the question."
         case 3:
             title = "In case of a wrong answer"
             message = "After a wrong answer, you can simply move on or receive a theoretical hint that will help you understand immediately which answer was correct. This slows down the game, but makes it more informative."
@@ -191,4 +185,31 @@ extension SettingCell {
         }
         delegate?.showInformationAlert(title, message)
     }
+}
+
+
+// Последовательность вопросов
+enum QuestionOrder {
+	case straight
+	case random
+}
+// Смена формулировок вопроса
+enum QuestionText {
+	case same
+	case random
+}
+// Подсказка после неправильного ответа
+enum HelpAfterWrong {
+	case proceed
+	case help
+}
+// Звук
+enum Sound {
+	case on
+	case off
+}
+// Смена после подсказки
+enum ChangeAfterHelp {
+	case change
+	case dontChange
 }
