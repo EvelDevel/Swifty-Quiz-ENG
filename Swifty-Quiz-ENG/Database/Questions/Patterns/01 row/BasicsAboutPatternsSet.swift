@@ -164,14 +164,14 @@ class BasicsAboutPatternsSet {
 					 questionId: 2513,
 					 helpText: "The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation. It is one of the Gang of Four design patterns."),
 			
-			Question(question: ["This pattern decouple an abstraction from its implementation allowing the two to vary independently"],
+			Question(question: ["This structural design pattern lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other"],
 					 image: "",
 					 optionA: "Bridge",
 					 optionB: "Composite",
 					 optionC: "Decorator",
 					 optionD: "",
 					 questionId: 2514,
-					 helpText: "The bridge pattern is a design pattern used in software engineering that is meant to \"decouple an abstraction from its implementation so that the two can vary independently\", introduced by the Gang of Four. The bridge uses encapsulation, aggregation, and can use inheritance to separate responsibilities into different classes. When a class varies often, the features of object-oriented programming become very useful because changes to a program's code can be made easily with minimal prior knowledge about the program. The bridge pattern is useful when both the class and what it does vary often. The class itself can be thought of as the abstraction and what the class can do as the implementation. The bridge pattern can also be thought of as two layers of abstraction."),
+					 helpText: "Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other."),
 			
 			Question(question: ["This pattern encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests"],
 					 image: "",
