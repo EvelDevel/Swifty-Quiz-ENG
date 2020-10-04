@@ -7,29 +7,29 @@ import Foundation
 // MARK: 27 - Вопросы (id) с 2501 по 2600
 
 class BasicsAboutPatternsSet {
-    static func getQuestions() -> [Question] {
-        return [
+	static func getQuestions() -> [Question] {
+		return [
 			
 			/// https://refactoring.guru/design-patterns/what-is-pattern
 			
-            Question(question: ["What is a design pattern?"],
-                     image: "",
-                     optionA: "Typical solutions",
-                     optionB: "Library",
-                     optionC: "Framework",
-                     optionD: "Off-the-shelf function",
-                     questionId: 2501,
-                     helpText: "Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code."),
-            
-            Question(question: ["Can we just find a pattern and copy it into our program to solve the problem?",
+			Question(question: ["What is a design pattern?"],
+					 image: "",
+					 optionA: "Typical solutions",
+					 optionB: "Library",
+					 optionC: "Framework",
+					 optionD: "Off-the-shelf function",
+					 questionId: 2501,
+					 helpText: "Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code."),
+			
+			Question(question: ["Can we just find a pattern and copy it into our program to solve the problem?",
 								"You can just copy the pattern to your program to solve your problem. Is that true?"],
-                     image: "",
-                     optionA: "No",
-                     optionB: "Yes",
-                     optionC: "",
-                     optionD: "",
-                     questionId: 2502,
-                     helpText: "You can’t just find a pattern and copy it into your program, the way you can with off-the-shelf functions or libraries. The pattern is not a specific piece of code, but a general concept for solving a particular problem. You can follow the pattern details and implement a solution that suits the realities of your own program."),
+					 image: "",
+					 optionA: "No",
+					 optionB: "Yes",
+					 optionC: "",
+					 optionD: "",
+					 questionId: 2502,
+					 helpText: "You can’t just find a pattern and copy it into your program, the way you can with off-the-shelf functions or libraries. The pattern is not a specific piece of code, but a general concept for solving a particular problem. You can follow the pattern details and implement a solution that suits the realities of your own program."),
 			
 			/// Тут как-бы по вопросом сама формулировка вопроса, довольно логичная и легкая
 			/// Но для информации это можно оставить (хелп текст полезный)
@@ -42,18 +42,18 @@ class BasicsAboutPatternsSet {
 					 optionD: "",
 					 questionId: 2503,
 					 helpText: "Patterns are often confused with algorithms, because both concepts describe typical solutions to some known problems. While an algorithm always defines a clear set of actions that can achieve some goal, a pattern is a more high-level description of a solution. The code of the same pattern applied to two different programs may be different."),
-            
+			
 			/// 2503 Самописный (из методички ГБ)
 			
-            Question(question: ["Are design patterns tied to a specific programming language?"],
-                     image: "",
-                     optionA: "No",
-                     optionB: "Yes",
-                     optionC: "",
-                     optionD: "",
-                     questionId: 2504,
-                     helpText: "Design patterns are not tied to a specific programming language. In some areas, some patterns are more widely used and the rest are almost not used, in other areas the picture may be different. Many modern programming languages have simplified syntactic constructs that make certain patterns easy to use. Swift has a lot of this syntactic sugar."),
-            
+			Question(question: ["Are design patterns tied to a specific programming language?"],
+					 image: "",
+					 optionA: "No",
+					 optionB: "Yes",
+					 optionC: "",
+					 optionD: "",
+					 questionId: 2504,
+					 helpText: "Design patterns are not tied to a specific programming language. In some areas, some patterns are more widely used and the rest are almost not used, in other areas the picture may be different. Many modern programming languages have simplified syntactic constructs that make certain patterns easy to use. Swift has a lot of this syntactic sugar."),
+			
 			Question(question: ["Who first described the concept of patterns?",
 								"The concept of patterns was first described by this person"],
 					 image: "",
@@ -66,41 +66,41 @@ class BasicsAboutPatternsSet {
 			
 			/// Ниже три с википедии
 			
-            Question(question: ["What is the basis of Creational Patterns?"],
-                     image: "",
-                     optionA: "Objects creation",
-                     optionB: "Classes and objects composition",
-                     optionC: "Classes inheritance from each other",
-                     optionD: "",
-                     questionId: 2506,
-                     helpText: "Creational software design patterns deal with object creation mechanisms. They try to instantiate objects in a manner suitable for the particular situation. Here are several creational design patterns: Factory Method, Abstract Factory, Builder, Singleton, Prototype."),
-            
+			Question(question: ["What is the basis of Creational Patterns?"],
+					 image: "",
+					 optionA: "Objects creation",
+					 optionB: "Classes and objects composition",
+					 optionC: "Classes inheritance from each other",
+					 optionD: "",
+					 questionId: 2506,
+					 helpText: "Creational software design patterns deal with object creation mechanisms. They try to instantiate objects in a manner suitable for the particular situation. Here are several creational design patterns: Factory Method, Abstract Factory, Builder, Singleton, Prototype."),
+			
 			Question(question: ["Behavioral patterns are about ..."],
-                     image: "",
-                     optionA: "Objects communication",
-                     optionB: "Object creation mechanisms",
-                     optionC: "Keeping structures flexible",
-                     optionD: "",
-                     questionId: 2507,
-                     helpText: "Behavioral patterns are about identifying common communication patterns between objects and realize these patterns. Behavioral design patterns include: Chain of Responsibility, Template Method, Command, Iterator, Mediator, Memento, Observer, Strategy, State, Visitor."),
-            
+					 image: "",
+					 optionA: "Objects communication",
+					 optionB: "Object creation mechanisms",
+					 optionC: "Keeping structures flexible",
+					 optionD: "",
+					 questionId: 2507,
+					 helpText: "Behavioral patterns are about identifying common communication patterns between objects and realize these patterns. Behavioral design patterns include: Chain of Responsibility, Template Method, Command, Iterator, Mediator, Memento, Observer, Strategy, State, Visitor."),
+			
 			Question(question: ["Structural patterns explain ..."],
-                     image: "",
+					 image: "",
 					 optionA: "Objects organizing",
 					 optionB: "How to create efficient objects",
 					 optionC: "How to keep structures flexible",
-                     optionD: "",
-                     questionId: 2508,
-                     helpText: "Structural patterns are about organizing different classes and objects to form larger structures and provide new functionality. They aim to simplify the design by finding an easy way of realizing relationships between classes and objects. These are some structural architecture patterns: Adapter, Bridge, Facade, Decorator, Composite, Flyweight, Proxy."),
+					 optionD: "",
+					 questionId: 2508,
+					 helpText: "Structural patterns are about organizing different classes and objects to form larger structures and provide new functionality. They aim to simplify the design by finding an easy way of realizing relationships between classes and objects. These are some structural architecture patterns: Adapter, Bridge, Facade, Decorator, Composite, Flyweight, Proxy."),
 			
-            Question(question: ["Are design patterns used in Apple's native libraries?"],
-                     image: "",
-                     optionA: "Yes",
-                     optionB: "No",
-                     optionC: "",
-                     optionD: "",
-                     questionId: 2509,
-                     helpText: "Yes. Typical commonly used patterns when building iOS applications are those that Apple advocates in their Cocoa, Cocoa Touch, Objective-C, and Swift documentation. These are the patterns that every iOS developer learns. Apple refers to them as “core competencies” design patterns. They include MVC, Singleton, Delegate, and Observer."),
+			Question(question: ["Are design patterns used in Apple's native libraries?"],
+					 image: "",
+					 optionA: "Yes",
+					 optionB: "No",
+					 optionC: "",
+					 optionD: "",
+					 questionId: 2509,
+					 helpText: "Yes. Typical commonly used patterns when building iOS applications are those that Apple advocates in their Cocoa, Cocoa Touch, Objective-C, and Swift documentation. These are the patterns that every iOS developer learns. Apple refers to them as “core competencies” design patterns. They include MVC, Singleton, Delegate, and Observer."),
 			
 			/// Набросил этот вопрос просто ради теории. Сами вопросы логичные и наверное немного глупые, но инфы полезная
 			/// Если найдешь способ придать им побольше смысла - велкам )
@@ -336,6 +336,6 @@ class BasicsAboutPatternsSet {
 					 optionD: "Proxy",
 					 questionId: 2531,
 					 helpText: "In object-oriented programming and software engineering, the visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existing object structures without modifying the structures. It is one way to follow the open/closed principle. In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes. Instead, a visitor class is created that implements all of the appropriate specializations of the virtual function. The visitor takes the instance reference as input, and implements the goal through double dispatch.")
-        ]
-    }
+		]
+	}
 }
