@@ -66,6 +66,11 @@ class AboutProjectController: UIViewController {
         UIApplication.shared.open(urlComponents.url!)
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
+	@IBAction func Wiki(_ sender: Any) {
+		let urlComponents = URLComponents(string: "https://en.wikipedia.org/")!
+		UIApplication.shared.open(urlComponents.url!)
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+	}
     @IBAction func swiftOrg(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://swift.org/")!
         UIApplication.shared.open(urlComponents.url!)

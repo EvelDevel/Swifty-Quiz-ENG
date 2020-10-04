@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="height" constant="120" id="mNW-eE-FEw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So... it's a quiz about Swift. That's it 😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQD-eb-wj0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So... it's a quiz about Swift 😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQD-eb-wj0">
                                 <rect key="frame" x="20" y="155" width="280" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,7 +30,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-ws-uFX">
                                 <rect key="frame" x="20" y="179.5" width="280" height="171"/>
-                                <string key="text">Hello, and nice to see you here! My name is Evgeniy, I am an independent iOS-developer (junior) from Siberia, and it's my first app. You can test it out with 150 free questions, and then you can unlock full access with over 920 questions (and this number will grow). That was a hard work, I got to tell you. Please enjoy it and send your feedback (it's important for improvement). I have received some big help from great people along the way, you can see them below. </string>
+                                <string key="text">Hello, and nice to see you here! My name is Evgeniy, I am an independent iOS-developer (junior) from Siberia, and it's my first app. You can test it out with 150 free questions, and then you can unlock full access with over 980 questions (and this number will grow). That was a hard work, I got to tell you. Please enjoy it and send your feedback (it's important for improvement). I have received some big help from great people along the way, you can see them below. </string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                         <rect key="frame" x="0.0" y="38" width="288" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP7-IE-71B">
-                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="30"/>
                                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Refactoring.guru">
@@ -123,8 +123,24 @@
                                                     <action selector="refactorGuru:" destination="YuG-To-Exf" eventType="touchUpInside" id="cx1-vq-ndx"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEP-iR-q1Z">
+                                                <rect key="frame" x="133.5" y="0.0" width="74" height="30"/>
+                                                <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Wikipedia">
+                                                    <color key="titleColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="Wiki:" destination="YuG-To-Exf" eventType="touchUpInside" id="LH8-16-IuZ"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBv-gJ-cCZ">
-                                                <rect key="frame" x="185.5" y="0.0" width="102.5" height="30"/>
+                                                <rect key="frame" x="215.5" y="0.0" width="72.5" height="30"/>
                                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Swift.org">
@@ -199,6 +215,7 @@
                         <outletCollection property="allButtons" destination="TSU-Lc-9o4" collectionClass="NSMutableArray" id="X0O-y4-Z89"/>
                         <outletCollection property="allButtons" destination="VP7-IE-71B" collectionClass="NSMutableArray" id="J7B-gt-amO"/>
                         <outletCollection property="allButtons" destination="LBv-gJ-cCZ" collectionClass="NSMutableArray" id="e3w-sQ-8eo"/>
+                        <outletCollection property="allButtons" destination="fEP-iR-q1Z" collectionClass="NSMutableArray" id="6Uc-SR-J4Y"/>
                     </connections>
                 </viewController>
                 <exit id="41b-oF-sX1" userLabel="Exit" sceneMemberID="exit"/>

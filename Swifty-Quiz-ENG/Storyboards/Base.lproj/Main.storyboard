@@ -524,13 +524,13 @@
                                 <rect key="frame" x="0.0" y="30" width="375" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-kx-2hD" userLabel="Help Button">
-                                        <rect key="frame" x="320" y="14" width="50" height="23"/>
+                                        <rect key="frame" x="325" y="5.5" width="50" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Nqs-qb-q99"/>
-                                            <constraint firstAttribute="height" constant="23" id="sP7-Wj-Til"/>
+                                            <constraint firstAttribute="height" constant="40" id="sP7-Wj-Til"/>
                                         </constraints>
                                         <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <inset key="imageEdgeInsets" minX="18" minY="3" maxX="15" maxY="3"/>
+                                        <inset key="imageEdgeInsets" minX="15" minY="11" maxX="17" maxY="11"/>
                                         <state key="normal" image="InfoGray"/>
                                         <state key="highlighted" image="InfoFill"/>
                                         <connections>
@@ -539,7 +539,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veA-zL-dzC" userLabel="Help Counter">
-                                        <rect key="frame" x="289.5" y="17.5" width="42.5" height="0.0"/>
+                                        <rect key="frame" x="289.5" y="17.5" width="47.5" height="0.0"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="12" id="7jA-hR-zMQ"/>
                                         </constraints>
@@ -604,7 +604,7 @@
                                     <constraint firstItem="veA-zL-dzC" firstAttribute="firstBaseline" secondItem="atk-Fk-RiH" secondAttribute="firstBaseline" id="hgb-w8-lIc"/>
                                     <constraint firstItem="2hl-kx-2hD" firstAttribute="leading" secondItem="veA-zL-dzC" secondAttribute="trailing" constant="-12" id="ozG-6h-m12"/>
                                     <constraint firstItem="atk-Fk-RiH" firstAttribute="centerX" secondItem="B6F-p6-lv0" secondAttribute="centerX" id="rnb-I7-FTr"/>
-                                    <constraint firstAttribute="trailing" secondItem="2hl-kx-2hD" secondAttribute="trailing" constant="5" id="uDT-ek-yjI"/>
+                                    <constraint firstAttribute="trailing" secondItem="2hl-kx-2hD" secondAttribute="trailing" id="uDT-ek-yjI"/>
                                     <constraint firstItem="lup-xN-Pbw" firstAttribute="top" secondItem="atk-Fk-RiH" secondAttribute="bottom" constant="12" id="utN-tX-5hz"/>
                                 </constraints>
                             </view>

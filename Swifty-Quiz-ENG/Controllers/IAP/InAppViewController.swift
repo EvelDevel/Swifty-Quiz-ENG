@@ -33,7 +33,7 @@ class InAppViewController: UIViewController {
         super.viewDidLoad()
 		fetchProduct()
 		setTheInterfaceRight()
-		shadow.addBlackButtonShadows([buyButtonLabel])
+		shadow.addBlackButtonShadows([buyButtonLabel, restoreButtonLabel])
 		SKPaymentQueue.default().add(self)
 		print("Создали наблюдателя :: SKPaymentQueue.default().add(self)")
     }
