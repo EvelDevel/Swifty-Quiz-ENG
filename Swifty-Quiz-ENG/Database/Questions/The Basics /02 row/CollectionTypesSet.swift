@@ -402,7 +402,7 @@ class CollectionTypesSet {
 					 questionId: 338,
 					 helpText: "A set stores distinct values of the same type in a collection with no defined ordering. You can use a set instead of an array when the order of items is not important, or when you need to ensure that an item only appears once."),
 			
-			Question(question: ["Which protocol all values stored in a set must conform to in the first place?",
+			Question(question: ["Which protocol must all values stored in a set conform to in the first place?",
 								"To be able to be stored in a set all its values must conform to that protocol"],
 					 image: "",
 					 optionA: "Hashable",
@@ -499,7 +499,7 @@ class CollectionTypesSet {
 					 optionB: ".sort()",
 					 optionC: ".filter()",
 					 optionD: ".flatMap()",
-					 questionId: 34700,
+					 questionId: 348,
 					 helpText: "Swift’s Set type does not have a defined ordering. To iterate over the values of a set in a specific order, use the .sorted() method, which returns the set’s elements as an array sorted using the < operator."),
 			
 			Question(question: ["What method creates a new set that contains all of the values of two sets?"],
@@ -508,7 +508,7 @@ class CollectionTypesSet {
 					 optionB: "intersection(_:)",
 					 optionC: "subtracting(_:)",
 					 optionD: "symmetricDifference(_:)",
-					 questionId: 348,
+					 questionId: 349,
 					 helpText: "Use the union(_:) method to create a new set with all of the values in both sets. If the values are repeated in the sets, they will not be repeated in the new set (all values within the set are unique). Suppose there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when executing one.union(two).sorted() we we get [0, 1, 2, 3, 4, 5, 6]."),
 			
 			Question(question: ["How to create a new set with only the values common to both sets?"],
@@ -517,7 +517,7 @@ class CollectionTypesSet {
 					 optionB: "union(_:)",
 					 optionC: "subtracting(_:)",
 					 optionD: "symmetricDifference(_:)",
-					 questionId: 349,
+					 questionId: 350,
 					 helpText: "Use the intersection(_:) method to create a new set with only the values common to both sets. Let's say there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when executing one.intersection(two).sorted() we will get [3, 4, 5]."),
 			
 			Question(question: ["How can we create a new set with values not in the specified set?"],
@@ -526,7 +526,7 @@ class CollectionTypesSet {
 					 optionB: "intersection(_:)",
 					 optionC: "union(_:)",
 					 optionD: "symmetricDifference(_:)",
-					 questionId: 350,
+					 questionId: 351,
 					 helpText: "Use the subtracting(_:) method to create a new set with values not in the specified set. Let's say there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when doing one.subtracting(two).sorted() we will get [0, 1, 2]."),
 			
 			Question(question: ["Which method creates a new set with values in either set, but not both?"],
@@ -535,7 +535,7 @@ class CollectionTypesSet {
 					 optionB: "intersection(_:)",
 					 optionC: "subtracting(_:)",
 					 optionD: "union(_:)",
-					 questionId: 351,
+					 questionId: 352,
 					 helpText: "Use the symmetricDifference(_:) method to create a new set with values in either set, but not both. Let's say there is first set one = [0, 1, 2, 3, 4, 5], and there is a second set two = [3, 4, 5, 6], when executing one.symmetricDifference(two).sorted() we will get [0, 1, 2, 6]."),
 			
 			Question(question: ["Which set is a superset?"],
@@ -544,7 +544,7 @@ class CollectionTypesSet {
 					 optionB: "b",
 					 optionC: "c",
 					 optionD: "There is no superset",
-					 questionId: 352,
+					 questionId: 353,
 					 helpText: "The illustration depicts three sets—a, b and c—with overlapping regions representing elements shared among sets. Set a is a superset of set b, because a contains all elements in b."),
 			
 			Question(question: ["Which set is a subset?"],
@@ -553,7 +553,7 @@ class CollectionTypesSet {
 					 optionB: "a",
 					 optionC: "c",
 					 optionD: "There is no subset",
-					 questionId: 353,
+					 questionId: 354,
 					 helpText: "The illustration depicts three sets—a, b and c—with overlapping regions representing elements shared among sets. Set a is a superset of set b, because a contains all elements in b. Conversely, set b is a subset of set a, because all elements in b are also contained by a."),
 			
 			Question(question: ["Which sets are disjoint?"],
@@ -562,7 +562,7 @@ class CollectionTypesSet {
 					 optionB: "a and b",
 					 optionC: "c and a",
 					 optionD: "There are no disjoint sets",
-					 questionId: 354,
+					 questionId: 355,
 					 helpText: "The illustration above depicts three sets—a, b and c—with overlapping regions representing elements shared among sets. Set a is a superset of set b, because a contains all elements in b. Conversely, set b is a subset of set a, because all elements in b are also contained by a. Set b and set c are disjoint with one another, because they share no elements in common."),
 			
 			Question(question: ["How can we determine whether two sets contain all of the same values?"],
@@ -571,7 +571,7 @@ class CollectionTypesSet {
 					 optionB: "=",
 					 optionC: "===",
 					 optionD: "",
-					 questionId: 35500,
+					 questionId: 356,
 					 helpText: "Use the “is equal” operator (==) to determine whether two sets contain all of the same values."),
 			
 			Question(question: ["Which method do we need to use to determine whether all of the values of a set are contained in the specified set?"],
@@ -580,7 +580,7 @@ class CollectionTypesSet {
 					 optionB: "isSuperset(of:)",
 					 optionC: "isStrictSubset(of:)",
 					 optionD: "",
-					 questionId: 355,
+					 questionId: 357,
 					 helpText: "Use the isSubset(of:) method to determine whether all of the values of a set are contained in the specified set. For example, let one: Set = [1, 2], let two: Set = [1, 2, 3, 4, 5], one.isSubset(of: two) will return true because all the values of set one are contained in the set two. In fact, we determine whether a set is a subset of the specified set."),
 			
 			Question(question: ["Which method do we need to use to determine whether a set contains all of the values in a specified set?"],
@@ -589,7 +589,7 @@ class CollectionTypesSet {
 					 optionB: "isSubset(of:)",
 					 optionC: "isStrictSuperset(of:)",
 					 optionD: "",
-					 questionId: 356,
+					 questionId: 358,
 					 helpText: "Use the isSuperset(of:) method to determine whether a set contains all of the values in a specified set. For example, let one: Set = [1, 2], let two: Set = [1, 2, 3, 4, 5], two.isSuperset(of: one) will return true because all the values of set one are contained in the set two. In fact, we determine whether a set is a superset of the specified set."),
 			
 			Question(question: ["The type of a Swift dictionary is written in full as ..."],
@@ -598,7 +598,7 @@ class CollectionTypesSet {
 					 optionB: "Dictionary<KeyType>, <ValueType>",
 					 optionC: "Dictionary(KeyType, ValueType)",
 					 optionD: "",
-					 questionId: 357,
+					 questionId: 359,
 					 helpText: "The type of a Swift dictionary is written in full as Dictionary<KeyType, ValueType>, where KeyType is the type of value that can be used as a dictionary key, and ValueType is the type of value that the dictionary stores for those keys. A dictionary Key type must conform to the Hashable protocol, like a set’s value type."),
 			
 			Question(question: ["Does dictionary in Swift have a shorthand form?"],
@@ -607,7 +607,7 @@ class CollectionTypesSet {
 					 optionB: "No, KeyType: ValueType",
 					 optionC: "Yes, <KeyType, ValueType>",
 					 optionD: "No",
-					 questionId: 358,
+					 questionId: 360,
 					 helpText: "You can also write the type of a dictionary in shorthand form as [Key: Value]. Although the two forms (full and shorthand) are functionally identical, the shorthand form is preferred."),
 			
 			Question(question: ["You can create an empty Dictionary of a certain type by using initializer syntax. How exactly can you do that?"],
@@ -616,7 +616,7 @@ class CollectionTypesSet {
 					 optionB: "var names = Int: String[]",
 					 optionC: "var names: [Int: String] = ()",
 					 optionD: "var names: (Int: String) = []",
-					 questionId: 359,
+					 questionId: 361,
 					 helpText: "As with arrays, you can create an empty Dictionary of a certain type by using initializer syntax: var namesOfIntegers = [Int: String](). This example creates an empty dictionary of type [Int: String] to store human-readable names of integer values. Its keys are of type Int, and its values are of type String."),
 			
 			Question(question: ["Pick an empty dictionary literal"],
@@ -625,7 +625,7 @@ class CollectionTypesSet {
 					 optionB: "[]",
 					 optionC: "[](:)",
 					 optionD: "{:}",
-					 questionId: 360,
+					 questionId: 362,
 					 helpText: "If the context already provides type information, you can create an empty dictionary with an empty dictionary literal, which is written as [:] (a colon inside a pair of square brackets)."),
 			
 			Question(question: ["You can initialize a dictionary with a dictionary literal. How?"],
@@ -634,7 +634,7 @@ class CollectionTypesSet {
 					 optionB: "var b: <Int: String> = ([0: \"Name\"])",
 					 optionC: "var c: (Int: String)[0: \"Name\"]",
 					 optionD: "",
-					 questionId: 361,
+					 questionId: 363,
 					 helpText: "You can initialize a dictionary with a dictionary literal, which has a similar syntax to the array literal seen earlier. A dictionary literal is a shorthand way to write one or more key-value pairs as a Dictionary collection. A key-value pair is a combination of a key and a value. In a dictionary literal, the key and value in each key-value pair are separated by a colon. The key-value pairs are written as a list, separated by commas, surrounded by a pair of square brackets."),
 			
 			Question(question: ["What type will Swift assign to this dictionary?"],
@@ -643,7 +643,7 @@ class CollectionTypesSet {
 					 optionB: "[Int : Character]",
 					 optionC: "[Int : String]",
 					 optionD: "[Float : String]",
-					 questionId: 362,
+					 questionId: 364,
 					 helpText: "The correct answer is [Double: String], because the default type to any floating point number is Double, without explicitly specifying the type. The second part, the dictionary value is String."),
 			
 			Question(question: ["How can we add a new item to a dictionary with subscript syntax"],
@@ -652,7 +652,7 @@ class CollectionTypesSet {
 					 optionB: "dictionary.Key(Value)",
 					 optionC: "dictionary.Key = [Value]",
 					 optionD: "We can't modify dictionaries",
-					 questionId: 363,
+					 questionId: 365,
 					 helpText: "You can add a new item to a dictionary with subscript syntax. Use a new key of the appropriate type as the subscript index, and assign a new value of the appropriate type. You can also use subscript syntax to change the value associated with a particular key. Correct answer: dictionary[Key] = Value."),
 			
 			Question(question: ["An alternative way to set or update a value for a specific dictionary key",
@@ -663,7 +663,7 @@ class CollectionTypesSet {
 					 optionB: "update(key:)",
 					 optionC: "changeValue(forKey:)",
 					 optionD: "change(key:)",
-					 questionId: 364,
+					 questionId: 366,
 					 helpText: "As an alternative to subscripting, use a dictionary’s updateValue(_:forKey:) method to set or update the value for a particular key. Like the subscript examples above, the updateValue(_:forKey:) method sets a value for a key if none exists, or updates the value if that key already exists. Unlike a subscript, however, the updateValue(_:forKey:) method returns the old value after performing an update. This enables you to check whether or not an update took place."),
 			
 			Question(question: ["What does updateValue(_:forKey:) method return, in case no value is found?"],
@@ -672,7 +672,7 @@ class CollectionTypesSet {
 					 optionB: "0",
 					 optionC: "Optional type",
 					 optionD: "",
-					 questionId: 365,
+					 questionId: 367,
 					 helpText: "The updateValue(_:forKey:) method returns an optional value of the dictionary’s value type. For a dictionary that stores String values, for example, the method returns a value of type String?, or “optional String”. This optional value contains the old value for that key if one existed before the update, or nil if no value existed."),
 			
 			Question(question: ["If we try to access a nonexistent dictionary value through the subscript syntax, what do we get?",
@@ -682,7 +682,7 @@ class CollectionTypesSet {
 					 optionB: "Dictionary’s first value",
 					 optionC: "Dictionary’s last value",
 					 optionD: "We'll get an error",
-					 questionId: 366,
+					 questionId: 368,
 					 helpText: "You can also use subscript syntax to retrieve a value from the dictionary for a particular key. Because it is possible to request a key for which no value exists, a dictionary’s subscript returns an optional value of the dictionary’s value type. If the dictionary contains a value for the requested key, the subscript returns an optional value containing the existing value for that key. Otherwise, the subscript returns nil."),
 			
 			Question(question: ["How can we remove a key-value pair from a dictionary using the subscript syntax?",
@@ -693,7 +693,7 @@ class CollectionTypesSet {
 					 optionB: "dict[Key] = []",
 					 optionC: "dict[Key] = 0",
 					 optionD: "dict[Key].remove()",
-					 questionId: 367,
+					 questionId: 369,
 					 helpText: "You can use subscript syntax to remove a key-value pair from a dictionary by assigning a value of nil for that key. Correct answer: dict[Key] = nil"),
 			
 			Question(question: ["The method that removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed"],
@@ -702,7 +702,7 @@ class CollectionTypesSet {
 					 optionB: "remove(forKey:)",
 					 optionC: "removeValue(Key:)",
 					 optionD: "deleteValue(forKey:)",
-					 questionId: 368,
+					 questionId: 370,
 					 helpText: "You can remove a key-value pair from a dictionary with the removeValue(forKey:) method. This method removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed."),
 			
 			Question(question: ["What is the value of the \"first\" constant?"],
@@ -711,7 +711,7 @@ class CollectionTypesSet {
 					 optionB: "10",
 					 optionC: "8",
 					 optionD: "",
-					 questionId: 369,
+					 questionId: 371,
 					 helpText: "Numbers (indices) below 10 can be accompanied by zeros. This stylistic add-on is not strictly necessary, but it can sometimes make your code more readable."),
 			
 			Question(question: ["Collections defined by the standard library like arrays use an optimization to reduce the performance cost of copying. Within this approach, the elements are copied ...",
@@ -722,7 +722,7 @@ class CollectionTypesSet {
 					 optionB: "Async in the main thread",
 					 optionC: "In the global thread",
 					 optionD: "Immediately",
-					 questionId: 370,
+					 questionId: 372,
 					 helpText: "Collections defined by the standard library like arrays, dictionaries, and strings use an optimization to reduce the performance cost of copying. Instead of making a copy immediately, these collections share the memory where the elements are stored between the original instance and any copies. If one of the copies of the collection is modified, the elements are copied just before the modification. The behavior you see in your code is always as if a copy took place immediately."),
 			
 			Question(question: ["What will we get in the console after running the following code?"],
@@ -731,7 +731,7 @@ class CollectionTypesSet {
 					 optionB: "Three",
 					 optionC: "Two",
 					 optionD: "We'll get an error",
-					 questionId: 371,
+					 questionId: 372,
 					 helpText: "Correct answer: Four. This example defines a variable called numberOfLegs and initializes it with a dictionary literal containing three key-value pairs. The type of the numberOfLegs dictionary is inferred to be [String: Int]. After creating the dictionary, this example uses subscript assignment to add a String key of \"bird\" and an Int value of 2 to the dictionary."),
 			
 			Question (question: ["What will the addNewBook() function return if our library already has a Book with the book.id we pass?"],
@@ -740,7 +740,7 @@ class CollectionTypesSet {
 					  optionB: "true",
 					  optionC: "Book.id value",
 					  optionD: "We will get an error",
-					  questionId: 372,
+					  questionId: 373,
 					  helpText: "The updateValue(forKey:) method sets the value for the key if it doesn't exist, or updates the value if the key already exists. For example, for a dictionary that stores String values, the method will return a String? type, or an optional String. This optional value contains the old value for this key, if it existed before the update, or nil if the value did not exist. In our case, since the book is already in our library, the function will return us Book?, which means when comparing with nil (== nil) we get false."),
 			
 			Question(question: ["What will the deleteBook() function return if our library already has a Book with this book.id?"],
@@ -749,7 +749,7 @@ class CollectionTypesSet {
 					 optionB: "false",
 					 optionC: "Value of book.id",
 					 optionD: "",
-					 questionId: 373,
+					 questionId: 374,
 					 helpText: "You can remove a key-value pair from a dictionary with the removeValue(forKey:) method. This method removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed. In our case, the book is already in the library, which means that when deleted, its value will be returned to us. When we are comparing it for the inequality nil (!= nil), we get true."),
 			
 			Question(question: ["What will we get printed out to the console?"],
@@ -758,7 +758,7 @@ class CollectionTypesSet {
 					 optionB: "0, 1, 2",
 					 optionC: "[2, 3, 4]",
 					 optionD: "3",
-					 questionId: 374,
+					 questionId: 375,
 					 helpText: "prefix(_ maxLength: Int) returns a subsequence, up to the specified maximum length, containing the initial elements of the collection, that's why we will get [1, 2, 3]."),
 			
 			Question(question: ["What will we get in the console?"],
@@ -767,7 +767,7 @@ class CollectionTypesSet {
 					 optionB: "[1, 2, 3]",
 					 optionC: "[2, 3, 4]",
 					 optionD: "3",
-					 questionId: 375,
+					 questionId: 376,
 					 helpText: "suffix(_ maxLength: Int) returns a subsequence, up to the given maximum length, containing the final elements of the collection. That’s why we get [3, 4, 5]. If maxLength exceeds the number of elements of the original sequence, we will get all its elements."),
 			
 			Question(question: ["Which cities will be combined in the grouped dictionary according to the condition we used?"],
@@ -776,7 +776,7 @@ class CollectionTypesSet {
 					 optionB: "Shanghai and Karachi",
 					 optionC: "Shanghai and Beijing",
 					 optionD: "Beijing and Karachi",
-					 questionId: 376,
+					 questionId: 377,
 					 helpText: "Shanghai and Seoul. When initializing the dictionary, the input argument grouping is used, which is passed the analyzed keys of the cities dictionary as its value. After the initializer, a closure is specified, according to which the values are grouped (in this case, by the first character of the key)."),
 			
 			Question(question: ["Can we assign a default value to the dictionary element that will be returned when we are trying to access a key that does not exist?"],
@@ -785,7 +785,7 @@ class CollectionTypesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 377,
+					 questionId: 378,
 					 helpText: "While using the subscript syntax to access elements of the dictionary, nil will be returned if you try to access a name that does not exist. You can specify a default value that will be returned when trying to access a nonexistent element, though. It can be done using the default property specified in the subscript [key, default: value]."),
 			
 			Question(question: ["What method is used for dictionary mapping?"],
@@ -794,7 +794,7 @@ class CollectionTypesSet {
 					 optionB: ".map",
 					 optionC: ".filter",
 					 optionD: ".reduce",
-					 questionId: 378,
+					 questionId: 379,
 					 helpText: "Processing (mapping) the values of dictionary elements is done by using the mapValues(_ :) method, into which the closure is passed. Access is performed one by one to the value of each element of the dictionary. Returns a new dictionary containing the keys of this dictionary with the values transformed by the given closure."),
 			
 			Question(question: ["Do we get a new collection of elements as a result of filtering the dictionary through .filter?",
@@ -805,7 +805,7 @@ class CollectionTypesSet {
 					 optionB: "No",
 					 optionC: "",
 					 optionD: "",
-					 questionId: 379,
+					 questionId: 380,
 					 helpText: "Filtering the dictionary through .filter {} will return a new collection of the same type as the original one. The initial collection remains unchanged."),
 			
 			Question(question: ["What method can we use to combine two different sequences of values into one dictionary?",
@@ -816,7 +816,7 @@ class CollectionTypesSet {
 					 optionB: "Dictionary()",
 					 optionC: "mapValues(_:)",
 					 optionD: "Subscripting",
-					 questionId: 380,
+					 questionId: 381,
 					 helpText: "zip(_:_:) creates a sequence of pairs built out of two underlying sequences, after which it should pass it to the uniqueKeysWithValues property of the Dictionary initializer. The resulting dictionary will contain the values of the first base collection as keys, and the elements of the second base collection as its values.")
 		]
 	}

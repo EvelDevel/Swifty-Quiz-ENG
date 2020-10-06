@@ -15,7 +15,8 @@ class HelpViewController: UIViewController {
     @IBOutlet weak var helpTextLabel: UILabel!
     @IBOutlet weak var backInGameButton: UIButton!
     @IBOutlet weak var separatorHeight: NSLayoutConstraint!
-    weak var delegate: HelpViewControllerDelegate?
+    
+	weak var delegate: HelpViewControllerDelegate?
     var questionID: Int = 0
     
     override func viewDidLoad() {
