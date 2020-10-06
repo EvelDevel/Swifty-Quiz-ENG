@@ -456,8 +456,8 @@ class ControlFlowSet {
 			
 			Question(question: ["In the given code snippet, is index a variable or a constant?"],
 					 image: "ControlFlow4",
-					 optionA: "Variable",
-					 optionB: "Constant",
+					 optionA: "Constant",
+					 optionB: "Variable",
 					 optionC: "",
 					 optionD: "",
 					 questionId: 404,
