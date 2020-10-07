@@ -7,8 +7,10 @@ import Foundation
 enum InAppStatuses: String {
 	
 	case didntPurchasedYet = "You don't have full access yet 🥺"
-	case success = "Thank you! You got the full access 😎"
+	case success = "Thank you! You’ve got full access now 😎"
 	case restore = "Here you go! Glad you're back 🥳"
 	case faild = "Sorry, something went wrong 🙄"
 	case cantBuy = "Sorry, your device is not supporting purchases 😢"
+	
+	
 }

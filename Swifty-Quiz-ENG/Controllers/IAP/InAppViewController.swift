@@ -64,6 +64,10 @@ class InAppViewController: UIViewController {
 	}
 	
 	func setTheInterfaceRight() {
+		
+		IapMainTextLabel.text = "Hello! I'm glad that you are using my app and considering purchasing the full access. It will unlock over \(RandomSetManager.showAllQuestionsNumber()) questions. I've been working on these questions, categorizing them, and gathering useful tips on each topic for more than half a year. I truly hope you will enjoy learning Swift in Swifty."
+
+		
 		buyButtonLabel.setTitle("Unlock for ...", for: .normal)
 		restoreButtonLabel.setTitle("Restore your previous purchase", for: .normal)
 		statusLabel.text = InAppStatuses.didntPurchasedYet.rawValue

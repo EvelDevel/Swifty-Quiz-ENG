@@ -56,7 +56,6 @@ class AdaptiveInterface {
 	/// Адаптация экрана "О проекте"
 	func setAboutAppPage(view: UIView,
 						 mainTextLabel: UILabel,
-						 textAfterLogoHeight: NSLayoutConstraint,
 						 stackAfterTextMargin: NSLayoutConstraint,
 						 firstRowButtonsHeight: NSLayoutConstraint,
 						 secondRowButtonsHeight: NSLayoutConstraint,

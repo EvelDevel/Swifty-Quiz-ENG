@@ -133,43 +133,7 @@ class AntipatternsSet {
 					 optionC: "Golden hammer",
 					 optionD: "",
 					 questionId: 2911,
-					 helpText: "Softcoding is a computer coding term that refers to obtaining a value or function from some external resource, such as a preprocessor macro, external constant, configuration file, command line argument or database table. It is the opposite of hardcoding, which refers to coding values and functions in the source code."),
-			
-//			Question(question: [""],
-//					 image: "",
-//					 optionA: "",
-//					 optionB: "",
-//					 optionC: "",
-//					 optionD: "",
-//					 questionId: 2911,
-//					 helpText: ""),
-//
-//			Question(question: [""],
-//					 image: "",
-//					 optionA: "",
-//					 optionB: "",
-//					 optionC: "",
-//					 optionD: "",
-//					 questionId: 2911,
-//					 helpText: ""),
-//
-//			Question(question: [""],
-//					 image: "",
-//					 optionA: "",
-//					 optionB: "",
-//					 optionC: "",
-//					 optionD: "",
-//					 questionId: 2911,
-//					 helpText: ""),
-//
-//			Question(question: [""],
-//					 image: "",
-//					 optionA: "",
-//					 optionB: "",
-//					 optionC: "",
-//					 optionD: "",
-//					 questionId: 2911,
-//					 helpText: ""),
+					 helpText: "Softcoding is a computer coding term that refers to obtaining a value or function from some external resource, such as a preprocessor macro, external constant, configuration file, command line argument or database table. It is the opposite of hardcoding, which refers to coding values and functions in the source code.")
         ]
     }
 }

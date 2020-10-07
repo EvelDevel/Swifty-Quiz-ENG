@@ -166,23 +166,25 @@ extension SettingCell {
         var title = ""
         var message = ""
         SoundPlayer.shared.playSound(sound: .infoAboutSetting)
-        
-        switch sender.tag {
-        case 1:
-            title = "Questions order"
-            message = "In the case of direct order, the questions will go in the same order for each game. If you choose a random order, the order of the questions will never be repeated twice for new games (won't affect games, that you continue)."
-        case 2:
-            title = "Question text"
-            message = "Each question in the game has several different question texts - from one to three. If you want to make the game harder, include a change in texts, then it will be more difficult for the eye to remember the question."
-        case 3:
-            title = "In case of a wrong answer"
-            message = "After a wrong answer, you can simply move on or receive a theoretical hint that will help you understand immediately which answer was correct. This slows down the game, but makes it more informative."
-        case 4:
-            title = "If the hint is shown"
-            message = "After each hint, you can automatically move on to the next question, or you can stay to read the question carefully again and choose the correct answer. After using the hint you will not score the points."
-        default:
-            print("Error with information about setting")
-        }
+		
+		switch sender.tag {
+		case 1:
+			title = "Questions order"
+			message = "In case of enabling direct order, the questions will appear in the same order for each game. If you choose a random order, the questions' order will never be repeated twice for new games (won't affect games that you continue)."
+		case 2:
+			title = "Question text"
+			message = "Each question in the game has several different wordings - from one to three. If you want to make the game harder, enable different wordings here, then it will be more difficult for the eye to remember the question."
+		case 3:
+			title = "In case of a wrong answer"
+			message = "After giving a wrong answer, you can simply move on or receive a hint that will help you understand immediately which answer was correct and why. This slows down the game, but makes it more informative."
+		case 4:
+			title = "If the hint is shown"
+			message = "After each hint, you can automatically move on to the next question, or you can stay to read the question carefully again and choose the correct answer. After using the hint you will not score the points."
+		default:
+			print("Error with information about setting")
+		}
+
+		
         delegate?.showInformationAlert(title, message)
     }
 }

@@ -22,25 +22,13 @@
                                     <constraint firstAttribute="height" constant="120" id="mNW-eE-FEw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So... it's a quiz about Swift 😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQD-eb-wj0">
-                                <rect key="frame" x="20" y="155" width="280" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-ws-uFX">
-                                <rect key="frame" x="20" y="179.5" width="280" height="171"/>
-                                <string key="text">Hello, and nice to see you here! My name is Evgeniy, I am an independent iOS-developer (junior) from Siberia, and it's my first app. You can test it out with 150 free questions, and then you can unlock full access with over 980 questions (and this number will grow). That was a hard work, I got to tell you. Please enjoy it and send your feedback (it's important for improvement). I have received some big help from great people along the way, you can see them below. </string>
+                                <rect key="frame" x="20" y="155" width="280" height="257.5"/>
+                                <mutableString key="text">Hello, and nice to see you here! My name is Evgeniy, and I am an independent iOS-developer from Siberia. Swifty is my first app, which I've created to spread knowledge and help other developers and enthusiasts learn Swift. You can test it out with 150 questions available for free, and then unlock full access with over 980 questions (this number will grow) if you want to dive deeper into learning Swift. I have to tell you that it was hard to build this app, but it's finally done, so please enjoy it and send your feedback (it's important for improvement). I have also received some big help from great people along the way, you can see them below.</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your support mean a lot to us, thanks!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flZ-yt-1aH">
-                                <rect key="frame" x="20" y="360.5" width="280" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-wY-WEY" userLabel="links">
                                 <rect key="frame" x="16" y="480" width="288" height="68"/>
@@ -181,24 +169,18 @@
                         <viewLayoutGuide key="safeArea" id="VlK-nO-hNM"/>
                         <color key="backgroundColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="flZ-yt-1aH" firstAttribute="top" secondItem="Uuy-ws-uFX" secondAttribute="bottom" constant="10" id="2pA-AJ-4ev"/>
                             <constraint firstItem="VlK-nO-hNM" firstAttribute="bottom" secondItem="1PH-wY-WEY" secondAttribute="bottom" constant="20" id="51V-mR-oVc"/>
                             <constraint firstItem="1PH-wY-WEY" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="16" id="84G-zG-TKb"/>
-                            <constraint firstItem="Uuy-ws-uFX" firstAttribute="top" secondItem="xQD-eb-wj0" secondAttribute="bottom" constant="7.5" id="EIq-Ud-Cm9"/>
-                            <constraint firstItem="1PH-wY-WEY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="flZ-yt-1aH" secondAttribute="bottom" constant="25" id="QYS-LC-bU7"/>
-                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="flZ-yt-1aH" secondAttribute="trailing" constant="20" id="SdS-44-LaQ"/>
-                            <constraint firstItem="flZ-yt-1aH" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="20" id="VjM-JU-KFK"/>
+                            <constraint firstItem="1PH-wY-WEY" firstAttribute="top" relation="lessThanOrEqual" secondItem="Uuy-ws-uFX" secondAttribute="bottom" constant="67.5" id="FNO-Rn-YlF"/>
+                            <constraint firstItem="Uuy-ws-uFX" firstAttribute="top" secondItem="S2h-f6-hHS" secondAttribute="bottom" constant="15" id="YzR-Jh-EzY"/>
                             <constraint firstItem="YIT-iR-Aff" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" id="cEe-n7-dpK"/>
-                            <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="xQD-eb-wj0" secondAttribute="trailing" constant="20" id="dEu-zR-SDG"/>
                             <constraint firstItem="S2h-f6-hHS" firstAttribute="top" secondItem="VlK-nO-hNM" secondAttribute="top" constant="20" id="eFs-xn-WeJ"/>
                             <constraint firstItem="S2h-f6-hHS" firstAttribute="leading" secondItem="lwT-9J-X6S" secondAttribute="leadingMargin" constant="16" id="gty-V3-ULM"/>
                             <constraint firstItem="YIT-iR-Aff" firstAttribute="top" secondItem="VlK-nO-hNM" secondAttribute="top" id="idT-Kl-kp9"/>
-                            <constraint firstItem="xQD-eb-wj0" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="20" id="km8-sr-hv5"/>
                             <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="1PH-wY-WEY" secondAttribute="trailing" constant="16" id="lN5-7V-R1N"/>
                             <constraint firstItem="Uuy-ws-uFX" firstAttribute="leading" secondItem="VlK-nO-hNM" secondAttribute="leading" constant="20" id="pUV-Z9-kIc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="S2h-f6-hHS" secondAttribute="trailing" constant="16" id="rTH-gD-1eR"/>
                             <constraint firstItem="VlK-nO-hNM" firstAttribute="trailing" secondItem="Uuy-ws-uFX" secondAttribute="trailing" constant="20" id="soK-Tv-crq"/>
-                            <constraint firstItem="xQD-eb-wj0" firstAttribute="top" secondItem="S2h-f6-hHS" secondAttribute="bottom" constant="15" id="wJd-7C-qHb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AN6-jL-PSl"/>
@@ -208,8 +190,7 @@
                         <outlet property="logoHeight" destination="mNW-eE-FEw" id="kJe-mS-cJc"/>
                         <outlet property="mainTextLabel" destination="Uuy-ws-uFX" id="At6-CL-oVH"/>
                         <outlet property="secondRowButtonsHeight" destination="umJ-XB-SfK" id="FyC-1o-Ffv"/>
-                        <outlet property="stackAfterTextHeight" destination="QYS-LC-bU7" id="rYV-VE-CvR"/>
-                        <outlet property="textAfterLogoHeight" destination="wJd-7C-qHb" id="Soj-Ys-Aug"/>
+                        <outlet property="stackAfterTextHeight" destination="FNO-Rn-YlF" id="bk4-8K-68Y"/>
                         <outletCollection property="allButtons" destination="gio-b5-NVf" collectionClass="NSMutableArray" id="i1O-R3-ge9"/>
                         <outletCollection property="allButtons" destination="JQO-Hu-hpw" collectionClass="NSMutableArray" id="hlW-mn-5M1"/>
                         <outletCollection property="allButtons" destination="TSU-Lc-9o4" collectionClass="NSMutableArray" id="X0O-y4-Z89"/>

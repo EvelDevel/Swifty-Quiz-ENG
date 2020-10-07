@@ -13,7 +13,6 @@ class AboutProjectController: UIViewController {
 	private var adaptiveInterface = AdaptiveInterface()
 
 	@IBOutlet weak var mainTextLabel: UILabel!
-	@IBOutlet weak var textAfterLogoHeight: NSLayoutConstraint!
 	@IBOutlet weak var stackAfterTextHeight: NSLayoutConstraint!
 	@IBOutlet weak var firstRowButtonsHeight: NSLayoutConstraint!
 	@IBOutlet weak var secondRowButtonsHeight: NSLayoutConstraint!
@@ -21,9 +20,11 @@ class AboutProjectController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		mainTextLabel.text = "Hello, and nice to see you here! My name is Evgeniy, and I am an independent iOS-developer from Siberia. Swifty is my first app, which I've created to spread knowledge and help other developers and enthusiasts learn Swift. You can test it out with 150 questions available for free, and then unlock full access with over \(RandomSetManager.showAllQuestionsNumber()) questions (this number will grow) if you want to dive deeper into learning Swift. I have to tell you that it was hard to build this app, but it's finally done, so please enjoy it and send your feedback (it's important for improvement). I have also received some big help from great people along the way, you can see them below."
+		
 		adaptiveInterface.setAboutAppPage(view: view,
 										  mainTextLabel: mainTextLabel,
-										  textAfterLogoHeight: textAfterLogoHeight,
 										  stackAfterTextMargin: stackAfterTextHeight,
 										  firstRowButtonsHeight: firstRowButtonsHeight,
 										  secondRowButtonsHeight: secondRowButtonsHeight,

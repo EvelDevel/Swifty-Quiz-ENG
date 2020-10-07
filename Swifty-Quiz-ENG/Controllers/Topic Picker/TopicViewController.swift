@@ -213,7 +213,7 @@ extension TopicViewController: MFMailComposeViewControllerDelegate {
         composer.setToRecipients(["hello@swifty-quiz.online"])
         composer.setSubject(section)
 		composer.setMessageBody("""
-			I want to suggest my question to \(section) section
+			I want to suggest my question for the \(section) section
 			
 			category: 
 			question text:
