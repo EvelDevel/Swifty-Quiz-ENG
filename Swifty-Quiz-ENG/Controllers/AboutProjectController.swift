@@ -53,7 +53,7 @@ class AboutProjectController: UIViewController {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
     @IBAction func design(_ sender: Any) {
-        let urlComponents = URLComponents(string: "https://vk.com/shlehanov")!
+        let urlComponents = URLComponents(string: "http://instagram.com/shlehanov")!
         UIApplication.shared.open(urlComponents.url!)
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }

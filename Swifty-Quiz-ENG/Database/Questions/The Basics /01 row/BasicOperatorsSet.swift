@@ -294,9 +294,9 @@ class BasicOperatorsSet {
 					 questionId: 128,
 					 helpText: "Each of the comparison operators returns a Bool value to indicate whether or not the statement is true. For example: 1 == 1 // true, since 1 is 1, 2! = 1 // true, because 2 is not equal to 1, 2 > 1 // true, because 2 is greater than 1, etc. Comparison operators are often used in conditional expressions, including the if statement."),
 			
-			Question(question: ["The syntax of this operator is: expression? action1 : action2?",
-								"Which operator is this: question? answer1 : answer2?",
-								"Choose the operator that takes the form: a? b: c"],
+			Question(question: ["The syntax of this operator is: expression ? action1 : action2?",
+								"Which operator is this: question ? answer1 : answer2?",
+								"Choose the operator that takes the form: a ? b: c"],
 					 image: "",
 					 optionA: "Ternary conditional operator",
 					 optionB: "Binary conditional operator",
