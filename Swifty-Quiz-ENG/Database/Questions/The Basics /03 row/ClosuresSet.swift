@@ -257,7 +257,7 @@ class ClosuresSet {
 					 questionId: 621,
 					 helpText: "If a closure expression is provided as the function’s or method’s only argument and you provide that expression as a trailing closure, you don’t need to write a pair of parentheses () after the function or method’s name when you call the function."),
 			
-			Question(question: ["Swift’s Array type has a ___ method, which takes a closure expression as its single argument"],
+			Question(question: ["Swift’s Array type has a ... method, which takes a closure expression as its single argument"],
 					 image: "",
 					 optionA: "map(_:)",
 					 optionB: "sort()",
@@ -304,7 +304,7 @@ class ClosuresSet {
 					 helpText: "Functions and closures are reference types. Whenever you assign a function or a closure to a constant or a variable, you are actually setting that constant or variable to be a reference to the function or closure. This also means that if you assign a closure to two different constants or variables, both of those constants or variables refer to the same closure."),
 			
 			Question(question: ["Which keyword can you use to indicate that a closure can be passed as an argument to a function, but will be called after the function returns?",
-								"You can use the ___ keyword, when your closure is allowed be passed as an argument to the function, but is called after the function returns"],
+								"You can use the ... keyword, when your closure is allowed be passed as an argument to the function, but is called after the function returns"],
 					 image: "",
 					 optionA: "@escaping",
 					 optionB: "@exit",

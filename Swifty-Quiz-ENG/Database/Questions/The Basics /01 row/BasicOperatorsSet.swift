@@ -149,7 +149,7 @@ class BasicOperatorsSet {
 			
 			Question(question: ["What arithmetic operator is supported for String concatenation?",
 								"The arithmetic operator that can be used to concatenate string values",
-								"Concatenation of string values can be done through … "],
+								"Concatenation of string values can be done through ... "],
 					 image: "",
 					 optionA: "Addition operator",
 					 optionB: "Multiplication operator",
@@ -420,7 +420,7 @@ class BasicOperatorsSet {
 					 helpText: "The closed range operator has an alternative form for ranges that continue as far as possible in one direction—for example, a range that includes all the elements of an array from index 2 to the end of the array. In these cases, you can omit the value from one side of the range operator. This kind of range is called a one-sided range because the operator has a value on only one side. The half-open range operator also has a one-sided form that’s written with only its final value. Just like when you include a value on both sides, the final value isn’t part of the range."),
 			
 			Question(question: ["How many standard logical operators does Swift support?",
-								"Swift supports … standard logical operators",
+								"Swift supports ... standard logical operators",
 								"The number of logical operators supported by Swift"],
 					 image: "",
 					 optionA: "3",
@@ -687,7 +687,7 @@ class BasicOperatorsSet {
 			
 			Question(question: ["What arithmetic operator is supported for String concatenation?",
 								"The arithmetic operator that can be used to concatenate string values",
-								"Concatenation of string values can be done through … "],
+								"Concatenation of string values can be done through ... "],
 					 image: "",
 					 optionA: "Addition operator",
 					 optionB: "Multiplication operator",

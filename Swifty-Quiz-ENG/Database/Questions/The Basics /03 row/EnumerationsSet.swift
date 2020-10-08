@@ -119,7 +119,7 @@ class EnumerationsSet {
 					 helpText: "Swift enumeration cases don’t have an integer value set by default, unlike languages like C and Objective-C. For example, if you have enumeration with 4 cases, they don’t implicitly equal 0, 1, 2 and 3."),
 			
 			Question(question: ["Like other types in Swift, enumerations names should start with that kind of letter",
-								"Enumerations names should start with a ___ letter"],
+								"Enumerations names should start with a ... letter"],
 					 image: "",
 					 optionA: "Capital letter",
 					 optionB: "Small letter",
