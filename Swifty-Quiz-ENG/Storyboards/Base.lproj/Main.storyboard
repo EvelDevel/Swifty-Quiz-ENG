@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="9dX-kS-VaR">
-                                <rect key="frame" x="35" y="252" width="305" height="163"/>
+                                <rect key="frame" x="80" y="276" width="215" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9dX-kS-VaR" secondAttribute="height" multiplier="15:8" id="H3Q-Ei-ZJe"/>
                                 </constraints>
@@ -26,8 +26,8 @@
                         <viewLayoutGuide key="safeArea" id="0cL-bL-Twe"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9dX-kS-VaR" firstAttribute="leading" secondItem="0cL-bL-Twe" secondAttribute="leading" constant="35" id="Ea5-mR-jjP"/>
-                            <constraint firstItem="0cL-bL-Twe" firstAttribute="trailing" secondItem="9dX-kS-VaR" secondAttribute="trailing" constant="35" id="px2-L6-6gB"/>
+                            <constraint firstItem="9dX-kS-VaR" firstAttribute="leading" secondItem="0cL-bL-Twe" secondAttribute="leading" constant="80" id="Ea5-mR-jjP"/>
+                            <constraint firstItem="0cL-bL-Twe" firstAttribute="trailing" secondItem="9dX-kS-VaR" secondAttribute="trailing" constant="80" id="px2-L6-6gB"/>
                             <constraint firstItem="9dX-kS-VaR" firstAttribute="centerY" secondItem="0cL-bL-Twe" secondAttribute="centerY" id="sF8-rN-gCC"/>
                         </constraints>
                     </view>
@@ -777,7 +777,7 @@
         <image name="InfoGray" width="50" height="50"/>
         <image name="RightChevrone" width="50" height="50"/>
         <image name="RightChevroneFill" width="50" height="50"/>
-        <image name="launch" width="800" height="300"/>
+        <image name="launch" width="470" height="183"/>
         <image name="logo" width="409" height="140"/>
         <image name="n-gear-lighter" width="89" height="96"/>
     </resources>
