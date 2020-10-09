@@ -74,14 +74,18 @@ extension RecordsViewController {
         tableView.reloadData()
         playTrashSound()
     }
-    /// Удаление одной ячейки по свайпу влево
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            Game.shared.deleteOneRecord(index: indexPath.row)
-            tableView.reloadData()
-            playTrashSound()
-        }
-    }
+    
+	/// Обработка свайпа ячейки влево (удаление)
+	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+		let reportAction = UIContextualAction(style: .normal, title: "Delete") { (action, view, completion) in
+			Game.shared.deleteOneRecord(index: indexPath.row)
+			tableView.reloadData()
+			self.playTrashSound()
+			completion(true)
+		}
+		reportAction.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2371389396, blue: 0.1065657165, alpha: 0.5)
+		return UISwipeActionsConfiguration(actions: [reportAction])
+	}
 }
 
 
@@ -98,38 +102,10 @@ extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     /// Настройка ячейки
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecordCell", for: indexPath) as? RecordCell
-            else { return UITableViewCell() }
-        
-        let record = Game.shared.records[indexPath.row]
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        cell.percentOfCorrect.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        
-        if record.playedNum! < record.totalQuestion! {
-            cell.colorBackground.backgroundColor = #colorLiteral(red: 0.8938786387, green: 0.8978905678, blue: 0.9102204442, alpha: 1)
-            cell.percentOfCorrect.textColor = #colorLiteral(red: 0.2377000451, green: 0.2814793885, blue: 0.335570693, alpha: 1)
-        } else if record.percentOfCorrectAnswer! < 30 {
-            cell.colorBackground.backgroundColor = #colorLiteral(red: 0.9865071177, green: 0.3565812409, blue: 0.2555966675, alpha: 1)
-        } else if record.percentOfCorrectAnswer! < 70 {
-            cell.colorBackground.backgroundColor = #colorLiteral(red: 1, green: 0.8070752121, blue: 0.1738902499, alpha: 1)
-        } else {
-            cell.colorBackground.backgroundColor = #colorLiteral(red: 0.1451225281, green: 0.7943774462, blue: 0.4165494442, alpha: 1)
-        }
-        
-        if record.percentOfCorrectAnswer! < 99 {
-            cell.percentOfCorrect.text = "\(record.percentOfCorrectAnswer ?? 0)%"
-        } else {
-            cell.percentOfCorrect.text = "100%"
-        }
-        
-        cell.helpCounterLabel.text = "Hints: \(record.helpCounter ?? 0)"
-        cell.topicLabel.text = "\(record.topic ?? "")"
-        cell.dateLabel.text = "Date: \(dateFormatter.string(from: record.date ?? Date()))"
-        cell.totalQuestionLabel.text = "Questions: \(record.playedNum ?? 0) / \(record.totalQuestion ?? 0)"
-        cell.scoreLabel.text = "Score: \(record.score ?? 0)"
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecordCell", for: indexPath) as? RecordCell else {
+			return UITableViewCell()
+		}
+		cell.currentIndex = indexPath.row
         return cell
     }
     

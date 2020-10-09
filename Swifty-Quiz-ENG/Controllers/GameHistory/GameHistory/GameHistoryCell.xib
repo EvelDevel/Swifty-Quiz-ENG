@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameHistoryCell" rowHeight="351" id="KGk-i7-Jjw" customClass="GameHistoryCell" customModule="Swifty_Quiz" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameHistoryCell" rowHeight="385" id="KGk-i7-Jjw" customClass="GameHistoryCell" customModule="Swifty_Quiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-nz-QSa" userLabel="Color identificator">
@@ -40,14 +42,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-B8-Oan" userLabel="GraySeparator">
-                        <rect key="frame" x="90" y="350" width="214" height="1"/>
+                        <rect key="frame" x="90" y="384" width="214" height="1"/>
                         <color key="backgroundColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.29548373290000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="PBO-LD-YzF"/>
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8Jk-ps-7p4">
-                        <rect key="frame" x="90" y="19" width="210" height="307"/>
+                        <rect key="frame" x="90" y="19" width="210" height="341"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbf-DP-hla" userLabel="QuestionView">
                                 <rect key="frame" x="0.0" y="0.0" width="210" height="200"/>
@@ -61,7 +63,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="aRV-os-3c6" firstAttribute="leading" secondItem="Sbf-DP-hla" secondAttribute="leading" id="4ha-Iw-gLq"/>
                                     <constraint firstItem="aRV-os-3c6" firstAttribute="top" secondItem="Sbf-DP-hla" secondAttribute="top" id="QaI-aZ-v28"/>
@@ -76,14 +78,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="751" text="Текст вопроса " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-FD-6vG">
-                                <rect key="frame" x="0.0" y="212" width="210" height="44"/>
+                                <rect key="frame" x="0.0" y="212" width="210" height="25"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DHw-Gt-iwd">
-                                <rect key="frame" x="0.0" y="268" width="210" height="39"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DHw-Gt-iwd">
+                                <rect key="frame" x="0.0" y="249" width="210" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" text="Правильный ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-JJ-S7x">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="18"/>
@@ -92,13 +94,31 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Ваш ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-GA-g4v">
-                                        <rect key="frame" x="0.0" y="21" width="210" height="18"/>
+                                        <rect key="frame" x="0.0" y="22" width="210" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtZ-4l-j64" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="301" width="210" height="40"/>
+                                <color key="backgroundColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eLE-W9-fsO"/>
+                                </constraints>
+                                <state key="normal" title="Show hint">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showHintTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3ny-rB-GPf"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </stackView>
                 </subviews>
@@ -115,11 +135,11 @@
                     <constraint firstItem="ird-p1-UMY" firstAttribute="centerY" secondItem="OBZ-nz-QSa" secondAttribute="centerY" id="moX-ir-Ux8"/>
                 </constraints>
             </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <constraints>
                 <constraint firstItem="OBZ-nz-QSa" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="16" id="Ct4-dC-0G3"/>
                 <constraint firstItem="OBZ-nz-QSa" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="20" id="UNh-9w-0Fk"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="colorBack" destination="OBZ-nz-QSa" id="6Ym-W9-iY2"/>
                 <outlet property="correctAnswer" destination="Vdx-JJ-S7x" id="Ovl-4x-u9Q"/>
@@ -128,10 +148,21 @@
                 <outlet property="questionNumber" destination="ird-p1-UMY" id="Bda-6X-pv5"/>
                 <outlet property="questionText" destination="oFg-FD-6vG" id="KHR-u7-QpT"/>
                 <outlet property="separatorHeight" destination="PBO-LD-YzF" id="jeG-O9-SXS"/>
+                <outlet property="showHintButton" destination="OtZ-4l-j64" id="rNB-i5-Jtf"/>
                 <outlet property="stackTopMargin" destination="QvP-eV-e8E" id="ZHi-bt-W3n"/>
                 <outlet property="userAnswer" destination="xEp-GA-g4v" id="fF2-gG-qya"/>
             </connections>
-            <point key="canvasLocation" x="140.57971014492756" y="243.41517857142856"/>
+            <point key="canvasLocation" x="140.57971014492756" y="254.12946428571428"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="OtZ-4l-j64">
+            <size key="intrinsicContentSize" width="68" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

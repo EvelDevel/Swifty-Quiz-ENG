@@ -181,7 +181,8 @@ extension GameViewController {
                                                correctAnswer: localQuestionSet[currentQuestionIndex].optionA,
                                                userAnswer: buttonsView.showFinalButtonsSet()[sender.tag - 1],
                                                questionId: localQuestionSet[currentQuestionIndex].questionId,
-                                               image: localQuestionSet[currentQuestionIndex].image))
+                                               image: localQuestionSet[currentQuestionIndex].image,
+											   helpText: localQuestionSet[currentQuestionIndex].helpText))
             }
             
             /// Далее работа непосредственно внутри контроллера
@@ -357,7 +358,8 @@ extension GameViewController {
                                                correctAnswer: localQuestionSet[currentQuestionIndex].optionA,
                                                userAnswer: "Hint",
                                                questionId: localQuestionSet[currentQuestionIndex].questionId,
-                                               image: localQuestionSet[currentQuestionIndex].image))
+                                               image: localQuestionSet[currentQuestionIndex].image,
+											   helpText: localQuestionSet[currentQuestionIndex].helpText))
             }
             helpCounterLabel.text = "\(helpCounter)"
             weDidTakeHelp = true

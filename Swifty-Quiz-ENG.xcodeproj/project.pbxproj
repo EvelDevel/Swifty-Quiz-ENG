@@ -67,6 +67,7 @@
 		FB92A5A32507E90F00612F4B /* rightAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB92A5A12507E90F00612F4B /* rightAnswer.mp3 */; };
 		FB92A5A42507E90F00612F4B /* fullAccess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB92A5A22507E90F00612F4B /* fullAccess.mp3 */; };
 		FB92A5A62507EBAA00612F4B /* InAppStatuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92A5A52507EBAA00612F4B /* InAppStatuses.swift */; };
+		FB941CFD2530145C00ABF3CF /* HistoryHintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB941CFC2530145C00ABF3CF /* HistoryHintController.swift */; };
 		FB954D4A246E5BD0000C952E /* StringAndCharactersSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB954D49246E5BD0000C952E /* StringAndCharactersSet.swift */; };
 		FB966289246E6D8C000B82B9 /* AccessControlSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966288246E6D8C000B82B9 /* AccessControlSet.swift */; };
 		FB96628B246E6D9B000B82B9 /* MemorySafetySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96628A246E6D9B000B82B9 /* MemorySafetySet.swift */; };
@@ -165,6 +166,7 @@
 		FB92A5A12507E90F00612F4B /* rightAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rightAnswer.mp3; sourceTree = "<group>"; };
 		FB92A5A22507E90F00612F4B /* fullAccess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fullAccess.mp3; sourceTree = "<group>"; };
 		FB92A5A52507EBAA00612F4B /* InAppStatuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppStatuses.swift; sourceTree = "<group>"; };
+		FB941CFC2530145C00ABF3CF /* HistoryHintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHintController.swift; sourceTree = "<group>"; };
 		FB954D49246E5BD0000C952E /* StringAndCharactersSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndCharactersSet.swift; sourceTree = "<group>"; };
 		FB966288246E6D8C000B82B9 /* AccessControlSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessControlSet.swift; sourceTree = "<group>"; };
 		FB96628A246E6D9B000B82B9 /* MemorySafetySet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySafetySet.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 			children = (
 				FB6624E424E014FA008C9CE5 /* GameHistoryViewController.swift */,
 				FB6624E724E0202C008C9CE5 /* GameHistoryCell.swift */,
+				FB941CFC2530145C00ABF3CF /* HistoryHintController.swift */,
 				FB6624E824E0202C008C9CE5 /* GameHistoryCell.xib */,
 			);
 			path = GameHistory;
@@ -680,6 +683,7 @@
 				FB86ACA22469A3F8002BA8B3 /* FunctionsSet.swift in Sources */,
 				FB7B13E124AA020400CB11C6 /* GameHelper.swift in Sources */,
 				FB6624E924E0202C008C9CE5 /* GameHistoryCell.swift in Sources */,
+				FB941CFD2530145C00ABF3CF /* HistoryHintController.swift in Sources */,
 				FBECDC60243F352D00BD5583 /* TopicOperator.swift in Sources */,
 				FBC1D4842474EE020055FF62 /* AnswerButtonsView.swift in Sources */,
 				FBDECD842484D073004695FB /* RoundCornerButton.swift in Sources */,

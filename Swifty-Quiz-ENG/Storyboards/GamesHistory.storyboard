@@ -199,6 +199,104 @@
             </objects>
             <point key="canvasLocation" x="926" y="1067"/>
         </scene>
+        <!--History Hint Controller-->
+        <scene sceneID="mKd-sr-wim">
+            <objects>
+                <viewController storyboardIdentifier="HistoryHintController" modalPresentationStyle="overCurrentContext" id="jlI-sH-Aog" customClass="HistoryHintController" customModule="Swifty_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4d-ls-g8M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDX-yM-YCR">
+                                <rect key="frame" x="16" y="398.5" width="343" height="54"/>
+                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="JTp-NN-1Q0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <state key="normal" title="Back to history">
+                                    <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToHistoryTapped:" destination="jlI-sH-Aog" eventType="touchUpInside" id="ffa-V4-02I"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="046-hd-3Rx">
+                                <rect key="frame" x="16" y="233.5" width="343" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEx-iE-hCc">
+                                        <rect key="frame" x="20" y="62" width="303" height="68"/>
+                                        <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.2361087473" green="0.27885135449999998" blue="0.33557069299999998" alpha="0.7010648545" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yle-GJ-Aek">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="57h-59-qy2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-aU-MqV" userLabel="Separator">
+                                        <rect key="frame" x="25" y="48" width="293" height="1"/>
+                                        <color key="backgroundColor" red="0.2361087473" green="0.27885135449999998" blue="0.33557069299999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="2Ar-vV-Wbq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pEx-iE-hCc" secondAttribute="bottom" constant="20" id="AsP-bP-rKP"/>
+                                    <constraint firstItem="Yle-GJ-Aek" firstAttribute="leading" secondItem="046-hd-3Rx" secondAttribute="leading" id="CgJ-SE-O5H"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yle-GJ-Aek" secondAttribute="trailing" id="G7c-ox-CXD"/>
+                                    <constraint firstItem="Yle-GJ-Aek" firstAttribute="top" secondItem="046-hd-3Rx" secondAttribute="top" id="Gmq-Og-Xlp"/>
+                                    <constraint firstItem="Dyf-aU-MqV" firstAttribute="leading" secondItem="046-hd-3Rx" secondAttribute="leading" constant="25" id="K3W-NH-5Lt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="O21-Gk-Vd1"/>
+                                    <constraint firstItem="Dyf-aU-MqV" firstAttribute="top" secondItem="046-hd-3Rx" secondAttribute="top" constant="48" id="aHr-Lh-zSz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dyf-aU-MqV" secondAttribute="trailing" constant="25" id="bdV-Qg-BoE"/>
+                                    <constraint firstItem="pEx-iE-hCc" firstAttribute="leading" secondItem="046-hd-3Rx" secondAttribute="leading" constant="20" id="pC9-Gi-AcM"/>
+                                    <constraint firstItem="pEx-iE-hCc" firstAttribute="top" secondItem="046-hd-3Rx" secondAttribute="top" constant="62" id="tLy-ze-d2k"/>
+                                    <constraint firstAttribute="trailing" secondItem="pEx-iE-hCc" secondAttribute="trailing" constant="20" id="yxk-vv-1yA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bD3-zn-gwT"/>
+                        <color key="backgroundColor" red="0.80845015539999998" green="0.81129181230000003" blue="0.81981678300000005" alpha="0.90084546229999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="046-hd-3Rx" firstAttribute="centerY" secondItem="bD3-zn-gwT" secondAttribute="centerY" constant="-25" id="4DE-gf-y9Y"/>
+                            <constraint firstItem="bD3-zn-gwT" firstAttribute="trailing" secondItem="kDX-yM-YCR" secondAttribute="trailing" constant="16" id="507-Sf-spJ"/>
+                            <constraint firstItem="kDX-yM-YCR" firstAttribute="top" secondItem="046-hd-3Rx" secondAttribute="bottom" constant="15" id="InL-5p-mbY"/>
+                            <constraint firstItem="046-hd-3Rx" firstAttribute="leading" secondItem="bD3-zn-gwT" secondAttribute="leading" constant="16" id="Sf7-RW-1jm"/>
+                            <constraint firstItem="bD3-zn-gwT" firstAttribute="trailing" secondItem="046-hd-3Rx" secondAttribute="trailing" constant="16" id="iUT-Ql-VO4"/>
+                            <constraint firstItem="kDX-yM-YCR" firstAttribute="leading" secondItem="bD3-zn-gwT" secondAttribute="leading" constant="16" id="x7j-fF-OCO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="a2y-ik-zJg"/>
+                    <connections>
+                        <outlet property="backButton" destination="kDX-yM-YCR" id="QdL-fU-cfd"/>
+                        <outlet property="hintBG" destination="046-hd-3Rx" id="ZnK-PH-4wE"/>
+                        <outlet property="hintTextLabel" destination="pEx-iE-hCc" id="Obo-aR-BAE"/>
+                        <outlet property="separatorHeight" destination="2Ar-vV-Wbq" id="UcP-du-KTg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnh-rp-KPG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="1067"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ChevroneBigBlue" width="50" height="50"/>
