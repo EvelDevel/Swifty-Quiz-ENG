@@ -105,7 +105,7 @@ extension RecordsViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecordCell", for: indexPath) as? RecordCell else {
 			return UITableViewCell()
 		}
-		cell.currentIndex = indexPath.row
+		cell.cellIndex = indexPath.row
         return cell
     }
     

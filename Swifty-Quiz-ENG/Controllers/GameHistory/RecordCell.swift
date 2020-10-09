@@ -20,9 +20,9 @@ class RecordCell: UITableViewCell {
         graySeparatorHeight.constant = 1.0 / UIScreen.main.scale
     }
 	
-	var currentIndex: Int = 0 {
+	var cellIndex: Int = 0 {
 		didSet {
-			let record = Game.shared.records[currentIndex]
+			let record = Game.shared.records[cellIndex]
 			let dateFormatter = DateFormatter()
 			dateFormatter.dateStyle = .short
 			percentOfCorrect.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

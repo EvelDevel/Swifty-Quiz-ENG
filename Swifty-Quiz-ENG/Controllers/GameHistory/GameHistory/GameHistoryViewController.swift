@@ -53,7 +53,7 @@ extension GameHistoryViewController: UITableViewDelegate, UITableViewDataSource 
 		cell.history = history
 		cell.tableView = tableView
 		cell.width = tableView.frame.size.width
-		cell.currentIndex = indexPath.row
+		cell.cellIndex = indexPath.row
         return cell
     }
     
