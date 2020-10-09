@@ -112,6 +112,11 @@ class RandomSetManager {
 			shuffled = patterns.isEmpty ? setAndGetPatternsQuestions().shuffled() : patterns.shuffled()
 		case .demo:
 			shuffled = demo.isEmpty ? setAndGetDemoQuestions().shuffled() : demo.shuffled()
+			for i in shuffled {
+				print("---")
+				print(i)
+			}
+			print(shuffled.count)
 		}
 		
 		for index in 0..<limit {
