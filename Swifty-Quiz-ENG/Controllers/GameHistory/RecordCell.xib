@@ -92,7 +92,7 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dio-AF-jQx" userLabel="GraySeparator">
                         <rect key="frame" x="90" y="83" width="259" height="1"/>
-                        <color key="backgroundColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.29548373287671231" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.58131741751269028" green="0.58131741751269028" blue="0.58131741751269028" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="RnF-8s-UcM"/>
                         </constraints>
