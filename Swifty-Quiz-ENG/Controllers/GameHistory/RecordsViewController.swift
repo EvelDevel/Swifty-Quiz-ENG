@@ -6,6 +6,7 @@ import UIKit
 
 protocol RecordsViewControllerDelegate: class {
     func updateInitialView()
+	func refreshLastGameInfo()
 }
 
 class RecordsViewController: UIViewController {
@@ -27,6 +28,7 @@ class RecordsViewController: UIViewController {
 	/// Call delegates
     override func viewDidDisappear(_ animated: Bool) {
         delegate?.updateInitialView()
+		delegate?.refreshLastGameInfo()
     }
 	
 	/// > 13.0 iOS Navigation settings
@@ -81,7 +83,14 @@ extension RecordsViewController {
 			Game.shared.deleteOneRecord(index: indexPath.row)
 			tableView.reloadData()
 			self.playTrashSound()
-			completion(true)
+			
+			/// Если удалили последний рекорд - убираем продолжение (предпоследней игре)
+			/// Если убрать эту часть - можно будет продолжать любую не оконченную игру из истории (если она последняя)
+			/// То есть если мы удаляем все игры до этой игры - ее можно будет доиграть
+			/// Если захочется сделать возможность доигрывать все игры незавершенные (после удаления предыдущей сверху) - закомментировать
+			if indexPath.row == 0 {
+				Game.shared.changeContinueStatus()
+			}
 		}
 		reportAction.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2371389396, blue: 0.1065657165, alpha: 0.5)
 		return UISwipeActionsConfiguration(actions: [reportAction])

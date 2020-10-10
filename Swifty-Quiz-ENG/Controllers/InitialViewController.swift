@@ -4,21 +4,9 @@
 
 import UIKit
 
-// MARK: TODO - Баги и доработки
-/// Добавить в источники википедию
-/// Проверить подсказки в настройках, чтобы они коррелировали с новой политикой, что подсказки не обнуляют игру (уточнить что рандомайзиться вопросы будут только на новую игру а не на продолжение). 
-
-/// Добавить накопление неправильных ответов в базу "неправильных", по которым отдельно можно играть (можно выбрать в выборе тем)
-/// Появляется эта категория только после игр с неправильными ответами, как и когда должна рефрешиться?
-
-/// Добавить логгер на ин-апп
-/// Социальные фичи (поделиться результатом)
-
-/// Сделать настройку "вибрации" и добавить небольшие виброотклики на нажатия клавиш
-/// Вынести настройку звук и вибрация в небольшие выключатели "он / оф" вверху настроек"
-
 class InitialViewController: UIViewController {
 
+	@IBOutlet weak var lastGameTitle: UILabel!
 	@IBOutlet weak var logoHeight: NSLayoutConstraint!
 	@IBOutlet weak var logoWidth: NSLayoutConstraint!
 	@IBOutlet weak var logoVerticalPosition: NSLayoutConstraint!
@@ -39,8 +27,12 @@ class InitialViewController: UIViewController {
 	@IBOutlet var initialWhiteViews: [UIView]!
 	@IBOutlet var initialButtons: [UIButton]!
 
-	@IBAction func goToAbout(_ sender: Any) { SoundPlayer.shared.playSound(sound: .menuMainButton) }
-	@IBAction func tapButtonSounds(_ sender: Any) { SoundPlayer.shared.playSound(sound: .menuMainButton) }
+	@IBAction func goToAbout(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+	}
+	@IBAction func tapButtonSounds(_ sender: Any) {
+		SoundPlayer.shared.playSound(sound: .menuMainButton)
+	}
 
 	private let currentAppVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
 	private let shadows = ShadowsHelper()
@@ -52,6 +44,10 @@ class InitialViewController: UIViewController {
 		setUpInitialInformation()
 		setUpUserInterface()
 	}
+	
+	override func viewWillLayoutSubviews() {
+		updateLastGameLabel()
+	}
 }
 
 
@@ -59,16 +55,14 @@ class InitialViewController: UIViewController {
 extension InitialViewController {
 
 	func setUpInitialInformation() {
-		setUpStartQuestionSet()
-		setUpLastGameInfo()
+		setStartQuestionSet()
+		updateLastGameInfo()
 		showTotalQuestions()
 	}
 
 	/// Загружаем дефолтный сет
-	func setUpStartQuestionSet() {
-		if SelectedTopic.shared.topic.questionSet.isEmpty
-			|| Game.shared.settings.appLastVersion != currentAppVersion {
-
+	func setStartQuestionSet() {
+		if SelectedTopic.shared.topic.questionSet.isEmpty || Game.shared.settings.appLastVersion != currentAppVersion {
 			var newSet: [Question] = []
 
 			if Game.shared.wePurchasedFullAccess() {
@@ -76,18 +70,16 @@ extension InitialViewController {
 			} else {
 				newSet = TopicOperator.getQuestionsDemoTheBasics()
 			}
-
 			SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
 			selectedTopic.text = "The Basics"
 			Game.shared.changeContinueStatus()
-
 		} else {
 			selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)"
 		}
 	}
 
 	/// Устанавливаем информацию о последней игре
-	func setUpLastGameInfo() {
+	func updateLastGameInfo() {
 		let records: [Record] = recordCaretaker.getRecordsList()
 		if records.count != 0 {
 			let category = records.first?.topic ?? ""
@@ -99,6 +91,10 @@ extension InitialViewController {
 			lastTopic.text = "Category: \(category)"
 			totalQuestions.text = "Questions: \(played) out of \(total) (hints: \(help))"
 			lastScore.text = "Correct answers: \(correct) (\(roundedPercents)%)"
+		} else {
+			lastTopic.text = "Category: "
+			totalQuestions.text = "Questions: "
+			lastScore.text = "Correct answers: "
 		}
 	}
 
@@ -127,14 +123,23 @@ extension InitialViewController {
 	/// Показываем или скрываем кнопку "продолжить"
 	func updateContinueButton() {
 		if Game.shared.records.count != 0 && Game.shared.records[0].continueGameStatus == true {
-			UIView.animate(withDuration: 0.12, animations: {
-				if self.continueGameButton.isHidden == true { SoundPlayer.shared.playSound(sound: .showContinueButton) }
-				self.contentCenter.constant = (UIScreen.main.scale / 2) + 22.5
-				self.continueGameButton.isHidden = false })
+			if self.continueGameButton.isHidden == true { SoundPlayer.shared.playSound(sound: .showContinueButton) }
+			self.contentCenter.constant = (UIScreen.main.scale / 2) + 22.5
+			self.continueGameButton.isHidden = false
 		} else {
 			if self.continueGameButton.isHidden == false { SoundPlayer.shared.playSound(sound: .hideContinueButton) }
 			self.contentCenter.constant = (UIScreen.main.scale / 2) - 10.5
 			self.continueGameButton.isHidden = true
+		}
+	}
+	
+	/// Показываем корректный заголовок последней игры
+	func updateLastGameLabel() {
+		lastGameTitle.text = "Your previous game: "
+		if Game.shared.records.count != 0 {
+			if Game.shared.records.first?.continueGameStatus ?? false {
+				lastGameTitle.text = "Your current game: "
+			}
 		}
 	}
 
@@ -191,7 +196,7 @@ extension InitialViewController {
 
 
 // MARK: Выполнение функций делегата
-extension InitialViewController: 	GameViewControllerDelegate,
+extension InitialViewController: 	GameViewControllerDelegate, 
 									TopicViewControllerDelegate,
 									RecordsViewControllerDelegate,
 									SettingsViewControllerDelegate {
@@ -207,8 +212,13 @@ extension InitialViewController: 	GameViewControllerDelegate,
 	}
 	func selectedCategory() {
 		selectedTopic.text = "\(SelectedTopic.shared.topic.topicName)"
+		updateLastGameLabel()
 	}
 	func refreshTotalNumberOfQuestion() {
 		showTotalQuestions()
+	}
+	func refreshLastGameInfo() {
+		updateLastGameInfo()
+		updateLastGameLabel()
 	}
 }

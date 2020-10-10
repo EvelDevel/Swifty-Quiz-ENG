@@ -101,7 +101,7 @@ extension GameViewController {
     /// Установка значений при продолжении
     func setUpValuesIfWeContinue() {
         if Game.shared.records.count != 0 {
-            if weContinueLastGame == true {
+            if weContinueLastGame {
                 self.localQuestionSet = SelectedTopic.shared.topic.continueQuestionSet
                 self.currentQuestionNumber = Game.shared.records[0].playedNum! + 1
                 self.weDidTakeHelp = Game.shared.records[0].helpFlag!
