@@ -10,11 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="RecordCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RecordCell" rowHeight="84" id="KGk-i7-Jjw" customClass="RecordCell" customModule="Swifty_Quiz" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="380" height="84"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="RecordCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RecordCell" rowHeight="86" id="KGk-i7-Jjw" customClass="RecordCell" customModule="Swifty_Quiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="349" height="84"/>
+                <rect key="frame" x="0.0" y="0.0" width="349" height="86"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-de-6E7">
@@ -91,7 +91,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dio-AF-jQx" userLabel="GraySeparator">
-                        <rect key="frame" x="90" y="83" width="259" height="1"/>
+                        <rect key="frame" x="90" y="85" width="259" height="1"/>
                         <color key="backgroundColor" red="0.58131741751269028" green="0.58131741751269028" blue="0.58131741751269028" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="RnF-8s-UcM"/>
@@ -103,7 +103,7 @@
                     <constraint firstItem="YS0-bb-Hxu" firstAttribute="top" secondItem="FcE-xq-s4t" secondAttribute="bottom" constant="4" id="ACW-ze-PKu"/>
                     <constraint firstItem="0rP-Ie-Ogi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="95" id="BwF-pu-olj"/>
                     <constraint firstAttribute="trailing" secondItem="dio-AF-jQx" secondAttribute="trailing" id="Ff9-5C-T0Q"/>
-                    <constraint firstItem="dio-AF-jQx" firstAttribute="top" secondItem="0rP-Ie-Ogi" secondAttribute="bottom" constant="13" id="K3R-Om-Ank"/>
+                    <constraint firstItem="dio-AF-jQx" firstAttribute="top" secondItem="0rP-Ie-Ogi" secondAttribute="bottom" constant="15" id="K3R-Om-Ank"/>
                     <constraint firstItem="dio-AF-jQx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="OP8-GU-sHw"/>
                     <constraint firstItem="GBc-rt-n09" firstAttribute="leading" secondItem="0rP-Ie-Ogi" secondAttribute="trailing" constant="5" id="RL9-eX-nYY"/>
                     <constraint firstItem="FcE-xq-s4t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="SEo-j3-NUq"/>
@@ -131,7 +131,7 @@
                 <outlet property="topicLabel" destination="FcE-xq-s4t" id="FK5-au-iGZ"/>
                 <outlet property="totalQuestionLabel" destination="0rP-Ie-Ogi" id="u5b-Q3-aBj"/>
             </connections>
-            <point key="canvasLocation" x="184.05797101449278" y="89.0625"/>
+            <point key="canvasLocation" x="184.05797101449278" y="89.732142857142847"/>
         </tableViewCell>
     </objects>
 </document>

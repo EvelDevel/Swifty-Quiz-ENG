@@ -162,40 +162,47 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 	}
 	
 	func purchased(_ transaction: SKPaymentTransaction) {
-		print("Purchased")
 		SKPaymentQueue.default().finishTransaction(transaction)
-		print("Finish transaction")
 		statusLabel.text = InAppStatuses.success.rawValue
 		SoundPlayer.shared.playSound(sound: .fullAccess)
 		Game.shared.openFullAccess()
+		Game.shared.changeContinueStatus()
+		
+		print("Finish transaction")
+		print("Purchased")
 		print("Open full access")
 	}
 	
 	func restored(_ transaction: SKPaymentTransaction) {
-		print("Restored")
 		SKPaymentQueue.default().finishTransaction(transaction)
-		print("Finish transaction")
 		Game.shared.openFullAccess()
-		print("Open full access")
+		Game.shared.changeContinueStatus()
 		SoundPlayer.shared.playSound(sound: .fullAccess)
 		statusLabel.text = InAppStatuses.restore.rawValue
+		
+		print("Restored")
+		print("Finish transaction")
+		print("Open full access")
 	}
 	
 	func failed(_ transaction: SKPaymentTransaction) {
-		print("Transaction Failed")
 		SKPaymentQueue.default().finishTransaction(transaction)
+		
 		print("Finish transaction")
+		print("Transaction Failed")
 	}
 	
 	func deferred(_ transaction: SKPaymentTransaction) {
-		print("Transaction Deferred")
 		SKPaymentQueue.default().finishTransaction(transaction)
+		
+		print("Transaction Deferred")
 		print("Finish transaction")
 	}
 	
 	func defaultCase(_ transaction: SKPaymentTransaction) {
-		print("Default Case")
 		SKPaymentQueue.default().finishTransaction(transaction)
+		
+		print("Default Case")
 		print("Finish transaction")
 	}
 }
