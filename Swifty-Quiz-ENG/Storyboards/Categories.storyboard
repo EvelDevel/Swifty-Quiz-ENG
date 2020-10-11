@@ -80,9 +80,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4W-VM-oxL">
-                                <rect key="frame" x="105.5" y="353" width="109" height="18"/>
+                                <rect key="frame" x="105.5" y="355" width="109" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <color key="textColor" red="0.21772362810000001" green="0.56964118730000002" blue="0.75777202070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzL-U1-g5A">
@@ -101,8 +101,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP8-AL-fTy">
-                                <rect key="frame" x="16" y="506" width="288" height="32"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                <rect key="frame" x="16" y="508" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <state key="normal" title="Privacy Policy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -127,7 +127,7 @@
                             <constraint firstItem="DrA-zp-arr" firstAttribute="leading" secondItem="i1W-eV-8zj" secondAttribute="leading" constant="16" id="VRh-ZO-3bW"/>
                             <constraint firstItem="gzL-U1-g5A" firstAttribute="leading" secondItem="i1W-eV-8zj" secondAttribute="leading" id="ahC-vg-Tcj"/>
                             <constraint firstItem="kgu-gY-gKw" firstAttribute="top" secondItem="kFL-dZ-RSH" secondAttribute="bottom" constant="8" id="awv-at-Z2k"/>
-                            <constraint firstItem="kFL-dZ-RSH" firstAttribute="top" secondItem="p4W-VM-oxL" secondAttribute="bottom" constant="15" id="bxZ-IG-wSK"/>
+                            <constraint firstItem="qP8-AL-fTy" firstAttribute="top" secondItem="p4W-VM-oxL" secondAttribute="bottom" constant="135" id="cXi-CS-PJn"/>
                             <constraint firstItem="DrA-zp-arr" firstAttribute="top" secondItem="NZX-jg-g5F" secondAttribute="bottom" constant="5" id="emQ-QD-wxQ"/>
                             <constraint firstItem="i1W-eV-8zj" firstAttribute="trailing" secondItem="qP8-AL-fTy" secondAttribute="trailing" constant="16" id="hHx-kZ-v4B"/>
                             <constraint firstItem="kgu-gY-gKw" firstAttribute="leading" secondItem="i1W-eV-8zj" secondAttribute="leading" constant="16" id="v5q-YO-dzG"/>
@@ -140,11 +140,12 @@
                         <outlet property="IapMainTextLabel" destination="UN2-r8-tYI" id="hN1-hh-hpA"/>
                         <outlet property="IapSupportLabel" destination="7W1-pN-P4v" id="liU-cM-feN"/>
                         <outlet property="backButton" destination="gzL-U1-g5A" id="rTt-Wk-URW"/>
-                        <outlet property="buyButtonLabel" destination="kFL-dZ-RSH" id="hqI-Kg-uJX"/>
+                        <outlet property="buyButton" destination="kFL-dZ-RSH" id="hqI-Kg-uJX"/>
                         <outlet property="getYourFullAccessHeight" destination="r7s-CQ-wGi" id="NBV-NJ-e8J"/>
                         <outlet property="labelsLeadingSpace" destination="CiN-Pz-izn" id="LfL-DT-ET7"/>
                         <outlet property="labelsTrailingSpace" destination="VRh-ZO-3bW" id="h0c-BJ-WAz"/>
-                        <outlet property="restoreButtonLabel" destination="kgu-gY-gKw" id="TET-bJ-8xg"/>
+                        <outlet property="purchaseStatusBottomMargin" destination="cXi-CS-PJn" id="l6H-WF-gHy"/>
+                        <outlet property="restoreButton" destination="kgu-gY-gKw" id="TET-bJ-8xg"/>
                         <outlet property="statusLabel" destination="p4W-VM-oxL" id="6rO-8r-PD4"/>
                         <outlet property="textTopMargin" destination="emQ-QD-wxQ" id="iXG-EV-tvP"/>
                         <outlet property="topMargin" destination="wEg-vV-0Hz" id="9wf-am-7Vp"/>

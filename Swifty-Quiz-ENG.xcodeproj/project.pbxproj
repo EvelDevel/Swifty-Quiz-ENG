@@ -539,8 +539,8 @@
 			isa = PBXGroup;
 			children = (
 				FBE1437B24F26072004D8E85 /* Launch Screen.storyboard */,
-				FBC91D1524FBAC0000811A8B /* Categories.storyboard */,
 				FB2EAC99243EEE0F0098FAC3 /* Main.storyboard */,
+				FBC91D1524FBAC0000811A8B /* Categories.storyboard */,
 				FBC91D1B24FBAC3500811A8B /* About.storyboard */,
 				FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */,
 				FBC91D1924FBAC2600811A8B /* Settings.storyboard */,

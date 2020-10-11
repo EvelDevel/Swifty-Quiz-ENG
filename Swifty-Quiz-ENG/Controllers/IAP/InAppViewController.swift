@@ -11,11 +11,12 @@ protocol InAppViewControllerDelegate: class {
 
 class InAppViewController: UIViewController {
 	
+	@IBOutlet weak var purchaseStatusBottomMargin: NSLayoutConstraint!
 	@IBOutlet weak var backButton: UIButton!
 	@IBOutlet weak var IapSupportLabel: UILabel!
 	@IBOutlet weak var IapMainTextLabel: UILabel!
-	@IBOutlet weak var buyButtonLabel: UIButton!
-	@IBOutlet weak var restoreButtonLabel: RoundCornerButton!
+	@IBOutlet weak var buyButton: UIButton!
+	@IBOutlet weak var restoreButton: RoundCornerButton!
 	@IBOutlet weak var statusLabel: UILabel!
 	
 	@IBOutlet weak var getYourFullAccessHeight: NSLayoutConstraint!
@@ -33,7 +34,7 @@ class InAppViewController: UIViewController {
         super.viewDidLoad()
 		fetchProduct()
 		setTheInterfaceRight()
-		shadow.addBlackButtonShadows([buyButtonLabel, restoreButtonLabel])
+		shadow.addBlackButtonShadows([buyButton, restoreButton])
 		SKPaymentQueue.default().add(self)
 		print("Создали наблюдателя :: SKPaymentQueue.default().add(self)")
     }
@@ -68,8 +69,8 @@ class InAppViewController: UIViewController {
 		IapMainTextLabel.text = "Hello! I'm glad that you are using my app and considering purchasing the full access. It will unlock over \(RandomSetManager.showAllQuestionsNumber()) questions. I've been working on these questions, categorizing them, and gathering useful tips on each topic for more than half a year. I truly hope you will enjoy learning Swift in Swifty."
 
 		
-		buyButtonLabel.setTitle("Unlock for ...", for: .normal)
-		restoreButtonLabel.setTitle("Restore your previous purchase", for: .normal)
+		buyButton.setTitle("Unlock for ...", for: .normal)
+		restoreButton.setTitle("Restore your previous purchase", for: .normal)
 		statusLabel.text = InAppStatuses.didntPurchasedYet.rawValue
 		
 		adaptiveInterface.setUnlockPageInterface(view: view,
@@ -87,6 +88,13 @@ class InAppViewController: UIViewController {
 		UIApplication.shared.open(urlComponents.url!)
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 	}
+	
+	func showPurchaseAlert(title: String, message: String) {
+		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+		let close = UIAlertAction(title: "Ok", style: .default, handler: { action in })
+		alert.addAction(close)
+		present(alert, animated: true, completion: nil)
+	}
 }
 
 
@@ -101,11 +109,15 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 	}
 
 	@IBAction func restoreButtonTapped(_ sender: Any) {
-		// Открыть на симуляторе
-		// Game.shared.openFullAccess()
-		print("Restore button tapped")
-		SoundPlayer.shared.playSound(sound: .menuMainButton)
-		SKPaymentQueue.default().restoreCompletedTransactions()
+		if !Game.shared.wePurchasedFullAccess() {
+			// Открыть на симуляторе
+			// Game.shared.openFullAccess()
+			print("Restore button tapped")
+			SoundPlayer.shared.playSound(sound: .menuMainButton)
+			SKPaymentQueue.default().restoreCompletedTransactions()
+		} else {
+			dismiss(animated: true, completion: nil)
+		}
 	}
 	
 	@IBAction func buyButtonTapped(_ sender: Any) {
@@ -114,9 +126,9 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 			return
 		}
 		if SKPaymentQueue.canMakePayments() {
-			print("We can make payments")
 			let payment = SKPayment(product: myProduct)
 			SKPaymentQueue.default().add(payment)
+			print("We can make payments")
 			print("Add payment :: \(payment)")
 		} else {
 			statusLabel.text = InAppStatuses.cantBuy.rawValue
@@ -127,7 +139,7 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 		if let product = response.products.first {
 			myProduct = product
 			DispatchQueue.main.async {
-				self.buyButtonLabel.setTitle("Unlock for \(product.priceLocale.currencySymbol ?? "") \(product.price)", for: .normal)
+				self.buyButton.setTitle("Unlock for \(product.priceLocale.currencySymbol ?? "") \(product.price)", for: .normal)
 			}
 		}
 	}
@@ -168,6 +180,11 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 		Game.shared.openFullAccess()
 		Game.shared.changeContinueStatus()
 		
+		self.buyButton.isHidden = true
+		restoreButton.setTitle("Go to available categories", for: .normal)
+		purchaseStatusBottomMargin.constant = 75
+		showPurchaseAlert(title: "Purchased successfully", message: "Questions have been unlocked!")
+		
 		print("Finish transaction")
 		print("Purchased")
 		print("Open full access")
@@ -180,6 +197,11 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 		SoundPlayer.shared.playSound(sound: .fullAccess)
 		statusLabel.text = InAppStatuses.restore.rawValue
 		
+		self.buyButton.isHidden = true
+		restoreButton.setTitle("Go to available categories", for: .normal)
+		purchaseStatusBottomMargin.constant = 75
+		showPurchaseAlert(title: "Purchase restored successfully", message: "Questions have been unlocked!")
+		
 		print("Restored")
 		print("Finish transaction")
 		print("Open full access")
@@ -187,21 +209,18 @@ extension InAppViewController: SKProductsRequestDelegate, SKPaymentTransactionOb
 	
 	func failed(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		
 		print("Finish transaction")
 		print("Transaction Failed")
 	}
 	
 	func deferred(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		
 		print("Transaction Deferred")
 		print("Finish transaction")
 	}
 	
 	func defaultCase(_ transaction: SKPaymentTransaction) {
 		SKPaymentQueue.default().finishTransaction(transaction)
-		
 		print("Default Case")
 		print("Finish transaction")
 	}
