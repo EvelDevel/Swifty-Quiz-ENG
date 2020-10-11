@@ -11,14 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="466" id="KGk-i7-Jjw" customClass="SettingCell" customModule="Swifty_Quiz" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
+            <rect key="frame" x="0.0" y="0.0" width="368" height="466"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
+                <rect key="frame" x="0.0" y="0.0" width="368" height="466"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="D0I-Pl-Rlx">
-                        <rect key="frame" x="290" y="18.5" width="14" height="13"/>
+                        <rect key="frame" x="338" y="18.5" width="14" height="13"/>
                         <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="13" id="U9t-do-7Up"/>
@@ -26,7 +26,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l73-AV-Lm5" userLabel="questionOrder">
-                        <rect key="frame" x="20" y="15" width="284" height="20"/>
+                        <rect key="frame" x="20" y="15" width="332" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="ykh-Ft-eTC"/>
                         </constraints>
@@ -39,7 +39,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="i1T-ve-GQ7">
-                        <rect key="frame" x="16" y="43" width="288" height="36"/>
+                        <rect key="frame" x="16" y="43" width="336" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="CNU-mA-RBL"/>
@@ -55,7 +55,7 @@
                         </connections>
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="79n-yw-SUS">
-                        <rect key="frame" x="290" y="101.5" width="14" height="13"/>
+                        <rect key="frame" x="338" y="101.5" width="14" height="13"/>
                         <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="nOU-CL-n2g"/>
@@ -63,7 +63,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-wf-yoT" userLabel="questionText">
-                        <rect key="frame" x="20" y="98" width="284" height="20"/>
+                        <rect key="frame" x="20" y="98" width="332" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="3Os-Be-ijl"/>
                         </constraints>
@@ -76,7 +76,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kDo-Pf-RA7">
-                        <rect key="frame" x="16" y="126" width="288" height="36"/>
+                        <rect key="frame" x="16" y="126" width="336" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="1LL-b5-GCa"/>
@@ -92,7 +92,7 @@
                         </connections>
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="j3H-6m-y7Y">
-                        <rect key="frame" x="290" y="184.5" width="14" height="13"/>
+                        <rect key="frame" x="338" y="184.5" width="14" height="13"/>
                         <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="13" id="GCh-3f-xLp"/>
@@ -100,7 +100,7 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veB-j8-GhW" userLabel="questionText">
-                        <rect key="frame" x="20" y="181" width="284" height="20"/>
+                        <rect key="frame" x="20" y="181" width="332" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="eJC-p9-pDW"/>
                         </constraints>
@@ -113,7 +113,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-f5-f8C">
-                        <rect key="frame" x="16" y="209" width="288" height="36"/>
+                        <rect key="frame" x="16" y="209" width="336" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="Jco-0I-9EH"/>
@@ -129,7 +129,7 @@
                         </connections>
                     </segmentedControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoGray" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-Du-767">
-                        <rect key="frame" x="290" y="267.5" width="14" height="13"/>
+                        <rect key="frame" x="338" y="267.5" width="14" height="13"/>
                         <color key="tintColor" red="0.0" green="0.46574187280000001" blue="0.7108791471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="gxR-HD-P8r"/>
@@ -137,11 +137,11 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oll-D6-fdB" userLabel="questionText">
-                        <rect key="frame" x="20" y="264" width="280" height="20"/>
+                        <rect key="frame" x="20" y="264" width="328" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="YBo-XS-VMy"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                         <state key="normal" title="Skip to next question when hint used?">
                             <color key="titleColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="0.79791845029999997" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
@@ -150,7 +150,7 @@
                         </connections>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JRi-HG-15f">
-                        <rect key="frame" x="16" y="292" width="288" height="36"/>
+                        <rect key="frame" x="16" y="292" width="336" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="sUU-vw-YoR"/>
@@ -166,7 +166,7 @@
                         </connections>
                     </segmentedControl>
                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U53-eV-aMa" userLabel="questionText">
-                        <rect key="frame" x="20" y="347" width="280" height="20"/>
+                        <rect key="frame" x="20" y="347" width="328" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="sHa-pq-GVO"/>
                         </constraints>
@@ -176,7 +176,7 @@
                         </state>
                     </button>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Odq-rL-3kX">
-                        <rect key="frame" x="16" y="375" width="288" height="36"/>
+                        <rect key="frame" x="16" y="375" width="336" height="36"/>
                         <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="SfH-cK-HdZ"/>
@@ -253,8 +253,13 @@
                 <outletCollection property="allControls" destination="iWV-f5-f8C" collectionClass="NSMutableArray" id="Mao-u8-yWI"/>
                 <outletCollection property="allControls" destination="JRi-HG-15f" collectionClass="NSMutableArray" id="PTF-70-vHj"/>
                 <outletCollection property="allControls" destination="Odq-rL-3kX" collectionClass="NSMutableArray" id="xur-D8-ShZ"/>
+                <outletCollection property="titles" destination="U53-eV-aMa" collectionClass="NSMutableArray" id="a01-g3-LSv"/>
+                <outletCollection property="titles" destination="oll-D6-fdB" collectionClass="NSMutableArray" id="3HE-dw-g0T"/>
+                <outletCollection property="titles" destination="veB-j8-GhW" collectionClass="NSMutableArray" id="ara-Rs-oeI"/>
+                <outletCollection property="titles" destination="Bdm-wf-yoT" collectionClass="NSMutableArray" id="sEw-q9-dRq"/>
+                <outletCollection property="titles" destination="l73-AV-Lm5" collectionClass="NSMutableArray" id="vqQ-0T-gCB"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="228.34821428571428"/>
+            <point key="canvasLocation" x="172.46376811594203" y="228.34821428571428"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -10,7 +10,8 @@ protocol SettingCellDelegate: class {
 
 class SettingCell: UITableViewCell {
 
-    @IBOutlet weak var questionOrderControl: UISegmentedControl!
+	@IBOutlet var titles: [UIButton]!
+	@IBOutlet weak var questionOrderControl: UISegmentedControl!
     @IBOutlet weak var questionTextControl: UISegmentedControl!
     @IBOutlet weak var helpAfterWrongAnswerControl: UISegmentedControl!
     @IBOutlet weak var changeAfterHelpControl: UISegmentedControl!
@@ -25,6 +26,7 @@ class SettingCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setControlsTintColors()
+		adaptTitlesSize()
         addingTargets()
         settingsInitialValues()
     }
@@ -32,6 +34,15 @@ class SettingCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+	
+	func adaptTitlesSize() {
+		let width = UIScreen.main.bounds.size.width
+		if width <= 320 {
+			for title in titles {
+				title.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .light)
+			}
+		}
+	}
 }
 
 
