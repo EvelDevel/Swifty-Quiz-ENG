@@ -107,6 +107,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="eLE-W9-fsO"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <state key="normal" title="Show hint">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -157,7 +158,7 @@
     </objects>
     <designables>
         <designable name="OtZ-4l-j64">
-            <size key="intrinsicContentSize" width="68" height="30"/>
+            <size key="intrinsicContentSize" width="63" height="29"/>
         </designable>
     </designables>
     <resources>
