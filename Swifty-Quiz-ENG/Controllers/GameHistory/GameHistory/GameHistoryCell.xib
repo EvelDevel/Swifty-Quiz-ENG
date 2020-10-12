@@ -49,7 +49,7 @@
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8Jk-ps-7p4">
-                        <rect key="frame" x="90" y="19" width="210" height="346"/>
+                        <rect key="frame" x="90" y="19" width="210" height="351"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbf-DP-hla" userLabel="QuestionView">
                                 <rect key="frame" x="0.0" y="0.0" width="210" height="200"/>
@@ -78,14 +78,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="751" text="Текст вопроса " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-FD-6vG">
-                                <rect key="frame" x="0.0" y="212" width="210" height="32"/>
+                                <rect key="frame" x="0.0" y="212" width="210" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" red="0.23770004510000001" green="0.28147938849999998" blue="0.33557069299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DHw-Gt-iwd">
-                                <rect key="frame" x="0.0" y="256" width="210" height="38"/>
+                                <rect key="frame" x="0.0" y="261" width="210" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" text="Правильный ответ: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-JJ-S7x">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="17"/>
@@ -102,7 +102,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtZ-4l-j64" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="306" width="210" height="40"/>
+                                <rect key="frame" x="0.0" y="311" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="eLE-W9-fsO"/>
@@ -125,7 +125,7 @@
                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="8Jk-ps-7p4" secondAttribute="trailing" constant="20" id="1tg-ZE-5CR"/>
-                    <constraint firstAttribute="bottom" secondItem="8Jk-ps-7p4" secondAttribute="bottom" constant="20" id="3jo-yM-3qA"/>
+                    <constraint firstAttribute="bottom" secondItem="8Jk-ps-7p4" secondAttribute="bottom" constant="15" id="3jo-yM-3qA"/>
                     <constraint firstAttribute="bottom" secondItem="5iS-B8-Oan" secondAttribute="bottom" id="926-xY-qJL"/>
                     <constraint firstItem="8Jk-ps-7p4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="QvP-eV-e8E"/>
                     <constraint firstAttribute="trailing" secondItem="5iS-B8-Oan" secondAttribute="trailing" constant="16" id="T0A-2y-nrt"/>

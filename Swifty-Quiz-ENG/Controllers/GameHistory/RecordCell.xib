@@ -130,6 +130,10 @@
                 <outlet property="scoreLabel" destination="YS0-bb-Hxu" id="3XN-fx-9xu"/>
                 <outlet property="topicLabel" destination="FcE-xq-s4t" id="FK5-au-iGZ"/>
                 <outlet property="totalQuestionLabel" destination="0rP-Ie-Ogi" id="u5b-Q3-aBj"/>
+                <outletCollection property="infoTitles" destination="ysi-7y-8JZ" collectionClass="NSMutableArray" id="nzy-Mf-maw"/>
+                <outletCollection property="infoTitles" destination="YS0-bb-Hxu" collectionClass="NSMutableArray" id="gO8-db-AVq"/>
+                <outletCollection property="infoTitles" destination="0rP-Ie-Ogi" collectionClass="NSMutableArray" id="Sf9-Bn-YQK"/>
+                <outletCollection property="infoTitles" destination="GBc-rt-n09" collectionClass="NSMutableArray" id="nns-EL-tZf"/>
             </connections>
             <point key="canvasLocation" x="184.05797101449278" y="89.732142857142847"/>
         </tableViewCell>
