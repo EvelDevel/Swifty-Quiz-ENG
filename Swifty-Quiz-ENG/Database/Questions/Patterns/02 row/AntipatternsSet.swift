@@ -7,16 +7,16 @@ import Foundation
 // MARK: 31 - Вопросы (id) с 2901 по 3000
 
 class AntipatternsSet {
-    static func getQuestions() -> [Question] {
-        return [
-            Question(question: ["This anti-pattern have a relation between two or more modules which either directly or indirectly depend on each other to function properly"],
-                     image: "",
-                     optionA: "Circular dependency",
-                     optionB: "Constant interface",
-                     optionC: "God object",
-                     optionD: "",
-                     questionId: 2911,
-                     helpText: "In software engineering, a circular dependency is a relation between two or more modules which either directly or indirectly depend on each other to function properly. Such modules are also known as mutually recursive."),
+	static func getQuestions() -> [Question] {
+		return [
+			Question(question: ["This anti-pattern have a relation between two or more modules which either directly or indirectly depend on each other to function properly"],
+					 image: "",
+					 optionA: "Circular dependency",
+					 optionB: "Constant interface",
+					 optionC: "God object",
+					 optionD: "",
+					 questionId: 2911,
+					 helpText: "In software engineering, a circular dependency is a relation between two or more modules which either directly or indirectly depend on each other to function properly. Such modules are also known as mutually recursive."),
 			
 			Question(question: ["In this anti-pattern we have an object that knows too much or does too much"],
 					 image: "",
@@ -134,6 +134,6 @@ class AntipatternsSet {
 					 optionD: "",
 					 questionId: 2911,
 					 helpText: "Softcoding is a computer coding term that refers to obtaining a value or function from some external resource, such as a preprocessor macro, external constant, configuration file, command line argument or database table. It is the opposite of hardcoding, which refers to coding values and functions in the source code.")
-        ]
-    }
+		]
+	}
 }

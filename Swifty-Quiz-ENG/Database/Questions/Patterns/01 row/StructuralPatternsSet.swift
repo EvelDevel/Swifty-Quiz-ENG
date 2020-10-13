@@ -7,8 +7,8 @@ import Foundation
 // MARK: 29 - Вопросы (id) с 2701 по 2800
 
 class StructuralPatternsSet {
-    static func getQuestions() -> [Question] {
-        return [
+	static func getQuestions() -> [Question] {
+		return [
 			Question(question: ["Structral design pattern that allows the interface of an existing class to be used as another interface",
 								"Structral design pattern that often used to make existing classes work with others without modifying their source code"],
 					 image: "",
@@ -310,7 +310,7 @@ class StructuralPatternsSet {
 					 optionD: "",
 					 questionId: 2732,
 					 helpText: "Yes, we can make a singleton Facade, but try not to. It is usually implemented because it's easier to call, but it gives several disadvantages: Code coupling, Not-concurrent safe by default, Not Testable."),
-            
+			
 			Question(question: ["Use this structural pattern when you want to divide and organize a monolithic class that has several variants of some functionality (for example, if the class can work with various database servers)"],
 					 image: "",
 					 optionA: "Bridge",
@@ -320,14 +320,14 @@ class StructuralPatternsSet {
 					 questionId: 2733,
 					 helpText: "Use the Bridge pattern when you want to divide and organize a monolithic class that has several variants of some functionality (for example, if the class can work with various database servers). The bigger a class becomes, the harder it is to figure out how it works, and the longer it takes to make a change. The changes made to one of the variations of functionality may require making changes across the whole class, which often results in making errors or not addressing some critical side effects. The Bridge pattern lets you split the monolithic class into several class hierarchies. After this, you can change the classes in each hierarchy independently of the classes in the others. This approach simplifies code maintenance and minimizes the risk of breaking existing code."),
 			
-            Question(question: ["Which structural pattern is on the image?"],
-                     image: "StructuralPatterns1",
-                     optionA: "Adapter",
-                     optionB: "Composite",
-                     optionC: "Bridge",
-                     optionD: "Decorator",
-                     questionId: 2734,
-                     helpText: "Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate."),
+			Question(question: ["Which structural pattern is on the image?"],
+					 image: "StructuralPatterns1",
+					 optionA: "Adapter",
+					 optionB: "Composite",
+					 optionC: "Bridge",
+					 optionD: "Decorator",
+					 questionId: 2734,
+					 helpText: "Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate."),
 			
 			Question(question: ["The key concept of this structural pattern is that you can manipulate a single instance of the object just as you would manipulate a group of them",
 								"This structural pattern should be used when clients ignore the difference between compositions of objects and individual objects"],
@@ -340,14 +340,14 @@ class StructuralPatternsSet {
 					 helpText: "When dealing with Tree-structured data, programmers often have to discriminate between a leaf-node and a branch. This makes code more complex, and therefore, more error prone. The solution is an interface that allows treating complex and primitive objects uniformly. In object-oriented programming, a composite is an object designed as a composition of one-or-more similar objects, all exhibiting similar functionality. This is known as a \"has-a\" relationship between objects. The key concept is that you can manipulate a single instance of the object just as you would manipulate a group of them. The operations you can perform on all the composite objects often have a least common denominator relationship."),
 			
 			Question(question: ["Which structural pattern is on the image?"],
-                     image: "StructuralPatterns2",
-                     optionA: "Bridge",
-                     optionB: "Facade",
-                     optionC: "Adapter",
-                     optionD: "",
-                     questionId: 2736,
-                     helpText: "Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other."),
-            
+					 image: "StructuralPatterns2",
+					 optionA: "Bridge",
+					 optionB: "Facade",
+					 optionC: "Adapter",
+					 optionD: "",
+					 questionId: 2736,
+					 helpText: "Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other."),
+			
 			Question(question: ["Structural design pattern that solves problems like: How can a class be reused that does not have an interface that a client requires?",
 								"Structural design pattern that solves problems like: How can classes that have incompatible interfaces work together?",
 								"Structural design pattern that solves problems like: How can an alternative interface be provided for a class?"],
@@ -404,6 +404,6 @@ class StructuralPatternsSet {
 					 optionD: "",
 					 questionId: 2742,
 					 helpText: "Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors."),
-        ]
-    }
+		]
+	}
 }
