@@ -9,12 +9,8 @@ import Foundation
 class CreationalPatternsSet {
 	static func getQuestions() -> [Question] {
 		return [
-			
-			/// В общем почти все текстовки без редактуры взяты либо с Вики, либо с рефакторинг - гуру
-			/// Можешь проверять на лайте на простое наличие смысла и ошибки в формулировках вопросов
-			
 			Question(question: ["This creational design pattern lets you ensure that a class has only one instance, while providing a global access point to this instance",
-								"This creational design pattern providing a global access point to one instance?"],
+								"Which of the creational design patterns provides a global access point to one instance?"],
 					 image: "",
 					 optionA: "Singleton",
 					 optionB: "Memento",
@@ -23,7 +19,7 @@ class CreationalPatternsSet {
 					 questionId: 2601,
 					 helpText: "Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance."),
 			
-			Question(question: ["Which creational pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created?"],
+			Question(question: ["Which pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created?"],
 					 image: "",
 					 optionA: "Factory Method",
 					 optionB: "Builder",
@@ -42,8 +38,8 @@ class CreationalPatternsSet {
 					 questionId: 2603,
 					 helpText: "Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code."),
 			
-			Question(question: ["With that creational design pattern you can move the product creation code into one place in the program, making the code easier to support",
-								"With that creational design pattern you avoid tight coupling between the creator and the concrete products",
+			Question(question: ["With which creational design pattern you can move the product creation code into one place in the program, making the code easier to support",
+								"Which of these helps to avoid tight coupling between the creator and the concrete products",
 								"With that creational patterns you can introduce new types of products into the program without breaking existing client code"],
 					 image: "",
 					 optionA: "Factory Method",
@@ -71,7 +67,7 @@ class CreationalPatternsSet {
 					 questionId: 2606,
 					 helpText: "The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects. This pattern is used to: avoid subclasses of an object creator in the client application, avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it is prohibitively expensive for a given application."),
 			
-			Question(question: ["Which creational design pattern use Creator class?"],
+			Question(question: ["Which creational design pattern uses Creator class?"],
 					 image: "",
 					 optionA: "Factory Method",
 					 optionB: "Prototype",
@@ -98,7 +94,7 @@ class CreationalPatternsSet {
 					 questionId: 2609,
 					 helpText: "The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client does not know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface."),
 			
-			Question(question: ["Critics consider this creational pattern to be an anti-pattern in that it is frequently used in scenarios where it is not beneficial"],
+			Question(question: ["Some critics consider one of these creational patterns to be an anti-pattern in that it is frequently used in scenarios where it is not beneficial"],
 					 image: "",
 					 optionA: "Singleton",
 					 optionB: "Delegation",
@@ -125,7 +121,7 @@ class CreationalPatternsSet {
 					 questionId: 2612,
 					 helpText: "The Builder design pattern solves problems like: How can a class (the same construction process) create different representations of a complex object? How can a class that includes creating a complex object be simplified?"),
 			
-			Question(question: ["This creational pattern separates product construction code from the code that actually uses the product"],
+			Question(question: ["Choose the creational pattern that separates product construction code from the code that actually uses the product"],
 					 image: "",
 					 optionA: "Factory Method",
 					 optionB: "Builder",
@@ -134,7 +130,7 @@ class CreationalPatternsSet {
 					 questionId: 2613,
 					 helpText: "Use the Factory Method when you don’t know beforehand the exact types and dependencies of the objects your code should work with. The Factory Method separates product construction code from the code that actually uses the product. Therefore it’s easier to extend the product construction code independently from the rest of the code. For example, to add a new product type to the app, you’ll only need to create a new creator subclass and override the factory method in it."),
 			
-			Question(question: ["Which creational design pattern is on the image?"],
+			Question(question: ["Which creational design pattern is this?"],
 					 image: "CreationalPatterns2",
 					 optionA: "Abstract Factory",
 					 optionB: "Factory Method",
@@ -143,9 +139,9 @@ class CreationalPatternsSet {
 					 questionId: 2614,
 					 helpText: "Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes."),
 			
-			Question(question: ["This creational design pattern solves problems like: How can an application be independent of how its objects are created?",
+			Question(question: ["The creational design pattern that can solve problems like: How can an application be independent of how its objects are created?",
 								"This creational design pattern solves problems like: How can a class be independent of how the objects it requires are created?",
-								"This creational pattern solves problems like: How can families of related or dependent objects be created?"],
+								"The creational pattern that solves problems like: How can families of related or dependent objects be created?"],
 					 image: "",
 					 optionA: "Abstract Factory",
 					 optionB: "Singleton",
@@ -154,7 +150,7 @@ class CreationalPatternsSet {
 					 questionId: 2615,
 					 helpText: "The Abstract Factory design pattern solves problems like: How can an application be independent of how its objects are created? How can a class be independent of how the objects it requires are created? How can families of related or dependent objects be created? Creating objects directly within the class that requires the objects is inflexible because it commits the class to particular objects and makes it impossible to change the instantiation later independently from (without having to change) the class. It stops the class from being reusable if other objects are required, and it makes the class hard to test because real objects cannot be replaced with mock objects."),
 			
-			Question(question: ["Which creational design pattern is on the image?"],
+			Question(question: ["Which creational design pattern is on this image?"],
 					 image: "CreationalPatterns3",
 					 optionA: "Builder",
 					 optionB: "Prototype",
@@ -197,10 +193,9 @@ class CreationalPatternsSet {
 					 optionC: "Builder",
 					 optionD: "",
 					 questionId: 2620,
-					 helpText: "Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes."),
+					 helpText: "Prototype. It is a creational design pattern that lets you copy existing objects without making your code dependent on their classes."),
 			
-			Question(question: ["Use of this creational pattern makes it possible to interchange concrete implementations without changing the code that uses them, even at runtime",
-								"Employment of this creational pattern may result in unnecessary complexity and extra work in the initial writing of code"],
+			Question(question: ["Use this creational pattern to make it possible to interchange concrete implementations without changing the code that uses them, even at runtime"],
 					 image: "",
 					 optionA: "Abstract Factory",
 					 optionB: "Composite",
@@ -209,7 +204,7 @@ class CreationalPatternsSet {
 					 questionId: 2621,
 					 helpText: "Use of the Abstract Factory pattern makes it possible to interchange concrete implementations without changing the code that uses them, even at runtime. However, employment of this pattern, as with similar design patterns, may result in unnecessary complexity and extra work in the initial writing of code. Additionally, higher levels of separation and abstraction can result in systems that are more difficult to debug and maintain."),
 			
-			Question(question: ["What creational design pattern do these advantages relate to: Encapsulates code for construction and representation, provides control over steps of construction process?"],
+			Question(question: ["Pick the design pattern that provides the following advantages: it encapsulates code for construction and representation and provides control over steps of construction process"],
 					 image: "",
 					 optionA: "Builder",
 					 optionB: "Factory Method",
@@ -227,8 +222,8 @@ class CreationalPatternsSet {
 					 questionId: 2623,
 					 helpText: "Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance."),
 			
-			Question(question: ["This creational design pattern solves problems like: How can objects be created so that which objects to create can be specified at run-time?",
-								"This creational pattern solves problems like: How can dynamically loaded classes be instantiated?"],
+			Question(question: ["The creational design pattern that specifies which objects must be created at run-time?",
+								"Which creational pattern determines how can dynamically loaded classes be instantiated?"],
 					 image: "",
 					 optionA: "Prototype",
 					 optionB: "Bridge",
@@ -237,8 +232,8 @@ class CreationalPatternsSet {
 					 questionId: 2624,
 					 helpText: "The Prototype design pattern solves problems like: How can objects be created so that which objects to create can be specified at run-time? How can dynamically loaded classes be instantiated?"),
 			
-			Question(question: ["The key idea in this creational pattern is to make the class itself responsible for controlling its instantiation (that it is instantiated only once)",
-								"In this creational design pattern the hidden constructor (declared private) ensures that the class can never be instantiated from outside the class"],
+			Question(question: ["The key idea of that pattern is to make the class itself responsible for controlling its instantiation (that it is instantiated only once)",
+								"In which creational design pattern the hidden constructor (declared private) ensures that the class can never be instantiated from outside the class"],
 					 image: "",
 					 optionA: "Singleton",
 					 optionB: "Abstract Factory",
@@ -254,10 +249,10 @@ class CreationalPatternsSet {
 					 optionC: "Factory Method",
 					 optionD: "",
 					 questionId: 2626,
-					 helpText: "Correct Answer: Builder. Director class doesn't create and assemble objects directly. Instead, the Director refers to the Builder interface for building (creating and assembling) the parts of a complex object, which makes the Director independent of which concrete classes are instantiated (which representation is created)."),
+					 helpText: "Correct answer: Builder. Director class doesn't create and assemble objects directly. Instead, the Director refers to the Builder interface for building (creating and assembling) the parts of a complex object, which makes the Director independent of which concrete classes are instantiated (which representation is created)."),
 			
-			Question(question: ["This creational pattern encapsulate object creation in a separate (factory) object",
-								"In this creational design pattern class delegates object creation to a factory object instead of creating objects directly"],
+			Question(question: ["Choose the creational pattern that encapsulates object creation in a separate object",
+								"In this creational design pattern a class delegates object creation to a separate object instead of creating objects directly"],
 					 image: "",
 					 optionA: "Abstract Factory",
 					 optionB: "Factory Method",
@@ -266,8 +261,8 @@ class CreationalPatternsSet {
 					 questionId: 2627,
 					 helpText: "The Abstract Factory design pattern describes how to solve such problems: Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface. A class delegates object creation to a factory object instead of creating objects directly. This makes a class independent of how its objects are created (which concrete classes are instantiated). A class can be configured with a factory object, which it uses to create objects, and even more, the factory object can be exchanged at run-time."),
 			
-			Question(question: ["This creational design pattern solve problems like: How can the number of instances of a class be restricted?",
-								"This creational design pattern solve problems like: How can a global variable be accessed?"],
+			Question(question: ["One of the problems this design pattern helps to solve: How can the number of instances of a class be restricted?",
+								"Which of the design patterns below solves problems like: How can a global variable be accessed?"],
 					 image: "",
 					 optionA: "Singleton",
 					 optionB: "Prototype",
@@ -283,7 +278,7 @@ class CreationalPatternsSet {
 					 optionC: "Prototype",
 					 optionD: "Singleton",
 					 questionId: 2629,
-					 helpText: "Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.")
+					 helpText: "Factory Method. It provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.")
 		]
 	}
 }
