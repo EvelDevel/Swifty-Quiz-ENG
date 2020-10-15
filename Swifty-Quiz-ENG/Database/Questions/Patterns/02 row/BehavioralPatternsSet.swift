@@ -18,7 +18,7 @@ class BehavioralPatternsSet {
 					 questionId: 2801,
 					 helpText: "Command is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you parameterize methods with different requests, delay or queue a request’s execution, and support undoable operations."),
 			
-			Question(question: ["Which behavioral pattern is on the image?"],
+			Question(question: ["Which of these patterns is shown on the image?"],
 					 image: "BehavioralPatterns4",
 					 optionA: "Memento",
 					 optionB: "Visitor",
@@ -27,7 +27,7 @@ class BehavioralPatternsSet {
 					 questionId: 2802,
 					 helpText: "Memento is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation."),
 			
-			Question(question: ["Use this behavioral pattern when it’s essential to execute several handlers in a particular order"],
+			Question(question: ["Which pattern you should use when it’s essential to execute several handlers in a particular order"],
 					 image: "",
 					 optionA: "Chain of Responsibility",
 					 optionB: "Strategy",
@@ -36,7 +36,7 @@ class BehavioralPatternsSet {
 					 questionId: 2803,
 					 helpText: "Use the pattern when it’s essential to execute several handlers in a particular order. Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned."),
 			
-			Question(question: ["Use this behavioral pattern when you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime"],
+			Question(question: ["Which pattern to use when there are different variants of an algorithm within an object and you want to switch from one algorithm to another during runtime"],
 					 image: "",
 					 optionA: "Strategy",
 					 optionB: "Mediator",
@@ -45,7 +45,7 @@ class BehavioralPatternsSet {
 					 questionId: 2804,
 					 helpText: "Use the Strategy pattern when you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime. The Strategy pattern lets you indirectly alter the object’s behavior at runtime by associating it with different sub-objects which can perform specific sub-tasks in different ways."),
 			
-			Question(question: ["This behavioral pattern consisting of a source of command objects and a series of processing objects"],
+			Question(question: ["The behavioral pattern that consists of a source of command objects and a series of processing objects"],
 					 image: "",
 					 optionA: "Chain of Responsibility",
 					 optionB: "Command",
@@ -63,7 +63,7 @@ class BehavioralPatternsSet {
 					 questionId: 2806,
 					 helpText: "Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object."),
 			
-			Question(question: ["In this bhavioral pattern an object, called the subject, maintains a list of its dependents and notifies them automatically of any state changes, usually by calling one of their methods"],
+			Question(question: ["In this behavioral pattern an object, called the subject, maintains a list of its dependents and notifies them automatically of any state changes, usually by calling one of their methods"],
 					 image: "",
 					 optionA: "Observer",
 					 optionB: "Visitor",
@@ -72,7 +72,7 @@ class BehavioralPatternsSet {
 					 questionId: 2807,
 					 helpText: "The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods."),
 			
-			Question(question: ["The central ideas of this behavioral pattern closely mirror the semantics of first-class functions and higher-order functions in functional programming languages"],
+			Question(question: ["The central ideas of … behavioral pattern closely mirror the semantics of first-class functions and higher-order functions in functional programming languages"],
 					 image: "",
 					 optionA: "Command",
 					 optionB: "Prototype",
@@ -81,7 +81,7 @@ class BehavioralPatternsSet {
 					 questionId: 2808,
 					 helpText: "The central ideas of Command pattern closely mirror the semantics of first-class functions and higher-order functions in functional programming languages. Specifically, the invoker object is a higher-order function of which the command object is a first-class argument."),
 			
-			Question(question: ["Use this behavioral pattern when some objects in your app must observe others, but only for a limited time or in specific cases"],
+			Question(question: ["What behavioral pattern you could use when some objects in your app must keep track of changes in other objects, but only for a limited time or in specific cases"],
 					 image: "",
 					 optionA: "Observer",
 					 optionB: "Visitor",
@@ -90,7 +90,7 @@ class BehavioralPatternsSet {
 					 questionId: 2809,
 					 helpText: "Use the Observer pattern when some objects in your app must observe others, but only for a limited time or in specific cases. The subscription list is dynamic, so subscribers can join or leave the list whenever they need to."),
 			
-			Question(question: ["Which behavioral pattern is on the image?"],
+			Question(question: ["Identify the behavioral pattern from the image above"],
 					 image: "BehavioralPatterns8",
 					 optionA: "Strategy",
 					 optionB: "State",
@@ -115,9 +115,9 @@ class BehavioralPatternsSet {
 					 optionC: "",
 					 optionD: "",
 					 questionId: 2812,
-					 helpText: "What solution does the Observer design pattern describe: Define Subject and Observer objects so that when a subject changes state, all registered observers are notified and updated automatically (and probably asynchronously). The sole responsibility of a subject is to maintain a list of observers and to notify them of state changes by calling their update() operation. The responsibility of observers is to register (and unregister) themselves on a subject (to get notified of state changes) and to update their state (synchronize their state with subject's state) when they are notified. This makes subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time. This notification-registration interaction is also known as publish-subscribe."),
+					 helpText: "What solution does the Observer design pattern describe: Define Subject and Observer objects so that when a subject changes state, all registered observers are notified and updated automatically (and probably asynchronously). The sole responsibility of a subject is to maintain a list of observers and to notify them of state changes by calling their update() operation. The responsibility of observers is to register (and unregister) themselves on a subject (to get notified of state changes) and to update their state (synchronize their state with the subject's state) when they are notified. This makes the subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time."),
 			
-			Question(question: ["This pattern helps you when you should be ensured that when one object changes state an open-ended number of dependent objects are updated automatically"],
+			Question(question: ["The pattern that helps you when you should be ensured that when one object changes state an open-ended number of dependent objects are updated automatically"],
 					 image: "",
 					 optionA: "Observer",
 					 optionB: "Visitor",
@@ -144,7 +144,7 @@ class BehavioralPatternsSet {
 					 questionId: 2815,
 					 helpText: "Template Method is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure."),
 			
-			Question(question: ["Use this behavioral pattern when you need to perform an operation on all elements of a complex object structure (for example, an object tree)"],
+			Question(question: ["Which of the following patterns you could use if you needed to perform an operation on all elements of a complex object structure (for example, an object tree)"],
 					 image: "",
 					 optionA: "Visitor",
 					 optionB: "Strategy",
@@ -180,7 +180,7 @@ class BehavioralPatternsSet {
 					 questionId: 2819,
 					 helpText: "Use the pattern when you have a class polluted with massive conditionals that alter how the class behaves according to the current values of the class’s fields. The State pattern lets you extract branches of these conditionals into methods of corresponding state classes. While doing so, you can also clean temporary fields and helper methods involved in state-specific code out of your main class."),
 			
-			Question(question: ["Use this behavioral pattern when you can’t reuse a component in a different program because it’s too dependent on other components"],
+			Question(question: ["What pattern can you implement when you can’t reuse a component in a different program because it’s too dependent on other components"],
 					 image: "",
 					 optionA: "Mediator",
 					 optionB: "Visitor",
@@ -189,7 +189,7 @@ class BehavioralPatternsSet {
 					 questionId: 2820,
 					 helpText: "Use the pattern when you can’t reuse a component in a different program because it’s too dependent on other components. After you apply the Mediator, individual components become unaware of the other components. They could still communicate with each other, albeit indirectly, through a mediator object. To reuse a component in a different app, you need to provide it with a new mediator class."),
 			
-			Question(question: ["Use this behavioral pattern when you want to queue operations, schedule their execution, or execute them remotely"],
+			Question(question: ["Use this behavioral pattern if you want to queue operations, schedule their execution, or execute them remotely"],
 					 image: "",
 					 optionA: "Command",
 					 optionB: "Facade",
@@ -198,7 +198,7 @@ class BehavioralPatternsSet {
 					 questionId: 2821,
 					 helpText: "Use the Command pattern when you want to queue operations, schedule their execution, or execute them remotely. As with any other object, a command can be serialized, which means converting it to a string that can be easily written to a file or a database. Later, the string can be restored as the initial command object. Thus, you can delay and schedule command execution. But there’s even more! In the same way, you can queue, log or send commands over the network."),
 			
-			Question(question: ["Behavioral design pattern that lets you reduce chaotic dependencies between objects"],
+			Question(question: ["The behavioral design pattern that lets you reduce chaotic dependencies between objects"],
 					 image: "",
 					 optionA: "Mediator",
 					 optionB: "Flyweight",
@@ -216,7 +216,7 @@ class BehavioralPatternsSet {
 					 questionId: 2823,
 					 helpText: "Use State when you have a lot of duplicate code across similar states and transitions of a condition-based state machine. The State pattern lets you compose hierarchies of state classes and reduce duplication by extracting common code into abstract base classes."),
 			
-			Question(question: ["Use this behavioral pattern when your collection has a complex data structure under the hood, but you want to hide its complexity from clients (either for convenience or security reasons)"],
+			Question(question: ["Which behavioral pattern to use when a collection has a complex data structure under the hood, but you want to hide its complexity from clients?"],
 					 image: "",
 					 optionA: "Iterator",
 					 optionB: "Observer",
@@ -225,7 +225,7 @@ class BehavioralPatternsSet {
 					 questionId: 2824,
 					 helpText: "Use the Iterator pattern when your collection has a complex data structure under the hood, but you want to hide its complexity from clients (either for convenience or security reasons). The iterator encapsulates the details of working with a complex data structure, providing the client with several simple methods of accessing the collection elements. While this approach is very convenient for the client, it also protects the collection from careless or malicious actions which the client would be able to perform if working with the collection directly."),
 			
-			Question(question: ["Behavioral design pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time"],
+			Question(question: ["The behavioral design pattern that provides an object that encapsulates all information needed to perform an action or trigger an event at a later time"],
 					 image: "",
 					 optionA: "Command",
 					 optionB: "Observer",
@@ -243,7 +243,7 @@ class BehavioralPatternsSet {
 					 questionId: 2826,
 					 helpText: "Like many other behavioral design patterns, the Chain of Responsibility relies on transforming particular behaviors into stand-alone objects called handlers. Each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument. The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it. Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing."),
 			
-			Question(question: ["Which behavioral pattern is on the image?"],
+			Question(question: ["Choose the behavioral pattern shown on this image"],
 					 image: "BehavioralPatterns2",
 					 optionA: "Iterator",
 					 optionB: "Command",
@@ -261,7 +261,7 @@ class BehavioralPatternsSet {
 					 questionId: 2828,
 					 helpText: "Use the State pattern when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently. The pattern suggests that you extract all state-specific code into a set of distinct classes. As a result, you can add new states or change existing ones independently of each other, reducing the maintenance cost."),
 			
-			Question(question: ["This behavioral pattern provides the ability to restore an object to its previous state"],
+			Question(question: ["The behavioral pattern that provides the ability to restore an object to its previous state"],
 					 image: "",
 					 optionA: "Memento",
 					 optionB: "Visitor",
@@ -270,25 +270,25 @@ class BehavioralPatternsSet {
 					 questionId: 2829,
 					 helpText: "The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback)."),
 			
-			Question(question: ["Three terms always associated with this behavioral pattern are receiver, invoker and client. Which pattern is this?"],
+			Question(question: ["Three terms always associated with that behavioral pattern are receiver, invoker and client. Which pattern is this?"],
 					 image: "",
 					 optionA: "Command",
 					 optionB: "Mediator",
 					 optionC: "State",
 					 optionD: "",
 					 questionId: 2830,
-					 helpText: "Four terms always associated with the command pattern are command, receiver, invoker and client. A command object knows about receiver and invokes a method of the receiver. Values for parameters of the receiver method are stored in the command. The receiver object to execute these methods is also stored in the command object by aggregation. The receiver then does the work when the execute() method in command is called. An invoker object knows how to execute a command, and optionally does bookkeeping about the command execution. The invoker does not know anything about a concrete command, it knows only about the command interface. Invoker object(s), command objects and receiver objects are held by a client object, the client decides which receiver objects it assigns to the command objects, and which commands it assigns to the invoker. The client decides which commands to execute at which points. To execute a command, it passes the command object to the invoker object."),
+					 helpText: "Four terms always associated with the command pattern are command, receiver, invoker and client. A command object knows about the receiver and invokes a method of the receiver. Values for parameters of the receiver method are stored in the command. The receiver object to execute these methods is also stored in the command object by aggregation. The receiver then does the work when the execute() method in command is called. An invoker object knows how to execute a command, and optionally does bookkeeping about the command execution. The invoker does not know anything about a concrete command, it knows only about the command interface. Invoker object(s), command objects and receiver objects are held by a client object, the client decides which receiver objects it assigns to the command objects, and which commands it assigns to the invoker. The client decides which commands to execute at which points. To execute a command, it passes the command object to the invoker object."),
 			
-			Question(question: ["This behavioral pattern define a bunch of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver"],
+			Question(question: ["This behavioral pattern defines a bunch of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver"],
 					 image: "",
 					 optionA: "Chain of Responsibility",
 					 optionB: "Command",
 					 optionC: "Iterator",
 					 optionD: "",
 					 questionId: 2831,
-					 helpText: "Chain of Responsibility define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any). This enables to send a request to a chain of receivers without having to know which one handles the request. The request gets passed along the chain until a receiver handles the request. The sender of a request is no longer coupled to a particular receiver."),
+					 helpText: "Chain of Responsibility defines a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any). This enables you to send a request to a chain of receivers without having to know which one handles the request. The request gets passed along the chain until a receiver handles the request. The sender of a request is no longer coupled to a particular receiver."),
 			
-			Question(question: ["Use this behavioral pattern when the internal state of an object should be saved externally so that the object can be restored to this state later"],
+			Question(question: ["Pick the behavioral pattern that you could you when the internal state of an object should be saved externally so that the object can be restored to this state later"],
 					 image: "",
 					 optionA: "Memento",
 					 optionB: "Mediator",
@@ -306,7 +306,7 @@ class BehavioralPatternsSet {
 					 questionId: 2833,
 					 helpText: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."),
 			
-			Question(question: ["Use this behavioral pattern when you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts"],
+			Question(question: ["What pattern can help you if you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts?"],
 					 image: "",
 					 optionA: "Mediator",
 					 optionB: "Command",
@@ -334,7 +334,7 @@ class BehavioralPatternsSet {
 					 questionId: 28350,
 					 helpText: "Use the Command pattern when you want to implement reversible operations. Although there are many ways to implement undo/redo, the Command pattern is perhaps the most popular of all. To be able to revert operations, you need to implement the history of performed operations. The command history is a stack that contains all executed command objects along with related backups of the application’s state."),
 			
-			Question(question: ["This behavioral pattern is implemented with these objects: the originator and a caretaker"],
+			Question(question: ["The behavioral pattern that operate the following objects: the originator and a caretaker"],
 					 image: "",
 					 optionA: "Memento",
 					 optionB: "Visitor",
@@ -343,7 +343,7 @@ class BehavioralPatternsSet {
 					 questionId: 2836,
 					 helpText: "The memento pattern is implemented with three objects: the originator, a caretaker and a memento. The originator is some object that has an internal state. The caretaker is going to do something to the originator, but wants to be able to undo the change. The caretaker first asks the originator for a memento object. Then it does whatever operation (or sequence of operations) it was going to do. To roll back to the state before the operations, it returns the memento object to the originator. The memento object itself is an opaque object (one which the caretaker cannot, or should not, change). When using this pattern, care should be taken if the originator may change other objects or resources - the memento pattern operates on a single object."),
 			
-			Question(question: ["This behavioral pattern lets an object alter its behavior when its internal state changes"],
+			Question(question: ["The behavioral pattern that lets an object alter its behavior when its internal state changes"],
 					 image: "",
 					 optionA: "State",
 					 optionB: "Memento",
@@ -370,7 +370,7 @@ class BehavioralPatternsSet {
 					 questionId: 2839,
 					 helpText: "Use the Template Method pattern when you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure. The Template Method lets you turn a monolithic algorithm into a series of individual steps which can be easily extended by subclasses while keeping intact the structure defined in a superclass."),
 			
-			Question(question: ["Behavioral design pattern that lets you separate algorithms from the objects on which they operate"],
+			Question(question: ["What behavioral design pattern is useful to implement when you need to separate algorithms from the objects on which they operate?"],
 					 image: "",
 					 optionA: "Visitor",
 					 optionB: "Strategy",
@@ -395,7 +395,7 @@ class BehavioralPatternsSet {
 					 optionC: "Strategy",
 					 optionD: "Visitor",
 					 questionId: 2842,
-					 helpText: "Command is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you parameterize methods with different requests, delay or queue a request’s execution, and support undoable operations."),
+					 helpText: "Command is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you parameterize methods with different requests, delay or queue the request's execution, and support undoable operations."),
 			
 			Question(question: ["Use this behavioral pattern when you want to parametrize objects with operations"],
 					 image: "",
@@ -424,7 +424,7 @@ class BehavioralPatternsSet {
 					 questionId: 2845,
 					 helpText: "State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class."),
 			
-			Question(question: ["This behavioral pattern allow you to traverse a container and access the container's elements"],
+			Question(question: ["Which behavioral pattern allows you to traverse a container and access the container's elements"],
 					 image: "",
 					 optionA: "Iterator",
 					 optionB: "Template Method",
@@ -433,7 +433,7 @@ class BehavioralPatternsSet {
 					 questionId: 2846,
 					 helpText: "In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled. For example, the hypothetical algorithm SearchForElement can be implemented generally using a specified type of iterator rather than implementing it as a container-specific algorithm. This allows SearchForElement to be used on any container that supports the required type of iterator."),
 			
-			Question(question: ["This behavioral pattern allow you define a separate object that encapsulates accessing and traversing an aggregate object"],
+			Question(question: ["This behavioral pattern allows you define a separate object that encapsulates accessing and traversing an aggregate object"],
 					 image: "",
 					 optionA: "Iterator",
 					 optionB: "Mediator",
@@ -442,7 +442,7 @@ class BehavioralPatternsSet {
 					 questionId: 2847,
 					 helpText: "What solution does the Iterator design pattern describe: Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object. Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures). Different iterators can be used to access and traverse an aggregate in different ways. New access and traversal operations can be defined independently by defining new iterators."),
 			
-			Question(question: ["This behavioral pattern defines an object that encapsulates how a set of objects interact"],
+			Question(question: ["One of the behavioral patterns defines an object that encapsulates how a set of objects interact. Which one?"],
 					 image: "",
 					 optionA: "Mediator",
 					 optionB: "Memento",
@@ -496,7 +496,7 @@ class BehavioralPatternsSet {
 					 questionId: 2853,
 					 helpText: "Use the Mediator pattern when it’s hard to change some of the classes because they are tightly coupled to a bunch of other classes. The pattern lets you extract all the relationships between classes into a separate class, isolating any changes to a specific component from the rest of the components."),
 			
-			Question(question: ["Behavioral design pattern that lets you pass requests along a chain of handlers"],
+			Question(question: ["The behavioral design pattern that lets you pass requests along a chain of handlers"],
 					 image: "",
 					 optionA: "Chain of Responsibility",
 					 optionB: "Command",

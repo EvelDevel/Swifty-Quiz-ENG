@@ -24,7 +24,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-ws-uFX">
                                 <rect key="frame" x="20" y="155" width="280" height="257.5"/>
-                                <mutableString key="text">Hello, and nice to see you here! My name is Evgeniy, and I am an independent iOS-developer from Siberia. Swifty is my first app, which I've created to spread knowledge and help other developers and enthusiasts learn Swift. You can test it out with 150 questions available for free, and then unlock full access with over 980 questions (this number will grow) if you want to dive deeper into learning Swift. I have to tell you that it was hard to build this app, but it's finally done, so please enjoy it and send your feedback (it's important for improvement). I have also received some big help from great people along the way, you can see them below.</mutableString>
+                                <string key="text">Hello, and nice to see you here! My name is Evgeniy, and I am an independent iOS-developer from Siberia. Swifty is my first app, which I've created to spread knowledge and help other developers and enthusiasts learn Swift. You can test it out with 150 questions available for free, and then unlock full access with over 980 questions (this number will grow) if you want to dive deeper into learning Swift. I have to tell you that it was hard to build this app, but it's finally done, so please enjoy it and send your feedback (it's important for improvement). I have also received some big help from great people along the way, you can see them below.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gio-b5-NVf">
-                                                <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
                                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Author">
@@ -54,7 +54,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-Hu-hpw">
-                                                <rect key="frame" x="73" y="0.0" width="87.5" height="30"/>
+                                                <rect key="frame" x="59" y="0.0" width="68" height="30"/>
                                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Designer">
@@ -71,10 +71,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSU-Lc-9o4">
-                                                <rect key="frame" x="168.5" y="0.0" width="119.5" height="30"/>
+                                                <rect key="frame" x="135" y="0.0" width="153" height="30"/>
                                                 <color key="backgroundColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Translation">
+                                                <state key="normal" title="Product Consultant">
                                                     <color key="titleColor" red="0.36213576790000002" green="0.75555109980000001" blue="0.88135051730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>

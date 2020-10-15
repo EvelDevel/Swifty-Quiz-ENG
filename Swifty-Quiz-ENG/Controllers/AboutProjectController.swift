@@ -58,10 +58,13 @@ class AboutProjectController: UIViewController {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
     @IBAction func corrector(_ sender: Any) {
-        let urlComponents = URLComponents(string: "https://vk.com/id237197643")!
+        let urlComponents = URLComponents(string: "http://linkedin.com/in/altregubov/")!
         UIApplication.shared.open(urlComponents.url!)
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
     }
+	
+	///
+	
     @IBAction func refactorGuru(_ sender: Any) {
         let urlComponents = URLComponents(string: "https://refactoring.guru/ru")!
         UIApplication.shared.open(urlComponents.url!)
