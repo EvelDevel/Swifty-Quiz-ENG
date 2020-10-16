@@ -3,6 +3,7 @@
 //  Copyright © 2020 Evel-Devel. All rights reserved.
 
 import UIKit
+import StoreKit
 
 class InitialViewController: UIViewController {
 
@@ -220,5 +221,14 @@ extension InitialViewController: 	GameViewControllerDelegate,
 	func refreshLastGameInfo() {
 		updateLastGameInfo()
 		updateLastGameLabel()
+	}
+	func showReviewRequest() {
+		let recordsCount = Game.shared.records.count
+		if recordsCount == 10 || recordsCount == 30 || recordsCount == 50 {
+			let twoSecondsFromNow = DispatchTime.now() + 1.0
+			DispatchQueue.main.asyncAfter(deadline: twoSecondsFromNow) {
+				SKStoreReviewController.requestReview()
+			}
+		}
 	}
 }

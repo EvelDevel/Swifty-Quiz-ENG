@@ -71,7 +71,7 @@
                                     <action selector="clearRecordSound:" destination="p0w-mL-ldH" eventType="touchUpInside" id="ogk-kb-8AW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K4-Cm-cjc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K4-Cm-cjc">
                                 <rect key="frame" x="16" y="50" width="205" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.1150984988" green="0.2395524681" blue="0.40144312380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
