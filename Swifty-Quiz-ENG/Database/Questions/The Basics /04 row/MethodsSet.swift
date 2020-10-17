@@ -55,7 +55,7 @@ class MethodsSet {
 			Question(question: ["Where do you need to write an instance method?",
 								"How do you write instance methods?"],
 					 image: "",
-					 optionA: "Within the opening and closing braces of the type",
+					 optionA: "Within the opening and closing braces",
 					 optionB: "In an extension of the type it belongs to",
 					 optionC: "In the name of the type it belongs to",
 					 optionD: "In the protocol of the instance type",

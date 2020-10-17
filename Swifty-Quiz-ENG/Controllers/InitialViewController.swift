@@ -223,8 +223,8 @@ extension InitialViewController: 	GameViewControllerDelegate,
 		updateLastGameLabel()
 	}
 	func showReviewRequest() {
-		let recordsCount = Game.shared.records.count
-		if recordsCount == 10 || recordsCount == 30 || recordsCount == 50 {
+		let recordsNumber = Game.shared.records.count
+		if recordsNumber == 10 || recordsNumber == 30 || recordsNumber == 50 {
 			let twoSecondsFromNow = DispatchTime.now() + 1.0
 			DispatchQueue.main.asyncAfter(deadline: twoSecondsFromNow) {
 				SKStoreReviewController.requestReview()

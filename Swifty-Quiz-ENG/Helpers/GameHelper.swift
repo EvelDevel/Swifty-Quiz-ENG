@@ -77,15 +77,16 @@ class GameHelper {
 									  _ questionImageHeight: NSLayoutConstraint, _ view: UIView,
 									  _ questionLabel: UILabel, _ buttons: [UIButton]) {
 		
+		let bounds = UIScreen.main.bounds.size.width
 		let image = set[index].image
 		if  image == "" {
 			/// Когда нет изображения
 			questionImageView.image = nil
 			questionImageHeight.constant = 0
-			
-			if view.frame.size.width <= 320 {
+		
+			if bounds <= 320 {
 				questionLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .light)
-			} else if view.frame.size.width <= 410 {
+			} else if bounds <= 410 {
 				questionLabel.font = UIFont.systemFont(ofSize: 20.0, weight: .light)
 			} else {
 				questionLabel.font = UIFont.systemFont(ofSize: 22.0, weight: .light)
@@ -94,10 +95,10 @@ class GameHelper {
 			/// Когда есть изображение
 			questionImageView.image = UIImage(named: image)
 			
-			if view.frame.size.width <= 320 {
+			if bounds <= 320 {
 				questionLabel.font = UIFont.systemFont(ofSize: 12.0, weight: .light)
 				questionImageHeight.constant = 180
-			} else if view.frame.size.width <= 410 {
+			} else if bounds <= 410 {
 				questionLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .light)
 				questionImageHeight.constant = 200
 			} else {
@@ -108,12 +109,12 @@ class GameHelper {
 		
 		/// Размер текста ответов
 		for button in buttons {
-			if view.frame.size.width <= 320 {
+			if bounds <= 320 {
 				button.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
-			} else if view.frame.size.width <= 410 {
-				button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0)
+			} else if bounds <= 410 {
+				button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0)
 			} else {
-				button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
+				button.titleLabel?.font = UIFont.systemFont(ofSize: 17.0)
 			}
 		}
 	}
