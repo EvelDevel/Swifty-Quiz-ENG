@@ -75,7 +75,7 @@ class ProtocolsSet {
 					 helpText: "Multiple protocols can be listed, and are separated by commas."),
 			
 			Question(question: ["If a class has a superclass and multiple protocols, how should we list them after the colon?",
-								"While declaring a custom type inherited from a superclass, and the type has many protocols, in what order must we put their names after colon?"],
+								"While declaring a custom type inherited from a superclass, and the type has many protocols, in which order must we put their names after colon?"],
 					 image: "",
 					 optionA: "Superclass, Protocol, Protocol",
 					 optionB: "Protocol, Protocol, Superclass",

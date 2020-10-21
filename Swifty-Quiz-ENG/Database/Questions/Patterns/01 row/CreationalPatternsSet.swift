@@ -242,7 +242,7 @@ class CreationalPatternsSet {
 					 questionId: 2625,
 					 helpText: "The singleton design pattern describes how to solve such problems: Hide the constructor of the class. Define a public static method (getInstance()) that returns the sole instance of the class. The key idea in this pattern is to make the class itself responsible for controlling its instantiation (that it is instantiated only once). The hidden constructor (declared private) ensures that the class can never be instantiated from outside the class. The public static methods can be accessed easily by using the class name and method name (Singleton.getInstance())."),
 			
-			Question(question: ["In what creational design pattern you need to define the Director class?"],
+			Question(question: ["In which creational design pattern you need to define the Director class?"],
 					 image: "",
 					 optionA: "Builder",
 					 optionB: "Abstract Factory",
