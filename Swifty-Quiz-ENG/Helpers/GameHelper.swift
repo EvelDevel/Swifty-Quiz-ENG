@@ -12,26 +12,33 @@ class GameHelper {
 		/// Когда выбрана подборка "сет случайных вопросов" (tag от 0 до 9)
 		/// Перетасовываем их, когда: переключили тему, завершили текущий сет (доиграли до конца и нажали на "выход")
 		/// При любых других раскладах текущий сет случайных вопросов будет повторяться (перезапуск, не доиграли)
-		
-		if Game.shared.wePurchasedFullAccess() {
-			if tag == 0 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(20, .all), topic: "20 random questions", tag: 0)
-			} else if tag == 1 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(50, .all), topic: "50 random questions", tag: 1)
-			} else if tag == 2 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(100, .all), topic: "100 random questions", tag: 2)
-			} else if tag == 3 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(20, .guide), topic: "20 questions on Language Guide", tag: 3)
-			} else if tag == 4 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(20, .patterns), topic: "20 questions on Patterns", tag: 4)
-			}
-		} else {
-			if tag == 0 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(20, .demo), topic: "20 random questions", tag: 0)
-			} else if tag == 1 {
-				SelectedTopic.shared.saveQuestionSet(RandomSetManager.getQuestions(50, .demo), topic: "50 random questions", tag: 1)
-			}
-		}
+        
+        if tag == 0 {
+            SelectedTopic.shared.saveQuestionSet(
+                RandomSetManager.getQuestions(20, .all),
+                topic: "20 random questions", tag: 0
+            )
+        } else if tag == 1 {
+            SelectedTopic.shared.saveQuestionSet(
+                RandomSetManager.getQuestions(50, .all),
+                topic: "50 random questions", tag: 1
+            )
+        } else if tag == 2 {
+            SelectedTopic.shared.saveQuestionSet(
+                RandomSetManager.getQuestions(100, .all),
+                topic: "100 random questions", tag: 2
+            )
+        } else if tag == 3 {
+            SelectedTopic.shared.saveQuestionSet(
+                RandomSetManager.getQuestions(20, .guide),
+                topic: "20 questions on Language Guide", tag: 3
+            )
+        } else if tag == 4 {
+            SelectedTopic.shared.saveQuestionSet(
+                RandomSetManager.getQuestions(20, .patterns),
+                topic: "20 questions on Patterns", tag: 4
+            )
+        }
 	}
 	
 	

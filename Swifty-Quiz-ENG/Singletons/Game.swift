@@ -77,19 +77,6 @@ extension Game {
     func saveSettings(_ settings: Settings) {
         self.settings = settings
     }
-
-	/// Работа с покупкой и полным доступом
-	func openFullAccess() {
-		self.settings.fullAccess = true
-	}
-	func wePurchasedFullAccess() -> Bool {
-		return self.settings.fullAccess
-	}
-	
-	/// Этот метод использовался для тестов
-	//	func deletePurchaseStatus() {
-	//		self.settings.fullAccess = false
-	//	}
 }
 
 
