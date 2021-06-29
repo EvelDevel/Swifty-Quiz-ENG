@@ -10,9 +10,7 @@ class TopicOperator {
     // MARK: Super Sets
     // Руководство, Паттерны
     static func getRandom20() -> [Question] { return RandomSetManager.getQuestions(20, .all) }
-	static func getDemoRandom20() -> [Question] { return RandomSetManager.getQuestions(20, .demo) }
     static func getRandom50() -> [Question] { return RandomSetManager.getQuestions(50, .all) }
-	static func getDemoRandom50() -> [Question] { return RandomSetManager.getQuestions(50, .demo) }
     static func getRandom100() -> [Question] { return RandomSetManager.getQuestions(100, .all) }
     static func getGuide20() -> [Question] { return RandomSetManager.getQuestions(20, .guide) }
     static func getPatterns20() -> [Question] { return RandomSetManager.getQuestions(20, .patterns) }
@@ -22,18 +20,13 @@ class TopicOperator {
     // MARK: 01 row
     // Основы, Операторы, Строки и символы
     static func getQuestionsTheBasics() -> [Question] { return TheBasicsSet.getQuestions() }
-	static func getQuestionsDemoTheBasics() -> [Question] { TheBasicsSet.getDemoQuestions() }
     static func getQuestionsBasicOperators() -> [Question] { return BasicOperatorsSet.getQuestions() }
-	static func getQuestionsDemoBasicOperators() -> [Question] { return BasicOperatorsSet.getDemoQuestions() }
     static func getQuestionsStringAndCharacters() -> [Question] { return StringAndCharactersSet.getQuestions() }
-	static func getQuestionsDemoStringAndCharacters() -> [Question] { return StringAndCharactersSet.getDemoQuestions() }
     
     // MARK: 02 row
     // Коллекции, Управление потоком
     static func getQuestionsCollectionTypes() -> [Question] { return CollectionTypesSet.getQuestions() }
-	static func getQuestionsDemoCollectionTypes() -> [Question] { return CollectionTypesSet.getDemoQuestions() }
     static func getQuestionsControlFlow() -> [Question] { return ControlFlowSet.getQuestions() }
-	static func getQuestionsDemoControlFlow() -> [Question] { return ControlFlowSet.getDemoQuestions() }
     
     // MARK: 03 row
     // Функции, Замыкания, Перечисления
