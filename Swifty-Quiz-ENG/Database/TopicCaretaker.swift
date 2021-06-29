@@ -23,19 +23,23 @@ class TopicCaretaker {
     
     func getTopic() -> Topic {
         guard let data = UserDefaults.standard.data(forKey: key) else {
-            return Topic(questionSet: [],
-                         continueQuestionSet: [],
-                         topicTag: 0,
-                         topicName: "")
+            return Topic(
+                questionSet: [],
+                continueQuestionSet: [],
+                topicTag: 0,
+                topicName: ""
+            )
         }
         do {
             return try self.decoder.decode(Topic.self, from: data)
         } catch {
             print("We have some problems with retrieving topic from memory")
-            return Topic(questionSet: [],
-                         continueQuestionSet: [],
-                         topicTag: 0,
-                         topicName: "")
+            return Topic(
+                questionSet: [],
+                continueQuestionSet: [],
+                topicTag: 0,
+                topicName: ""
+            )
         }
     }
 }
