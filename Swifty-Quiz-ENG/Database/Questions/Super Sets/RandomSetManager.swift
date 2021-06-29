@@ -8,7 +8,6 @@ enum RandomType {
 	case all
 	case patterns
 	case guide
-	case demo
 }
 
 class RandomSetManager {
@@ -16,8 +15,7 @@ class RandomSetManager {
 	private static var all: [Question] = []
 	private static var guide: [Question] = []
 	private static var patterns: [Question] = []
-	private static var demo: [Question] = []
-	
+    
 	// Получить общее количество всех вопросов
 	// Эта функция всегда запускается при старте приложения, чтобы показать общее кол-во вопросов
 	// Это вызывает цепную реакцию, которая запускает наполнение общего массива, массива по руководству и паттернам
@@ -27,11 +25,7 @@ class RandomSetManager {
 	static func showAllQuestionsNumber() -> Int {
 		return setAndGetAllQuestions().count
 	}
-	
-	static func showDemoQuestionsNumber() -> Int {
-		return setAndGetDemoQuestions().count
-	}
-	
+
 	// Получить массив всех вопросов по Руководству
 	static func setAndGetGuideQuestions() -> [Question] {
 		if guide.isEmpty {
@@ -77,18 +71,6 @@ class RandomSetManager {
 		return patterns
 	}
 	
-	/// Получить массив всех вопросов демо-версии
-	static func setAndGetDemoQuestions() -> [Question] {
-		if demo.isEmpty {
-			demo.append(contentsOf: TheBasicsSet.getDemoQuestions())
-			demo.append(contentsOf: BasicOperatorsSet.getDemoQuestions())
-			demo.append(contentsOf: StringAndCharactersSet.getDemoQuestions())
-			demo.append(contentsOf: CollectionTypesSet.getDemoQuestions())
-			demo.append(contentsOf: ControlFlowSet.getDemoQuestions())
-		}
-		return demo
-	}
-	
 	// Получить массив всех вопросов
 	static func setAndGetAllQuestions() -> [Question] {
 		if all.isEmpty {
@@ -110,8 +92,6 @@ class RandomSetManager {
 			shuffled = guide.isEmpty ? setAndGetGuideQuestions().shuffled() : guide.shuffled()
 		case .patterns:
 			shuffled = patterns.isEmpty ? setAndGetPatternsQuestions().shuffled() : patterns.shuffled()
-		case .demo:
-			shuffled = demo.isEmpty ? setAndGetDemoQuestions().shuffled() : demo.shuffled()
 		}
 		
 		for index in 0..<limit {
