@@ -89,8 +89,6 @@
 		FBB48FAE2501124900167C24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB48FAD2501124900167C24 /* StoreKit.framework */; };
 		FBC1D4842474EE020055FF62 /* AnswerButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */; };
 		FBC1D48A247574730055FF62 /* ShadowsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D489247574730055FF62 /* ShadowsHelper.swift */; };
-		FBC91D0D24FAA17900811A8B /* DemoCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */; };
-		FBC91D0E24FAA17900811A8B /* DemoCategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */; };
 		FBC91D1124FB67D400811A8B /* InAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC91D1024FB67D400811A8B /* InAppViewController.swift */; };
 		FBC91D1624FBAC0000811A8B /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1524FBAC0000811A8B /* Categories.storyboard */; };
 		FBC91D1824FBAC1700811A8B /* GamesHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */; };
@@ -186,8 +184,6 @@
 		FBB48FAD2501124900167C24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButtonsView.swift; sourceTree = "<group>"; };
 		FBC1D489247574730055FF62 /* ShadowsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsHelper.swift; sourceTree = "<group>"; };
-		FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCategoriesCell.swift; sourceTree = "<group>"; };
-		FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCategoriesCell.xib; sourceTree = "<group>"; };
 		FBC91D1024FB67D400811A8B /* InAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppViewController.swift; sourceTree = "<group>"; };
 		FBC91D1524FBAC0000811A8B /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
 		FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesHistory.storyboard; sourceTree = "<group>"; };
@@ -360,8 +356,6 @@
 				FB37AA3E246D2D7C001E08CE /* TopicViewController.swift */,
 				FB37AA3A246D2CCD001E08CE /* CategoriesCell.swift */,
 				FB37AA3B246D2CCD001E08CE /* CategoriesCell.xib */,
-				FBC91D0B24FAA17900811A8B /* DemoCategoriesCell.swift */,
-				FBC91D0C24FAA17900811A8B /* DemoCategoriesCell.xib */,
 			);
 			path = "Topic Picker";
 			sourceTree = "<group>";
@@ -646,7 +640,6 @@
 				FBA764FB246331E400D567D0 /* button3.mp3 in Resources */,
 				FBC91D1A24FBAC2600811A8B /* Settings.storyboard in Resources */,
 				FB7BCD5024BDCDA700B8F6BA /* hideContinue.mp3 in Resources */,
-				FBC91D0E24FAA17900811A8B /* DemoCategoriesCell.xib in Resources */,
 				FB87420D24605BF500247923 /* trash.mp3 in Resources */,
 				FB39FCBB24FFA7FC00B0685D /* error.mp3 in Resources */,
 				FBE1437C24F26072004D8E85 /* Launch Screen.storyboard in Resources */,
@@ -700,7 +693,6 @@
 				FB37AA3C246D2CCD001E08CE /* CategoriesCell.swift in Sources */,
 				FB2EAC98243EEE0F0098FAC3 /* GameViewController.swift in Sources */,
 				FB99F892247B98E40053166C /* AntipatternsSet.swift in Sources */,
-				FBC91D0D24FAA17900811A8B /* DemoCategoriesCell.swift in Sources */,
 				FB7B13E324AB5DE600CB11C6 /* LaunchViewController.swift in Sources */,
 				FBADAAEF246825560014501E /* CollectionTypesSet.swift in Sources */,
 				FB96628B246E6D9B000B82B9 /* MemorySafetySet.swift in Sources */,
