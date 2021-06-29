@@ -89,7 +89,6 @@
 		FBB48FAE2501124900167C24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB48FAD2501124900167C24 /* StoreKit.framework */; };
 		FBC1D4842474EE020055FF62 /* AnswerButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */; };
 		FBC1D48A247574730055FF62 /* ShadowsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D489247574730055FF62 /* ShadowsHelper.swift */; };
-		FBC91D1124FB67D400811A8B /* InAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC91D1024FB67D400811A8B /* InAppViewController.swift */; };
 		FBC91D1624FBAC0000811A8B /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1524FBAC0000811A8B /* Categories.storyboard */; };
 		FBC91D1824FBAC1700811A8B /* GamesHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */; };
 		FBC91D1A24FBAC2600811A8B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC91D1924FBAC2600811A8B /* Settings.storyboard */; };
@@ -184,7 +183,6 @@
 		FBB48FAD2501124900167C24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FBC1D4832474EE020055FF62 /* AnswerButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButtonsView.swift; sourceTree = "<group>"; };
 		FBC1D489247574730055FF62 /* ShadowsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsHelper.swift; sourceTree = "<group>"; };
-		FBC91D1024FB67D400811A8B /* InAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppViewController.swift; sourceTree = "<group>"; };
 		FBC91D1524FBAC0000811A8B /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
 		FBC91D1724FBAC1700811A8B /* GamesHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesHistory.storyboard; sourceTree = "<group>"; };
 		FBC91D1924FBAC2600811A8B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -521,14 +519,6 @@
 			path = "Game Controller";
 			sourceTree = "<group>";
 		};
-		FBC91D0F24FB67A300811A8B /* IAP */ = {
-			isa = PBXGroup;
-			children = (
-				FBC91D1024FB67D400811A8B /* InAppViewController.swift */,
-			);
-			path = IAP;
-			sourceTree = "<group>";
-		};
 		FBC91D1F24FBF06900811A8B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,7 +552,6 @@
 				FB37AA39246D2CAA001E08CE /* Topic Picker */,
 				FB0E0290246CF334005CA792 /* GameHistory */,
 				FB66C05624559197009FADDE /* Setting */,
-				FBC91D0F24FB67A300811A8B /* IAP */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -684,7 +673,6 @@
 				FB1D0B972446E7A600E9C56D /* TheBasicsSet.swift in Sources */,
 				FBECDC5E243F310800BD5583 /* Question.swift in Sources */,
 				FB8606A92441CF7300A692AD /* Record.swift in Sources */,
-				FBC91D1124FB67D400811A8B /* InAppViewController.swift in Sources */,
 				FB8606A72441CF1C00A692AD /* Game.swift in Sources */,
 				FB86ACA82469A424002BA8B3 /* EnumerationsSet.swift in Sources */,
 				FB99F88B247B95430053166C /* CreationalPatternsSet.swift in Sources */,
@@ -883,7 +871,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Evel-Devel.Swifty-Quiz-ENG";
 				PRODUCT_NAME = "Swifty-Quiz";
 				SWIFT_VERSION = 5.0;
@@ -904,7 +892,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Evel-Devel.Swifty-Quiz-ENG";
 				PRODUCT_NAME = "Swifty-Quiz";
 				SWIFT_VERSION = 5.0;

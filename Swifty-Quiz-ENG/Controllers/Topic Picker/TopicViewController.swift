@@ -11,14 +11,13 @@ protocol TopicViewControllerDelegate: AnyObject {
 	func refreshTotalNumberOfQuestion()
 }
 
-class TopicViewController: UIViewController, InAppViewControllerDelegate {
+class TopicViewController: UIViewController {
 
 	@IBOutlet weak var headerHeight: NSLayoutConstraint!
 	@IBOutlet weak var titleTopMargin: NSLayoutConstraint!
 	@IBOutlet weak var backButton: UIButton!
 	@IBOutlet weak var nameAndNumberOfQuestions: UILabel!
 	@IBOutlet weak var tableView: UITableView!
-	@IBOutlet weak var buyButton: UIButton!
 	@IBOutlet weak var categoriesTitle: UILabel!
 	weak var delegate: TopicViewControllerDelegate?
 
@@ -26,7 +25,6 @@ class TopicViewController: UIViewController, InAppViewControllerDelegate {
 		super.viewDidLoad()
 		cellRegistration()
 		setDefaultNumberOfQuestions()
-		setOrHideUnlockButton()
 	}
 
 	/// Обновляем выбранную категорию (моментально)
@@ -56,28 +54,10 @@ class TopicViewController: UIViewController, InAppViewControllerDelegate {
 		dismiss(animated: true, completion: nil)
 	}
 
-	/// Работа кнопки UNLOCK
-	func setOrHideUnlockButton() {
-		if !Game.shared.wePurchasedFullAccess() {
-			let total = RandomSetManager.showAllQuestionsNumber()
-			buyButton.setTitle("Unlock \(total) questions", for: .normal)
-		} else {
-			categoriesTitle.text = "Available categories"
-			buyButton.isHidden = true
-		}
-	}
-
 	@IBAction func unlockAllQuestions(_ sender: Any) {
 		SoundPlayer.shared.playSound(sound: .menuMainButton)
 	}
-
-	/// Подготовка делегата
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier  == "toInAppPurchaseView" {
-			let inAppView = segue.destination as! InAppViewController
-			inAppView.delegate = self
-		}
-	}
+    
 	/// Обновление таблицы
 	func refreshViewAndTableAfterPurchase() {
 		let newSet = TopicOperator.getQuestionsTheBasics()
@@ -89,7 +69,6 @@ class TopicViewController: UIViewController, InAppViewControllerDelegate {
 			{ () -> Void in
 				SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
 				self.nameAndNumberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
-				self.setOrHideUnlockButton()
 				self.tableView.setNeedsLayout()
 				self.tableView.reloadData()
 		},
@@ -122,11 +101,7 @@ class TopicViewController: UIViewController, InAppViewControllerDelegate {
 extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 
 	func cellRegistration() {
-		if Game.shared.wePurchasedFullAccess() {
-			tableView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellReuseIdentifier: "CategoriesCell")
-		} else {
-			tableView.register(UINib(nibName: "DemoCategoriesCell", bundle: nil), forCellReuseIdentifier: "DemoCategoriesCell")
-		}
+        tableView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellReuseIdentifier: "CategoriesCell")
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -134,25 +109,19 @@ extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if Game.shared.wePurchasedFullAccess() {
-			guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell else {
-				return UITableViewCell()
-			}
-			cell.delegate = self
-			return cell
-		} else {
-			guard let cell = tableView.dequeueReusableCell(withIdentifier: "DemoCategoriesCell", for: indexPath) as? DemoCategoriesCell else {
-				return UITableViewCell()
-			}
-			cell.delegate = self
-			return cell
-		}
+        guard let cell = tableView.dequeueReusableCell(
+                withIdentifier: "CategoriesCell",
+                for: indexPath) as? CategoriesCell else {
+            return UITableViewCell()
+        }
+        cell.delegate = self
+        return cell
 	}
 }
 
 
 // MARK: Работа с делегатом CategoriesCell и DemoCategoriesCell
-extension TopicViewController: CategoriesCellDelegate, DemoCategoriesCellDelegate {
+extension TopicViewController: CategoriesCellDelegate {
 
 	func updateNumberOfQuestions() {
 		if SelectedTopic.shared.topic.topicTag < 10 {
@@ -164,19 +133,6 @@ extension TopicViewController: CategoriesCellDelegate, DemoCategoriesCellDelegat
 
 	func showAlert() {
 		self.showAlertIfNeeded()
-	}
-
-	/// Когда нажимаем на неативную категорию - срабатывает анимация кнопки "купить"
-	func popTheBuyButton() {
-		buyButton.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-		UIView.animate(withDuration: 1,
-					   delay: 0,
-					   usingSpringWithDamping: CGFloat(1),
-					   initialSpringVelocity: CGFloat(4.0),
-					   options: UIView.AnimationOptions.allowUserInteraction,
-					   animations: {
-						self.buyButton.transform = CGAffineTransform.identity }, completion: { Void in()  }
-		)
 	}
 
 	/// Вызов отправки письма

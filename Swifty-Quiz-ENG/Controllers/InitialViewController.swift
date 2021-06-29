@@ -64,13 +64,7 @@ extension InitialViewController {
 	/// Загружаем дефолтный сет
 	func setStartQuestionSet() {
 		if SelectedTopic.shared.topic.questionSet.isEmpty || Game.shared.settings.appLastVersion != currentAppVersion {
-			var newSet: [Question] = []
-
-			if Game.shared.wePurchasedFullAccess() {
-				newSet = TopicOperator.getQuestionsTheBasics()
-			} else {
-				newSet = TopicOperator.getQuestionsDemoTheBasics()
-			}
+            let newSet = TopicOperator.getQuestionsTheBasics()
 			SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
 			selectedTopic.text = "The Basics"
 			Game.shared.changeContinueStatus()
@@ -101,11 +95,7 @@ extension InitialViewController {
 
 	/// Показываем общее количество вопросов в игре
 	func showTotalQuestions() {
-		if Game.shared.wePurchasedFullAccess() {
-			totalQuestionsLabel.text = "Questions in game: \(RandomSetManager.showAllQuestionsNumber())"
-		} else {
-			totalQuestionsLabel.text = "Questions in game: \(RandomSetManager.showDemoQuestionsNumber())"
-		}
+        totalQuestionsLabel.text = "Questions in game: \(RandomSetManager.showAllQuestionsNumber())"
 	}
 }
 
