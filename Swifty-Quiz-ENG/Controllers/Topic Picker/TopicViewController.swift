@@ -145,7 +145,7 @@ extension TopicViewController: MFMailComposeViewControllerDelegate {
 
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
-        composer.setToRecipients(["hello@swifty-quiz.online"])
+        composer.setToRecipients(["hello@swifty-quiz.ru"])
         composer.setSubject(section)
 		composer.setMessageBody("""
 			I want to suggest my question for the \(section) section
