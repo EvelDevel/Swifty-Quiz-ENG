@@ -4,7 +4,7 @@
 
 import UIKit
 
-protocol DemoCategoriesCellDelegate: class {
+protocol DemoCategoriesCellDelegate: AnyObject {
 	func updateNumberOfQuestions()
 	func showAlert()
 	func popTheBuyButton()

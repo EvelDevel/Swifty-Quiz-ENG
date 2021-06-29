@@ -5,7 +5,7 @@
 import UIKit
 import StoreKit
 
-protocol InAppViewControllerDelegate: class {
+protocol InAppViewControllerDelegate: AnyObject {
 	func refreshViewAndTableAfterPurchase()
 }
 

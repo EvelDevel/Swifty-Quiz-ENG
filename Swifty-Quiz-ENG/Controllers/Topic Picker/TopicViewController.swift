@@ -5,7 +5,7 @@
 import UIKit
 import MessageUI
 
-protocol TopicViewControllerDelegate: class {
+protocol TopicViewControllerDelegate: AnyObject {
 	func selectedCategory()
 	func updateInitialView()
 	func refreshTotalNumberOfQuestion()

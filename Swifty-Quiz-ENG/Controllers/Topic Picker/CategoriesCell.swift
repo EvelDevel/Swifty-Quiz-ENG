@@ -14,7 +14,7 @@
 
 import UIKit
 
-protocol CategoriesCellDelegate: class {
+protocol CategoriesCellDelegate: AnyObject {
 	func updateNumberOfQuestions()
 	func showAlert()
 	func suggestQuestion(section: String)
