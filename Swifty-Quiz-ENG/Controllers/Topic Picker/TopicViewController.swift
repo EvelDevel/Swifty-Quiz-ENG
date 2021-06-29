@@ -54,27 +54,6 @@ class TopicViewController: UIViewController {
 		dismiss(animated: true, completion: nil)
 	}
 
-	@IBAction func unlockAllQuestions(_ sender: Any) {
-		SoundPlayer.shared.playSound(sound: .menuMainButton)
-	}
-    
-	/// Обновление таблицы
-	func refreshViewAndTableAfterPurchase() {
-		let newSet = TopicOperator.getQuestionsTheBasics()
-		cellRegistration()
-		UIView.transition(with: tableView,
-						  duration: 1,
-						  options: .transitionCrossDissolve,
-						  animations:
-			{ () -> Void in
-				SelectedTopic.shared.saveQuestionSet(newSet, topic: "The Basics", tag: 10)
-				self.nameAndNumberOfQuestions.text = "\(SelectedTopic.shared.topic.topicName) (\(SelectedTopic.shared.topic.questionSet.count))"
-				self.tableView.setNeedsLayout()
-				self.tableView.reloadData()
-		},
-						  completion: nil)
-	}
-
 	func setDefaultNumberOfQuestions() {
 		if SelectedTopic.shared.topic.topicTag < 10 {
 			nameAndNumberOfQuestions.text = SelectedTopic.shared.topic.topicName
@@ -120,7 +99,7 @@ extension TopicViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 
-// MARK: Работа с делегатом CategoriesCell и DemoCategoriesCell
+// MARK: Работа с делегатом CategoriesCell
 extension TopicViewController: CategoriesCellDelegate {
 
 	func updateNumberOfQuestions() {

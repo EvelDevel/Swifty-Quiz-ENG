@@ -7,11 +7,11 @@ import Foundation
 // MARK: Модель "настройки"
 struct Settings: Codable {
     
-    var questionOrder: Int          // Порядок вопросов
-    var questionTextShuffeling: Int // Изменение формулировок вопроса
-    var sound: Int                  // Звук
-    var changeAfterHelp: Int        // Поведение после подсказки (меняем вопрос или остаемся)
-    var helpAfterWrong: Int         // Поведение после неправильного ответа (показываем подсказку или переходим)
-    var appLastVersion: String      // Сохранение текущей версии приложения (чтобы когда обновляем, рефрешить контент)
-	var fullAccess: Bool			// Флаг покупки полной версии
+    var questionOrder: Int
+    var questionTextShuffeling: Int
+    var sound: Int
+    var changeAfterHelp: Int
+    var helpAfterWrong: Int
+    var appLastVersion: String
+	var fullAccess: Bool
 }

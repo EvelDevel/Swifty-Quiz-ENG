@@ -23,6 +23,7 @@ class SoundPlayer {
     
     static let shared = SoundPlayer()
     var player = AVAudioPlayer()
+    
     private init() { }
     
     func playSound(sound: Sounds) {
@@ -67,7 +68,6 @@ class SoundPlayer {
 				soundExtension = "mp3"
             }
 			
-            
             guard let url = Bundle.main.url(forResource: name, withExtension: soundExtension) else {
                 return
             }

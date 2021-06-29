@@ -5,7 +5,9 @@
 import Foundation
 
 class Game {
+    
     static let shared = Game()
+    
     private let recordCaretaker = RecordsCaretaker()
     private let settingsCaretaker = SettingsCaretaker()
     private var weShowedAlert: Bool = false
@@ -31,15 +33,19 @@ class Game {
 
 // MARK: Работа с подсказкой по незавершенной игре
 extension Game {
+    
     func showSettingsAlertStatus() -> Bool {
         return self.weShowedAlert
     }
+    
     func showTopicAlertStatus() -> Bool {
         return self.weShowedAlert
     }
+    
     func showNewGameAlertStatus() -> Bool {
         return self.weShowedAlert
     }
+    
     func setThatWeShowedAlert() {
         self.weShowedAlert = true
     }
@@ -48,19 +54,24 @@ extension Game {
 
 // MARK: Сохранение, удаление, редактирование рекордов
 extension Game {
+    
     func addRecord(_ record: Record) {
         self.records.insert(record, at: 0)
     }
+    
     func replaceRecord(_ record: Record) {
         self.records.remove(at: 0)
         self.records.insert(record, at: 0)
     }
+    
     func clearRecords() {
         self.records = []
     }
+    
     func deleteOneRecord(index: Int) {
         self.records.remove(at: index)
     }
+    
     func changeContinueStatus() {
         if self.records.count != 0 {
             var lastRecord = self.records[0]
@@ -74,6 +85,7 @@ extension Game {
 
 // MARK: Сохранение настроек
 extension Game {
+    
     func saveSettings(_ settings: Settings) {
         self.settings = settings
     }
@@ -82,6 +94,7 @@ extension Game {
 
 // MARK: Установка значений настроек
 extension Game {
+    
     /// Настройки: Порядок вопросов в теме
     func setQuestionOrder(setting: QuestionOrder) {
         if setting == .random {
