@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKu-aM-NQz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKu-aM-NQz">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,14 +45,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="abk-Hi-kpA">
-                                <rect key="frame" x="117.5" y="40" width="140" height="45"/>
+                                <rect key="frame" x="117.5" y="60" width="140" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="0d1-Vn-wXw"/>
                                     <constraint firstAttribute="width" constant="140" id="rHO-eI-hdD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPr-C7-FGY" userLabel="About Project">
-                                <rect key="frame" x="102.5" y="30" width="170" height="65"/>
+                                <rect key="frame" x="102.5" y="50" width="170" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="PB4-CK-oVQ"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VpL-Hy-Br9">
-                                <rect key="frame" x="43.5" y="153.5" width="288" height="360"/>
+                                <rect key="frame" x="43.5" y="163.5" width="288" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5De-it-OQy" userLabel="TopicPicker">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="60"/>
@@ -195,7 +195,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXd-ZC-ZJT" customClass="RoundCornerButton" customModule="Swifty_Quiz" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="230" height="48"/>
-                                                <color key="backgroundColor" red="0.37924414870000001" green="0.75569957489999995" blue="0.873203218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.47056565380935761" green="0.74527597720880667" blue="0.85976678133010864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Game history">
                                                     <color key="titleColor" red="0.95662969350000004" green="0.96071344609999998" blue="0.96887880559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -768,6 +768,32 @@
             <point key="canvasLocation" x="1873" y="112"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="3us-Ch-ovH">
+            <size key="intrinsicContentSize" width="61" height="32"/>
+        </designable>
+        <designable name="LsO-B9-8ah">
+            <size key="intrinsicContentSize" width="89" height="96"/>
+        </designable>
+        <designable name="SXd-ZC-ZJT">
+            <size key="intrinsicContentSize" width="102" height="33"/>
+        </designable>
+        <designable name="cGm-XU-csX">
+            <size key="intrinsicContentSize" width="60" height="32"/>
+        </designable>
+        <designable name="lcg-H9-k7K">
+            <size key="intrinsicContentSize" width="60" height="32"/>
+        </designable>
+        <designable name="mO1-NM-9Qp">
+            <size key="intrinsicContentSize" width="69" height="33"/>
+        </designable>
+        <designable name="pq9-9e-V5c">
+            <size key="intrinsicContentSize" width="47" height="41"/>
+        </designable>
+        <designable name="sAj-KE-UJq">
+            <size key="intrinsicContentSize" width="61" height="32"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="aL1-7b-at2"/>
     </inferredMetricsTieBreakers>
